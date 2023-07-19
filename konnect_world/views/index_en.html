@@ -78,7 +78,7 @@
             <main id="content" class="main_content">
                 <section class="section main_img">
                     <!-- <img src="../img/main_banner.png"> -->
-                    <video id="video" autoplay muted playsinline>
+                    <video id="video" autoplay muted>
                         <source id="video_intro" src="../img/desktop_Intro.mp4" type="video/mp4" />
                         <source id="video_loop" src="../img/desktop_Looping.mp4" type="video/mp4" />
                     </video>
@@ -157,7 +157,8 @@
                     <h1 class="blue_text_46">The era of web 3.0 buzz<br />and excitement</h1>
                 </section>
                 <!-- 이모지 배경화면 -->
-                <section class="section bg_img sub_img2 bg_face1_en">
+                <section class="section bg_img sub_img2 bg_face">
+                    <img src="../img/bg_face_en.png" alt="bg_face1_en"/>
                     <h1 class="blue_text_46">
                         Users tired of fake web 3.0 projects lacking utility
                     </h1>
@@ -165,8 +166,9 @@
                         Web 3.0 projects so far with insufficient incentives for users to receive
                     </h3>
                 </section>
-                <section class="section bg_img sub_img2 bg_face2_en">
-                    <h1 class="blue_text_46">
+                <section class="section bg_img sub_img2 bg_face">
+                    <img src="../img/bg_face2_en.png" alt="bg_face2_en"/>
+                    <h1 class="blue_text_46 pt_20 ">
                         and<br />web 2.0 services with inherent limitations despite their utility
                     </h1>
                     <h3 class="navy_text_36">
@@ -476,7 +478,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="market_link">
+                            <!-- <div class="market_link">
                                 <button
                                     type="button"
                                     class="btn btn--md"
@@ -487,7 +489,7 @@
                                 <p class="sub_sub_text">
                                     Visit Konnect's existing NFT Marketplace and take a look.
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </section>
@@ -667,7 +669,7 @@
                 <!-- 커넥트 파트너사 안내 -->
                 <section class="section bg_blue">
                     <div class="m_konnect_info">
-                        <div class="m_konnect_info_in_2">
+                        <div class="m_konnect_info_in_3">
                             <div class="m_partner">
                                 <img src="../img/temp/m_partner.png" alt="m_partner" />
                             </div>
@@ -677,12 +679,12 @@
                 <!-- 커넥트 nft 안내 -->
                 <section class="section">
                     <div class="m_konnect_info">
-                        <div class="m_konnect_info_in">
+                        <div class="m_konnect_info_in_2">
                             <div class="m_nft">
                                 <img src="../img/temp/m_nft_en.png" alt="m_nft" />
                             </div>
                         </div>
-                        <div class="market_link">
+                        <!-- <div class="market_link">
                             <button
                                 type="button"
                                 class="btn btn--md m_btn--md"
@@ -690,7 +692,7 @@
                             >
                                 GO TO KONNECT NFT MARKETPLACE
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
             </main>
@@ -816,14 +818,9 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var video = document.getElementById('video_m');
-        var introSource = document.getElementById('video_m_intro');
-        var loopSource = document.getElementById('video_m_loop');
-
         var video = document.getElementById('video');
         var introSource = document.getElementById('video_intro');
         var loopSource = document.getElementById('video_loop');
-        console.log(video, introSource, loopSource);
 
         video.addEventListener('ended', function () {
             introSource.removeEventListener('ended', replayIntro);
@@ -837,5 +834,22 @@
         }
 
         introSource.addEventListener('ended', replayIntro);
+
+        var video_m = document.getElementById('video_m');
+        var introSource_m = document.getElementById('video_m_intro');
+        var loopSource_m = document.getElementById('video_m_loop');
+
+        video_m.addEventListener('ended', function () {
+            introSource_m.removeEventListener('ended', replayIntro);
+            video_m.src = loopSource_m.src;
+            video_m.loop = true;
+            video_m.play();
+        });
+
+        function replayIntro() {
+            introSource_m.play();
+        }
+
+        introSource_m.addEventListener('ended', replayIntro);
     });
 </script>
