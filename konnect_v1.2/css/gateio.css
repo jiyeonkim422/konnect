@@ -1,0 +1,165 @@
+main > .section_gateio{
+    padding-top:70px;
+}
+
+.gateio_grade{
+    margin-top:36px;
+}
+
+.card_img{
+    width:193px;
+    height:286px;
+    margin:0 auto;
+}
+.gateio_card_img{
+    margin-top:30px;
+}
+.gateio_card_img > img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+.gateio_benefit_info{
+    margin-top:30px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:14px;
+}
+
+.gateio_benefit{
+    margin-top:24px;
+}
+.benefit_box{
+    margin-top:24px;
+}
+.benefit_box > .main_tit{
+    margin-bottom:10px;
+}
+
+
+.benefit_info_box{
+    width:100%;
+    background-color:#1d1d1d;
+    border-radius: 20px;
+    padding:30px 34px 30px 36px;
+    display:flex;
+    gap:18px;
+}
+.benefit_info_box + .benefit_info_box{
+    margin-top: 20px;
+}
+.benefit_info_left{
+    width:70px;
+    display:flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.brand_img{
+    width:70px;
+    height:70px;
+}
+.brand_img > img{
+    width:100%;
+    height:auto;
+}
+
+
+.benefit_info_right{
+    width:calc(100% - 70px);
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.benefit_info{
+    height:70px;
+    display:flex;
+    gap:7px;
+    flex-direction: column;
+    justify-content: center;
+}
+.brand_name{
+    color:#b3b3b3;
+    font-size:14px;
+    line-height:20px;
+    letter-spacing:-0.7px;
+    font-weight:600;
+}
+.benefit_tit{
+    color:#fff;
+    font-size:16px;
+    line-height:22px;
+    font-weight:700;
+}
+.benefit_detail{
+    color:#b3b3b3;
+    font-size:14px;
+    line-height:20px;
+}
+.benefit_detail_li{
+    padding-left:9px;
+    position:relative;
+}
+.benefit_detail_li + .benefit_detail_li{
+    margin-top:4px;
+}
+.benefit_detail_li::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #858585;
+    content: '';
+}
+
+
+
+.gateio_benefit.benefit_plus{
+    margin-top:80px;
+    margin-bottom:100px;
+}
+.gateio_benefit.benefit_plus .benefit_tit{
+    font-size:20px
+}
+.gateio_benefit.benefit_plus .benefit_detail{
+    font-size:16px;
+    line-height:22px;
+}
+.gateio_benefit.benefit_plus .benefit_detail_li::before{
+    top:8px;
+}
+.benefit_info_box2{
+    width: 100%;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 30px 34px 30px 36px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.benefit_info_box2 + .benefit_info_box2{
+    margin-top:20px;
+}
+.benefit_info_top{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.benefit_info2{
+    margin-bottom:6px;
+}
+.benefit_info_top > .brand_img{
+    width:70px;
+    height:70px;   
+}
+
+.benefit_info_box2 .gateio_card_img{
+    width:92px;
+    height:136px;
+    margin-top:0; 
+}

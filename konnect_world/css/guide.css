@@ -1,0 +1,74 @@
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Pretendard',sans-serif;
+    color:#555;
+}
+
+/****************** 폰트 font ******************/
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    src: url("../../font/Pretendard-Thin.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    src: url("../../font/Pretendard-ExtraLight.ttf") format("ttf"); 
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src: url("../../font/Pretendard-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url("../../font/Pretendard-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url("../../font/Pretendard-Medium.ttf") format("ttf");
+} 
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src: url("../../font/Pretendard-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src: url("../../font/Pretendard-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    src: url("../../font/Pretendard-ExtraBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    src: url("../../font/Pretendard-Black.ttf") format("ttf");
+}
+
+
+/****************** 버튼 button ******************/
+ 
+
+
+/****************** 마진 margin ******************/
+
+
+
+/****************** 패딩 padding ******************/

@@ -1,0 +1,279 @@
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Pretendard',sans-serif;
+    color:#000;
+}
+
+/****************** 폰트 font ******************/
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    src: url("../../font/Pretendard-Thin.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    src: url("../../font/Pretendard-ExtraLight.ttf") format("ttf"); 
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src: url("../../font/Pretendard-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url("../../font/Pretendard-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url("../../font/Pretendard-Medium.ttf") format("ttf");
+} 
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src: url("../../font/Pretendard-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src: url("../../font/Pretendard-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    src: url("../../font/Pretendard-ExtraBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Pretendard';             
+    font-weight: 900;
+    src: url("../../font/Pretendard-Black.ttf") format("ttf");
+}
+
+/****************** 색상 color ******************/
+.bg--white{
+    background-color:#fff !important;
+}
+.bg--gray{
+    background-color:#f3f4f6 !important;
+}
+.bg--black{
+    background-color:#000 !important;
+}
+
+/****************** 버튼 button ******************/
+ 
+.btn{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color:#000;
+    color: #000;
+    font-size: 13px;
+    padding: 6px 12px;
+}
+
+.btn--full{
+    width:100%;
+}
+.btn--xs{
+    height:24px;
+    font-size:13px;
+    font-weight:800;
+}
+.btn--lg{
+    height:48px;
+    font-size:14px;
+    font-weight:700;
+}
+.btn--primary1{
+    background-color:#0039cc;
+    color:#fff;
+    border:none;
+}
+.btn--primary2{
+    background-color:#00a3ff;
+    color:#fff;
+}
+
+
+.btn--icon{
+    display:flex;
+    gap: 4px;
+    align-items: center;
+}
+
+
+/****************** 마진 margin ******************/
+.mt_2{
+    margin-top:2px !important;
+}
+.mt_4{
+    margin-top:4px !important;
+}
+.mt_8{
+    margin-top:8px !important;
+}
+.mt_10{
+    margin-top:10px !important;
+}
+.mt_20{
+    margin-top:20px !important;
+}
+.mt_30{
+    margin-top:30px !important;
+}
+.mb_2{
+    margin-bottom:2px !important;
+}
+.mb_4{
+    margin-bottom:4px !important;
+}
+.mb_8{
+    margin-bottom:8px !important;
+}
+.mb_10{
+    margin-bottom:10px !important;
+}
+.mb_20{
+    margin-bottom:20px !important;
+}
+.mb_30{
+    margin-bottom:30px !important;
+}
+.mb_60{
+    margin-bottom:60px !important;
+}
+
+/****************** 패딩 padding ******************/
+.p_side_20{
+    padding:0 20px;
+}
+
+
+/****************** 텍스트 text ******************/
+
+.nav_title{
+    font-size:18px;
+    font-weight:700;
+    line-height:22px;
+    display:flex;
+    align-items: center;
+    width:calc(100% - 70px);
+}
+
+.main_tit{
+    color:#000;
+    font-weight:700;
+    letter-spacing: -0.5px;
+    font-size:24px;
+    line-height:34px;
+    text-align:center;
+    word-break: break-word;
+}
+.main_detail{
+    color:#000;
+    font-weight:600;
+    font-size:16px;
+    line-height:22px;
+    text-align:center;
+    letter-spacing: -0.5px;
+    word-break: break-word;
+}
+
+
+.text_link{
+    color:#002863;
+    font-size:14px;
+    font-weight:700;
+}
+
+
+.tx--left{
+    text-align:left !important;
+}
+.tx--center{
+    text-align:center !important;
+}
+.tx--right{
+    text-align:right !important;
+}
+
+.tx--white{
+    color:#fff !important;
+}
+.tx--black{
+    color:#000 !important;
+}
+.tx--blue1{
+    color:#0039CC !important;
+}
+.tx--blue2{
+    color:#00A3FF !important;
+}
+.tx--warning{
+    color:#CE2827 !important;
+}
+
+
+
+
+/****************** 라벨&뱃지 label&badge ******************/
+
+.label{
+    font-weight: 800;
+    font-size:16px;
+    display: inline-block;
+    flex-flow: row nowrap;
+    padding: 8px 15px;
+    overflow: visible;
+    border-radius: 50px;
+    border: 2px solid #0039CC;
+    color: #0039CC; 
+}
+.label--fill-blue1{
+    background-color:#0039CC;
+    border:none;
+    color:#fff;
+}  
+.label--fill-blue2{
+    background-color:#00a3ff;
+    border:none;
+    color:#fff;
+}
+
+.badge{
+    width:70px;
+    height:22px;
+    font-weight:700;
+    font-size:12px;
+    background-color:#313131;
+    color:#b3b3b3;
+    border-radius:36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

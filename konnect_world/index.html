@@ -1,0 +1,14 @@
+<html>
+    <script>
+        // 사용자 언어 설정 가져오기
+        var userLanguage = navigator.language || navigator.userLanguage;
+
+        var fileName = 'views/index_ko.html';
+        if (userLanguage === 'en') {
+            fileName = 'views/index_en.html';
+        }
+
+        // 리다이렉트
+        window.location.href = fileName;
+    </script>
+</html>
