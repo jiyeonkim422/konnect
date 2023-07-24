@@ -193,7 +193,7 @@
     width: auto;
 }
 .footer_left_top .app_download .app_down_link {
-    width: 150px;
+    width: 154px;
     height: auto;
 }
 
@@ -810,11 +810,7 @@
     font-weight: 700;
     font-size: 24px;
 }
-.m_btn--md {
-    height: 48px;
-    font-size: 14px;
-    font-weight: 600;
-}
+
 
 /************************ 모바일 start *************************/
 .m_header_wrap {
@@ -886,10 +882,6 @@
     padding: 0;
 }
 
-.m_main_content .main_img {
-    padding-top: 64px;
-    height:84vh;
-}
 
 .m_section_full {
     width: 100%;
@@ -921,19 +913,6 @@
     height: auto;
 }
 
-.m_konnect_info {
-    padding-top: 20px;
-    padding-bottom: 80px;
-}
-.m_konnect_info_in {
-    padding: 40px 50px;
-}
-.m_konnect_info_in_2 {
-    padding: 40px 20px;
-}
-.m_konnect_info_in_3 {
-    padding: 40px 0;
-}
 
 .m_intro {
     width: 100%;
@@ -990,10 +969,10 @@
 }
 
 .m_footer_in {
-    max-width: 900px;
+    max-width: 700px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 40px 50px 40px;
+    padding: 40px 34px 50px 34px;
     gap: 40px;
     display: flex;
     flex-direction: column;
@@ -1035,20 +1014,7 @@
     margin-bottom: 30px;
 }
 
-.m_footer_bottom .footer_tit {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-.m_footer_bottom .footer_detail {
-    font-size: 14px;
-    letter-spacing: 0;
-    margin-top: 4px;
-}
-.m_footer_bottom .copyright {
-    font-size: 12px;
-    line-height: 18px;
-}
+
 
 /*************************************************************/
 /************ (모바일)(max-width: 1210px) ************/
@@ -1065,7 +1031,7 @@
     }
 
     .section {
-        padding: 0 20px;
+        padding: 0 60px;
         min-width: 320px;
     }
     .detail-tab__inner {
@@ -1113,6 +1079,14 @@
     .footer_qa {
         padding: 0 20px;
     }
+
+    .app_download{
+        justify-content: center;
+    }
+    .app_download > ul{
+        max-width:400px;
+    }
+
     .inner_footer {
         padding: 0 20px;
     }
@@ -1133,4 +1107,103 @@
         border: none;
         min-width: 150px;
     }
+    .m_main_content .main_img {
+        padding-top: 64px;
+        height:100vh;
+    }
+
+    .m_konnect_info {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    .m_konnect_info_in {
+        padding: 40px 160px;
+    }
+    .m_konnect_info_in_2 {
+        padding: 40px 100px;
+    }
+    .m_konnect_info_in_3 {
+        padding: 40px 60px;
+    }
+
+    .m_btn--md {
+        height: 62px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .m_footer_bottom .footer_tit {
+        /* font-size: 16px; */
+        font-size: 3.3vw;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+    .m_footer_bottom .footer_detail {
+        /* font-size: 14px; */
+        font-size: 2.4vw;
+        letter-spacing: 0;
+        margin-top: 4px;
+    }
+    .m_footer_bottom .copyright {
+        /* font-size: 12px; */
+        font-size: 2vw;
+        line-height:1.4;
+        letter-spacing: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .section {
+        padding: 0 20px;
+    }
+
+    .m_main_content .main_img {
+        padding-top: 64px;
+        height:84vh;
+    }
+    .m_konnect_info {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    .m_konnect_info_in {
+        padding: 40px 50px;
+    }
+    .m_konnect_info_in_2 {
+        padding: 40px 20px;
+    }
+    .m_konnect_info_in_3 {
+        padding: 40px 0;
+    }
+
+    .m_btn--md {
+        height: 48px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .m_footer_bottom .footer_tit {
+        /* font-size: 16px; */
+        font-size: 4.2vw;
+    }
+    .m_footer_bottom .footer_detail {
+        /* font-size: 14px; */
+        font-size: 3.5vw;
+    }
+    .m_footer_bottom .copyright {
+        /* font-size: 12px; */
+        font-size: 3vw;
+    }
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .m_footer_in{
+        padding:40px 24px 50px 24px;
+    }
+
 }
