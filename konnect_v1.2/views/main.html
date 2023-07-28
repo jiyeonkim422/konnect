@@ -43,107 +43,65 @@
         <!-- // Icon & Favicon -->
 
         <link rel="stylesheet" href="../css/common.css">
+        
 
 
-        <!-- //js script -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="../js/common.js"></script>
-        <!-- //js script -->
+
     </head>
 
     <body class="body_bg_bk"> 
         <div class="wrap">
-            <header id="header" class="header sub_header">       
+            <header id="header" class="header main_header">       
                 <div id="safe_area_top" class="status_bar"></div>
-                <div class="navigation_bar bg--white">
-                    <div class="arrow_title">
-                        <div class="arrow_back go_back" id="go_back">
-                            <i class="ic ic_arrow_left">
-                                <img src="../img/svg/arrow_left.svg"/>
-                            </i>
-                        </div>
-                        <div class="nav_title tx--black">전체보기</div>
+                <div class="navigation_bar main_top">
+                    <div class="header_logo">
+                        <img src="../img/main_logo.png" alt="main_logo"/>
                     </div>
-                    <div class="nav_icon_box" onclick="location.href='/setting'">
-                        <i class="ic ic_alarm">
-                            <img src="../img/svg/mypage.svg" alt=""/>
+                    <div class="nav_icon_box" onclick="location.href='../menu_all/menu_all.html'">
+                        <i class="ic ic_mypage">
+                            <img src="../img/svg/mypage_wh.svg" alt=""/>
                         </i>
-                        <i class="ic ic_setting mb_4">
-                            <img src="../img/svg/hamburger_menu_wh.svg\" alt=""/>
+                        <i class="ic ic_menu mb_4">
+                            <img src="../img/svg/hamburger_menu_wh.svg" alt=""/>
                         </i>
                     </div>
                 </div>
             </header>
-            <main id="content" class="sub_content">
-                <section class="section section_menu">
-                    <div class="section_in p_side_20 menu_top">
-                        <div class="profile_info">
-                            <div class="profile_img">
-                                <!-- 기본이미지 -->
-                                <img src="../img/temp/default_img.png" alt="profile_img"/>
+            <main id="content" class="main_content">
+                <section class="section section_main">
+                    <div class="main_slide po_relative">                    
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper main_slide">
+                                <div class="swiper-slide main_slide_li">
+                                    <img src="../img/temp/main_banner1.png" alt="main_banner"/>
+                                    <p class="btn_text tx--white">무료멤버십 받기</p>
+                                </div>
+                                <div class="swiper-slide main_slide_li">
+                                    <img src="../img/temp/main_banner2.png" alt="main_banner"/>
+                                    <p class="btn_text tx--white">게이트 아이오 멤버십 받기</p>
+                                </div>
                             </div>
-                            <h2 class="profile_name mt_4">
-                                <em>커넥트</em> 님
-                            </h3>
-                            <!-- 버튼 선택시 마이페이지로 이동 -->
-                            <button onclick="location.href='/mypage'" type="button" class="btn btn--xs btn--primary1 btn--icon">
-                                <span>MY</span>
-                                <img src="../img/svg/arrow_right_wh_sm.svg">
-                            </button>
+                            <div class="swiper-pagination main_pagination dark_pagination"></div>
+                            <div class="main_btn_box p_side_20">
+                                <button class="btn btn--full btn--lg btn--white-stroke"></button>
+                            </div>
                         </div>
-                        <ul class="quick_info">
-                            <li class="q_info" onclick="location.href='/event'">
-                                이벤트
-                            </li>
-                            <li class="q_info" onclick="location.href='/notice'">
-                                공지사항
-                            </li>
-                            <li class="q_info" onclick="location.href='/cs'">
-                                고객센터
-                            </li>
-                        </ul>
                     </div>
-                    <div class="section_in menu_list_area p_side_20">
-                        <ul class="menu_list">
-                            <li class="menu_li" onclick="location.href='/wallet'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_wallet.svg" alt="menu_wallet"/>
+                    <div class="section_in p_side_20">
+                        <div class="notice_area">
+                            <div class="notice_box">
+                                <div class="notice_icon">
+                                    <i class="ic ic_alarm"><img src="../img/svg/alarm_blue.svg" alt="alarm"/></i>
                                 </div>
-                                <p class="text_link">내 지갑</p>
-                            </li>
-                            <li class="menu_li" onclick="location.href='/membership'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_membership.svg" alt="menu_membership"/>
+                                <div class="notice_text">
+                                    <div class="notice">
+                                        <ul class="rolling">
+                                            <li><a href="#" class="link">[공지] 공지1 알려드립니다.</a></li>
+                                            <li><a href="#" class="link">[공지] 공지2 알려드립니다.</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <p class="text_link">나의 멤버쉽</p>
-                            </li>
-                            <li class="menu_li" onclick="location.href='/brand'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_brand.svg" alt="menu_brand"/>
-                                </div>
-                                <p class="text_link">브랜드관</p>
-                            </li>
-                            <li class="menu_li" onclick="location.href='/store'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_store.svg" alt="menu_store"/>
-                                </div>
-                                <p class="text_link">스토어</p>
-                            </li>
-                            <li class="menu_li" onclick="location.href='/nft'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_nft.svg" alt="menu_nft"/>
-                                </div>
-                                <p class="text_link">NFT관</p>
-                            </li>
-                            <li class="menu_li" onclick="location.href='/guide'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_guide.svg" alt="menu_guide"/>
-                                </div>
-                                <p class="text_link">안내서</p>
-                            </li>
-                        </ul>
-                        <div class="ad_event">
-                            <img src="../img/temp/home_banner6_ko.png" alt="invite_event"/>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -151,7 +109,18 @@
         </div>
         
 
+        <!-- //js script -->
+        <script src="../js/libs/jquery-3.6.0.min.js"></script>
+        <script src="../js/libs/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript">
+
+        </script>
+        <!-- //js script -->
+
     </body>
+
+
     <footer id="footer" class="main_footer"></footer>
     <div id="safe_area_bottom"></div>
 

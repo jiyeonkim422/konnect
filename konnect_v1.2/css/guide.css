@@ -118,6 +118,11 @@ textarea {
     background-color:#00a3ff;
     color:#fff;
 }
+.btn--white-stroke{
+    border:2px solid #fff;
+    color:#fff;
+    background-color:rgba(0,0,0,0);
+}
 
 
 .btn--icon{
@@ -174,6 +179,7 @@ textarea {
 }
 
 
+
 /****************** 텍스트 text ******************/
 
 .nav_title{
@@ -202,6 +208,17 @@ textarea {
     text-align:center;
     letter-spacing: -0.5px;
     word-break: break-word;
+}
+.btn_text{
+    font-size:14px;
+    font-weight:700;
+    text-align:center;
+    letter-spacing: -0.3px;
+}
+.regular_text{
+    font-size:14px;
+    line-height:1.4;
+    color:#222;
 }
 
 
@@ -276,4 +293,15 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+/****************** 포지션 position ******************/
+.po_relative{
+    position:relative;
+}
+.po_absolute{
+    position:absolute;
 }

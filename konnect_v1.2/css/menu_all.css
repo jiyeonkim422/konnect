@@ -1,10 +1,13 @@
 main > .section_menu{
     padding-top:70px;
+    margin:0;
+    height:100vh;
 }
 
 .menu_top{
     width:100%;   
-    margin-top:20px;
+    padding-top:20px;
+    background-color:#fff;
 }
 
 .profile_info{
@@ -48,10 +51,12 @@ main > .section_menu{
 }
 .q_info{
     display:inline-flex;
+    justify-content: center;
+    width:30%;        
+    padding:20px 0;
     font-size:16px;
     font-weight:600;
     color:#002863;
-    padding:20px 30px;
     position:relative;
 }
 .q_info:first-child{
@@ -79,6 +84,10 @@ main > .section_menu{
     background-color:#f3f4f6;
     padding-top:28px;
     padding-bottom:36px;
+    display: flex;
+    gap: 110px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu_list{
@@ -86,7 +95,6 @@ main > .section_menu{
     gap:10px;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom:110px;
 }
 .menu_li{
     width: calc(50% - 5px);
@@ -105,7 +113,7 @@ main > .section_menu{
 
 .ad_event{
     width:100%;
-    height:100%;
+    height:auto;
     border-radius: 15px;
 }
 .ad_event > img{
