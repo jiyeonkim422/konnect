@@ -161,8 +161,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 90px 0;
-    gap: 100px;
+    column-gap: 100px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .footer_left {
     display: flex;
