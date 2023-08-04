@@ -257,6 +257,17 @@ textarea {
 
 
 
+.medium{
+    font-weight:500 !important;
+}
+.semibold{
+    font-weight:600 !important;
+}
+.bold{
+    font-weight:700 !important;
+}
+
+
 
 /****************** 라벨&뱃지 label&badge ******************/
 
@@ -304,4 +315,20 @@ textarea {
 }
 .po_absolute{
     position:absolute;
+}
+
+
+
+
+/******************  transform ******************/
+
+.rotate_180{
+    transform:rotate(180deg);
+}
+
+
+/****************** 아이콘 icon ******************/
+.ic_arrow_s_wh{
+    display:flex;
+    align-items: center;
 }

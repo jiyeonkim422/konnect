@@ -49,21 +49,8 @@
 
     <body class="body_bg_bk"> 
         <div class="wrap">
-            <header id="header" class="header sub_header">       
-                <div id="safe_area_top" class="status_bar"></div>
-                <div class="arrow_title">
-                    <div class="navigation_bar bg--black">
-                        <div class="arrow_title">
-                            <div class="arrow_back go_back" onclick="goBack();">
-                                <i class="ic ic_arrow_left_w">
-                                    <img src="../img/svg/arrow_left_wh.svg"/>
-                                </i>
-                            </div>
-                            <div class="nav_title tx--white">게이트 아이오 BLUE 멤버십</div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <header id="header" class="header sub_header"></header>
+
             <main id="content" class="sub_content bg--black">
                 <section class="section section_gateio">
                     <div class="section_in p_side_20 gateio_membership">
@@ -478,18 +465,21 @@
                     </div>
                 </section>
             </main>
+
+            <!-- <footer id="footer" class="footer sub_footer"></footer> -->
+            <div id="safe_area_bottom"></div>
         </div>
 
-          <!-- //js script -->
-          <script src="../js/libs/jquery-3.6.0.min.js"></script>
-          <script src="../js/libs/swiper.min.js"></script>
-          <script type="text/javascript" src="../js/common.js"></script>
-          <script type="text/javascript">
-  
-          </script>
+        <!-- //js script -->
+        <script src="../js/libs/jquery-3.6.0.min.js"></script>
+        <script src="../js/libs/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sub_footer").load("../views/sub_footer.html");
+            });
+        </script>
           <!-- //js script -->
     </body>
-    <footer id="footer" class="main_footer"></footer>
-    <div id="safe_area_bottom"></div>
 
 </html> 

@@ -46,3 +46,15 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+
+//footer toggle - 정보 더보기
+$(function () {
+    $(".detail_more_btn").click(function () {
+        $(".detail_more_view").slideToggle(0);
+        $(".ic_arrow_green_xs")
+        .toggleClass('on')
+        .siblings()
+        .removeClass('on');
+    });
+});
