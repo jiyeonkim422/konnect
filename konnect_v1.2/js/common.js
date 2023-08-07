@@ -49,10 +49,11 @@ var swiper = new Swiper(".mySwiper", {
 
 
 //footer toggle - 정보 더보기
+
 $(function () {
-    $(".detail_more_btn").click(function () {
-        $(".detail_more_view").slideToggle(0);
-        $(".ic_arrow_green_xs")
+    $(".business_title").click(function () {
+        $(".business_detail").slideToggle(0);
+        $(".ic_arrow_s_wh")
         .toggleClass('on')
         .siblings()
         .removeClass('on');

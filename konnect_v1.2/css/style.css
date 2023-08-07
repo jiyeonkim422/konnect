@@ -85,27 +85,53 @@ body{
 /****** 메인 footer ******/
 .footer{
     width:100%;
-    background-color:#111;
+    /* background-color:#111; */
+    background-color:#ddd;
+    padding-bottom:34px;
 }
 .business_info{
-    padding:10px;
     display:flex;
     flex-direction: column;
 }
 .business_title{
     display:flex;
+    padding:20px 20px 0 20px;
     gap:10px;
     justify-content: center;
 }
-.business_detail > li > p{
+.business_detail{
+    padding:24px 30px 0px 30px;
+    display:none;
+}
+.business_detail > li + li{
+    padding-top:20px;
+}
+.business_detail > li  p{
     color:#c8c8c8;
     font-size:12px;
-    line-height:1.4;
+    line-height:1.7;
 }
 .business_detail > li span{
     color:#787878;
     font-size:12px;
-    line-height:1.4;
+    line-height:1.7;
+    padding-right:6px;
+}
+
+.footer_fix{
+    padding:20px 30px;
+}
+
+.quick_menu{
+    display:flex;
+    gap:24px;
+}
+.quick_menu > li{
+    font-size:12px;
+    line-height:1.7;
+    text-decoration: underline;
+    color:#fff;
+    display:flex;
 }
 
 
