@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
 
-        <title></title>
+        <title>Konnect Admin</title>
 
         <!-- SEO meta tag -->
         <meta name="keywords" content="">
@@ -41,13 +41,63 @@
     <body data-pagestatus="">
 
         <div id="wrap">
-            <div class="side_nav">
+            <!-- 상단 메뉴 -->
+            <div class="top_nav">
                 <div class="logo_box">
-                    <a href="#">
+                    <a href="../main/index.html">
                         <div class="logo"><img src="../img/main_logo.png" alt="logo"/></div>
                     </a>
                 </div>
-                
+                <div class="top_nav_inner">
+                    <ul class="top_nav_left">
+                        <li class="dropdown nav_item">
+                            <button class="btn btn_noline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              주문현황
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">입금대기</a></li>
+                              <li><a class="dropdown-item" href="#">결제완료</a></li>
+                              <li><a class="dropdown-item" href="#">결제취소</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav_item">
+                            <button class="btn btn_noline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              자주쓰는메뉴
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">운영자 관리</a></li>
+                              <li><a class="dropdown-item" href="#">관리자 메인</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav_item">
+                            <button class="btn btn_noline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              더보기
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">마이페이지</a></li>
+                              <li><a class="dropdown-item" href="#">매뉴얼</a></li>
+                              <li><a class="dropdown-item" href="#">사이트맵</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="top_nav_right">
+                        <li class="user">
+                            <p><em class="semibold">{커넥트어드민관리자}</em>님</p>
+                        </li>
+                        <form role="search" method="get" class="top_search">
+                            <i class="ic ic_search"></i>
+                            <input type="text" class="search_form form-control" autocomplete="off" placeholder="메뉴 검색" aria-label="Search">
+                        </form>
+                        <!-- <form class="top_search" role="search">
+                            <input class="search_form form-control" type="search" placeholder="검색" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                            </button>
+                        </form> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 사이드 메뉴 -->
+            <div class="side_nav">
                 <div class="nav_list_box">
                     <ul class="nav_list">
                         <li class="nav_item">
@@ -94,37 +144,6 @@
                 </div>
             </div>
             <div class="wrapper">
-                <div class="top_navbar">
-                    <ul class="top_nav_left">
-                       <li>sdfsf</li>
-                    </ul>
-                    <form class="top_search" role="search">
-                        <input class="search_form form-control" type="search" placeholder="검색" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
-                    <ul class="top_nav_right">
-                        <li class="nav_item">
-                            <a href="#" class="nav_link">주문현황</a>
-                        </li>  
-                        <li class="nav_item">
-                            <a href="#" class="nav_link">자주쓰는메뉴</a>
-                        </li> 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              더보기
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                       
-                        <li class="user">
-                            <p><em class="semibold">{커넥트어드민관리자}</em>님</p>
-                        </li>
-                    </ul>
-                </div>
                 <div class="content_bg">
                     <div class="content">
 
@@ -140,9 +159,17 @@
 
 
         <!-- //js script -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="../js/bootstrap.js"></script>
-        <script type="text/javascript" src="../js/common.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/common.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready( function() {
+                $("#top_nav").load("../main/top_nav.html");
+                $("#side_nav").load("../main/side_nav.html");
+
+            });
+        </script>
         <!-- //js script -->
         
 

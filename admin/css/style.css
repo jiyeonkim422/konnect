@@ -1,6 +1,7 @@
 #wrap{
     /* display:flex; */
     height:100vh;
+    min-width:1000px;
 }
 
 /** 좌측 left nav menu **/
@@ -11,12 +12,31 @@
     position:fixed;
     top:0;
     left:0;
+    padding-top:70px;
+}
+.nav_list_box{
+    overflow-y:scroll;
+    height: 100%;
 }
 
+.nav_list_box::-webkit-scrollbar {
+    width: 9px;
+  }
+  .nav_list_box::-webkit-scrollbar-thumb {
+    background-color: #788daa;
+    border-radius: 18px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  .nav_list_box::-webkit-scrollbar-track {
+    background-color:#323d4d ;
+  }
+
+
 .logo_box{
-    width:100%;
+    width:240px;
     height:70px;
-    /* background-color:#fff; */
+    background-color:#323d4d;   
     border-bottom:1px solid rgba(255,255,255,0.1);
 }
 .logo{
@@ -77,14 +97,14 @@
 /** 본문내용 **/
 .wrapper{
     width:100%;
-    height:100%;
+    height:calc(100vh - 120px);
     padding-left:240px;
     background-color:#fff;
 }
 
 
 /** 상단 navbar **/
-.top_navbar{
+.top_nav{
     height:70px;
     background-color:#fff;
     position:sticky;
@@ -95,36 +115,114 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+}
+.top_nav_inner{
     padding:10px 20px;
+    width:calc(100% - 240px);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dropdown-toggle{
+    white-space: nowrap; 
+}
+.dropdown-toggle:hover{
+    color:#000;
+    font-weight:600;
+}
+.dropdown-toggle.show{
+    color:#000;
+    font-weight:600;
+}
+.dropdown-toggle::after{
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu{
+    z-index:1000;
+    min-width:100px;
+    font-size:13px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    padding:6px 0;
+    display:none;
+    border-radius:8px;
+}
+.dropdown-menu.show{
+    display:block;
+    margin-left:8px !important;
+}
+.dropdown-menu > li{
+    width:100%;
+    display:block;
+    padding:8px 12px;
+    color:#555;
+}
+.dropdown-menu > li:hover{
+    /* background-color:#f6f7fb; */
+    color:#000;
+    font-weight:600;
+}
+.dropdown-menu > li > a{
+    display:block;
 }
 
 
 
-
+.top_nav_left{
+    display:flex;
+    gap:6px;
+    align-items: center;
+}
+.top_nav_left > li{
+    display:inline-flex;
+    font-size:14px;
+    color:#555;
+}
+.top_nav_left > li > .btn{
+    font-size:14px;
+}
 
 .top_nav_right{
     display:flex;
-    gap:16px;
+    gap:20px;
     align-items: center;
 }
 .top_nav_right > li{
     display:inline-flex;
-    font-size:12.5px;
+    font-size:14px;
+    color:#555;
+    padding-left:10px;
 }
+.top_nav_right .nav_link:hover{
+    color:#000;
+    font-weight:600;
+    transition: all .25s ease-in-out;
+    display:block;
+}
+.top_nav_right .nav_link.is-active{
+    font-weight:600;
+    transition: all .25s ease-in-out;
+    color:#000;
+}
+
+
+
 
 /** 검색창 **/
 .top_search{
     display:flex;
-    gap:10px;
-}
-.search_form{
-    display: block;
-    width: 100%;
+    width: auto;
+    gap:6px;
     padding: 4px 10px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -134,21 +232,30 @@
     border-radius: 0.375rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.search_form{
+    display: block;
+    border:none;
+    width:140px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
 
-.form-control:focus {
-    color: #212529;
+.search_form:focus {
+    color: #000;
     background-color: #fff;
-    border-color: #86b7fe;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   }
+.search_form::placeholder{
+    color:#999;
+}
 
 
 
 
 /** 메인 콘텐츠 content **/
 .content_bg{
-    /* height:calc(100% - 70px); */
     display:flex;
     height:calc(100vh - 120px);
     background-color:#f6f7fb;
@@ -156,10 +263,18 @@
 }
 .content{
     width:100%;
-    height:100%;
+    height:auto;
     background-color:#fff;
+    padding:20px;
 }
 
+.check_option{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    font-size: 13px;
+    margin-top: 25px;
+}
 
 
 /** footer **/
