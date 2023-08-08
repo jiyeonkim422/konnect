@@ -39,5 +39,12 @@ $(document).ready(function() {
         });
      });
 
+     
 
-
+     //datepicker.js
+     $(function() {
+        $("#datepicker1,#datepicker2").datepicker({
+            //옵션들 생략//
+            //옵션들 생략//
+        });                           
+    });

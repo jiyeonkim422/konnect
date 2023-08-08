@@ -184,7 +184,7 @@ select:disabled {
 .title_box{
     width:100%;
     padding:6px 0 10px;
-    border-bottom:1px solid #ddd;
+    /* border-bottom:1px solid #ddd; */
 }
 .main_tit{
     font-weight:800;
@@ -332,5 +332,26 @@ button:not(:disabled),
     background-repeat:no-repeat;
     background-position:center;
     width:24px;
-    height:28px; 
+    height:24px; 
+}
+.ic_arrow{
+    background-image:url(../img/svg/ic_arrow.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:12px;
+    height:12px; 
+}
+.ic_alarm{
+    background-image:url(../img/svg/ic_alarm.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px; 
+}
+.ic_setting{
+    background-image:url(../img/svg/ic_setting.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px; 
 }

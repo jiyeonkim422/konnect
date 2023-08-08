@@ -30,7 +30,7 @@
         <!-- Icon & Favicon -->
         <link rel="shortcut icon" href="../">
         <link rel="icon" type="image/png" sizes="16x16" href="../">
-        <link rel="icon" type="image/png" sizes="32x32" href="../">
+        <link rel="icon" type="image/png" sizes="32x32" hrebf="../">
         <link rel="apple-touch-icon" href="../">
         <!-- // Icon & Favicon -->
 
@@ -50,40 +50,6 @@
                 </div>
                 <div class="top_nav_inner">
                     <ul class="top_nav_left">
-                        <li class="dropdown nav_item">
-                            <button class="btn btn_noline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              주문현황
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">입금대기</a></li>
-                              <li><a class="dropdown-item" href="#">결제완료</a></li>
-                              <li><a class="dropdown-item" href="#">결제취소</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown nav_item">
-                            <button class="btn btn_noline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              자주쓰는메뉴
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">운영자 관리</a></li>
-                              <li><a class="dropdown-item" href="#">관리자 메인</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown nav_item">
-                            <button class="btn btn_noline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              더보기
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">마이페이지</a></li>
-                              <li><a class="dropdown-item" href="#">매뉴얼</a></li>
-                              <li><a class="dropdown-item" href="#">사이트맵</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="top_nav_right">
-                        <li class="user">
-                            <p><em class="semibold">{커넥트어드민관리자}</em>님</p>
-                        </li>
                         <form role="search" method="get" class="top_search">
                             <i class="ic ic_search"></i>
                             <input type="text" class="search_form form-control" autocomplete="off" placeholder="메뉴 검색" aria-label="Search">
@@ -94,6 +60,49 @@
                             </button>
                         </form> -->
                     </ul>
+                    <ul class="top_nav_right">
+                        <li class="dropdown nav_item">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              자주쓰는메뉴
+                              <i class="ic ic_arrow"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">운영자 관리</a></li>
+                              <li><a class="dropdown-item" href="#">관리자 메인</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav_item">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              더보기
+                              <i class="ic ic_arrow"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">마이페이지</a></li>
+                              <li><a class="dropdown-item" href="#">매뉴얼</a></li>
+                              <li><a class="dropdown-item" href="#">사이트맵</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown_icon">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="ic ic_alarm"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">알림목록</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown_icon">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ic ic_setting"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">내 계정</a></li>
+                              <li><a class="dropdown-item" href="#">로그아웃</a></li>
+                            </ul>
+                        </li>
+                        <li class="user">
+                            <p><em class="semibold">{커넥트어드민관리자}</em>님</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- 사이드 메뉴 -->
@@ -101,7 +110,7 @@
                 <div class="nav_list_box">
                     <ul class="nav_list">
                         <li class="nav_item">
-                            <a href="#" class="nav_link">고객관리</a>
+                            <a href="../cs/cs_list.html" class="nav_link">고객관리</a>
                         </li>         
                         <li class="nav_item">
                             <a href="#" class="nav_link">브랜드관 관리</a>
