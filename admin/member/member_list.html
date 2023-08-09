@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Konnect Admin</title>
+
+        <!-- SEO meta tag -->
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="date" content="">
+        <meta name="sitecode" content="">
+        <!-- // SEO meta tag -->
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:type" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:locale" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:country-name" content="">
+        <!-- // Open Graph -->
+
+        <!-- Icon & Favicon -->
+        <link rel="shortcut icon" href="../">
+        <link rel="icon" type="image/png" sizes="16x16" href="../">
+        <link rel="icon" type="image/png" sizes="32x32" href="../">
+        <link rel="apple-touch-icon" href="../">
+        <!-- // Icon & Favicon -->
+
+        <link rel="stylesheet" href="../css/common.css">
+
+
+    </head>
+
+    <body data-pagestatus="">
+
+        <div id="wrap">
+            <!-- 상단 메뉴 -->
+            <div id="top_nav" class="top_nav"></div>
+            <!-- 사이드 메뉴 -->
+            <div id="side_nav" class="side_nav"></div>
+            <div class="wrapper">
+                <div class="content_bg">
+                    <div class="title_box">
+                        <h1 class="main_tit">회원정보 관리</h1>
+                    </div>
+                    <div class="content">
+                        <div class="check_option_box">
+                            <div class="option_group">
+                                <div class="btn_box_tit">
+                                    <span>가입일</span>
+                                </div>
+                                <div class="btn_group" role="group">
+                                    <button type="button" class="btn btn_group_inner is-active">오늘</button>
+                                    <button type="button" class="btn btn_group_inner">7일</button>
+                                    <button type="button" class="btn btn_group_inner">15일</button>
+                                    <button type="button" class="btn btn_group_inner">1개월</button>
+                                    <button type="button" class="btn btn_group_inner">3개월</button>
+                                    <button type="button" class="btn btn_group_inner">전체</button>
+                                </div>
+                                <div class="calendar_box">
+                                    <input class="date_input input_form" type="text" id="datepicker1">
+                                    ~
+                                    <input class="date_input input_form" type="text" id="datepicker2">                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check_option_box">
+                            <div class="option_group">
+                                <div class="btn_box_tit">
+                                    <span>회원 구분</span>
+                                </div>
+                                <div class="btn_group" role="group">
+                                    <button type="button" class="btn btn_group_inner is-active">전체</button>
+                                    <button type="button" class="btn btn_group_inner">일반</button>
+                                    <button type="button" class="btn btn_group_inner">해외</button>
+                                </div>
+                            </div>
+                            <div class="option_group" >
+                                <div class="btn_box_tit btn_box_tit_s">
+                                    <span>계정 상태</span>
+                                </div>
+                                <div class="btn_group " role="group">
+                                    <button type="button" class="btn btn_group_inner is-active">전체</button>
+                                    <button type="button" class="btn btn_group_inner">정상</button>
+                                    <button type="button" class="btn btn_group_inner">차단</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check_option_box">
+                            <div class="option_group">
+                                <div class="btn_box_tit">
+                                    <span>검색</span>
+                                </div>
+                                <select id="searchOption1" name="searchOption[]" class="multiple-select input_form">
+                                    <option value="" class="none_select">선택</option>
+                                    <option value="002" data-flag="" data-mall-name="">아이디</option>
+                                    <option value="003" data-flag="" data-mall-name="">회원번호</option>
+                                    <option value="001" data-flag="" data-mall-name="">이름</option>
+                                    <option value="007" data-flag="" data-mall-name="">닉네임</option>
+                                    <option value="006" data-flag="" data-mall-name="">휴대폰번호</option>
+                                    <option value="004" data-flag="" data-mall-name="">이메일</option>
+                                </select>
+                                <input class="input_search input_form" type="search" placeholder="검색어를 입력하세요" aria-label="Search" value="">
+                                <button type="button" class="btn btn--md btn--option">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="table_top">
+                            <div class="filter_option">
+                                <select id="searchOption1" name="searchOption[]" class="multiple-select multiple-select_s input_form">
+                                    <option value="" class="none_select">선택</option>
+                                    <option value="001" data-flag="" data-mall-name="">10</option>
+                                    <option value="002" data-flag="" data-mall-name="">20</option>
+                                    <option value="003" data-flag="" data-mall-name="">50</option>
+                                    <option value="007" data-flag="" data-mall-name="">100</option>
+                                </select>
+                                <p  class="default_text">개씩 보기</p>
+                            </div>
+                            <div class="btn_option">
+                                <button type="button" class="btn btn--warning btn--md">차단</button>
+                                <button type="button" class="btn btn--primary btn--md">차단 해제</button>    
+                            </div>
+                        </div>
+                        <div class="table_form">
+                            <table class="table_default table_type1">
+                                <thead class="table_head">
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>회원번호</th>
+                                        <th>닉네임</th>
+                                        <th>이메일</th>
+                                        <th>회원 구분</th>
+                                        <th>가입일</th>
+                                        <th>본인인증</th>
+                                        <th>관리대상</th>
+                                        <th>계정상태</th>
+                                        <th>
+                                            <div class="check_form">
+                                                <input type="checkbox" class="form-check-input dt-checkboxes">
+                                                <label class="form-check-label">&nbsp;</label>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <!-- 데이터 있을때 -->
+                                <!-- <tbody class="table_body">
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>12341234</td>
+                                        <td>커넥트</td>
+                                        <td>
+                                            <a href="#" class="text_link">userid1234@email.com</a>
+                                        </td>
+                                        <td>일반</td>
+                                        <td>2023-00-00</td>
+                                        <td>이메일</td>
+                                        <td><div class="badge_form is-red">관리대상</div></td>
+                                        <td><div class="badge_form is-blue">정상</div></td>
+                                        <td>
+                                            <div class="check_form">
+                                                <input type="checkbox" class="form-check-input dt-checkboxes">
+                                                <label class="form-check-label">&nbsp;</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>0000</td>
+                                        <td>12341234</td>
+                                        <td>커넥트</td>
+                                        <td>
+                                            <a href="#" class="text_link">userid1234@email.com</a>
+                                        </td>
+                                        <td>해외</td>
+                                        <td>2023-00-00</td>
+                                        <td>구글</td>
+                                        <td></td>
+                                        <td><div class="badge_form is-red">차단</div></td>
+                                        <td>
+                                            <div class="check_form">
+                                                <input type="checkbox" class="form-check-input dt-checkboxes">
+                                                <label class="form-check-label">&nbsp;</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody> -->
+                                 <!-- 데이터 있을때 -->
+                                 <tbody class="table_body">
+                                    <tr>
+                                        <div class="table_nodata"></div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table_bottom">
+                            <div class="table_bottom_left">
+                                <span class="main_text">
+                                    총 <span class="tx--blue1">2634 </span>항목 중 1~10 항목 표시					
+                                </span>
+                            </div>
+                            <div class="table_bottom_right">
+                                <!------------------ 페이지 이동 ---------------->
+                                <nav aria-label="Page navigation example" class="page_list">
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link pl_arrow" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">«</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link pl_arrow" href="#" aria-label="Next">
+                                          <span aria-hidden="true">»</span>
+                                        </a>
+                                     </li>
+                                    </ul>
+                                </nav>
+                                <div class="page_input_frame">
+                                    <input class="page_input" value=""> / 125
+                                    <button type="button" class="btn page_btn">이동</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p class="footer_detail">© 2023. Konnect All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- //js script -->
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/jquery_ui.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/common.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready( function() {
+                $("#top_nav").load("../main/top_nav.html");
+                $("#side_nav").load("../main/side_nav.html");
+
+            });
+        </script>
+        <!-- //js script -->
+        
+
+    </body>
+
+</html>
