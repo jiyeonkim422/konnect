@@ -50,6 +50,12 @@
                 <div class="content_bg">
                     <div class="title_box">
                         <h1 class="main_tit">회원정보 관리</h1>
+                        <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">회원정보 관리</li>
+                            </ol>
+                          </nav>
                     </div>
                     <div class="content">
                         <div class="check_option_box">
@@ -99,15 +105,19 @@
                                 <div class="btn_box_tit">
                                     <span>검색</span>
                                 </div>
-                                <select id="searchOption1" name="searchOption[]" class="multiple-select input_form">
-                                    <option value="" class="none_select">선택</option>
-                                    <option value="002" data-flag="" data-mall-name="">아이디</option>
-                                    <option value="003" data-flag="" data-mall-name="">회원번호</option>
-                                    <option value="001" data-flag="" data-mall-name="">이름</option>
-                                    <option value="007" data-flag="" data-mall-name="">닉네임</option>
-                                    <option value="006" data-flag="" data-mall-name="">휴대폰번호</option>
-                                    <option value="004" data-flag="" data-mall-name="">이메일</option>
-                                </select>
+                                <!-- select option -->
+                                <div class="select_option input_form">
+                                    <ul class="default_option">
+                                        <li class="option"><p>선택</p></li>
+                                    </ul>
+                                    <ul class="select_ul">
+                                        <li class="option"><p>이메일</p></li>
+                                        <li class="option"><p>회원번호</p></li>
+                                        <li class="option"><p>이름</p></li>
+                                        <li class="option"><p>닉네임</p></li>
+                                        <li class="option"><p>휴대폰번호</p></li>
+                                    </ul>
+                                </div>
                                 <input class="input_search input_form" type="search" placeholder="검색어를 입력하세요" aria-label="Search" value="">
                                 <button type="button" class="btn btn--md btn--option">검색</button>
                             </div>
@@ -152,7 +162,7 @@
                                     </tr>
                                 </thead>
                                 <!-- 데이터 있을때 -->
-                                <!-- <tbody class="table_body">
+                                <tbody class="table_body">
                                     <tr>
                                         <td>0000</td>
                                         <td>12341234</td>
@@ -191,14 +201,17 @@
                                             </div>
                                         </td>
                                     </tr>
-                                </tbody> -->
-                                 <!-- 데이터 있을때 -->
-                                 <tbody class="table_body">
+                                </tbody>
+                                <!-- 데이터 없을때 -->
+                                <tbody class="table_nodata" >
                                     <tr>
-                                        <div class="table_nodata"></div>
+                                        <td colspan="10">
+                                            회원정보를 검색해 주세요
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                           
                         </div>
                         <div class="table_bottom">
                             <div class="table_bottom_left">

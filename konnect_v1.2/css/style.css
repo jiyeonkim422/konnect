@@ -85,8 +85,7 @@ body{
 /****** 메인 footer ******/
 .footer{
     width:100%;
-    /* background-color:#111; */
-    background-color:#333;
+    background-color:#111;
     padding-bottom:34px;
 }
 .business_info{
@@ -142,6 +141,46 @@ body{
 
 
 
+/** 공통 tab bar **/
+.tabbar{
+    position:fixed;
+    height:78px;
+    background-color:#fff;
+    width:100%;
+    bottom:0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tabbar_wrap{
+    width:100%;
+    padding:0 20px;
+    height:100%;
+    display:flex;
+    gap:16px;
+}
+.tabbar_nav_item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width:100%;
+    gap:8px;
+}
+
+.tabbar_icon{
+    width:20px;
+    height:20px;
+}
+.tabbar_title{
+    color:#9fb1cc;
+    font-size:14px;
+    font-weight:400;
+}
+
+
+
+
  
 /** 상세화면 header **/
 .navigation_bar{
@@ -168,9 +207,10 @@ body{
     /* width:60px; */
     justify-content: center;
     align-items: center;
+    margin-right:10px;
 }
 .nav_icon_box > .ic{
-    width:60px;
+    width:45px;
     display: flex;
     justify-content: center;
     align-items: center;

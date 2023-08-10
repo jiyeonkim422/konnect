@@ -182,6 +182,9 @@ select:disabled {
 
 .title_box{
     width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
     /* padding:6px 0 10px; */
     /* border-bottom:1px solid #ddd; */
 }
@@ -313,13 +316,17 @@ button:not(:disabled),
 
 
 /****************** 폼 form ******************/
+
+input:focus{
+    /* outline:2px solid rgba(64, 168, 253, 0.5); */
+    outline:none;
+}
 .input_form{
     border: 1px solid #ccc;
     border-radius:4px;
     padding:6px;
     font-size:12px;
 }
-
 .input_search{
     min-width:240px;
 }
@@ -328,7 +335,10 @@ button:not(:disabled),
 }
 
 
-
+select.input_form option{
+    padding:6px;
+    height:30px;
+}
 .multiple-select{
     height:28px;
     border-radius:4px;
@@ -351,13 +361,83 @@ button:not(:disabled),
 }
 
 
-.check_fgorm{
+
+/** check_form **/
+.check_form{
     display: block;
     min-height: 1.35rem;
     padding-left: 1.612em;
     margin-bottom: 0;
 }
 
+
+
+
+/** select_option_form **/
+  .select_option{
+    position: relative;
+    user-select: none;
+    height:28px;
+    border-radius:4px;
+    padding:6px 8px;
+    width:120px;
+    background-image:url(../img/svg/ic_arrow.svg);
+    background-repeat: no-repeat;
+    background-position:right 5px center;
+    background-size: auto;
+    font-size:12px;
+  }
+  
+  .select_option .default_option{
+    position: relative;
+    cursor: pointer;
+  }
+  .select_option .select_ul{
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    display: none;
+    border:1px solid #ccc;
+  }
+  
+  .select_option .select_ul li{
+    padding:10px 8px;
+    cursor: pointer;
+  }
+  
+  .select_option .select_ul li:first-child:hover{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .select_option .select_ul li:last-child:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .select_option .select_ul li:hover{
+    background: #f6f7fb;
+    color:#000;
+  }
+  
+  .select_option .option{
+    display: flex;
+    align-items: center;
+  }
+  
+  .select_option .option .icon{
+    background: url('https://i.imgur.com/oEZu0sK.png') no-repeat 0 0;
+      width: 32px;
+      height: 32px;
+    margin-right: 15px;
+  }
+  
+  .select_option.active .select_ul{
+    display: block;
+  }
 
 /****************** 마진 margin ******************/
 
@@ -412,18 +492,15 @@ button:not(:disabled),
 /****************** table 테이블 ******************/
 .table_form{
     width:100%;
-    margin-top:12px;
-    overflow-x: scroll;
+    margin-top:14px;
+    overflow-x: auto;
 }
-
 .table_default{
     min-width:1000px;
 }
-
 .table_type1{
     width:100%;
 }
-
 .table_head{
     background-color:#f1f1f1;
 }
@@ -442,6 +519,17 @@ button:not(:disabled),
     border-bottom:1px solid #e1e1e1;
     text-align:center;
     height:48px;
+}
+
+.table_nodata{
+    font-size: 13px;
+    text-align: center;
+
+}
+.table_nodata td{
+    padding: 80px 0;
+    border-bottom:1px solid #e1e1e1;
+
 }
 
 
@@ -464,6 +552,36 @@ button:not(:disabled),
     background-color:#fae0e9;
 }
 
+
+/****************** breadcrumb 목차 ******************/
+.breadcrumb_form{
+    display:flex;
+}
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: flex-end;
+}
+.breadcrumb-item{
+    height:20px;
+    font-size: 14px;
+}
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0.5rem;
+}
+.breadcrumb-item.active{
+    color:#0039CC !important;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+.breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+}
 
 
 
