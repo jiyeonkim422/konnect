@@ -26,17 +26,17 @@ body{
     height: 34px;
 }
 
+
 /***** 메인 header *****/
 .header{
     position: sticky;
     background-color: unset;
     top: 0px;
     width: 100%; 
-    /* height: 70rem; */
+    /* height:70px; */
     left: 50%;
     /* max-width: 500rem; */
     margin: 0px auto;
-
     z-index: 1000;
     transition: all 0.5s ease-in-out 0s;
 }
@@ -80,6 +80,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 
 
 /****** 메인 footer ******/
@@ -150,6 +151,7 @@ body{
     bottom:0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    z-index:100;
 }
 .tabbar_wrap{
     width:100%;
@@ -169,13 +171,34 @@ body{
 }
 
 .tabbar_icon{
-    width:20px;
-    height:20px;
+    width:24px;
+    height:24px;
 }
 .tabbar_title{
     color:#9fb1cc;
     font-size:14px;
-    font-weight:400;
+}
+
+.tabbar_nav_item.is-active .tabbar_title{
+    color:#0039cc;
+    font-weight:600;
+} 
+
+
+.center_logo{
+    width:50px;
+    height:auto;
+    border:1px solid #eee;
+    border-radius:25px;
+    padding:10px;
+    box-shadow: 0px 1px 4px 0px rgba(131, 191, 225, 0.4);
+}
+.center_logo > img{
+    width:100%;
+    height:auto;
+}
+.tabbar_nav_item.is-active .center_logo{
+    box-shadow: 0px 1px 4px 0px rgba(0, 57, 204, 0.4);
 }
 
 
@@ -191,6 +214,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
 
 .arrow_title{
     display:flex;
@@ -243,6 +267,17 @@ main > .section{
     align-items: center;
     flex-direction: column;
 }
+
+.section_in + .section_in{
+    margin-top:100px;
+}
+.section_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
 
 
 /** imag 이미지 **/

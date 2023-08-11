@@ -54,7 +54,7 @@
             <main id="content" class="main_content">
                 <section class="section section_main">
                     <div class="main_slide po_relative">                    
-                        <div class="swiper mySwiper">
+                        <div class="swiper main_swiper">
                             <div class="swiper-wrapper main_slide">
                                 <div class="swiper-slide main_slide_li">
                                     <img src="../img/temp/main_banner1.png" alt="main_banner"/>
@@ -88,54 +88,50 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section_in p_side_20">
+                    <div class="section_in">
                         <div class="membership">
-                            <p class="label label--fill-blue2">MEMBERSHIP</p>
+                            <div class="section_header p_side_20">
+                                <p class="label label--stroke-blue2">MEMBERSHIP</p>
+                                <h1 class="main_tit tx--white">당신의 라이프 스타일에<br/>딱 맞는 멤버십</h1>
+                            </div>
+                            <div class="swiper membership_swiper">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="membership_img">
+                                        <img src="../img/temp/membership_white.png"/>
+                                    </div>
+                                    <div class="membership_text">
+                                        <p class="tx--white">test1</p>
+                                    </div>
+                                </div>
+                                  <div class="swiper-slide">
+                                    <div class="membership_img">
+                                        <img src="../img/temp/membership_blue.png"/>
+                                    </div>
+                                    <div class="membership_text">
+                                        <p class="tx--white">test1</p>
+                                    </div>
+                                </div>
+                                  <div class="swiper-slide">
+                                    <div class="membership_img">
+                                        <img src="../img/temp/membership_gold.png"/>
+                                    </div>
+                                    <div class="membership_text">
+                                        <p class="tx--white">test1</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="swiper-pagination membership_pagination dark_pagination"></div>
+                              </div>
+                            <div class="text_box"></div>
                         </div>
                     </div>
                 </section>
             </main>
             <!-- // Footer -->
             <footer id="footer" class="footer main_footer"></footer>
-
             <!-- // Tab Bar -->
-            <div id="tabbar" class="tabbar">
-                <div class="tabbar_wrap">
-                    <button class="tabbar_nav_item" onclick="location.href='../main/main.html'">
-                        <div class="tabbar_icon">
-                            <svg viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu-active" style="width: 1.2rem; height: 1.2rem; cursor: unset;"><path d="M19.697 7.663L12.3 1.217c-.276-.24-.517-.45-.73-.61a2.622 2.622 0 00-.752-.418 2.566 2.566 0 00-1.635 0 2.636 2.636 0 00-.752.417c-.213.161-.453.37-.73.611L.304 7.663a.885.885 0 00.585 1.555h.415v6.132c0 .427 0 .795.023 1.1.023.32.075.64.217.952A2.63 2.63 0 002.82 18.7c.082.039.166.07.249.097.227.073.457.106.688.124.299.023.661.023 1.081.023h1.256c.702 0 1.271-.579 1.271-1.293v-3.783c0-.204 0-.403.013-.572a1.79 1.79 0 01.147-.628c.173-.382.475-.69.851-.866.22-.103.436-.136.618-.15.166-.012.362-.012.563-.012h.92c.202 0 .398 0 .564.013.182.014.397.046.618.15.376.176.678.482.85.865.103.224.135.443.148.628.012.169.012.368.012.572v3.783c0 .714.57 1.293 1.272 1.293h1.219c.42 0 .782 0 1.081-.023.23-.018.46-.051.687-.124.084-.027.167-.058.25-.097a2.63 2.63 0 001.277-1.298c.142-.312.194-.632.217-.953.023-.304.023-.672.023-1.1V9.22h.414a.885.885 0 00.586-1.556h.001z" fill="#9fb1cc"></path></svg>
-                        </div>
-                        <p class="tabbar_title">홈</p>
-                    </button>
-                    <button class="tabbar_nav_item" onclick="location.href='../main/main.html'">
-                        <div class="tabbar_icon">
-                            <svg viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="width: 1.2rem; height: 1.2rem; cursor: unset;">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M.93 1.379C.05 2.257.05 3.672.05 6.5v6c0 2.828 0 4.243.88 5.121.878.879 2.292.879 5.12.879h10c.93 0 1.396 0 1.777-.102a3 3 0 002.122-2.122c.102-.381.102-.846.102-1.776h-6a3 3 0 110-6h6v-2c0-2.828 0-4.243-.879-5.121C18.293.5 16.88.5 14.051.5h-8C3.222.5 1.808.5.929 1.379zM5.05 4.5a1 1 0 000 2h3a1 1 0 100-2h-3z" fill="#9FB1CC"></path><path d="M15.05 11.5h-1" stroke="#9FB1CC" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>                       
-                         </div>
-                        <p class="tabbar_title">지갑</p>
-                    </button>
-                    <button class="tabbar_nav_item" onclick="location.href='../main/main.html'">
-                        <img src="../img/logo.png" alt="logo">
-                    </button>
-                    <button class="tabbar_nav_item" onclick="location.href='../main/main.html'">
-                        <div class="tabbar_icon">
-                            <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="width: 1.25rem; height: 1.25rem; cursor: unset;">
-                                <path d="M19.113 7.382l-.415-.391c-.476-.446-.714-.67-.825-.863-.11-.194-.183-.515-.326-1.154l-.128-.56a2.783 2.783 0 00-2.564-2.174l-.566-.03c-.647-.032-.973-.048-1.18-.125-.208-.076-.467-.275-.983-.67a92.91 92.91 0 00-.445-.34l-.01-.007a2.746 2.746 0 00-3.345 0l-.452.345c-.517.397-.777.595-.984.671-.208.077-.533.093-1.18.126l-.567.03A2.781 2.781 0 002.58 4.413l-.127.56c-.144.64-.217.96-.327 1.153-.11.194-.35.418-.825.864l-.414.39a2.826 2.826 0 00-.581 3.333c.095.19.18.36.258.511.295.583.444.876.482 1.096.038.22-.002.546-.083 1.197l-.07.57a2.808 2.808 0 001.674 2.93c.194.084.367.157.523.223.597.255.897.383 1.066.526.17.144.346.42.697.971l.309.481a2.762 2.762 0 003.145 1.157c.202-.061.381-.117.542-.167.62-.194.93-.29 1.152-.29.22 0 .532.096 1.15.29l.543.168a2.763 2.763 0 003.145-1.157l.136-.212c.446-.69.67-1.037.883-1.224.193-.17.479-.296 1.164-.59l.412-.176a2.808 2.808 0 001.674-2.93c-.025-.213-.049-.401-.07-.57-.08-.65-.12-.977-.082-1.198.038-.22.187-.512.483-1.096a78.1 78.1 0 00.258-.51 2.826 2.826 0 00-.582-3.333l-.001.001zm-5.327 1.642l-4.09 4.135a.81.81 0 01-1.157 0l-2.2-2.224a.834.834 0 010-1.17.812.812 0 011.157 0l1.62 1.64 3.512-3.55a.812.812 0 011.157 0c.32.322.32.846 0 1.169z" fill="#9fb1cc"></path>
-                            </svg>
-                        </div>
-                        <p class="tabbar_title">브랜드관</p>
-                    </button>
-                    <button class="tabbar_nav_item" onclick="location.href='../main/main.html'">
-                        <div class="tabbar_icon">
-                            <svg viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="width: 1.25rem; height: 1.25rem; cursor: unset;">
-                                <path d="M17.993 18.766l-.675-10.369a1.564 1.564 0 00-1.544-1.443h-2.337v-1.61c0-2.499-2.042-4.532-4.552-4.532-1.22 0-2.364.47-3.222 1.325a4.494 4.494 0 00-1.33 3.207v1.61H1.996c-.835 0-1.514.648-1.544 1.476l-.45 10.396c-.03.884.293 1.724.91 2.367a3.19 3.19 0 002.321.994h11.5a3.28 3.28 0 002.348-1.02c.64-.635.971-1.51.912-2.401zM12.13 12.08l-5.397 5.37a.787.787 0 01-1.08 0 .757.757 0 010-1.074l5.397-5.372a.759.759 0 01.54-.221.76.76 0 01.54 1.295h-.001zm-.165 5.095c-.432.43-1.186.43-1.619 0a1.14 1.14 0 01.81-1.946 1.14 1.14 0 01.808 1.946zm-6.23-5.866a1.14 1.14 0 01.81-.333 1.14 1.14 0 01.809 1.945c-.433.43-1.187.43-1.62 0a1.129 1.129 0 01-.335-.805c0-.304.12-.59.336-.806zm.593-5.993c0-1.42 1.16-2.574 2.586-2.574A2.568 2.568 0 0111.5 5.316v1.61H6.327v-1.61z" fill="#9fb1cc"></path>
-                            </svg>
-                        </div>
-                        <p class="tabbar_title">스토어</p>
-                    </button>
-                </div>
-            </div>
+            <div id="tabbar" class="tabbar"></div>
 
             <div id="safe_area_bottom"></div>
         </div>
@@ -150,6 +146,7 @@
             $(document).ready(function () {
                 $(".main_header").load("../views/main_header.html");
                 $(".main_footer").load("../views/main_footer.html");
+                $(".tabbar").load("../views/tabbar.html");
             });
         </script>
         <!-- //js script -->

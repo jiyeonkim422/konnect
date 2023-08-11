@@ -39,7 +39,7 @@ function goForward(){
 
 
 //메인 이미지 슬라이드
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".main_swiper", {
     // spaceBetween: 30,
     pagination: {
         el: ".main_pagination",
@@ -48,3 +48,11 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+//멤버쉽 카드 슬라이드 
+var swiper = new Swiper(".membership_swiper", {
+	spaceBetween: 0,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+  });

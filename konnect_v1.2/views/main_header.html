@@ -15,3 +15,21 @@
         </i>
     </div>
 </div>
+
+
+<script>
+$(function(){
+    // 스크롤 시 header fade-in
+    $(document).on('scroll', function(){
+        if($(window).scrollTop() > 640){
+            $(".main_header").removeClass("deactive");
+            $(".main_header").addClass("active");
+        }else{
+            $(".main_header").removeClass("active");
+            $(".main_header").addClass("deactive");
+        }
+    })
+
+});
+
+</script>
