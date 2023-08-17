@@ -7,6 +7,7 @@ textarea {
     color:#000;
 }
 
+
 /****************** 폰트 font ******************/
 @font-face {
     font-family: 'Pretendard';
@@ -151,6 +152,11 @@ textarea {
 .mt_30{
     margin-top:30px !important;
 }
+.mt_60{
+    margin-top:60px !important;
+}
+
+
 .mb_2{
     margin-bottom:2px !important;
 }
@@ -182,43 +188,60 @@ textarea {
 
 /****************** 텍스트 text ******************/
 
+
 .nav_title{
     font-size:18px;
     font-weight:700;
-    line-height:22px;
+    line-height:22rem;
     display:flex;
     align-items: center;
     width:calc(100% - 70px);
 }
 
+.big_tit{
+    font-size:28rem;
+    font-weight:700;
+    line-height:1.5;
+    letter-spacing: -0.5px;
+    text-align:center;
+    word-break: break-word;
+    color:#000;
+}
 .main_tit{
     color:#000;
     font-weight:700;
     letter-spacing: -0.5px;
-    font-size:24px;
-    line-height:1.4;
+    font-size:24rem;
+    line-height:1.3;
     text-align:center;
     word-break: break-word;
 }
 .main_detail{
     color:#000;
     font-weight:600;
-    font-size:16px;
-    line-height:22px;
+    font-size:16rem;
+    line-height:1.5;
     text-align:center;
     letter-spacing: -0.5px;
     word-break: break-word;
 }
 .btn_text{
-    font-size:14px;
+    font-size:14rem;
     font-weight:700;
     text-align:center;
     letter-spacing: -0.3px;
 }
 .regular_text{
-    font-size:14px;
-    line-height:1.4;
+    font-size:14rem;
+    line-height:1.5;
     color:#222;
+    font-weight:500;
+}
+.default_text{
+    font-size:12rem;
+    line-height:1.5;
+    color:#222;
+    font-weight:500;
 }
 
 
@@ -227,6 +250,18 @@ textarea {
     font-size:14px;
     font-weight:700;
 }
+
+
+
+/** 상세화면 **/
+.sub_tit{
+    font-size:30rem;
+    line-height:40rem;    
+    letter-spacing: -0.5px;
+    font-weight:700;
+    text-align: center;
+}
+
 
 
 .tx--left{
@@ -242,6 +277,9 @@ textarea {
 .tx--white{
     color:#fff !important;
 }
+.tx--lightgray{
+    color:#999 !important;
+}
 .tx--black{
     color:#000 !important;
 }
@@ -251,12 +289,17 @@ textarea {
 .tx--blue2{
     color:#00A3FF !important;
 }
+.tx--gold{
+    color:#e58c23 !important;
+}
 .tx--warning{
     color:#CE2827 !important;
 }
 
 
-
+.regular{
+    font-weight:400 !important;
+}
 .medium{
     font-weight:500 !important;
 }
@@ -269,6 +312,32 @@ textarea {
 
 
 
+.sentence_1{
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.sentence_2{
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.sentence_3{
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+
 /****************** 라벨&뱃지 label&badge ******************/
 
 .label{
@@ -276,7 +345,7 @@ textarea {
     font-size:16px;
     display: inline-block;
     flex-flow: row nowrap;
-    padding: 8px 15px;
+    padding: 8px 16px;
     overflow: visible;
     border-radius: 50px;
     border: 2px solid #0039CC;
@@ -346,6 +415,52 @@ textarea {
 }
 
 /****************** 아이콘 icon ******************/
+.ic_mypage{
+    background-image: url(../img/svg/ic_mypage.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+.ic_global{
+    background-image: url(../img/svg/ic_global.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+.ic_hamburger{
+    background-image: url(../img/svg/ic_hamburger.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+
+.ic_mypage_wh{
+    background-image: url(../img/svg/ic_mypage_wh.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+.ic_global_wh{
+    background-image: url(../img/svg/ic_global_wh.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+.ic_hamburger_wh{
+    background-image: url(../img/svg/ic_hamburger_wh.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+
+
+
 .ic_arrow_s_wh{
     display:flex;
     align-items: center;

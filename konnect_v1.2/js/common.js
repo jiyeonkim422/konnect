@@ -48,11 +48,88 @@ var swiper = new Swiper(".main_swiper", {
 });
 
 
-//멤버쉽 카드 슬라이드 
+//메인 - 멤버쉽 카드 슬라이드 
 var swiper = new Swiper(".membership_swiper", {
-	spaceBetween: 0,
+	spaceBetween: 30,
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,
 	},
   });
+
+
+//메인 - 혜택 슬라이드
+  var swiper = new Swiper(".benefit_swiper", {
+	spaceBetween: 0,
+	loop:true,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+  });
+
+  //메인 -  이벤트 배너 슬라이드
+  var swiper = new Swiper(".event_banner_swiper", {
+	pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+  });
+
+  //리뷰 슬라이드
+  var swiper = new Swiper(".review_swiper", {
+	spaceBetween: 30,
+	loop:true,
+  });
+
+
+
+
+    // 초깃값 설정
+    $('.filter-tab1').addClass('is-active');
+    // $('#filter-tab1').addClass('is-active').find('.section--book-list').addClass('is-active')
+    // .siblings('.section--best-select').find('.btn--layout-list').addClass('is-active');
+
+    // click 이벤트마다 리스트형으로 초기화
+    $('.tab_category_btn').on('click', function() {
+        let tab_id = $(this).attr('data-tab');
+
+        $(this).addClass('is-active').parent('li').siblings('li').find('button').removeClass('is-active');
+        $("#" + tab_id).siblings('.btn--layout').removeClass('is-active');
+        
+        $("#" + tab_id).addClass('is-active')
+        .find('.section--book-list').addClass('is-active')
+        .parents('.filter-tab_content').find('.section--best-select').show()
+        .find('.btn--layout-list').addClass('is-active')
+        .parents('.filter-tab_content').siblings().find('.section--book-display').removeClass('is-active')
+        .siblings('.section--best-select').hide()
+        .find('.btn--layout').removeClass('is-active')
+        ;
+    });
+
+
+    //filter-tab(탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+    $('.tab_category_btn').on('click', function() {
+        $('.filter-tab_content').removeClass('is-active');
+        $('.tab_category_btn').removeClass('is-active');
+        $(this).addClass('is-active');
+
+        let tab_id = $(this).attr('data-tab');
+        console.log(tab_id);
+
+        $("#" + tab_id).addClass('is-active');
+
+    });
+
+	//filter-tab(탭 1개) - 필터탭 여러개 사용시 겹침방지용
+	$('.control-category__btn_ver2').on('click', function() {
+		$('.filter-tab_content_ver2').removeClass('is-active');
+		$('.control-category__btn').removeClass('is-active');
+		$(this).addClass('is-active');
+
+		let tab_id = $(this).attr('data-tab');
+		console.log(tab_id);
+
+		$("#" + tab_id).addClass('is-active');
+
+	});

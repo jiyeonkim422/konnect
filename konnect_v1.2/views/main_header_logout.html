@@ -1,0 +1,29 @@
+<div id="safe_area_top" class="status_bar"></div>
+<div class="navigation_bar main_top">
+    <div class="header_logo">
+        <img src="../img/main_logo_bk.png" alt="main_logo"/>
+    </div>
+    <div class="nav_icon_box">
+        <i class="ic ic_global"onclick="location.href='../setting/language.html'"></i>
+        <i class="ic ic_mypage"onclick="location.href='../mypage/mypage.html'"></i>
+        <i class="ic ic_hamburger" onclick="location.href='../menu_all/menu_all.html'"> </i>
+    </div>
+</div>
+
+
+<script>
+$(function(){
+    // 스크롤 시 header fade-in
+    $(document).on('scroll', function(){
+        if($(window).scrollTop() > 0){
+            $(".sub_header").removeClass("deactive");
+            $(".sub_header").addClass("active");
+        }else{
+            $(".sub_header").removeClass("active");
+            $(".sub_header").addClass("deactive");
+        }
+    })
+
+});
+
+</script>

@@ -1,0 +1,96 @@
+/** 서브 메인화면 공통 **/
+.section_sub_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:14px;
+}
+.sub_header.deactive .navigation_bar{
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+  }
+  .sub_header.active .navigation_bar{
+    background-color: #fff;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+  }
+
+main > .section_sub_main{
+    padding-top:70px;
+    padding-bottom:140px;
+}
+
+
+.sub_main_intro{
+    padding-top:56px;
+}
+.sub_main_img{
+    width:185px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:9;
+}
+.sub_main_img img{
+    width:100%;
+    height:auto;
+}
+
+
+.sub_main_info{
+    width:100%;
+    padding:0px 30px;
+    display:flex;
+    gap:16px;
+    margin-top:-20px;
+}
+
+.sub_main_info > li{
+    width:50%;
+    height:auto;
+    background-color:#f3f4f6;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    gap:8px;
+}
+.sub_main_info_img{
+    width:80px;
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub_main_info_img img{
+    width:auto;
+    height:100%;
+}
+.sub_blue_text{
+    font-size:16rem;
+    line-height:1.4;
+    color:#002863;
+    font-weight:600;
+    letter-spacing: -0.5px;
+    text-align:center;
+}
+
+
+
+/** 브랜드 리스트 **/
+.brand_section{
+    margin-top:100px;
+}
+.brand_banner_list{
+    padding-top:32px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
