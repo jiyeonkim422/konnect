@@ -7,7 +7,25 @@
                     <img src="../img/svg/arrow_left_wh.svg"/>
                 </i>
             </div>
-            <div class="nav_title tx--white">게이트 아이오 BLUE 멤버십</div>
+            <div class="nav_title tx--white"></div>
         </div>
     </div>
 </div>
+
+
+<script>
+    $(function(){
+        // 스크롤 시 header fade-in
+        $(document).on('scroll', function(){
+            if($(window).scrollTop() > 640){
+                $(".sub_header").removeClass("deactive");
+                $(".sub_header").addClass("active");
+            }else{
+                $(".sub_header").removeClass("active");
+                $(".sub_header").addClass("deactive");
+            }
+        })
+    
+    });
+    
+    </script>

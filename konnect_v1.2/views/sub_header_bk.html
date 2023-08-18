@@ -1,0 +1,32 @@
+<div id="safe_area_top" class="status_bar"></div>
+<div class="arrow_title">
+    <div class="navigation_bar">
+        <div class="arrow_title">
+            <div class="arrow_back go_back" onclick="goBack();">
+                <i class="ic ic_arrow_left_w">
+                    <img src="../img/svg/arrow_left.svg"/>
+                </i>
+            </div>
+            <div class="nav_title tx--white"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(function(){
+        // 스크롤 시 header fade-in
+        $(document).on('scroll', function(){
+            if($(window).scrollTop() > 300){
+                $(".sub_header").removeClass("deactive");
+                $(".sub_header").addClass("active");
+            }else{
+                $(".sub_header").removeClass("active");
+                $(".sub_header").addClass("deactive");
+            }
+        })
+    
+    });
+    
+    </script>

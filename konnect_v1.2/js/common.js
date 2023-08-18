@@ -55,22 +55,22 @@ var swiper = new Swiper(".membership_swiper", {
 	  el: ".swiper-pagination",
 	  clickable: true,
 	},
-  });
+});
 
 
 //메인 - 혜택 슬라이드
   var swiper = new Swiper(".benefit_swiper", {
-	spaceBetween: 0,
-	loop:true,
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
+    spaceBetween: 0,
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
   //메인 -  이벤트 배너 슬라이드
   var swiper = new Swiper(".event_banner_swiper", {
-	pagination: {
+	      pagination: {
         el: ".swiper-pagination",
         type: "fraction",
       },
@@ -78,9 +78,22 @@ var swiper = new Swiper(".membership_swiper", {
 
   //리뷰 슬라이드
   var swiper = new Swiper(".review_swiper", {
-	spaceBetween: 30,
-	loop:true,
+    spaceBetween: 30,
+    loop:true,
   });
+
+  //브랜드 상세 - 이미지 풀사이즈 슬라이드
+  var swiper = new Swiper(".brand_img_swiper", {
+    pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});
+
+
+
+
+
 
 
 
@@ -133,3 +146,5 @@ var swiper = new Swiper(".membership_swiper", {
 		$("#" + tab_id).addClass('is-active');
 
 	});
+
+

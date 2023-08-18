@@ -1,0 +1,206 @@
+main > .section_brand_detail{
+    padding-top:0;
+}
+.sub_header.deactive .navigation_bar{
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+  }
+  .sub_header.active .navigation_bar{
+    background-color: rgba(255,255,255,1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    /* backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); */
+  }
+
+
+/** 브랜드 이미지 슬라이드 **/
+.brand_detail_img{
+    position:sticky;
+    top:0;
+}
+.brand_img_item{
+    width:100%;
+    height:430px;
+}
+.brand_img_item img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.brand_detail_box{
+    padding-top:30px;
+    padding-bottom:150px;
+    background-color:#fff;
+    position:relative;
+    z-index:100;
+}
+/** 브랜드 상세정보 상단 **/
+.brand_info_box{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+}
+.brand_sub_tit{
+    font-size:12px;
+    font-weight:700;   
+    color:#787878;
+    line-height:1.4;
+}
+.brand_tit{
+    font-size:20px;
+    line-height:1.5;
+    color:#000;
+    font-weight:700;
+    letter-spacing: -0.4px;    
+}
+.brand_info{
+    font-size:14px;
+    line-height:1.5;
+    color:#000;
+    padding-top:8px;
+}
+
+
+
+
+/** 브랜드 이미지 더보기 **/
+.brand_img_more::-webkit-scrollbar{
+    display:none; /* Chrome, Safari, Opera*/
+}
+.brand_img_more{
+    margin-top:30px;
+    width:100%;
+    overflow-x:auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.brand_img_more_list{
+    margin-top: 0;
+    margin-left: -12px;
+    font-size: 0;
+    padding: 0 18px;
+    white-space: nowrap;
+}
+.brand_img_more_item{
+    display:inline-block;
+    margin-left:12px;
+    border-radius:15px;
+    width:186px;
+    height:122px;
+    overflow:hidden;
+}
+.brand_img_more_item img, video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.brand_img_more_item > video{
+    border-radius:15px;
+
+}
+video[poster]{ 
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.brand_img_more_item:last-child{
+    margin-right:20px;
+}
+
+
+/** 브랜드 정보 리스트 **/
+.brand_info_list{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.brand_info_list > ul{
+    display:flex;
+    gap:24px;
+    flex-direction: column;
+}
+.brand_info_list > ul > li{
+    display:flex;
+    justify-content: flex-start;
+}
+
+
+
+.info_number{
+    display:flex;
+    width:30px;
+}
+.info_content{
+    display:flex;
+    width:calc(100% - 30px);
+    gap:10px;
+    flex-direction: column;
+}
+
+/** 유튜브 바로가기 **/
+.youtube_box{
+    width:100%;
+    height:110px;
+    border-radius:15px;
+    background-color:#f2f2f2;
+    margin-top:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:30px;
+    align-items: center;
+}
+.youtube_box > div{
+    width:180px;
+}
+.youtube_box img{
+    width:45px;
+    height:auto;
+}
+
+
+
+/** 블랙배경 멤버십 혜택안내 **/
+.membership_benefit_info{
+    display:flex;
+    gap:20px;
+    margin-bottom:36px;
+    align-items: flex-end;
+}
+.membership_benefit_info img{
+    height:54px;
+    width:auto;
+}
+
+
+/** 브랜드 부가설명 **/
+.brand_info_more{
+    padding-top:50px;
+}
+.brand_info_more > ul{
+    display:flex;
+    gap:50px;
+    flex-direction: column;
+}
+.brand_info_more > ul > li{
+    display:flex;
+    justify-content: flex-start;
+}
+.brand_info_more .info_content{
+    width:100%;
+}
+
+.location{
+    width:100%;
+    height:220px;
+    border-radius:15px;
+    border-radius: 15px;
+    overflow: hidden;
+}

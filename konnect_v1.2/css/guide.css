@@ -178,10 +178,16 @@ textarea {
 .mb_60{
     margin-bottom:60px !important;
 }
+.mb_80{
+    margin-bottom:80px !important;
+}
 
 /****************** 패딩 padding ******************/
 .p_side_20{
     padding:0 20px;
+}
+.p_side_40{
+    padding:0 40px;
 }
 
 
@@ -197,6 +203,13 @@ textarea {
     align-items: center;
     width:calc(100% - 70px);
 }
+.text_link{
+    color:#002863;
+    font-size:14px;
+    font-weight:700;
+}
+
+
 
 .big_tit{
     font-size:28rem;
@@ -235,22 +248,13 @@ textarea {
     font-size:14rem;
     line-height:1.5;
     color:#222;
-    font-weight:500;
 }
 .default_text{
     font-size:12rem;
     line-height:1.5;
     color:#222;
     font-weight:500;
-}
-
-
-.text_link{
-    color:#002863;
-    font-size:14px;
-    font-weight:700;
-}
-
+} 
 
 
 /** 상세화면 **/
@@ -261,6 +265,23 @@ textarea {
     font-weight:700;
     text-align: center;
 }
+.sub_tit2{
+    font-size:20rem;
+    line-height:1.4;
+    font-weight:700;
+    color:#000;
+    letter-spacing: -0.5px;
+}
+
+
+
+
+.bg--black h1{
+    color:#fff !important;
+}
+
+
+
 
 
 
@@ -277,8 +298,11 @@ textarea {
 .tx--white{
     color:#fff !important;
 }
+.tx--darkgray{
+    color:#ccc !important;
+}
 .tx--lightgray{
-    color:#999 !important;
+    color:#787878 !important;
 }
 .tx--black{
     color:#000 !important;
@@ -405,14 +429,60 @@ textarea {
 
 
 /****************** transform ******************/
-
+.rotate_90{
+    transform:rotate(90deg);
+}
 .rotate_180{
     transform:rotate(180deg);
 }
-
+.rotate_270{
+    transform:rotate(270deg);
+}
 .rotate_180.on{
     transform:rotate(0);
 }
+
+
+
+/****************** list style ******************/
+.dot_list > li{
+    position: relative;
+    padding-left: 12px;
+    line-height: 24px;
+    letter-spacing: -.3px;
+    margin-left:6px;
+}
+.dot_list > li:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #80888a;
+    content: "";
+}
+
+
+.dash_list > li{
+    position: relative;
+    padding-left: 12px;
+    line-height: 24px;
+    letter-spacing: -.3px;
+}
+.dash_list > li:before {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 5px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #80888a;
+    content: "";
+}
+
+
+
 
 /****************** 아이콘 icon ******************/
 .ic_mypage{
@@ -493,6 +563,23 @@ textarea {
     width:24px;
     height:24px;
 }
+
+.ic_arrow_L{
+    background-image: url(../img/svg/ic_arrow_L.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+
+.ic_arrow_s{
+    background-image: url(../img/svg/ic_arrow_s.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:12px;
+    height:12px;
+}
+
 
 
 .tabbar_nav_item.is-active .tabbar_icon .ic_home {

@@ -1,5 +1,7 @@
 body{
     min-width:320px;
+    max-width:800px;
+    margin:0 auto;
 }
 .wrap{
     position:relative;
@@ -153,7 +155,8 @@ body{
     border-top-right-radius: 10px;
     z-index:100;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
+    min-width:320px;
+    max-width:800px;
 }
 .tabbar_wrap{
     width:100%;
@@ -215,6 +218,8 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
+    min-width:320px;
+    max-width:800px;
 }
 
 
@@ -295,9 +300,6 @@ main > .section{
 
 
 /** 혜택 안내 **/
-.tab_list{
-    margin-top:40px;
-}
 .benefit_swiper{
     padding-bottom:24px !important;
 }
@@ -306,6 +308,7 @@ main > .section{
     flex-direction: column;
     gap:20px;
     padding:20px;
+    align-items: center;
 }
 .benefit_pagination{
     bottom:10px !important;
@@ -326,14 +329,29 @@ main > .section{
 
 
 /** 카테고리 탭 **/
+
 .tab_list::-webkit-scrollbar{
     display:none; /* Chrome, Safari, Opera*/
 }
 .tab_list{
+    position:sticky;
     overflow-x:auto;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+    padding:20px 0;
+    margin-top:30px;
+    top:70px;
+    z-index:99;
 }
+.body_bg_bk .tab_list{
+    background-color:#000;
+}
+.body_bg_wh .tab_list{
+    background-color:#fff;
+}
+
+
+
 .tab_category{
     margin-top: 0;
     margin-left: -8px;
@@ -391,7 +409,7 @@ main > .section{
 }
 .swiper-pagination.count_pagination{
     background-color:rgba(0, 0, 0, 0.3);
-    top:28px;
+    top:12px;
     bottom:auto;
     width: 46px;
     height:20px;
@@ -404,6 +422,13 @@ main > .section{
 }
 .swiper-pagination.count_pagination .swiper-pagination-current{
     font-weight:600;
+}
+
+
+.swiper-pagination.count_pagination.up{
+    top:auto;
+    bottom:30px;
+    right:26px;
 }
 
 

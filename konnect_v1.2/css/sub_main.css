@@ -38,8 +38,8 @@ main > .section_sub_main{
     z-index:9;
 }
 .sub_main_img img{
-    width:100%;
-    height:auto;
+    width:auto;
+    height:100%;
 }
 
 
@@ -89,7 +89,7 @@ main > .section_sub_main{
     margin-top:100px;
 }
 .brand_banner_list{
-    padding-top:32px;
+    padding-top:12px;
     display: flex;
     gap: 20px;
     flex-direction: column;

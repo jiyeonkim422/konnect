@@ -23,6 +23,7 @@ main > .section_main{
   transition-timing-function: ease;
   -webkit-transition-duration:0.4s;
   -webkit-transition-timing-function:ease;
+
 }
 
 
@@ -58,7 +59,6 @@ main > .section_main{
   position:relative;
   bottom:217px;
 }
-
 
 .notice_area{
     display: flex;
@@ -106,7 +106,7 @@ main > .section_main{
 .main_slide_li {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,6 +118,7 @@ main > .section_main{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width:500px;
 }
 
 .main_pagination{
@@ -146,7 +147,8 @@ main > .section_main{
 
 .membership_swiper{
   padding:24% 30% 30% 30%;
-  max-height:860px;
+  max-height:600px;
+  max-width:650px;
 }
 .membership_swiper .swiper-wrapper{
   padding-bottom:40px;
