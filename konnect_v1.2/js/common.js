@@ -87,11 +87,24 @@ var swiper = new Swiper(".membership_swiper", {
     pagination: {
     el: ".swiper-pagination",
     type: "fraction",
-  },
-});
+    },
+  });
+
+    //공통 - 카운트다운 배너
+    var swiper = new Swiper(".countdown_swiper", {
+      pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+        },
+    });
 
 
 
+    //공통 - 브랜드카드 슬라이드
+    var swiper = new Swiper(".brandcard_swiper", {
+      spaceBetween: 30,
+      loop:true,
+    });
 
 
 
@@ -146,5 +159,110 @@ var swiper = new Swiper(".membership_swiper", {
 		$("#" + tab_id).addClass('is-active');
 
 	});
+
+
+
+// 카운트다운 - 1
+var countDownDate = new Date("2023-09-30 00:00:00").getTime();
+
+function timePart(val, text, color = "white") {
+    return `<h1 class="timer" style="color:${color};">${val}<div>${text}</div></h1>`
+}
+
+var x = setInterval(function () {
+
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
+    document.getElementById("countdown_1").innerHTML = res
+
+    console.log(distance);
+
+    if (distance < 0) {
+        clearInterval(x);
+
+        let res = timePart(0, 'Day') + timePart(0, '') + timePart(0, ''); // + timePart(0, 'Seconds', 'red');
+        document.getElementById("countdown_1").innerHTML = res
+
+        //document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+// 카운트다운 - 2
+var countDownDate2 = new Date("2023-10-31 00:00:00").getTime();
+
+function timePart(val, text, color = "white") {
+    return `<h1 class="timer" style="color:${color};">${val}<div>${text}</div></h1>`
+}
+
+var x = setInterval(function () {
+
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate2 - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
+    document.getElementById("countdown_2").innerHTML = res
+
+    console.log(distance);
+
+    if (distance < 0) {
+        clearInterval(x);
+
+        let res = timePart(0, 'Day') + timePart(0, '') + timePart(0, ''); // + timePart(0, 'Seconds', 'red');
+        document.getElementById("countdown_2").innerHTML = res
+
+        //document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+// 카운트다운 - 3
+var countDownDate3 = new Date("2023-11-31 00:00:00").getTime();
+
+function timePart(val, text, color = "white") {
+    return `<h1 class="timer" style="color:${color};">${val}<div>${text}</div></h1>`
+}
+
+var x = setInterval(function () {
+
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate3 - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
+    document.getElementById("countdown_3").innerHTML = res
+
+    console.log(distance);
+
+    if (distance < 0) {
+        clearInterval(x);
+
+        let res = timePart(0, 'Day') + timePart(0, '') + timePart(0, ''); // + timePart(0, 'Seconds', 'red');
+        document.getElementById("countdown_3").innerHTML = res
+
+        //document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
 
 

@@ -391,7 +391,7 @@ textarea {
 }
 
 .badge{
-    width:70px;
+    padding:4px 10px;
     height:22px;
     font-weight:700;
     font-size:12px;
@@ -401,6 +401,15 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.badge--fill-gray{
+    background-color:#2B4C7D;
+    color:#fff;
+}
+.badge--fill-blue1{
+    background-color:#0039cc;
+    color:#fff;
 }
 
 
@@ -571,7 +580,13 @@ textarea {
     width:24px;
     height:24px;
 }
-
+.ic_arrow_m{
+    background-image: url(../img/svg/ic_arrow_m.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
 .ic_arrow_s{
     background-image: url(../img/svg/ic_arrow_s.svg);
     background-repeat: no-repeat;
