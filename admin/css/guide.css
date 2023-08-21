@@ -50,6 +50,13 @@ select:disabled {
 .mt_30{
     margin-top:30px !important;
 }
+.mt_40{
+    margin-top:40px !important;
+}
+.mt_80{
+    margin-top:80px !important;
+}
+
 .mb_2{
     margin-bottom:2px !important;
 }
@@ -72,13 +79,27 @@ select:disabled {
     margin-bottom:60px !important;
 }
 
+.mr_4{
+    margin-right:4px !important;
+}
 
 
+/****************** 마진 margin ******************/
 
 /****************** 패딩 padding ******************/
 .p_side_20{
     padding:0 20px;
 }
+.pl_4{
+    padding-left:4px !important;
+}
+.pl_8{
+    padding-left:8px !important;
+}
+.pl_10{
+    padding-left:10px !important;
+}
+
 
 
 
@@ -194,6 +215,16 @@ select:disabled {
     line-height:1.4;
     color:#000;
 }
+.sub_tit_box{
+    width:100%;
+    margin-bottom:4px;
+}
+.sub_tit{
+    font-weight:700;
+    font-size:18px;
+    color:#000;
+    line-height:1.4;
+}
 .default_text{
     font-size:12px;
     line-height:1.4;
@@ -234,7 +265,7 @@ button:not(:disabled),
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    border-color:#000;
+    border-color:#ccc;
     color: #555;
     padding: 6px 12px;
     font-weight:500;
@@ -313,6 +344,23 @@ button:not(:disabled),
     color:#555;
 }
 
+.btn_close{
+    background-image:url(../img/svg/ic_close_m.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:28px;
+    height:28px; 
+}
+.btn_close:hover{
+    border-width:2px;
+    border-color:#4c5f77;
+    /* background-image:url(../img/svg/ic_close_m_wh.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:28px;
+    height:28px; */
+} 
+
 
 
 /****************** 폼 form ******************/
@@ -324,8 +372,11 @@ input:focus{
 .input_form{
     border: 1px solid #ccc;
     border-radius:4px;
-    padding:6px;
+    padding:5px 8px;
     font-size:12px;
+    display:flex;
+    height:28px;
+    align-items: center;
 }
 .input_search{
     min-width:240px;
@@ -376,10 +427,11 @@ select.input_form option{
 /** select_option_form **/
   .select_option{
     position: relative;
+    display:inline-block;
     user-select: none;
     height:28px;
     border-radius:4px;
-    padding:6px 8px;
+    padding:5px 8px;
     width:120px;
     background-image:url(../img/svg/ic_arrow.svg);
     background-repeat: no-repeat;
@@ -391,6 +443,7 @@ select.input_form option{
   .select_option .default_option{
     position: relative;
     cursor: pointer;
+    width:100%;
   }
   .select_option .select_ul{
     position: absolute;
@@ -439,12 +492,6 @@ select.input_form option{
     display: block;
   }
 
-/****************** 마진 margin ******************/
-
-
-
-/****************** 패딩 padding ******************/
-
 
 /****************** display 정렬 ******************/
 
@@ -490,6 +537,7 @@ select.input_form option{
 
 
 /****************** table 테이블 ******************/
+
 .table_form{
     width:100%;
     margin-top:14px;
@@ -498,22 +546,35 @@ select.input_form option{
 .table_default{
     min-width:1000px;
 }
+.table_bg_gray{
+    background-color:#f1f1f1;
+}
+.top_border_bold{
+    border-top:2px solid #000;
+}
+.left_border{
+    border-left:1px solid #e1e1e1;
+}
+.right_border{
+    border-right:1px solid #e1e1e1;
+}
+
+
+/** 테이블 가로정렬 **/
 .table_type1{
     width:100%;
 }
-.table_head{
-    background-color:#f1f1f1;
-}
-.table_head th{
+.table_type1_head{
     padding: 0 0.6rem;
     color:#000;
     font-size: 13px;
     font-weight: 600;
-    border-top:1px solid #000;
     border-bottom:1px solid #e1e1e1;
     height:40px;
+    background-color:#f1f1f1;
+    border-top:1px solid #000;
 }
-.table_body td{
+.table_type1_data{
     padding: 0 0.6rem;
     font-size:13px;
     border-bottom:1px solid #e1e1e1;
@@ -532,6 +593,44 @@ select.input_form option{
 
 }
 
+
+
+/** 테이블 세로정렬 **/
+.table_type2{
+    width:100%;
+}
+.table_type2_row{
+    border-bottom:1px solid #e1e1e1;
+    width:100%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.table_type2_head{
+    padding: 0.85rem;
+    font-size: 13px;
+    text-align:left;
+    background-color:#f1f1f1;
+    border-right:1px solid #e1e1e1;
+    width:160px;
+    vertical-align: text-top;
+    font-weight:400;
+    line-height:1.5;
+}
+.table_type2_data{
+    padding: 0.6rem 0.85rem;
+    font-size:13px;
+    line-height:1.5;
+    text-align:left;
+    width: calc(50% - 160px);
+}
+.table_type2_data.full{
+    width:calc(100% - 160px) !important;
+}
+.table_type2_data p + p{
+    margin-top:4px;
+}
 
 
 /****************** badge 뱃지 ******************/
@@ -586,19 +685,14 @@ select.input_form option{
 
 
 /****************** icon 아이콘 ******************/
+
+/** icon 24px **/
 .ic_search{
     background-image:url(../img/svg/ic_search.svg);
     background-repeat:no-repeat;
     background-position:center;
     width:24px;
     height:24px; 
-}
-.ic_arrow{
-    background-image:url(../img/svg/ic_arrow.svg);
-    background-repeat:no-repeat;
-    background-position:center;
-    width:12px;
-    height:12px; 
 }
 .ic_alarm{
     background-image:url(../img/svg/ic_alarm.svg);
@@ -613,4 +707,39 @@ select.input_form option{
     background-position:center;
     width:24px;
     height:24px; 
+}
+
+
+/** icon 20px **/
+.ic_close_m{
+    background-image:url(../img/svg/ic_close_m.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px; 
+}
+.ic_close_m.is-{
+    background-image:url(../img/svg/ic_close_m.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px; 
+}
+
+
+
+/** icon 12px **/
+.ic_arrow{
+    background-image:url(../img/svg/ic_arrow.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:12px;
+    height:12px; 
+}
+.ic_close_s{
+    background-image:url(../img/svg/ic_close_s.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:12px;
+    height:12px; 
 }
