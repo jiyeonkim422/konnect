@@ -7,6 +7,8 @@ main > .section_brand_detail{
     transition-timing-function: ease;
     -webkit-transition-duration:0.4s;
     -webkit-transition-timing-function:ease;
+    top:0;
+    z-index:99;
   }
   .sub_header.active .navigation_bar{
     background-color: rgba(255,255,255,1);
@@ -14,6 +16,8 @@ main > .section_brand_detail{
     transition-timing-function: ease;
     -webkit-transition-duration:0.4s;
     -webkit-transition-timing-function:ease;
+    top:0;
+    z-index:99;
     /* backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); */
   }
@@ -40,7 +44,7 @@ main > .section_brand_detail{
     padding-bottom:150px;
     background-color:#fff;
     position:relative;
-    z-index:100;
+    z-index:98;
 }
 /** 브랜드 상세정보 상단 **/
 .brand_info_box{
@@ -203,4 +207,34 @@ video[poster]{
     border-radius:15px;
     border-radius: 15px;
     overflow: hidden;
+}
+
+
+
+.brand_tab_list{         
+    display:flex;
+    margin-top:10px;
+    margin-bottom:-20px;
+    padding:20px 0;
+    background-color:#fff;
+    position:sticky;
+    top:70px;
+    z-index:100;
+}
+.brand_tab_list .tab_list{
+    padding:0;
+    margin-top:0;
+    position:inherit;
+    top:auto; 
+    z-index:1;
+}
+.brand_tab_list .tab_list .tab_category{
+    padding:0;
+    padding-right:20px;
+}
+
+
+.brand_view_all{
+    display: flex;
+    padding: 0 14px 0px 20px;
 }

@@ -124,12 +124,21 @@ textarea {
     color:#fff;
     background-color:rgba(0,0,0,0);
 }
+.btn--stroke-primary1{
+    border-color:#0039cc;
+    color:#0039cc;
+}
 
 
 .btn--icon{
     display:flex;
     gap: 4px;
     align-items: center;
+}
+.btn--no-border{
+    border:none;
+    padding:0;
+    margin:0;
 }
 
 
@@ -494,6 +503,9 @@ textarea {
 
 
 /****************** 아이콘 icon ******************/
+
+
+/** icon 24px **/
 .ic_mypage{
     background-image: url(../img/svg/ic_mypage.svg);
     background-repeat: no-repeat;
@@ -539,7 +551,6 @@ textarea {
 }
 
 
-
 .ic_arrow_s_wh{
     display:flex;
     align-items: center;
@@ -573,6 +584,18 @@ textarea {
     height:24px;
 }
 
+
+.ic_all_view{
+    background-image: url(../img/svg/ic_view_all.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+
+
+
+
 .ic_arrow_L{
     background-image: url(../img/svg/ic_arrow_L.svg);
     background-repeat: no-repeat;
@@ -580,21 +603,6 @@ textarea {
     width:24px;
     height:24px;
 }
-.ic_arrow_m{
-    background-image: url(../img/svg/ic_arrow_m.svg);
-    background-repeat: no-repeat;
-    background-position:center;
-    width:20px;
-    height:20px;
-}
-.ic_arrow_s{
-    background-image: url(../img/svg/ic_arrow_s.svg);
-    background-repeat: no-repeat;
-    background-position:center;
-    width:12px;
-    height:12px;
-}
-
 
 
 .tabbar_nav_item.is-active .tabbar_icon .ic_home {
@@ -618,10 +626,36 @@ textarea {
     width:24px;
     height:24px;
 }
-.tabbar_nav_item.is-active .tabbar_icon .ic_store {
+.tabbar_nav_item.is-active .tabbar_icon .ic_store {        
     background-image: url(../img/svg/ic_store_active.svg);
     background-repeat: no-repeat;
     background-position:center;
     width:24px;
     height:24px;
 }
+
+
+
+
+/** icon 20px **/
+.ic_arrow_m{
+    background-image: url(../img/svg/ic_arrow_m.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+
+
+/** icon 12px **/
+.ic_arrow_s{
+    background-image: url(../img/svg/ic_arrow_s.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:12px;
+    height:12px;
+}
+
+
+
+

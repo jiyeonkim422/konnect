@@ -39,7 +39,7 @@ body{
     left: 50%;
     /* max-width: 500rem; */
     margin: 0px auto;
-    z-index: 1000;
+    z-index: 99;
     transition: all 0.5s ease-in-out 0s;
 }
 .header_wrap{
@@ -145,18 +145,19 @@ body{
 
 
 /** 공통 tab bar **/
+
 .tabbar{
     position:fixed;
     height:78px;
     background-color:#fff;
     width:100%;
     bottom:0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    z-index:100;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index:99;
     min-width:320px;
     max-width:800px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .tabbar_wrap{
     width:100%;
@@ -220,6 +221,7 @@ body{
     justify-content: space-between;
     min-width:320px;
     max-width:800px;
+    top:0;
 }
 
 
@@ -362,6 +364,10 @@ main > .section{
 .tab_category_item{
     display:inline-block;
     margin-left:8px;
+
+}
+.tab_category_item:last-child{
+    margin-right:10px;
 }
 .tab_category_btn{
     display: -webkit-inline-box;
@@ -614,4 +620,266 @@ main > .section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+/** 브랜드 탭 **/
+.filter-tab_content{
+    display:none;
+}
+.filter-tab_content.is-active{
+    display:block;
+}
+
+
+
+/***** 바텀시트 bottom_sheet *****/
+/* .botton_sheet_box{
+    display: none;
+    position: fixed;
+    z-index: 99999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    backdrop-filter:blur(5px);
+}
+
+.botton_sheet_content {
+    height: 100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+.bs_form{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    z-index: 999;
+    position: relative;
+}
+.bs_cover {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: auto;
+    border-radius: 30px 30px 0px 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+.handle_bar {
+    width: 55px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #C2D0E0;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom_nav_wrap{
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: space-between;
+    position: relative;
+} */
+
+
+
+
+
+
+
+
+
+  .bottomsheet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.1s linear;
+    z-index:999;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .bottomsheet.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .bottomsheet .sheet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: #000;
+  }
+  .bottomsheet .bs_box {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    height:auto;
+    max-height: 90vh;
+    max-width: 1150px;
+    transform: translateY(100%);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+    /* transition: 0.3s ease; */
+  }
+  .bottomsheet.show .bs_box{
+    transform: translateY(0%);
+  }
+  .bottomsheet.dragging .bs_box {
+    transition: none;
+  }
+  .bottomsheet.fullscreen .bs_box {
+    border-radius: 0;
+    overflow-y: hidden;
+  }
+  .bottomsheet .bs_header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top:25px;
+    border-bottom:1px solid #9FB1CC;   
+
+  }
+  .bs_header .drag-icon {
+    cursor: grab;
+    user-select: none;
+    padding: 15px;
+    margin-top: -15px;
+  }
+  .bs_header .drag-icon span {
+    height: 4px;
+    width: 40px;
+    display: block;
+    background: #C7D0E1;
+    border-radius: 50px;
+  }
+  .bottomsheet .bs_body {
+    height: 100%;
+    overflow-y: auto;
+    /* scrollbar-width: none; */
+    padding: 25px 20px;
+    padding-bottom:150px;
+    /* padding-bottom:250px; */
+  }
+  .bottomsheet .bs_body::-webkit-scrollbar {
+    width: 0;
+  }
+  .bottomsheet .bs_body h2 {
+    font-size: 1.8rem;
+  }
+  .bottomsheet .bs_body p {
+    margin-top: 20px;
+    font-size: 1.05rem;
+  }
+
+
+
+
+.bs_tit_box {
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bs_content {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.bs_content_box + .bs_content_box{
+    margin-top:36px;
+}
+
+.bs_tab_category{
+    white-space: normal;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: flex-start;
+    margin-top:10px;
+
+}
+.bs_tab_category_item{
+    display:inline-block;
+    width:calc(33.33% - 6.8px);
+
+}
+.bs_tab_category_btn{
+    background-color: #f3f4f6;
+    color:#2B4C7D;
+    height:40px;
+    padding:4px;
+    width:100%;
+    font-weight:700;
+    border-radius: 5px;
+    font-size: 12rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bs_tab_category_btn.is-active{
+    background-color: #0039cc;
+    color: #fff;
+}
+
+.bs_bottom{
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    padding: 20px 30px;
+    -webkit-box-shadow: 2px -3px 16px 0 rgb(0 0 0 / 12%);
+    box-shadow: 2px -3px 16px 0 rgb(0 0 0 / 12%);
+    z-index: 999;
+    display:flex;
+}
+.btn_wrap{
+    width:100%;
+    display:flex;
+    gap:10px;
 }

@@ -12,10 +12,10 @@
 
 
 <script>
+// 스크롤 시 header fade-in
 $(function(){
-    // 스크롤 시 header fade-in
     $(document).on('scroll', function(){
-        if($(window).scrollTop() > 640){
+        if($(window).scrollTop() > 480){
             $(".main_header").removeClass("deactive");
             $(".main_header").addClass("active");
         }else{
@@ -25,5 +25,28 @@ $(function(){
     })
 
 });
+
+
+
+// headerpin.js
+// $(function () {
+//     var wind = $(window),
+//         header = $('.main_header'),
+//         headerOffsetTop = header.offset().top;
+//         console.log(headerOffsetTop);
+
+//         /*window에 스크롤이 생기면 */
+//         wind.scroll(function(){
+//            //스크롤 양 > 화면상단에서의 거리 
+//            if(wind.scrollTop() >= headerOffsetTop){
+//                 header.addClass('active');
+//            }else{ 
+//                 header.removeClass('active')
+//            }
+//         })
+
+// });
+
+
 
 </script>

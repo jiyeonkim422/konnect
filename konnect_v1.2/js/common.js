@@ -98,7 +98,7 @@ var swiper = new Swiper(".membership_swiper", {
         },
     });
 
-
+ 
 
     //공통 - 브랜드카드 슬라이드
     var swiper = new Swiper(".brandcard_swiper", {
@@ -111,10 +111,10 @@ var swiper = new Swiper(".membership_swiper", {
 
 
 
+    // tab.js
     // 초깃값 설정
     $('.filter-tab1').addClass('is-active');
-    // $('#filter-tab1').addClass('is-active').find('.section--book-list').addClass('is-active')
-    // .siblings('.section--best-select').find('.btn--layout-list').addClass('is-active');
+    $('#filter-tab1').addClass('is-active').find('.tab_category_item').addClass('is-active')
 
     // click 이벤트마다 리스트형으로 초기화
     $('.tab_category_btn').on('click', function() {
@@ -123,18 +123,10 @@ var swiper = new Swiper(".membership_swiper", {
         $(this).addClass('is-active').parent('li').siblings('li').find('button').removeClass('is-active');
         $("#" + tab_id).siblings('.btn--layout').removeClass('is-active');
         
-        $("#" + tab_id).addClass('is-active')
-        .find('.section--book-list').addClass('is-active')
-        .parents('.filter-tab_content').find('.section--best-select').show()
-        .find('.btn--layout-list').addClass('is-active')
-        .parents('.filter-tab_content').siblings().find('.section--book-display').removeClass('is-active')
-        .siblings('.section--best-select').hide()
-        .find('.btn--layout').removeClass('is-active')
-        ;
     });
 
 
-    //filter-tab(탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+    //tab_category_btn(탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
     $('.tab_category_btn').on('click', function() {
         $('.filter-tab_content').removeClass('is-active');
         $('.tab_category_btn').removeClass('is-active');
@@ -147,10 +139,10 @@ var swiper = new Swiper(".membership_swiper", {
 
     });
 
-	//filter-tab(탭 1개) - 필터탭 여러개 사용시 겹침방지용
-	$('.control-category__btn_ver2').on('click', function() {
+	//bs_tab_category_btn(탭 1개) - 바텀시트 내부 tab
+	$('.bs_tab_category_btn').on('click', function() {
 		$('.filter-tab_content_ver2').removeClass('is-active');
-		$('.control-category__btn').removeClass('is-active');
+		$('.bs_tab_category_btn').removeClass('is-active');
 		$(this).addClass('is-active');
 
 		let tab_id = $(this).attr('data-tab');
@@ -159,6 +151,9 @@ var swiper = new Swiper(".membership_swiper", {
 		$("#" + tab_id).addClass('is-active');
 
 	});
+
+
+
 
 
 
@@ -266,3 +261,105 @@ var x = setInterval(function () {
 
 
 
+
+
+
+  //modal(bottom sheet & action sheet) show / 모달창(바텀시트 & 액션시트)
+
+    // var modals = document.getElementsByClassName("bottom_sheet_box");
+    // var btns = document.getElementsByClassName("bottom_sheet_show");
+    // var spanes = document.getElementsByClassName("bottom_sheet_close");
+    // var funcs = [];
+    
+    // function Modal(num) {
+    // return function() {
+    //     btns[num].onclick =  function() {
+    //         modals[num].style.display = "block";
+    //         console.log(num);
+    //     };
+    
+    //     spanes[num].onclick = function() {
+    //         modals[num].style.display = "none";
+    //     };
+    // };
+    // }
+    
+    // for(var i = 0; i < btns.length; i++) {
+    //     funcs[i] = Modal(i);
+    // }
+    
+    // for(var j = 0; j < btns.length; j++) {
+    //     funcs[j]();
+    // }
+    
+    // window.onclick = function(event) {
+    //     if (event.target.className == "modal_box") {
+    //         event.target.style.display = "none";
+    //     }
+    // };
+
+
+
+// 바텀시트
+const showModalBtn = document.querySelector(".show_modal");
+const bottomSheet = document.querySelector(".bottomsheet");
+const sheetOverlay = bottomSheet.querySelector(".sheet-overlay");
+const sheetContent = bottomSheet.querySelector(".bs_box");
+const dragIcon = bottomSheet.querySelector(".drag-icon");
+
+let isDragging = false, startY, startHeight;
+
+// Show the bottom sheet, hide body vertical scrollbar, and call updateSheetHeight
+const showBottomSheet = () => {
+    bottomSheet.classList.add("show");
+    document.body.style.overflowY = "hidden";
+    updateSheetHeight(80);
+}
+
+const updateSheetHeight = (height) => {
+    sheetContent.style.height = `${height}vh`; //updates the height of the sheet content
+    // Toggles the fullscreen class to bottomSheet if the height is equal to 100
+    // bottomSheet.classList.toggle("fullscreen", height === 100);
+}
+
+// Hide the bottom sheet and show body vertical scrollbar
+const hideBottomSheet = () => {
+    bottomSheet.classList.remove("show");
+    document.body.style.overflowY = "auto";
+}                                    
+
+// Sets initial drag position, sheetContent height and add dragging class to the bottom sheet
+const dragStart = (e) => {
+    isDragging = true;
+    startY = e.pageY || e.touches?.[0].pageY;
+    startHeight = parseInt(sheetContent.style.height);
+    bottomSheet.classList.add("dragging");
+}
+
+// Calculates the new height for the sheet content and call the updateSheetHeight function
+const dragging = (e) => {
+    if(!isDragging) return;
+    const delta = startY - (e.pageY || e.touches?.[0].pageY);
+    const newHeight = startHeight + delta / window.innerHeight * 100;
+    updateSheetHeight(newHeight);
+}
+
+// Determines whether to hide, set to fullscreen, or set to default 
+// height based on the current height of the sheet content
+const dragStop = () => {
+    isDragging = false;
+    bottomSheet.classList.remove("dragging");
+    const sheetHeight = parseInt(sheetContent.style.height);
+    sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 75 ? updateSheetHeight(90) : hideBottomSheet();
+}
+
+dragIcon.addEventListener("mousedown", dragStart);
+document.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+
+dragIcon.addEventListener("touchstart", dragStart);
+document.addEventListener("touchmove", dragging);
+document.addEventListener("touchend", dragStop);
+
+sheetOverlay.addEventListener("click", hideBottomSheet);
+showModalBtn.addEventListener("click", showBottomSheet);
