@@ -12,26 +12,13 @@
     position:fixed;
     top:0;
     left:0;
-    padding-top:70px;
+    z-index:9999;
 }
+
+
 .nav_list_box{
-    overflow-y:scroll;
     height: 100%;
 }
-
-.nav_list_box::-webkit-scrollbar {
-    width: 9px;
-  }
-  .nav_list_box::-webkit-scrollbar-thumb {
-    background-color: #788daa;
-    border-radius: 18px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
-  }
-  .nav_list_box::-webkit-scrollbar-track {
-    background-color:#323d4d ;
-  }
-
 
 .logo_box{
     width:240px;
@@ -40,7 +27,7 @@
     border-bottom:1px solid rgba(255,255,255,0.1);
 }
 .logo{
-    height:70px;
+    height:62px;
     width:auto;
     display:flex;
     justify-content: center;
@@ -49,6 +36,25 @@
 .logo > img{
     width:auto;
     height:100%;
+}
+
+
+
+.nav_list{
+    overflow-y:auto;
+    height:calc(100% - 70px);
+}
+.nav_list::-webkit-scrollbar {
+    width: 9px;
+  }
+.nav_list::-webkit-scrollbar-thumb {
+    background-color: #788daa;
+    border-radius: 18px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.nav_list::-webkit-scrollbar-track {
+    background-color:#323d4d ;
 }
 
 
@@ -97,7 +103,8 @@
 /** 본문내용 **/
 .wrapper{
     width:100%;
-    height:calc(100vh - 120px);
+    /* height:calc(100vh - 120px); */
+    height:auto;
     padding-left:240px;
     background-color:#fff;
 }
@@ -109,7 +116,7 @@
     background-color:#fff;
     position:sticky;
     top:0;
-    z-index:9999;
+    z-index:999;
     -webkit-box-shadow: 2px 1px 16px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 2px 1px 16px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.1);
     display:flex;
@@ -118,9 +125,9 @@
 }
 .top_nav_inner{
     padding:10px 20px;
-    width:calc(100% - 240px);
     display: flex;
     justify-content: space-between;
+    width:100%;
 }
 
 
@@ -129,6 +136,7 @@
     display:flex;
     gap:20px;
     align-items: center;
+    padding-left:240px;
 }
 .top_nav_left > li{
     display:inline-flex;
@@ -265,9 +273,9 @@
 .content_bg{
     display:flex;
     flex-direction: column;
-    height:calc(100vh - 120px);
     background-color:#f6f7fb;
-    padding:20px 20px 0px 20px;
+    padding:20px;
+    height:100%;
 }
 .content{
     width:100%;
@@ -461,6 +469,10 @@
 
 
 
+
+.btn_box{
+    margin-top:30px;
+}
 
 /** footer **/
 .footer{

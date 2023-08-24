@@ -49,7 +49,7 @@
             <div class="wrapper">
                 <div class="content_bg">
                     <div class="title_box">
-                        <h1 class="main_tit">문의 내역 조회</h1>
+                        <h1 class="main_tit">미완료 문의 내역</h1>
                         <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
@@ -146,42 +146,94 @@
                                 </div>
                                 <!-- 데이터 있을때 -->
                                 <tbody class="table_body top_border_bold">
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head" scope="row">처리 담당자</th>
-                                        <td class="table_type2_data">담당자</td>
-                                        <th class="table_type2_head left_border">처리 완료일 시</th>
-                                        <td class="table_type2_data">2023-08-23 12:12
+                                    <tr class="table_type2_row"> 
+                                        <th class="table_type2_head" scope="row">처리 구분<span class="required">*</span></th>
+                                        <td class="table_type2_data">
+                                            <div class="check_form_inline">
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_processing" id="inquiry_processing1">
+                                                    <label class="check_form_label" for="inquiry_processing1">처리 구분1</label>
+                                                </div>
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_processing" id="inquiry_processing2">
+                                                    <label class="check_form_label" for="inquiry_processing2">처리 구분2</label>
+                                                </div>
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_processing" id="inquiry_processing3">
+                                                    <label class="check_form_label" for="inquiry_processing3">처리 구분3</label>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="table_type2_row">
-                                        <th class="table_type2_head" scope="row">처리 구분</th>
-                                        <td class="table_type2_data"></td>
-                                        <th class="table_type2_head left_border">처리 방법</th>
-                                        <td class="table_type2_data"></td>
+                                        <th class="table_type2_head left_border">처리 방법<span class="required">*</span></th>
+                                        <td class="table_type2_data">
+                                            <div class="check_form_inline">
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_sort" id="inquiry_sort1">
+                                                    <label class="check_form_label" for="inquiry_sort1">처리 완료 (전화 대응)</label>
+                                                </div>
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_sort" id="inquiry_sort2">
+                                                    <label class="check_form_label" for="inquiry_sort2">처리 완료 (답변 발송)</label>
+                                                </div>
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_sort" id="inquiry_sort3">
+                                                    <label class="check_form_label" for="inquiry_sort3">보류</label>
+                                                </div>
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_sort" id="inquiry_sort3">
+                                                    <label class="check_form_label" for="inquiry_sort3">중복 접수</label>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="table_type2_row">
                                         <th class="table_type2_head">처리 내용</th>
                                         <td class="table_type2_data full">
-                                            <p>고객에게 응대한 내용<br/>
-                                                상담사가 등록한 내용이 표시됩니다.<br/>
-                                                내부 관리용입니다.</p>
+                                            <textarea class="textarea_form h_100" aria-label="textarea" placeholder="처리하신 내용을 작성해주세요."></textarea>
+                                            <p class="mt_10">
+                                                내부 관리를 위한 처리내용입니다.<br/>
+                                                고객에게는 발송되지 않습니다.
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr class="table_type2_row">
-                                        <th class="table_type2_head">답변 내용</th>
+                                        <th class="table_type2_head">답변 내용<span class="required">*</span></th>
                                         <td class="table_type2_data full">
-                                            <p>답변 내용을 입력해주세요.</p>
+                                            <textarea class="textarea_form h_300" aria-label="textarea" placeholder="답변 내용을 작성해주세요."></textarea>
+                                            <p class="mt_10">
+                                                고객이 수신하게 되는 답변 내용입니다.<br/>
+                                                ‘답변 이메일 수신 희망’ 고객과 미가입 고객에게는 이메일이 함께 발송됩니다.
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr class="table_type2_row">
                                         <th class="table_type2_head">답변 이메일 발송 여부</th>
-                                        <td class="table_type2_data full">발송</td>
+                                        <td class="table_type2_data full">
+                                            <div class="check_form_inline">
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_processing" id="inquiry_email_reply1">
+                                                    <label class="check_form_label" for="inquiry_email_reply1">발송</label>
+                                                </div>
+                                                <div class="check_form">
+                                                    <input class="check_form_input radio" type="radio" name="inquiry_processing" id="inquiry_email_reply2">
+                                                    <label class="check_form_label" for="inquiry_email_reply2">발송하지 않음</label>
+                                                </div>
+
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr class="table_type2_row">
-                                        <th class="table_type2_head" scope="row">보내는 사람</th>
-                                        <td class="table_type2_data">konnect_cs@email.com</td>
-                                        <th class="table_type2_head left_border">받는 사람</th>
-                                        <td class="table_type2_data">konnect@email.com</td>
+                                        <th class="table_type2_head" scope="row">보내는 사람<span class="required">*</span></th>
+                                        <td class="table_type2_data">
+                                            <input class="input_form w_100per" type="email" placeholder="이메일주소를 입력하세요" aria-label="Search" value="">
+                                        </td>
+                                        <th class="table_type2_head left_border">받는 사람<span class="required">*</span></th>
+                                        <td class="table_type2_data">
+                                            <input class="input_form w_100per" type="email" placeholder="이메일주소를 입력하세요" aria-label="Search" value="">
+
+                                        </td>
                                     </tr>
                                 </tbody>
                                 <!-- 데이터 없을때 -->

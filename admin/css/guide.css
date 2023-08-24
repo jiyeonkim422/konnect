@@ -102,6 +102,21 @@ select:disabled {
 
 
 
+/****************** width height ******************/
+.w_100per{
+    width:100% !important;
+}
+.w_50per{
+    width:50% !important;
+}
+
+
+.h_100{
+    height:100px !important;
+}
+.h_300{
+    height:300px !important;
+}
 
 
 /****************** 폰트 font ******************/
@@ -233,6 +248,14 @@ select:disabled {
 
 
 
+.required{
+    position:relative;
+    top:-1px;
+    left:4px;
+    color:#FE4155;
+    font-weight:600;
+}
+
 
 
 /****************** 버튼 button ******************/
@@ -269,6 +292,11 @@ button:not(:disabled),
     color: #555;
     padding: 6px 12px;
     font-weight:500;
+}
+
+.btn:hover{
+    background-color:#555;
+    color:#fff;
 }
 
 .btn--full{
@@ -412,19 +440,67 @@ select.input_form option{
 }
 
 
-
-/** check_form **/
-.check_form{
-    display: block;
-    min-height: 1.35rem;
-    padding-left: 1.612em;
-    margin-bottom: 0;
+/** textarea **/
+.textarea_form{
+    border: 1px solid #ccc;
+    font-size:12px;
+    line-height:1.6;
+    padding:5px 8px;
+    width:100%;
+    border-radius: 4px;
+}
+.textarea_form::placeholder{
+    color:#bbb;
 }
 
 
 
+/** check_form **/
+
+.check_form_inline{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+.check_form{
+    display: block;
+    min-height: 1.35rem;
+    margin-bottom: 0;
+}
+
+.check_form_input{
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    margin-right:4px;
+}
+.check_form_input.radio{
+    border-radius:50%;
+    background-image:url(../img/svg/radio_off.svg);
+}
+.check_form_input.radio:checked {
+    background-image:url(../img/svg/radio_on.svg);
+}
+
+
 
 /** select_option_form **/
+
+.option_btn_group{
+    gap:4px;
+    display:flex;
+    flex-direction: row;
+}
   .select_option{
     position: relative;
     display:inline-block;
@@ -602,8 +678,8 @@ select.input_form option{
 .table_type2_row{
     border-bottom:1px solid #e1e1e1;
     width:100%;
-    /* display: flex;
-    flex-direction: row;
+    display: flex;
+    /* flex-direction: row;
     flex-wrap: wrap; */
 }
 
@@ -614,6 +690,7 @@ select.input_form option{
     background-color:#f1f1f1;
     border-right:1px solid #e1e1e1;
     width:160px;
+    min-width:160px;
     vertical-align: text-top;
     font-weight:400;
     line-height:1.5;
@@ -621,15 +698,20 @@ select.input_form option{
 .table_type2_data{
     padding: 0.6rem 0.85rem;
     font-size:13px;
-    line-height:1.5;
+    line-height:1.6;
     text-align:left;
-    width: calc(50% - 160px);
+    width: 50%;
+    display: flex;
+    vertical-align: middle;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 .table_type2_data.full{
     width:calc(100% - 160px) !important;
 }
 .table_type2_data p + p{
-    margin-top:4px;
+    margin-top:8px;
 }
 
 
