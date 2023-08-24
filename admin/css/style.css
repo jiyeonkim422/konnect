@@ -102,11 +102,11 @@
 
 /** 본문내용 **/
 .wrapper{
-    width:100%;
-    /* height:calc(100vh - 120px); */
-    height:auto;
-    padding-left:240px;
-    background-color:#fff;
+    min-height:calc(100vh - 70px);
+    padding-bottom:50px;
+    margin-left:240px;
+    background-color:#f6f7fb;
+    position:relative;
 }
 
 
@@ -273,7 +273,6 @@
 .content_bg{
     display:flex;
     flex-direction: column;
-    background-color:#f6f7fb;
     padding:20px;
     height:100%;
 }
@@ -455,6 +454,7 @@
     font-weight:600;
     border-radius:4px;
     height: 20px;
+    padding:0 4px;
 }
 .btn.page_btn {
     width: 30px;
@@ -476,15 +476,17 @@
 
 /** footer **/
 .footer{
-    width:100%;
     height:50px;
     background-color:#f6f7fb;
     display:flex;
     align-items: center;
     padding-left :30px;
     border-top:1px solid #ddd;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
 }
 .footer_detail{
     font-size:12px;
-    
 }

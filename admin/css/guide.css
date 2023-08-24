@@ -110,6 +110,14 @@ select:disabled {
     width:50% !important;
 }
 
+.w_70{
+    width:70px !important;
+}
+.w_100{
+    width:100px !important;
+}
+
+
 
 .h_100{
     height:100px !important;
@@ -457,16 +465,27 @@ select.input_form option{
 
 /** check_form **/
 
+
+
+.check_form{
+    display: block;
+    min-height: 1.35rem;
+    margin-bottom: 0;
+    cursor:pointer;
+}
+
 .check_form_inline{
     display:flex;
     flex-direction: row;
     gap:20px;
 }
-.check_form{
-    display: block;
-    min-height: 1.35rem;
-    margin-bottom: 0;
+.check_form_solo{
+    cursor:default;
 }
+.check_form_solo .check_form_input{
+    margin-right:0;
+}
+
 
 .check_form_input{
     width: 15px;
@@ -483,6 +502,11 @@ select.input_form option{
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
     margin-right:4px;
+    cursor:pointer;
+}
+
+.check_form_label{
+    cursor:pointer;
 }
 .check_form_input.radio{
     border-radius:50%;
@@ -492,6 +516,13 @@ select.input_form option{
     background-image:url(../img/svg/radio_on.svg);
 }
 
+.check_form_input.checkbox{
+    border-radius:2px;
+    background-image:url(../img/svg/checkbox_off.svg);
+}
+.check_form_input.checkbox:checked {
+    background-image:url(../img/svg/checkbox_on.svg);
+}
 
 
 /** select_option_form **/
@@ -507,7 +538,7 @@ select.input_form option{
     user-select: none;
     height:28px;
     border-radius:4px;
-    padding:5px 8px;
+    padding:5px 18px 5px 8px;
     width:120px;
     background-image:url(../img/svg/ic_arrow.svg);
     background-repeat: no-repeat;
@@ -515,7 +546,8 @@ select.input_form option{
     background-size: auto;
     font-size:12px;
   }
-  
+
+
   .select_option .default_option{
     position: relative;
     cursor: pointer;
@@ -530,32 +562,61 @@ select.input_form option{
     border-radius: 4px;
     display: none;
     border:1px solid #ccc;
+    max-height:200px;
+    overflow-x: hidden;
+    overflow-y: overlay;
   }
+
+
+  .select_ul::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+  }
+.select_ul::-webkit-scrollbar-thumb {
+    border:5px solid transparent;
+    border-radius: 100px;
+    background-color: #ddd;
+    background-clip: padding-box;
+}      
+.select_ul::-webkit-scrollbar-track {
+    background-color:transparent ;
+}
   
-  .select_option .select_ul li{
+
+
+  
+  .select_option .select_ul .option{
     padding:10px 8px;
-    cursor: pointer;
+    cursor: pointer;        
+    display: block;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    white-space: nowrap;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   
-  .select_option .select_ul li:first-child:hover{
+  .select_option .select_ul .option:first-child:hover{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
   
-  .select_option .select_ul li:last-child:hover{
+  .select_option .select_ul .option:last-child:hover{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
   
-  .select_option .select_ul li:hover{
+  .select_option .select_ul .option:hover{
     background: #f6f7fb;
     color:#000;
   }
   
-  .select_option .option{
-    display: flex;
-    align-items: center;
-  }
   
   .select_option .option .icon{
     background: url('https://i.imgur.com/oEZu0sK.png') no-repeat 0 0;

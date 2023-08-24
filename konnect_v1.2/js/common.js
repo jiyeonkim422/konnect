@@ -70,7 +70,8 @@ var swiper = new Swiper(".membership_swiper", {
 
   //메인 -  이벤트 배너 슬라이드
   var swiper = new Swiper(".event_banner_swiper", {
-	      pagination: {
+    loop:true,
+	    pagination: {
         el: ".swiper-pagination",
         type: "fraction",
       },

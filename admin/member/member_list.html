@@ -47,208 +47,212 @@
             <!-- 사이드 메뉴 -->
             <div id="side_nav" class="side_nav"></div>
             <div class="wrapper">
-                <div class="content_bg">
-                    <div class="title_box">
-                        <h1 class="main_tit">회원정보 관리</h1>
-                        <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">회원정보 관리</li>
-                            </ol>
-                          </nav>
-                    </div>
-                    <div class="content">
-                        <div class="check_option_box">
-                            <div class="option_group">
-                                <div class="btn_box_tit">
-                                    <span>가입일</span>
+                <div class="content_box">
+                    <div class="content_bg">
+                        <div class="title_box">
+                            <h1 class="main_tit">회원정보 관리</h1>
+                            <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">회원정보 관리</li>
+                                </ol>
+                              </nav>
+                        </div>
+                        <div class="content">
+                            <div class="check_option_box">
+                                <div class="option_group">
+                                    <div class="btn_box_tit">
+                                        <span>가입일</span>
+                                    </div>
+                                    <div class="btn_group" role="group">
+                                        <button type="button" class="btn btn_group_inner is-active">오늘</button>
+                                        <button type="button" class="btn btn_group_inner">7일</button>
+                                        <button type="button" class="btn btn_group_inner">15일</button>
+                                        <button type="button" class="btn btn_group_inner">1개월</button>
+                                        <button type="button" class="btn btn_group_inner">3개월</button>
+                                        <button type="button" class="btn btn_group_inner">전체</button>
+                                    </div>
+                                    <div class="calendar_box">
+                                        <input class="date_input input_form" type="text" id="datepicker1">
+                                        ~
+                                        <input class="date_input input_form" type="text" id="datepicker2">                    
+                                    </div>
+                                    <button type="button" class="btn btn--md btn_close"></button>
                                 </div>
-                                <div class="btn_group" role="group">
-                                    <button type="button" class="btn btn_group_inner is-active">오늘</button>
-                                    <button type="button" class="btn btn_group_inner">7일</button>
-                                    <button type="button" class="btn btn_group_inner">15일</button>
-                                    <button type="button" class="btn btn_group_inner">1개월</button>
-                                    <button type="button" class="btn btn_group_inner">3개월</button>
-                                    <button type="button" class="btn btn_group_inner">전체</button>
+                            </div>
+                            <div class="check_option_box">
+                                <div class="option_group">
+                                    <div class="btn_box_tit">
+                                        <span>회원 구분</span>
+                                    </div>
+                                    <div class="btn_group" role="group">
+                                        <button type="button" class="btn btn_group_inner is-active">전체</button>
+                                        <button type="button" class="btn btn_group_inner">일반</button>
+                                        <button type="button" class="btn btn_group_inner">해외</button>
+                                    </div>
                                 </div>
-                                <div class="calendar_box">
-                                    <input class="date_input input_form" type="text" id="datepicker1">
-                                    ~
-                                    <input class="date_input input_form" type="text" id="datepicker2">                    
+                                <div class="option_group" >
+                                    <div class="btn_box_tit btn_box_tit_s">
+                                        <span>계정 상태</span>
+                                    </div>
+                                    <div class="btn_group " role="group">
+                                        <button type="button" class="btn btn_group_inner is-active">전체</button>
+                                        <button type="button" class="btn btn_group_inner">정상</button>
+                                        <button type="button" class="btn btn_group_inner">차단</button>
+                                    </div>
                                 </div>
-                                <button type="button" class="btn btn--md btn_close"></button>
+                            </div>
+                            <div class="check_option_box">
+                                <div class="option_group">
+                                    <div class="btn_box_tit">
+                                        <span>검색</span>
+                                    </div>
+                                    <!-- select option -->
+                                    <div class="select_option input_form">
+                                        <ul class="default_option">
+                                            <li><p class="option">선택</p></li>
+                                        </ul>
+                                        <ul class="select_ul">
+                                            <li><p class="option">이메일</p></li>
+                                            <li><p class="option">회원번호</p></li>
+                                            <li><p class="option">이름</p></li>
+                                            <li><p class="option">닉네임</p></li>
+                                            <li><p class="option">휴대폰번호</p></li>
+                                        </ul>
+                                    </div>
+                                    <input class="input_search input_form" type="search" placeholder="검색어를 입력하세요" aria-label="Search" value="">
+                                    <button type="button" class="btn btn--md btn--option">검색</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="check_option_box">
-                            <div class="option_group">
-                                <div class="btn_box_tit">
-                                    <span>회원 구분</span>
+                        <div class="content">
+                            <div class="table_top">
+                                <div class="filter_option">
+                                   <div class="select_option input_form w_70">
+                                        <ul class="default_option">
+                                            <li><p class="option">선택</p></li>
+                                        </ul>
+                                        <ul class="select_ul">
+                                            <li><p class="option">10</p></li>
+                                            <li><p class="option">20</p></li>
+                                            <li><p class="option">50</p></li>
+                                        </ul>
+                                    </div>
+                                    <p  class="default_text">개씩 보기</p>
                                 </div>
-                                <div class="btn_group" role="group">
-                                    <button type="button" class="btn btn_group_inner is-active">전체</button>
-                                    <button type="button" class="btn btn_group_inner">일반</button>
-                                    <button type="button" class="btn btn_group_inner">해외</button>
+                                <div class="btn_option">
+                                    <button type="button" class="btn btn--warning btn--md">차단</button>
+                                    <button type="button" class="btn btn--primary btn--md">차단 해제</button>    
                                 </div>
                             </div>
-                            <div class="option_group" >
-                                <div class="btn_box_tit btn_box_tit_s">
-                                    <span>계정 상태</span>
+                            <div class="table_form">
+                                <table class="table_default table_type1">
+                                    <thead>
+                                        <tr>
+                                            <th class="table_type1_head">번호</th>
+                                            <th class="table_type1_head">회원번호</th>
+                                            <th class="table_type1_head">닉네임</th>
+                                            <th class="table_type1_head">이메일</th>
+                                            <th class="table_type1_head">회원 구분</th>
+                                            <th class="table_type1_head">가입일</th>
+                                            <th class="table_type1_head">본인인증</th>
+                                            <th class="table_type1_head">관리대상</th>
+                                            <th class="table_type1_head">계정상태</th>
+                                            <th class="table_type1_head">
+                                                <div class="check_form check_form_solo">
+                                                    <input class="check_form_input checkbox" type="checkbox" name="check_all" onclick='selectAll(this)'/>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <!-- 데이터 있을때 -->
+                                    <tbody class="table_body">
+                                        <tr>
+                                            <td class="table_type1_data">0000</td>
+                                            <td class="table_type1_data">12341234</td>
+                                            <td class="table_type1_data">커넥트</td>
+                                            <td class="table_type1_data">
+                                                <a href="#" class="text_link">userid1234@email.com</a>
+                                            </td>
+                                            <td class="table_type1_data">일반</td>
+                                            <td class="table_type1_data">2023-00-00</td>
+                                            <td class="table_type1_data">이메일</td>
+                                            <td class="table_type1_data"><div class="badge_form is-red">관리대상</div></td>
+                                            <td class="table_type1_data"><div class="badge_form is-blue">정상</div></td>
+                                            <td class="table_type1_data">
+                                                <div class="check_form check_form_solo">
+                                                    <input class="check_form_input checkbox" type="checkbox" name="ckeck_box" id="ckeck_box2"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table_type1_data">0000</td>
+                                            <td class="table_type1_data">12341234</td>
+                                            <td class="table_type1_data">커넥트</td>
+                                            <td class="table_type1_data">
+                                                <a href="#" class="text_link">userid1234@email.com</a>
+                                            </td>
+                                            <td class="table_type1_data">해외</td>
+                                            <td class="table_type1_data">2023-00-00</td>
+                                            <td class="table_type1_data">구글</td>
+                                            <td class="table_type1_data"></td>
+                                            <td class="table_type1_data"><div class="badge_form is-red">차단</div></td>
+                                            <td class="table_type1_data">
+                                                <div class="check_form check_form_solo">
+                                                    <input class="check_form_input checkbox" type="checkbox" name="ckeck_box" id="ckeck_box3"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <!-- 검색전&일치하는 결과가 없을때 화면 | 각 상황에 맞는 텍스트를 넣어주세요 -->
+                                    <tbody class="table_nodata">
+                                        <tr>
+                                            <td colspan="10">
+                                                검색전 : 검색해 주세요
+                                                <br/>
+                                                일치하는 결과 없을때 : 일치하는 정보가 없습니다
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                               
+                            </div>
+                            <div class="table_bottom">
+                                <div class="table_bottom_left">
+                                    <span class="main_text">
+                                        총 <span class="tx--blue1">2634 </span>항목 중 1~10 항목 표시					
+                                    </span>
                                 </div>
-                                <div class="btn_group " role="group">
-                                    <button type="button" class="btn btn_group_inner is-active">전체</button>
-                                    <button type="button" class="btn btn_group_inner">정상</button>
-                                    <button type="button" class="btn btn_group_inner">차단</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="check_option_box">
-                            <div class="option_group">
-                                <div class="btn_box_tit">
-                                    <span>검색</span>
-                                </div>
-                                <!-- select option -->
-                                <div class="select_option input_form">
-                                    <ul class="default_option">
-                                        <li class="option"><p>선택</p></li>
-                                    </ul>
-                                    <ul class="select_ul">
-                                        <li class="option"><p>이메일</p></li>
-                                        <li class="option"><p>회원번호</p></li>
-                                        <li class="option"><p>이름</p></li>
-                                        <li class="option"><p>닉네임</p></li>
-                                        <li class="option"><p>휴대폰번호</p></li>
-                                    </ul>
-                                </div>
-                                <input class="input_search input_form" type="search" placeholder="검색어를 입력하세요" aria-label="Search" value="">
-                                <button type="button" class="btn btn--md btn--option">검색</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="table_top">
-                            <div class="filter_option">
-                                <select id="searchOption1" name="searchOption[]" class="multiple-select multiple-select_s input_form">
-                                    <option value="" class="none_select">선택</option>
-                                    <option value="001" data-flag="" data-mall-name="">10</option>
-                                    <option value="002" data-flag="" data-mall-name="">20</option>
-                                    <option value="003" data-flag="" data-mall-name="">50</option>
-                                    <option value="007" data-flag="" data-mall-name="">100</option>
-                                </select>
-                                <p  class="default_text">개씩 보기</p>
-                            </div>
-                            <div class="btn_option">
-                                <button type="button" class="btn btn--warning btn--md">차단</button>
-                                <button type="button" class="btn btn--primary btn--md">차단 해제</button>    
-                            </div>
-                        </div>
-                        <div class="table_form">
-                            <table class="table_default table_type1">
-                                <thead>
-                                    <tr>
-                                        <th class="table_type1_head">번호</th>
-                                        <th class="table_type1_head">회원번호</th>
-                                        <th class="table_type1_head">닉네임</th>
-                                        <th class="table_type1_head">이메일</th>
-                                        <th class="table_type1_head">회원 구분</th>
-                                        <th class="table_type1_head">가입일</th>
-                                        <th class="table_type1_head">본인인증</th>
-                                        <th class="table_type1_head">관리대상</th>
-                                        <th class="table_type1_head">계정상태</th>
-                                        <th class="table_type1_head">
-                                            <div class="check_form">
-                                                <input type="checkbox" class="form-check-input dt-checkboxes">
-                                                <label class="form-check-label">&nbsp;</label>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <!-- 데이터 있을때 -->
-                                <tbody class="table_body">
-                                    <tr>
-                                        <td class="table_type1_data">0000</td>
-                                        <td class="table_type1_data">12341234</td>
-                                        <td class="table_type1_data">커넥트</td>
-                                        <td class="table_type1_data">
-                                            <a href="#" class="text_link">userid1234@email.com</a>
-                                        </td>
-                                        <td class="table_type1_data">일반</td>
-                                        <td class="table_type1_data">2023-00-00</td>
-                                        <td class="table_type1_data">이메일</td>
-                                        <td class="table_type1_data"><div class="badge_form is-red">관리대상</div></td>
-                                        <td class="table_type1_data"><div class="badge_form is-blue">정상</div></td>
-                                        <td class="table_type1_data">
-                                            <div class="check_form">
-                                                <input type="checkbox" class="form-check-input dt-checkboxes">
-                                                <label class="form-check-label">&nbsp;</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table_type1_data">0000</td>
-                                        <td class="table_type1_data">12341234</td>
-                                        <td class="table_type1_data">커넥트</td>
-                                        <td class="table_type1_data">
-                                            <a href="#" class="text_link">userid1234@email.com</a>
-                                        </td>
-                                        <td class="table_type1_data">해외</td>
-                                        <td class="table_type1_data">2023-00-00</td>
-                                        <td class="table_type1_data">구글</td>
-                                        <td class="table_type1_data"></td>
-                                        <td class="table_type1_data"><div class="badge_form is-red">차단</div></td>
-                                        <td class="table_type1_data">
-                                            <div class="check_form">
-                                                <input type="checkbox" class="form-check-input dt-checkboxes">
-                                                <label class="form-check-label">&nbsp;</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <!-- 데이터 없을때 -->
-                                <tbody class="table_nodata" >
-                                    <tr>
-                                        <td colspan="10">
-                                            회원정보를 검색해 주세요
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                           
-                        </div>
-                        <div class="table_bottom">
-                            <div class="table_bottom_left">
-                                <span class="main_text">
-                                    총 <span class="tx--blue1">2634 </span>항목 중 1~10 항목 표시					
-                                </span>
-                            </div>
-                            <div class="table_bottom_right">
-                                <!------------------ 페이지 이동 ---------------->
-                                <nav aria-label="Page navigation example" class="page_list">
-                                    <ul class="pagination">
-                                      <li class="page-item">
-                                        <a class="page-link pl_arrow" href="#" aria-label="Previous">
-                                          <span aria-hidden="true">«</span>
-                                        </a>
-                                      </li>
-                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                      <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                      <li class="page-item">
-                                        <a class="page-link pl_arrow" href="#" aria-label="Next">
-                                          <span aria-hidden="true">»</span>
-                                        </a>
-                                     </li>
-                                    </ul>
-                                </nav>
-                                <div class="page_input_frame">
-                                    <input class="page_input" value=""> / 125
-                                    <button type="button" class="btn page_btn">이동</button>
+                                <div class="table_bottom_right">
+                                    <!------------------ 페이지 이동 ---------------->
+                                    <nav aria-label="Page navigation example" class="page_list">
+                                        <ul class="pagination">
+                                          <li class="page-item">
+                                            <a class="page-link pl_arrow" href="#" aria-label="Previous">
+                                              <span aria-hidden="true">«</span>
+                                            </a>
+                                          </li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link pl_arrow" href="#" aria-label="Next">
+                                              <span aria-hidden="true">»</span>
+                                            </a>
+                                         </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="page_input_frame">
+                                        <input class="page_input" value=""> / 125
+                                        <button type="button" class="btn page_btn">이동</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
