@@ -70,3 +70,40 @@ function selectAll(selectAll)  {
       checkbox.checked = selectAll.checked
     })
   }
+
+
+
+
+//팝업 - popup.js
+  function MM_openBrWindow(theURL,winName,features) { 
+    window.open(theURL,winName,features);
+}
+  function ViewImage(){ //이미지 미리보기
+    window.open("../popup/popup_img_preview.html","image_preview","width=500,height=450,scrollbars=yes, status=no, resizable=yes, titlebar=no");
+}	
+
+
+//모달 - modal.js
+const modal = document.getElementById("modal_wrap")
+const btnModal = document.getElementById("modal_on_btn")
+    btnModal.addEventListener("click", e => {
+        modal.style.display = "flex"
+    })
+
+const closeBtn = modal.querySelector(".modal_close")
+    closeBtn.addEventListener("click", e => {
+        modal.style.display = "none"
+    })
+
+modal.addEventListener("click", e => {
+    const evTarget = e.target
+    if(evTarget.classList.contains("modal_bg")) {
+        modal.style.display = "none"
+    }
+})
+
+window.addEventListener("keyup", e => {
+    if(modal.style.display === "flex" && e.key === "Escape") {
+        modal.style.display = "none"
+    }
+})

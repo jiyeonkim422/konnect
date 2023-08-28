@@ -4,6 +4,25 @@
     min-width:1000px;
 }
 
+.uio_wrap{
+    margin:0 auto;
+    width:1080px;
+    margin-top:40px;
+    height:auto !important;
+    margin-bottom:100px;
+}
+.uio_wrap h2{
+    padding-bottom:10px;
+}
+
+.uio_box{
+    border:2px solid #dddd;
+    margin-top:12px;
+    margin-bottom:30px;
+    padding:20px;
+}
+
+
 /** 좌측 left nav menu **/
 .side_nav{
     width: 240px;
@@ -37,6 +56,9 @@
     width:auto;
     height:100%;
 }
+
+
+
 
 
 
@@ -467,12 +489,33 @@
 }
 
 
+.brand_info_number{
+    display: flex;
+    width: 100%;
+    gap:12px;
+}
+.brand_info_number + .brand_info_number{
+    padding-top:12px;
+}
+.brand_info_number > button{
+    width:50px;
+}
+.brand_info_number_in{
+    display: flex;
+    width: calc(100% - 50px);
+    gap: 4px;
+    flex-direction: column;
+}
 
 
 
 .btn_box{
     margin-top:30px;
+    display: flex;
+    justify-content: flex-end;
+    gap:4px;
 }
+
 
 /** footer **/
 .footer{
@@ -489,4 +532,161 @@
 }
 .footer_detail{
     font-size:12px;
+}
+
+
+
+/************** 팝업 popup ***************/
+#popup_wrap{
+    background-color:#fff;
+}
+
+.popup_top{
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #EBEDF3;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup_tit{
+    font-size:18px;
+    font-weight:700;
+    padding:0 20px;
+}
+.logo_bk{
+    height:40px;
+    padding:0 20px;
+}
+
+.popup_content{
+    width:100%;
+    height:auto;
+    padding:20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid #EBEDF3;
+}
+.popup_content > p{
+    font-size:15px;
+    line-height:1.4;
+}
+
+.popup_content > img{
+    width:100%;
+    height:auto;
+}
+.popup_btn{
+    width:100%;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+}
+
+
+
+/************** 모달 modal ***************/
+#modal_wrap.modal_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.modal_window {
+    background:#fff;   
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    height:auto;
+    position: relative;
+    top: -100px;
+}
+
+
+.modal_s{
+    width:400px;
+}
+.modal_m{
+    width:600px;
+}
+.modal_l{
+    width:800px;
+
+}
+.modal_top{
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #EBEDF3; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal_tit {
+    font-size:18px;
+    font-weight:700;
+    padding:0 20px;
+
+}
+ .modal_title h2 {
+    display: inline;
+}
+.modal_close {
+    display: inline;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.modal_content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+/************** 알럿 alert ***************/
+
+.alert_window{
+    width:300px;
+}
+.alert_content{
+    text-align:center;
+    font-size:18px;
+    font-weight:500;
+    line-height:1.5;
+    height:180px;
+}
+
+.popup_btn.alert{
+    padding:0;
+    gap:0;
+}
+.popup_btn.alert .btn{
+    border:none;
+    padding:0;
+    width:50%;
+    border-radius:0;
+    height:50px;
+    font-size:14px;
+}
+
+
+.popup_btn.alert .btn + .btn{
+    border-left:1px solid #EBEDF3;
 }

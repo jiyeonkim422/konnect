@@ -75,6 +75,9 @@ select:disabled {
 .mb_30{
     margin-bottom:30px !important;
 }
+.mb_40{
+    margin-bottom:40px !important;
+}
 .mb_60{
     margin-bottom:60px !important;
 }
@@ -100,7 +103,9 @@ select:disabled {
     padding-left:10px !important;
 }
 
-
+.pb_40{
+    padding-bottom:40px !important;
+}
 
 /****************** width height ******************/
 .w_100per{
@@ -126,6 +131,13 @@ select:disabled {
     height:300px !important;
 }
 
+
+.min_h_100{
+    min-height:100px !important;
+}
+.min_h_300{
+    min-height:300px !important;
+}
 
 /****************** 폰트 font ******************/
 @font-face {
@@ -296,16 +308,11 @@ button:not(:disabled),
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    border-color:#ccc;
-    color: #555;
     padding: 6px 12px;
     font-weight:500;
 }
 
-.btn:hover{
-    background-color:#555;
-    color:#fff;
-}
+
 
 .btn--full{
     width:100%;
@@ -321,11 +328,19 @@ button:not(:disabled),
     font-weight:600;
 }
 .btn--lg{
-    height:48px;
+    height:40px;
     font-size:14px;
     font-weight:700;
+    min-width:80px;
 }
 
+
+.btn--cancle{
+    color: #555;
+}
+.btn--confirm{
+    color: #3b71ca;
+}
 
 .btn--option{
     background-color:#313a46;
@@ -337,6 +352,26 @@ button:not(:disabled),
 }
 
 
+.btn--basic{
+    border-color:#ccc;
+    color: #555;
+}
+.btn--basic:hover{
+    background-color:#555;
+    color:#fff;
+}
+
+
+.btn--fill-primary{
+    border-color:#3b71ca;
+    background-color:#3b71ca;
+    color:#fff;
+}
+.btn--fill-primary:hover{
+    border-color:#3b71ca;
+    background-color:#fff;
+    color:#3b71ca;
+}
 .btn--primary{
     border-color:#3b71ca;
     background-color:#fff;
@@ -380,7 +415,8 @@ button:not(:disabled),
     color:#555;
 }
 
-.btn_close{
+.btn_close   
+{
     background-image:url(../img/svg/ic_close_m.svg);
     background-repeat:no-repeat;
     background-position:center;
@@ -534,7 +570,6 @@ select.input_form option{
 }
   .select_option{
     position: relative;
-    display:inline-block;
     user-select: none;
     height:28px;
     border-radius:4px;
@@ -652,6 +687,20 @@ select.input_form option{
     display:none !important;
 }
 
+.align_center{
+    align-items: center !important;
+}
+
+.gap4{
+    gap:4px !important;
+}
+.gap6{
+    gap:6px !important;
+}
+.gap10{
+    gap:10px !important;
+}
+
 
 
 /****************** 포지션 position ******************/
@@ -672,12 +721,11 @@ select.input_form option{
 
 
 
-
 /****************** table 테이블 ******************/
 
 .table_form{
     width:100%;
-    margin-top:14px;
+    padding-top:14px;
     overflow-x: auto;
 }
 .table_default{
@@ -695,6 +743,7 @@ select.input_form option{
 .right_border{
     border-right:1px solid #e1e1e1;
 }
+
 
 
 /** 테이블 가로정렬 **/
@@ -753,7 +802,7 @@ select.input_form option{
     width:160px;
     min-width:160px;
     vertical-align: text-top;
-    font-weight:400;
+    font-weight:600;
     line-height:1.5;
 }
 .table_type2_data{
@@ -851,6 +900,14 @@ select.input_form option{
     width:24px;
     height:24px; 
 }
+.ic_close_l{
+    background-image:url(../img/svg/ic_close_l.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px; 
+}
+
 
 
 /** icon 20px **/
@@ -861,7 +918,7 @@ select.input_form option{
     width:20px;
     height:20px; 
 }
-.ic_close_m.is-{
+.ic_close_m.is{
     background-image:url(../img/svg/ic_close_m.svg);
     background-repeat:no-repeat;
     background-position:center;

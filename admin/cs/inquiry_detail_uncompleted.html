@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="tele√phone=no">
 
         <title>Konnect Admin</title>
 
@@ -53,14 +53,14 @@
                             <h1 class="main_tit">미완료 문의 내역</h1>
                             <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
-                                  <li class="breadcrumb-item"><a href="../cs/inquiry_list.html">고객지원</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">상담내역조회</li>
+                                    <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="../cs/inquiry_list.html">CS/운영</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">미완료 문의 내역</li>
                                 </ol>
                               </nav>
                         </div>
                         <div class="content">
-                            <div class="table_form">
+                            <div class="table_form pb_40">
                                 <table class="table_default table_type2">
                                     <div class="sub_tit_box">
                                         <span class="sub_tit">고객 정보</span>
@@ -76,12 +76,11 @@
                                         <tr class="table_type2_row">
                                             <th class="table_type2_head">이메일 주소</th>
                                             <td class="table_type2_data full"><a href="" class="text_link">konnect@email.com</a></td>
-    
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="table_form mt_40">
+                            <div class="table_form pb_40">
                                 <table class="table_default table_type2">
                                     <div class="sub_tit_box">
                                         <span class="sub_tit">고객 문의 정보</span>
@@ -131,7 +130,7 @@
                                         </tr>
                                     </tbody>
                                     <!-- 데이터 없을때 -->
-                                    <!-- <tbody class="table_nodata" >
+                                    <!-- <tbody class="table_nodata top_border_bold" >
                                         <tr>
                                             <td colspan="10">    
                                                 일치하는 정보가 없습니다.
@@ -140,7 +139,7 @@
                                     </tbody> -->
                                 </table>
                             </div>
-                            <div class="table_form mt_40">
+                            <div class="table_form">
                                 <table class="table_default table_type2">
                                     <div class="sub_tit_box">
                                         <span class="sub_tit">문의 처리 내용</span>
@@ -192,7 +191,7 @@
                                         <tr class="table_type2_row">
                                             <th class="table_type2_head">처리 내용</th>
                                             <td class="table_type2_data full">
-                                                <textarea class="textarea_form h_100" aria-label="textarea" placeholder="처리하신 내용을 작성해주세요."></textarea>
+                                                <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="처리하신 내용을 작성해주세요."></textarea>
                                                 <p class="mt_10">
                                                     내부 관리를 위한 처리내용입니다.<br/>
                                                     고객에게는 발송되지 않습니다.
@@ -202,7 +201,7 @@
                                         <tr class="table_type2_row">
                                             <th class="table_type2_head">답변 내용<span class="required">*</span></th>
                                             <td class="table_type2_data full">
-                                                <textarea class="textarea_form h_300" aria-label="textarea" placeholder="답변 내용을 작성해주세요."></textarea>
+                                                <textarea class="textarea_form min_h_300" aria-label="textarea" placeholder="답변 내용을 작성해주세요."></textarea>
                                                 <p class="mt_10">
                                                     고객이 수신하게 되는 답변 내용입니다.<br/>
                                                     ‘답변 이메일 수신 희망’ 고객과 미가입 고객에게는 이메일이 함께 발송됩니다.
@@ -237,17 +236,17 @@
                                         </tr>
                                     </tbody>
                                     <!-- 데이터 없을때 -->
-                                    <tbody class="table_nodata" >
+                                    <!-- <tbody class="table_nodata top_border_bold" >
                                         <tr>
                                             <td colspan="10">    
                                                 일치하는 정보가 없습니다.
                                             </td>         
                                         </tr>
-                                    </tbody>
+                                    </tbody> -->
                                 </table>
                             </div>
                             <div class="btn_box">
-                                <button class="btn btn--lg ">목록으로</button>
+                                <button type="button" class="btn btn--basic btn--lg">목록으로</button>
                             </div>
                         </div>
                     </div>
