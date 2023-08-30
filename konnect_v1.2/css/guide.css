@@ -142,6 +142,10 @@ textarea {
     margin:0;
 }
 
+.btn_box{
+    margin:40px 0;
+}
+
 
 /****************** 마진 margin ******************/
 .mt_2{
@@ -185,6 +189,9 @@ textarea {
 .mb_30{
     margin-bottom:30px !important;
 }
+.mb_40{
+    margin-bottom:40px !important;
+}
 .mb_60{
     margin-bottom:60px !important;
 }
@@ -200,6 +207,15 @@ textarea {
     padding:0 40px;
 }
 
+.p_20{
+    padding:20px !important;
+}
+
+
+.pt_10{
+    padding-top:10px !important;
+}
+
 
 
 .pb_10{
@@ -207,6 +223,9 @@ textarea {
 }
 .pb_20{
     padding-bottom:20px !important;
+}
+.pb_30{
+    padding-bottom:30px !important;
 }
 .pb_40{
     padding-bottom:40px !important;
@@ -218,7 +237,27 @@ textarea {
     padding-bottom:100px !important;
 }
 
+.pr_8{
+    padding-right:8px !important;
+}
+.pr_10{
+    padding-right:10px !important;
+}
 
+
+/****************** width height ******************/
+.w_100per{
+    width:100% !important;
+}
+.w_50per{
+    width:50% !important;
+}
+
+
+
+.h_auto{
+    height:auto !important;
+}
 
 /****************** 텍스트 text ******************/
 
@@ -311,8 +350,6 @@ textarea {
 
 
 
-
-
 .tx--left{
     text-align:left !important;
 }
@@ -346,6 +383,14 @@ textarea {
 }
 .tx--warning{
     color:#CE2827 !important;
+}
+
+.tx--gradient{
+    font-weight:700;
+    background: linear-gradient(to right, #00a3ff, #8ae9e2, #51fff2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 
@@ -418,6 +463,10 @@ textarea {
     color:#00a3ff;
 }
 
+.badge.en{
+    height:auto;
+    border-radius:10px;
+}
 .badge{
     padding:4px 10px;
     height:22px;
@@ -429,6 +478,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .badge--fill-gray{
@@ -448,6 +498,10 @@ textarea {
 .d_inlineflex{
     display:flex !important;
 }
+.align_center{
+    align-items: center !important;
+}
+
 
 .gap10{
     gap:10px !important;
@@ -485,9 +539,12 @@ textarea {
 .dot_list > li{
     position: relative;
     padding-left: 12px;
-    line-height: 24px;
+    line-height: 1.6;
     letter-spacing: -.3px;
     margin-left:6px;
+}
+.dot_list > li:last-child{
+    margin-bottom:0;
 }
 .dot_list > li:before {
     position: absolute;
@@ -498,6 +555,10 @@ textarea {
     border-radius: 50%;
     background-color: #80888a;
     content: "";
+}
+
+.dot_list.dot_list2 > li{
+    margin-bottom:8px;
 }
 
 
@@ -523,6 +584,16 @@ textarea {
 
 /****************** 아이콘 icon ******************/
 
+
+
+/** icon 32px **/
+.ic_notice{
+    background-image: url(../img/svg/ic_notice.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:32px;
+    height:32px;
+}
 
 /** icon 24px **/
 .ic_mypage{
@@ -619,7 +690,13 @@ textarea {
     width:24px;
     height:24px;
 }
-
+.ic_close_l{
+    background-image: url(../img/svg/ic_close_l.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
 
 
 
@@ -672,6 +749,28 @@ textarea {
     width:20px;
     height:20px;
 }
+.ic_location{
+    background-image: url(../img/svg/ic_location.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+.ic_phone{
+    background-image: url(../img/svg/ic_phone.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+.ic_copy{
+    background-image: url(../img/svg/ic_copy.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+
 
 
 /** icon 12px **/

@@ -307,6 +307,8 @@ const bottomSheet = document.querySelector(".bottomsheet");
 const sheetOverlay = bottomSheet.querySelector(".sheet-overlay");
 const sheetContent = bottomSheet.querySelector(".bs_box");
 const dragIcon = bottomSheet.querySelector(".drag-icon");
+var spanes = document.getElementsByClassName("close_modal");
+
 
 let isDragging = false, startY, startHeight;
 
@@ -320,7 +322,7 @@ const showBottomSheet = () => {
 const updateSheetHeight = (height) => {
     sheetContent.style.height = `${height}vh`; //updates the height of the sheet content
     // Toggles the fullscreen class to bottomSheet if the height is equal to 100
-    // bottomSheet.classList.toggle("fullscreen", height === 100);
+    bottomSheet.classList.toggle("fullscreen", height === 100);
 }
 
 // Hide the bottom sheet and show body vertical scrollbar
@@ -351,10 +353,11 @@ const dragStop = () => {
     isDragging = false;
     bottomSheet.classList.remove("dragging");
     const sheetHeight = parseInt(sheetContent.style.height);
-    sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 75 ? updateSheetHeight(90) : hideBottomSheet();
+    sheetHeight < 50 ? hideBottomSheet() : updateSheetHeight(80);
+    // sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 70 ? updateSheetHeight(70) : hideBottomSheet();
 }
 
-dragIcon.addEventListener("mousedown", dragStart);
+dragIcon.addEventListener("mousedown", dragStart);  
 document.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 

@@ -42,15 +42,33 @@ main > .section_collabo{
     padding: 40px 20px 20px;
     display: flex;
     gap: 20px;
-    margin-bottom:40px;
     position:relative;
     flex-direction: column;
 }
+.collabo_info_box + .collabo_info_box{
+    margin-top:40px;
+}
+
+.collabo_info_box.p_20{
+    gap:10px;
+}
+.collabo_info_box.p_20 + .collabo_info_box.p_20{
+    margin-top:20px;
+}
+
 .collabo_info_box > .label{
     position:absolute;
     top: -16px;
     left: 50%;
     transform: translateX(-50%);
+    white-space: pre;
+}
+
+.collabo_info_number{
+    display:flex;
+}
+.collabo_info_number > span{
+    width:26px;
 }
 
 
@@ -108,6 +126,19 @@ main > .section_collabo{
 .benefit_info_box + .benefit_info_box{
     margin-top: 20px;
 }
+
+.benefit_info_box_multi{
+    flex-direction: column;
+}
+.benefit_info_box_multi .benefit_info{
+    height:auto;
+}
+.benefit_info_box_inner{
+    display:flex;
+    gap:18px;
+}
+
+
 .benefit_info_left{
     width:70px;
     display:flex;
@@ -178,9 +209,11 @@ main > .section_collabo{
 
 .collabo_benefit.benefit_plus{
     margin-top:80px;
+    /* margin-bottom:40px; */
 }
 .collabo_benefit.benefit_plus .benefit_tit{
-    font-size:20px
+    font-size:20px;
+    line-height:26px;
 }
 .collabo_benefit.benefit_plus .benefit_detail{
     font-size:16px;
