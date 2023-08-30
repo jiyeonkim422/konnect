@@ -4,7 +4,7 @@ input,
 select,
 textarea {
     font-family: 'Pretendard',sans-serif;
-    color:#555;
+    color:#666;
 }
 
 [role=button] {
@@ -103,6 +103,9 @@ select:disabled {
     padding-left:10px !important;
 }
 
+.pb_20{
+    padding-bottom:20px !important;
+}
 .pb_40{
     padding-bottom:40px !important;
 }
@@ -261,7 +264,7 @@ select:disabled {
     line-height:1.4;
 }
 .default_text{
-    font-size:12px;
+    font-size:12.5px;
     line-height:1.4;
     color:#000;
 }
@@ -319,17 +322,17 @@ button:not(:disabled),
 }
 .btn--xs{
     height:24px;
-    font-size:12px;
+    font-size:12.5px;
     font-weight:500;
 }
 .btn--md{
-    height:28px;
-    font-size:12px;
+    height:32px;
+    font-size:13px;
     font-weight:600;
 }
 .btn--lg{
     height:40px;
-    font-size:14px;
+    font-size:15px;
     font-weight:700;
     min-width:80px;
 }
@@ -415,13 +418,12 @@ button:not(:disabled),
     color:#555;
 }
 
-.btn_close   
-{
+.btn_close{   
     background-image:url(../img/svg/ic_close_m.svg);
     background-repeat:no-repeat;
     background-position:center;
-    width:28px;
-    height:28px; 
+    width: 32px;
+    height:32px; 
 }
 .btn_close:hover{
     border-width:2px;
@@ -442,19 +444,19 @@ input:focus{
     outline:none;
 }
 .input_form{
-    border: 1px solid #ccc;
+    border: 1px solid #d3d8e3;
     border-radius:4px;
     padding:5px 8px;
-    font-size:12px;
+    font-size:13px;
     display:flex;
-    height:28px;
+    height:32px;
     align-items: center;
 }
 .input_search{
     min-width:240px;
 }
 .input_form::placeholder{
-    color:#bbb;
+    color:#a6adbb;
 }
 
 
@@ -471,7 +473,7 @@ select.input_form option{
     background-repeat: no-repeat;
     background-position:95%;
     background-size: auto;
-    font-size:12px;
+    font-size:12.5px;
 }
 .multiple-select:active{
     color:#000;
@@ -486,15 +488,15 @@ select.input_form option{
 
 /** textarea **/
 .textarea_form{
-    border: 1px solid #ccc;
-    font-size:12px;
+    border: 1px solid #d3d8e3;
+    font-size:13px;
     line-height:1.6;
     padding:5px 8px;
     width:100%;
     border-radius: 4px;
 }
 .textarea_form::placeholder{
-    color:#bbb;
+    color:#a6adbb;
 }
 
 
@@ -571,7 +573,7 @@ select.input_form option{
   .select_option{
     position: relative;
     user-select: none;
-    height:28px;
+    height:32px;
     border-radius:4px;
     padding:5px 18px 5px 8px;
     width:120px;
@@ -579,7 +581,7 @@ select.input_form option{
     background-repeat: no-repeat;
     background-position:right 5px center;
     background-size: auto;
-    font-size:12px;
+    font-size:13px;
   }
 
 
@@ -725,8 +727,8 @@ select.input_form option{
 
 .table_form{
     width:100%;
-    padding-top:14px;
-    overflow-x: auto;
+    padding-top:10px;
+    overflow-x: auto;;
 }
 .table_default{
     min-width:1000px;
@@ -752,20 +754,20 @@ select.input_form option{
 }
 .table_type1_head{
     padding: 0 0.6rem;
-    color:#000;
-    font-size: 13px;
+    color:#313a46;
+    font-size: 14px;
     font-weight: 600;
-    border-bottom:1px solid #e1e1e1;
-    height:40px;
-    background-color:#f1f1f1;
-    border-top:1px solid #000;
+    border-bottom:1px solid #d3d8e3;
+    height:50px;
+    background-color:#f3f6f9;
+    border-top:1px solid #313a46;
 }
 .table_type1_data{
     padding: 0 0.6rem;
-    font-size:13px;
-    border-bottom:1px solid #e1e1e1;
+    font-size:14px;
+    border-bottom:1px solid #d3d8e3;
     text-align:center;
-    height:48px;
+    height:50px;
 }
 
 .table_nodata{
@@ -775,7 +777,7 @@ select.input_form option{
 }
 .table_nodata td{
     padding: 80px 0;
-    border-bottom:1px solid #e1e1e1;
+    border-bottom:1px solid #d3d8e3;
 
 }
 
@@ -786,24 +788,20 @@ select.input_form option{
     width:100%;
 }
 .table_type2_row{
-    border-bottom:1px solid #e1e1e1;
     width:100%;
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
 }
 
 .table_type2_head{
     padding: 0.85rem;
-    font-size: 13px;
-    text-align:left;
-    background-color:#f1f1f1;
-    border-right:1px solid #e1e1e1;
+    font-size: 14px;
+    text-align:right;
     width:160px;
     min-width:160px;
     vertical-align: text-top;
     font-weight:600;
-    line-height:1.5;
+    line-height:1.7;
+    color:#7d7c8b;
 }
 .table_type2_data{
     padding: 0.6rem 0.85rem;
@@ -830,7 +828,7 @@ select.input_form option{
     display: inline-block;
     padding: 4px 8px;
     border-radius: 13px;
-    font-size: 11px;
+    font-size: 12px;
     line-height: normal;
     font-weight:600;
 }

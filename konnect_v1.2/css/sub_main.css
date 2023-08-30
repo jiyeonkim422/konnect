@@ -5,24 +5,6 @@
     align-items: center;
     gap:14px;
 }
-.sub_header.deactive .navigation_bar{
-    background-color: transparent;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
-    top:0;
-    z-index:99;
-  }
-  .sub_header.active .navigation_bar{
-    background-color: #fff;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
-    top:0;
-    z-index:99;
-  }
 
 main > .section_sub_main{
     padding-top:70px;
