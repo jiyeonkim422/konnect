@@ -393,6 +393,9 @@ textarea {
     color: transparent;
 }
 
+.tx--underline{
+    text-decoration:underline;
+}
 
 .regular{
     font-weight:400 !important;
@@ -464,8 +467,10 @@ textarea {
 }
 
 .badge.en{
-    height:auto;
-    border-radius:10px;
+    font-size:9px;
+    padding:0;
+    width:72px;
+    font-weight:500;
 }
 .badge{
     padding:4px 10px;

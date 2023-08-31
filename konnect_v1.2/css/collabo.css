@@ -179,9 +179,13 @@ main > .section_collabo{
 .benefit_tit{
     color:#fff;
     font-size:16px;
-    line-height:22px;
+    line-height:1.4;
     font-weight:700;
 }
+.benefit_tit.en{
+    font-size:14px;
+}
+
 .benefit_detail{
     color:#b3b3b3;
     font-size:14px;
@@ -218,6 +222,10 @@ main > .section_collabo{
 .collabo_benefit.benefit_plus .benefit_detail{
     font-size:16px;
     line-height:22px;
+}
+.collabo_benefit.benefit_plus .benefit_detail.en{
+    font-size:14px;
+    line-height:20px;
 }
 .collabo_benefit.benefit_plus .benefit_detail_li::before{
     top:8px;
