@@ -372,12 +372,20 @@ textarea {
 .tx--black{
     color:#000 !important;
 }
+
+.tx--darkblue{
+    color:#002863 !important;
+}
 .tx--blue1{
     color:#0039CC !important;
 }
 .tx--blue2{
     color:#00A3FF !important;
 }
+.tx--lightblue{
+    color:#9FB1CC !important;
+}
+
 .tx--gold{
     color:#e58c23 !important;
 }

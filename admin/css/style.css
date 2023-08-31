@@ -298,6 +298,30 @@
     padding:20px;
     height:100%;
 }
+
+.row_box{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+.row_box + .row_box{
+    margin-top:20px;
+}
+
+.column_box{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+}
+.column_box + .column_box{
+    margin-left:20px;
+}
+.menu_list{
+    width:20%;
+}
+
+
+
 .content{
     width:100%;
     height:auto;
@@ -316,7 +340,7 @@
     height:32px;
     display:flex;
     gap:50px;
-    color:#7d7c8b;
+    color:#9493a7;
 }
 .check_option_box + .check_option_box{
     margin-top:12px;
