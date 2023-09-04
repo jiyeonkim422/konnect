@@ -543,6 +543,9 @@ textarea {
 .column_direction{
     flex-direction:column !important;
 }
+.flex_nowrap{
+    flex-wrap: nowrap !important;
+}
 
 
 .gap10{
