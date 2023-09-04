@@ -108,6 +108,15 @@ var swiper = new Swiper(".membership_swiper", {
     });
 
 
+//메인 - 혜택 슬라이드
+var swiper = new Swiper(".card_benefit_swiper", {
+    spaceBetween: 30,
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
 
 
@@ -153,6 +162,24 @@ var swiper = new Swiper(".membership_swiper", {
 
 	});
 
+
+// line_tab - 탭 선택시 해당정보 노출 
+$(document).ready(function () {
+
+    $('.line_tab1').addClass('is-active'); // 초깃값 설정
+    $('.line_tab_content1').addClass('is-active');
+
+    $('.tab_top .line_tab').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('.tab_top .line_tab').removeClass('is-active');
+        $('.line_tab_content').removeClass('is-active');
+
+        $(this).addClass('is-active');
+        $("#" + tab_id).addClass('is-active');
+    })
+
+})
 
 
 

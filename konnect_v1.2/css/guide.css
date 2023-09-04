@@ -166,10 +166,15 @@ textarea {
 .mt_30{
     margin-top:30px !important;
 }
+.mt_40{
+    margin-top:40px !important;
+}
 .mt_60{
     margin-top:60px !important;
 }
-
+.mt_80{
+    margin-top:80px !important;
+}
 
 .mb_2{
     margin-bottom:2px !important;
@@ -218,6 +223,12 @@ textarea {
 
 
 
+.pb_2{
+    padding-bottom:2px !important;
+}
+.pb_4{
+    padding-bottom:4px !important;
+}
 .pb_10{
     padding-bottom:10px !important;
 }
@@ -340,6 +351,12 @@ textarea {
     letter-spacing: -0.5px;
 }
 
+.membership_grade{
+    font-size:36px;
+    font-weight:900;
+    text-align: center;
+    line-height:1.3;
+}
 
 
 
@@ -445,6 +462,10 @@ textarea {
     text-overflow: ellipsis;
 }
 
+.line_height_0{
+    line-height:normal;
+}
+
 
 /****************** 라벨&뱃지 label&badge ******************/
 
@@ -511,8 +532,16 @@ textarea {
 .d_inlineflex{
     display:flex !important;
 }
+
 .align_center{
     align-items: center !important;
+}
+.align_start{
+    align-items:flex-start !important;
+}
+
+.column_direction{
+    flex-direction:column !important;
 }
 
 
@@ -720,6 +749,13 @@ textarea {
     width:24px;
     height:24px;
 }
+.ic_arrow_L_wh{
+    background-image: url(../img/svg/ic_arrow_L_wh.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
 
 
 .tabbar_nav_item.is-active .tabbar_icon .ic_home {
@@ -784,6 +820,20 @@ textarea {
     height:20px;
 }
 
+.ic_krown{
+    background-image: url(../img/svg/ic_krown.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+.ic_membership{
+    background-image: url(../img/svg/ic_membership.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
 
 
 /** icon 12px **/

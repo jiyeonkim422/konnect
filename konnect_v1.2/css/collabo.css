@@ -82,11 +82,7 @@ main > .section_collabo{
     margin-top:36px;
 }
 
-.card_img{
-    width:193px;
-    height:286px;
-    margin:0 auto;
-}
+
 .collabo_card_img{
     margin-top:30px;
 }
@@ -169,14 +165,14 @@ main > .section_collabo{
     flex-direction: column;
     justify-content: center;
 }
-.brand_name{
+.benefit_info .brand_name{
     color:#b3b3b3;
     font-size:14px;
     line-height:20px;
     letter-spacing:-0.7px;
     font-weight:600;
 }
-.benefit_tit{
+.benefit_info .benefit_tit{
     color:#fff;
     font-size:16px;
     line-height:1.4;

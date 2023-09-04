@@ -199,6 +199,12 @@
     height: auto;
 }
 
+.footer_in .app_help{
+    color:#fff;
+}
+
+
+
 .footer_right {
     display: flex;
     flex-direction: column;
@@ -311,7 +317,7 @@
 /** 메인배너 하단영역 **/
 .main_img_bottom {
     width: 100%;
-    height: 140px;
+    height: 128px;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -329,7 +335,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 40px;
     gap: 4px;
     margin-left:70px;
 }
@@ -345,10 +350,12 @@
 
 .app_download {
     display: flex;
+    flex-direction: column;
 }
 
 .main_img_bottom > .app_download {
-    width: 500px;
+    width: 450px;
+    padding-right:60px;
 }
 .app_download > ul {
     width: 100%;
@@ -361,6 +368,25 @@
     width: 190px;
     height: auto;
 }
+
+.app_help{
+    font-size:16px;
+    color:#032863;
+    font-weight:500;
+    padding-top:16px;
+    display: flex;
+    align-items: center;
+    gap:6px;
+    padding-left:2px;
+}
+
+.ic_notice > img{
+    width:20px;
+    height:auto;
+}
+
+
+
 .app_download .app_down_link img {
     width: 100%;
     height: auto;
@@ -984,6 +1010,17 @@
     height: auto;
     margin: 0 auto;
     margin-bottom: 14px;
+}
+
+.m_footer_in .ic_notice > img{
+    width:17px;
+}
+.m_footer_in .app_help{
+    color:#fff;
+    font-weight:400;
+    font-size:3.5vw;
+    justify-content: center;
+    padding-left:0;
 }
 
 .m_footer_top {
