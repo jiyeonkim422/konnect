@@ -42,6 +42,16 @@
 }
 
 
+
+
+.filter-tab_voucher{
+    display:none;
+}
+.filter-tab_voucher.is-active{
+    display:block;
+}
+
+
 .card_benefit_info_box{
     padding:10px 0 10px;
     background-color:transparent;
@@ -90,10 +100,7 @@
 .card_benefit_swiper{
     position:relative;
     padding:0 20px;
-    padding-bottom:30px;
-}
-.card_benefit_pagination.swiper-pagination{
-    bottom:-10px;
+    padding-bottom:40px;
 }
 
 .no_benefit{

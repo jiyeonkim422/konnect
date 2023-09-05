@@ -120,26 +120,23 @@ var swiper = new Swiper(".card_benefit_swiper", {
 
 
 
-
-    // tab.js
+    ///// tab_btn0.js (탭 기본)
     // 초깃값 설정
     $('.filter-tab1').addClass('is-active');
-    $('#filter-tab1').addClass('is-active').find('.tab_category_item').addClass('is-active')
+    $('#filter-tab1').addClass('is-active').find('.tab_item0').addClass('is-active')
 
     // click 이벤트마다 리스트형으로 초기화
-    $('.tab_category_btn').on('click', function() {
+    $('.tab_btn0').on('click', function() {
         let tab_id = $(this).attr('data-tab');
 
         $(this).addClass('is-active').parent('li').siblings('li').find('button').removeClass('is-active');
         $("#" + tab_id).siblings('.btn--layout').removeClass('is-active');
         
     });
-
-
-    //tab_category_btn(탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
-    $('.tab_category_btn').on('click', function() {
+    //tab_btn1 (탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+    $('.tab_btn0').on('click', function() {
         $('.filter-tab_content').removeClass('is-active');
-        $('.tab_category_btn').removeClass('is-active');
+        $('.tab_btn0').removeClass('is-active');
         $(this).addClass('is-active');
 
         let tab_id = $(this).attr('data-tab');
@@ -148,6 +145,64 @@ var swiper = new Swiper(".card_benefit_swiper", {
         $("#" + tab_id).addClass('is-active');
 
     });
+
+
+    ///// tab_btn1.js
+    // 초깃값 설정
+    $('.filter-tab1').addClass('is-active');
+    $('#filter-tab1').addClass('is-active').find('.tab_item1').addClass('is-active')
+
+    // click 이벤트마다 리스트형으로 초기화
+    $('.tab_btn1').on('click', function() {
+        let tab_id = $(this).attr('data-tab');
+
+        $(this).addClass('is-active').parent('li').siblings('li').find('button').removeClass('is-active');
+        $("#" + tab_id).siblings('.btn--layout').removeClass('is-active');
+        
+    });
+    //tab_btn1 (탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+    $('.tab_btn1').on('click', function() {
+        $('.card_benefit_list').removeClass('is-active');
+        $('.tab_btn1').removeClass('is-active');
+        $(this).addClass('is-active');
+
+        let tab_id = $(this).attr('data-tab');
+        console.log(tab_id);
+
+        $("#" + tab_id).addClass('is-active');
+
+    });
+
+
+    ///// tab_btn2.js - 두번째
+    // 초깃값 설정
+    $('.filter-tab_voucher1').addClass('is-active');
+    $('#filter-tab_voucher1').addClass('is-active').find('.tab_item2').addClass('is-active')
+
+    // click 이벤트마다 리스트형으로 초기화
+    $('.tab_btn2').on('click', function() {
+        let tab_id = $(this).attr('data-tab');
+
+        $(this).addClass('is-active').parent('li').siblings('li').find('button').removeClass('is-active');
+        $("#" + tab_id).siblings('.btn--layout').removeClass('is-active');
+        
+    });
+    //tab_btn2 (탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+    $('.tab_btn2').on('click', function() {
+        $('.filter-tab_voucher').removeClass('is-active');
+        $('.tab_btn2').removeClass('is-active');
+        $(this).addClass('is-active');
+
+        let tab_id = $(this).attr('data-tab');
+        console.log(tab_id);
+
+        $("#" + tab_id).addClass('is-active');
+
+    });
+
+
+
+
 
 	//bs_tab_category_btn(탭 1개) - 바텀시트 내부 tab
 	$('.bs_tab_category_btn').on('click', function() {

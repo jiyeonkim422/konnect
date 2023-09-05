@@ -411,6 +411,9 @@ main > .section{
     background-color:#fff;
 }
 
+.tab_list2{
+    position:inherit;
+}
 
 
 .tab_category{
