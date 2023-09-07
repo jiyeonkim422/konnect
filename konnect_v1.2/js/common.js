@@ -40,7 +40,7 @@ function goForward(){
 
 //메인 이미지 슬라이드
 var swiper = new Swiper(".main_swiper", {
-    // spaceBetween: 30,
+    spaceBetween: 30,
     pagination: {
         el: ".main_pagination",
         clickable: true,
@@ -56,6 +56,16 @@ var swiper = new Swiper(".membership_swiper", {
 	  clickable: true,
 	},
 });
+
+//메인 - 멤버쉽 카드 슬라이드 
+var swiper = new Swiper(".my_membership_swiper", {
+	// spaceBetween: 30,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+});
+
 
 
 //메인 - 혜택 슬라이드
@@ -449,3 +459,21 @@ document.addEventListener("touchend", dragStop);
 
 sheetOverlay.addEventListener("click", hideBottomSheet);
 showModalBtn.addEventListener("click", showBottomSheet);
+
+
+
+
+//레이어팝업(모달)
+$('.show_layerpopup').on('click', function(e) {
+    e.preventDefault();
+    var el = $($(this).attr('href'));
+    if (!el.hasClass('open')) {
+      el.addClass('open');
+    } else {
+      el.removeClass('open');
+    }
+  });
+  
+  $('.close_layerpopup').on('click', function(e) {
+    $(this).closest('.layerpopup').removeClass('open');
+  });

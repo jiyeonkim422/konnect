@@ -1,4 +1,29 @@
 
+
+
+
+
+
+@media (min-width: 600px) and (max-width : 1025px){
+
+    /** 메인화면 - 멤버십 슬라이드 **/
+    .membership_swiper{
+        padding:13% 30% 30% 30%;
+        max-height:535px;
+    }
+    .membership_swiper .swiper-slide{
+        height: 273px;
+    }
+
+
+    /** 나의멤버십 - 멤버십 슬라이드 **/
+    .my_membership_swiper{
+        padding:0 250px 0;
+    }
+}
+
+
+
 @media (min-width: 450px){
     .responsive{
         padding:0 100px;

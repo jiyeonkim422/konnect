@@ -1,8 +1,3 @@
-body{
-    min-width:320px;
-    max-width:800px;
-    margin:0 auto;
-}
 .wrap{
     position:relative;
 }
@@ -28,6 +23,11 @@ body{
     height: 34px;
 }
 
+#content{
+    min-width:320px;
+    max-width:800px;
+    margin:0 auto;
+}
 
 
 /***** uio  *****/
@@ -196,8 +196,6 @@ body{
     width:100%;
     bottom:0;
     z-index:101; 
-    min-width:320px;
-    max-width:800px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -207,7 +205,10 @@ body{
     padding:0 20px;
     height:100%;
     display:flex;
-    gap:16px;
+    gap:13px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .tabbar_nav_item{
     display:flex;
@@ -215,17 +216,18 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    width:100%;
     gap:8px;
+    width:100%;
+    min-width:46rem
 }
 
 .tabbar_icon{
-    width:24px;
-    height:24px;
+    width:24rem;
+    height:24rem;
 }
 .tabbar_title{
     color:#9fb1cc;
-    font-size:14px;
+    font-size:13rem;
 }
 
 .tabbar_nav_item.is-active .tabbar_title{
@@ -262,8 +264,6 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    min-width:320px;
-    max-width:800px;
     top:0;
 }
 
@@ -346,9 +346,10 @@ main > .section{
 
 
 .card_img{
-    width:193px;
-    height:286px;
+    max-width:212rem;
+   max-height:286rem;
     margin:0 auto;
+    padding:0 10px;
 }
 .card_img > img{
     width:100%;
@@ -849,20 +850,19 @@ main > .section{
     overflow-y: auto;
     /* scrollbar-width: none; */
     padding: 25px 20px;
-    padding-bottom:150px;
-    /* padding-bottom:250px; */
+    padding-bottom:250px;
   }
   .bottomsheet .bs_body::-webkit-scrollbar {
     width: 0;
   }
-  .bottomsheet .bs_body h2 {
+  /* .bottomsheet .bs_body h2 {
     font-size: 1.8rem;
   }
   .bottomsheet .bs_body p {
     margin-top: 20px;
     font-size: 1.05rem;
   }
-
+ */
 
 
 

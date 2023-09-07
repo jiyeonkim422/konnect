@@ -150,6 +150,12 @@ textarea {
 }
 
 /****************** 마진 margin ******************/
+
+
+.m_10{
+    margin:10px !important;
+}
+
 .mt_2{
     margin-top:2px !important;
 }
@@ -214,6 +220,10 @@ textarea {
     padding:0 40px;
 }
 
+
+.p_10{
+    padding:10px !important;
+}
 .p_20{
     padding:20px !important;
 }
@@ -385,6 +395,9 @@ textarea {
 .tx--darkgray{
     color:#ccc !important;
 }
+.tx--darkgray2{
+    color:#a2a2a2 !important;
+}
 .tx--lightgray{
     color:#787878 !important;
 }
@@ -405,9 +418,13 @@ textarea {
     color:#9FB1CC !important;
 }
 
-.tx--gold{
+.tx--gold1{
     color:#e58c23 !important;
 }
+.tx--gold2{
+    color:#FFE189 !important;
+}
+
 .tx--warning{
     color:#CE2827 !important;
 }
@@ -525,7 +542,21 @@ textarea {
     background-color:#0039cc;
     color:#fff;
 }
+.badge--fill-blue2{
+    background-color:#00a3ff;
+    color:#fff;
+}
 
+.badge_square{
+    border-radius:8px;
+}
+.badge_circle{
+    padding:4px 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+}
 
 /****************** display ******************/
 .d_flex{
@@ -542,6 +573,10 @@ textarea {
     align-items:flex-start !important;
 }
 
+.content_center{
+    justify-content: center !important;
+}
+
 .column_direction{
     flex-direction:column !important;
 }
@@ -549,7 +584,9 @@ textarea {
     flex-wrap: nowrap !important;
 }
 
-
+.gap4{
+    gap:4px !important;
+}
 .gap10{
     gap:10px !important;
 }
@@ -627,6 +664,11 @@ textarea {
 }
 
 
+
+/****************** 라인 line border ******************/
+.no_border{
+    border:none !important;
+}
 
 
 /****************** 아이콘 icon ******************/
