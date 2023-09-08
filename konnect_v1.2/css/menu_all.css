@@ -18,13 +18,13 @@ main > .section_menu{
 }
 .profile_name{
     font-weight:700;
-    font-size:22px;
+    font-size:22rem;
     color:#000;
     line-height:1.36;
 }
 .profile_img{
-    width:92px;
-    height:92px;
+    width:92rem;
+    height:92rem;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -39,7 +39,7 @@ main > .section_menu{
     object-fit: cover;
 }
 .btn--icon > span{
-    height:13px;
+    height:15px;
 }
 
 .quick_info{
@@ -113,8 +113,10 @@ main > .section_menu{
 }
 
 .ad_event{
-    width:100%;
-    height:auto;
+    width: 100%;
+    max-width:400px;
+    height: auto;
+    margin:0 auto;
     border-radius: 15px;
 }
 .ad_event > img{

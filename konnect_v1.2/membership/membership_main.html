@@ -49,7 +49,7 @@
     <body class="body_bg_bk"> 
         <div class="wrap">
             <!-- // Header -->
-            <header id="header" class="header sub_header bg--black"></header>
+            <header id="header" class="header main_header bg--black"></header>
             <!-- // Content -->                 
             <main id="content" class="sub_main_content">
                 <section class="section section_sub_main">
@@ -481,7 +481,7 @@
                                   <div class="bs_body">
                                       <div class="bs_content">
                                           <div class="bs_content_box">
-                                            <ul class="benefit_info_box bg_light">
+                                            <ul class="benefit_info_box info_box2 bg_light">
                                                 <li class="benefit_info_left">
                                                     <div class="brand_img">
                                                         <img src="../img/temp/brand/hotel_lotte_iconmini.png" alt="lotte"/>
@@ -502,7 +502,7 @@
                                                     </p>
                                                 </li>
                                             </ul>
-                                            <ul class="benefit_info_box bg_light column_direction">
+                                            <ul class="benefit_info_box info_box2 bg_light column_direction">
                                                 <li class="benefit_policy_more show_layerpopup" href="#layerpopup">
                                                     <p class="regular_text tx--darkblue semibold">유의사항 및 문의사항</p>
                                                     <i class="ic ic_arrow_m rotate_270"></i>
@@ -598,7 +598,7 @@
                                     <span class="default_text tx--darkgray">크라운 구매 혜택</span>
                                 </div>
                             </div>
-                            <button class="btn btn--lg btn--full btn--primary2">무료 멤버십 받기</button>
+                            <button type="button" class="btn btn--lg btn--full btn--primary2">무료 멤버십 받기</button>
                         </div>
                         <!-- 바우처 리스트 start -->
                         <div class="line_tab_content line_tab_content2" id="line_tab2">
@@ -666,17 +666,17 @@
                         </div>
                     </div>
                     <div class="section_in event_banner mt_40">
-                        <div class="swiper event_banner_swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                            <div class="swiper-wrapper" id="swiper-wrapper-46ea91b39785cd13" aria-live="polite">
-                                <div class="swiper-slide event_banner_item swiper-slide-active" role="group" aria-label="1 / 2" data-swiper-slide-index="0" style="width: 375px;">
-                                    <a class="img_full" href=""><img src="../img/temp/home_banner6_ko.png" alt="event_banner1"></a>
+                        <div class="swiper event_banner_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide event_banner_item">
+                                    <a class="ad_event" href=""><img src="../img/temp/home_banner6_ko.png" alt="event_banner1"></a>
                                 </div>
-                                <div class="swiper-slide event_banner_item swiper-slide-next" role="group" aria-label="2 / 2" data-swiper-slide-index="1" style="width: 375px;">
-                                    <a class="img_full" href=""><img src="../img/temp/home_banner7_ko.png" alt="event_banner2"></a>
+                                <div class="swiper-slide event_banner_item">
+                                    <a class="ad_event" href=""><img src="../img/temp/home_banner7_ko.png" alt="event_banner2"></a>
                                 </div>
                             </div>
-                            <div class="swiper-pagination count_pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">2</span></div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>                      
+                            <div class="swiper-pagination count_pagination"></div>
+                        </div>                      
                     </div>
                 </section>
             </main>
@@ -696,7 +696,7 @@
         <script type="text/javascript" src="../js/common.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $(".sub_header").load("../views/sub_header_0.html");
+                $(".main_header").load("../views/main_header_0.html");
                 $(".main_footer").load("../views/main_footer.html");
                 $(".tabbar").load("../views/tabbar.html");
             });

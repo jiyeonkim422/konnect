@@ -321,7 +321,7 @@ main > .section{
 }
 
 .section_in + .section_in{
-    margin-top:150px;
+    margin-top:100px;
 }
 .section_header{
     display: flex;
@@ -344,6 +344,28 @@ main > .section{
     object-fit: cover;
 }
 
+.img_frame_150{
+    width:150rem;
+    height:150rem;
+    margin:0 auto;
+}
+.img_frame_150 > img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+.img_frame_240{
+    width:240rem;
+    height:auto;
+    margin:0 auto;
+}
+.img_frame_240 > img{
+    width:100%;
+    height:auto;
+
+}
+
 
 .card_img{
     max-width:212rem;
@@ -362,15 +384,17 @@ main > .section{
 
 
 /** 혜택 안내 **/
-.benefit_swiper{
-    padding-bottom:24px !important;
+
+.swiper.benefit_swiper{
+    padding-bottom:24px ;
+    padding:20px;
 }
 .swiper-slide.brand_slide_group{
     display: flex;
     flex-direction: column;
     gap:20px;
-    padding:20px;
-    align-items: center;
+    padding-bottom:20px;
+    max-width:400px;
 }
 .benefit_pagination{
     bottom:10px !important;
@@ -473,9 +497,13 @@ main > .section{
 
 
 /** 이벤트 배너 슬라이드 **/
-.event_banner_item{
- padding:0 20px;
+.swiper.event_banner_swiper{
+    width:100%;
+    max-width:400px;
+    height:auto;
+    padding:0 20px;
 }
+
 .swiper-pagination.count_pagination{
     background-color:rgba(0, 0, 0, 0.3);
     top:12px;
@@ -504,9 +532,14 @@ main > .section{
 
 /** 리뷰 슬라이드 **/
 
-.review_swiper{
-    padding:40px 50px 0px 50px !important;
+.swiper.review_swiper{
+    padding:0 20px;
 }
+.swiper-slide.review_slide{
+    margin-top:30px;
+    width:265px ;
+}
+
 .review_frame{
     height:260px;
     width:100%;
@@ -564,7 +597,7 @@ main > .section{
 }
 
 .countdown_swiper{
-    margin-top:40px;
+    margin-top:30px;
 }
 .countdown_inner{
     position:absolute;
@@ -624,7 +657,7 @@ main > .section{
 
 /** 브랜드카드 슬라이드 **/
 .brandcard_swiper{
-    padding: 40px 84px 0px 84px !important;
+    padding: 30px 84px 0px 84px !important;
 }
 .brandcard_frame{
     display:flex;
@@ -642,7 +675,12 @@ main > .section{
     flex-direction: column;
     align-items: center;
 }
-
+.brandcard_slide .brandcard_content{
+    opacity:0;
+}
+.brandcard_slide.swiper-slide-active .brandcard_content{
+    opacity:1;
+}
 
 /** 브랜드카드 리스트 **/
 .brandcard_list{

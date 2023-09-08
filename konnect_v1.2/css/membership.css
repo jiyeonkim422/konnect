@@ -183,8 +183,11 @@
 /*** 멤버십 카드 자세히보기 바텀시트 ***/
 .benefit_info_box.bg_light{
     background-color:#f3f4f6;
-    padding:20px 24px;
 }
+.benefit_info_box.bg_dark{
+    background-color:#262626;
+}
+
 .benefit_info_box.bg_light .benefit_info .brand_name{
     color:#002863;
 }
@@ -201,6 +204,20 @@
     font-size:13px;
     line-height:22px;
 }
+
+
+.benefit_info_box.info_box2{
+    padding: 20px 24px;
+}
+
+.benefit_info_box.info_box_solo{
+    padding: 14px 20px;
+}
+.info_box_solo + .info_box_solo{
+    margin-top:12px;
+}
+
+
 
 .benefit_policy_more{
     display: flex;

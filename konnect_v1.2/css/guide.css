@@ -150,7 +150,9 @@ textarea {
 }
 
 /****************** 마진 margin ******************/
-
+.m_0{
+    margin:0 !important;
+}
 
 .m_10{
     margin:10px !important;
@@ -213,6 +215,10 @@ textarea {
 }
 
 /****************** 패딩 padding ******************/
+.p_0{
+    padding:0 !important;
+}
+
 .p_side_20{
     padding:0 20px;
 }
@@ -286,7 +292,7 @@ textarea {
 
 
 .nav_title{
-    font-size:18px;
+    font-size:18rem;
     font-weight:700;
     line-height:22rem;
     display:flex;
@@ -295,7 +301,7 @@ textarea {
 }
 .text_link{
     color:#002863;
-    font-size:14px;
+    font-size:14rem;
     font-weight:700;
 }
 
@@ -590,6 +596,9 @@ textarea {
 .gap10{
     gap:10px !important;
 }
+.gap14{
+    gap:14px !important;
+}
 
 
 /****************** 포지션 position ******************/
@@ -845,6 +854,16 @@ textarea {
     width:20px;
     height:20px;
 }
+.ic_arrow_m_blue2{
+    background-image: url(../img/svg/ic_arrow_m_blue2.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+
+}
+
+
 .ic_location{
     background-image: url(../img/svg/ic_location.svg);
     background-repeat: no-repeat;
