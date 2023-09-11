@@ -107,6 +107,8 @@ var swiper = new Swiper(".my_membership_swiper", {
 
     //공통 - 카운트다운 배너
     var swiper = new Swiper(".countdown_swiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
       pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -117,7 +119,7 @@ var swiper = new Swiper(".my_membership_swiper", {
 
     //공통 - 브랜드카드 슬라이드
     var swiper = new Swiper(".brandcard_swiper", {
-      spaceBetween: 30,
+      slidesPerView: "auto",
       loop:true,
     });
 
@@ -481,3 +483,30 @@ $('.show_layerpopup').on('click', function(e) {
   $('.close_layerpopup').on('click', function(e) {
     $(this).closest('.layerpopup').removeClass('open');
   });
+
+
+
+//alert - alert.js
+// const modal = document.getElementById("modal_wrap")
+// const btnModal = document.getElementById("modal_on_btn")
+//     btnModal.addEventListener("click", e => {
+//         modal.style.display = "flex"
+//     })
+
+// const closeBtn = modal.querySelector(".modal_close")
+//     closeBtn.addEventListener("click", e => {
+//         modal.style.display = "none"                  
+//     })
+
+// modal.addEventListener("click", e => {
+//     const evTarget = e.target
+//     if(evTarget.classList.contains("modal_bg")) {
+//         modal.style.display = "none"
+//     }
+// })
+
+// window.addEventListener("keyup", e => {
+//     if(modal.style.display === "flex" && e.key === "Escape") {
+//         modal.style.display = "none"
+//     }
+// })

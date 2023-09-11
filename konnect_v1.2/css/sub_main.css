@@ -76,10 +76,11 @@ main > .section_sub_main{
     margin-top:100px !important;
 }
 .brand_banner_list{
-    padding-top:12px;
+    padding-top:10px;
     display: flex;
     gap: 20px;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 

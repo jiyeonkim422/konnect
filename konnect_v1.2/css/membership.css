@@ -171,18 +171,15 @@
     align-items: center;
 }
 
-.krown_box img{
-    width:80px;
-    height:auto;
-}
-
-
 
 
 
 /*** 멤버십 카드 자세히보기 바텀시트 ***/
 .benefit_info_box.bg_light{
     background-color:#f3f4f6;
+}
+.benefit_info_box.bg_gray{
+    background-color:#474747;
 }
 .benefit_info_box.bg_dark{
     background-color:#262626;
@@ -211,12 +208,19 @@
 }
 
 .benefit_info_box.info_box_solo{
-    padding: 14px 20px;
+    padding: 12px 20px;
 }
 .info_box_solo + .info_box_solo{
     margin-top:12px;
 }
 
+
+.info_box_slim + .info_box_slim{
+    margin-top:16px;
+}
+.benefit_info_box.info_box_slim{
+    padding: 6px 20px;
+}
 
 
 .benefit_policy_more{

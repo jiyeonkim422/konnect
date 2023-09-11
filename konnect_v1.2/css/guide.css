@@ -153,6 +153,9 @@ textarea {
 .m_0{
     margin:0 !important;
 }
+.m_center{
+    margin:0 auto !important;
+}
 
 .m_10{
     margin:10px !important;
@@ -238,6 +241,18 @@ textarea {
 .pt_10{
     padding-top:10px !important;
 }
+.pt_20{
+    padding-top:20px !important;
+}
+.pt_30{
+    padding-top:30px !important;
+}
+.pt_50{
+    padding-top:50px !important;
+}
+.pt_70{
+    padding-top:70px !important;
+}
 
 
 
@@ -266,6 +281,11 @@ textarea {
     padding-bottom:100px !important;
 }
 
+
+
+.pr_4{
+    padding-right:4px !important;
+}
 .pr_8{
     padding-right:8px !important;
 }
@@ -281,7 +301,9 @@ textarea {
 .w_50per{
     width:50% !important;
 }
-
+.w_230{
+    width:230px !important;
+}
 
 
 .h_auto{
@@ -307,6 +329,13 @@ textarea {
 
 
 
+.huge_tit{
+    font-size:45rem;
+    letter-spacing: -0.3px;
+    color:#000;
+    text-align:center;
+    line-height:50rem;
+}
 .big_tit{
     font-size:28rem;
     font-weight:700;
@@ -383,8 +412,6 @@ textarea {
 }
 
 
-
-
 .tx--left{
     text-align:left !important;
 }
@@ -431,6 +458,17 @@ textarea {
     color:#FFE189 !important;
 }
 
+
+.tx--gold3{
+    color:#eeb23d !important;
+}
+.tx--silver{
+    color:#999 !important;
+}
+.tx--bronze{
+    color:#bb9966 !important;
+}
+
 .tx--warning{
     color:#CE2827 !important;
 }
@@ -459,7 +497,9 @@ textarea {
 .bold{
     font-weight:700 !important;
 }
-
+.extrabold{
+    font-weight:800 !important;
+}
 
 
 .sentence_1{
@@ -489,6 +529,9 @@ textarea {
 
 .line_height_0{
     line-height:normal;
+}
+.line_height_26{
+    line-height:26px;
 }
 
 
@@ -599,6 +642,13 @@ textarea {
 .gap14{
     gap:14px !important;
 }
+.gap20{
+    gap:20px !important;
+}
+
+.gap40{
+    gap:40px !important;
+}
 
 
 /****************** 포지션 position ******************/
@@ -655,6 +705,15 @@ textarea {
 }
 
 
+.dot_list.black_dot > li:before{
+    background-color: #000;
+    width: 4px;
+    height: 4px;
+    top: 9px;
+}
+
+
+
 .dash_list > li{
     position: relative;
     padding-left: 12px;
@@ -691,6 +750,13 @@ textarea {
     background-position:center;
     width:32px;
     height:32px;
+}
+.ic_notice_blue1{
+    background-image: url(../img/svg/ic_notice_blue1.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
 }
 
 /** icon 24px **/
@@ -854,13 +920,19 @@ textarea {
     width:20px;
     height:20px;
 }
+.ic_arrow_m_blue1{
+    background-image: url(../img/svg/ic_arrow_m_blue1.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
 .ic_arrow_m_blue2{
     background-image: url(../img/svg/ic_arrow_m_blue2.svg);
     background-repeat: no-repeat;
     background-position:center;
     width:20px;
     height:20px;
-
 }
 
 

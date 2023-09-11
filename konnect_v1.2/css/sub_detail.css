@@ -66,7 +66,7 @@ main > .section_brand_detail{
 
 
 .brand_detail_box{
-    padding-top:30px;
+    padding-top:10px;
     background-color:#fff;
     position:relative;
     z-index:50;
@@ -271,7 +271,6 @@ video[poster]{
 .brand_tab_list{         
     display:flex;
     margin-top:10px;
-    margin-bottom:-20px;
     padding:20px 0;
     background-color:#fff;
     position:sticky;

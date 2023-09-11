@@ -142,6 +142,13 @@ main > .section_main{
   background-color:#00a3ff;
 }
 
+.light_pagination .swiper-pagination-bullet{
+  background-color:#c2d0e0;
+}
+.light_pagination .swiper-pagination-bullet-active{
+  background-color:#0039cc;
+}
+
 
 .main_slide_li .btn_text{
   position:absolute;
@@ -210,11 +217,71 @@ main > .section_main{
 
 
 /** 세이빙 프로그램 소개 **/
+
 .saving_program.dark{
   width:100%;
-  height:600px;
+  height:100%;
   background-image: url(../img/temp/bg_saving_program_dark.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  padding-top:20px;
+}
+.saving_program.light{
+  width:100%;
+  height:100%;
+  background-image: url(../img/temp/bg_saving_program_light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top:20px;
+}
+.roulette_text{
+  position: absolute;
+  bottom: 7px;
+  left:0;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 45px;
+}
+
+.roulette_box{
+  margin:0 auto;
+  padding:0 30px;
+  min-width:280px;
+  max-width:400px;
+  position:relative;
+}
+.roulette_box > img{
+  width:100%;
+  height:auto;
+}
+
+/** 에코시스템 소개 **/
+.ecosystem_box{
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecosystem_img_box{
+  background-color:#fff;
+  border-radius:50%;
+  width:128px;
+  height:128px;
+  padding:32px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ecosystem_img_box > img{
+  width:auto;
+  height:100%;
+  object-fit: contain;
+}
+.ecosystem_img_box > p{
+  text-align:center;
 }

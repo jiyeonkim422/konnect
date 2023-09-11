@@ -27,6 +27,7 @@
     min-width:320px;
     max-width:800px;
     margin:0 auto;
+    overflow:hidden;
 }
 
 
@@ -191,7 +192,7 @@
 
 .tabbar{
     position:fixed;
-    height:78px;
+    height:85px;
     background-color:#fff;
     width:100%;
     bottom:0;
@@ -203,7 +204,7 @@
 .tabbar_wrap{
     width:100%;
     padding:0 20px;
-    height:100%;
+    height:86%;
     display:flex;
     gap:13px;
     min-width: 320px;
@@ -254,6 +255,22 @@
 
 
 
+/****** bottom_fix ******/
+.bottom_fix{
+    position:fixed;
+    height:85px;
+    background-color:#000;
+    width:100%;
+    bottom:0;
+    z-index:101; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.bottom_fix_box{
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 13px 20px;
+}
 
  
 /** 상세화면 header **/
@@ -339,7 +356,7 @@ main > .section{
     height:100%;
 }
 .img_full > img{
-    width:100%;
+    width:100% !important;
     height:auto;
     object-fit: cover;
 }
@@ -366,6 +383,19 @@ main > .section{
 
 }
 
+.img_frame_80{
+    width: 80rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_frame_80 > img{
+    width:60%;
+    height:auto;
+}
+
+
 
 .card_img{
     max-width:212rem;
@@ -387,7 +417,7 @@ main > .section{
 
 .swiper.benefit_swiper{
     padding-bottom:24px ;
-    padding:20px;
+    padding:0 20px 20px;
 }
 .swiper-slide.brand_slide_group{
     display: flex;
@@ -425,7 +455,7 @@ main > .section{
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     padding:20px 0;
-    margin-top:30px;
+    margin-top:2%;
     top:70px;
     z-index:99;
 }
@@ -435,6 +465,7 @@ main > .section{
 .body_bg_wh .tab_list{
     background-color:#fff;
 }
+
 
 .tab_list2{
     position:inherit;
@@ -494,12 +525,21 @@ main > .section{
     color:#fff;
 }
 
+.body_bg_gray .tab_category_btn{
+    background-color:#e5e9ee;
+    color:#2b4c7d;
+}
+.body_bg_gray .tab_category_btn.is-active{
+    background-color:#0039cc;
+    color:#fff;
+}
+
 
 
 /** 이벤트 배너 슬라이드 **/
 .swiper.event_banner_swiper{
     width:100%;
-    max-width:400px;
+    max-width:440px;
     height:auto;
     padding:0 20px;
 }
@@ -587,18 +627,20 @@ main > .section{
 
 
 /** 프로모션 - 카운트 다운 슬라이드 **/
-.countdown_box{
+/* .countdown_box{
     width:100%;
     height:285px;
     border-radius:15px;
-}
-.countdown_item{
+} */
+.swiper.countdown_swiper{
+    margin-top:30px;
     padding:0 20px;
+    max-width:440px;
+    min-width:260px;
+    overflow:visible;
 }
 
-.countdown_swiper{
-    margin-top:30px;
-}
+
 .countdown_inner{
     position:absolute;
     width:100%;
@@ -656,8 +698,10 @@ main > .section{
 
 
 /** 브랜드카드 슬라이드 **/
-.brandcard_swiper{
-    padding: 30px 84px 0px 84px !important;
+.swiper.brandcard_swiper{
+    max-width:290px;
+    overflow:visible;
+    padding: 30px 20px 0px 20px !important;
 }
 .brandcard_frame{
     display:flex;
@@ -799,10 +843,6 @@ main > .section{
     justify-content: space-between;
     position: relative;
 } */
-
-
-
-
 
 
 
@@ -982,4 +1022,102 @@ main > .section{
     width:100%;
     display:flex;
     gap:10px;
+}
+
+
+
+/******* 모달&알림창 ********/
+.alert_form {
+    justify-content: center;
+}
+.alert_form .alert_box{
+    width:300px;
+    height:300px !important; 
+}
+
+#modal_wrap.modal_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.modal_window {
+    background:#fff;   
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    height:auto;
+    position: relative;
+    top: -100px;
+}
+
+.modal_top{
+    width:100%;
+    height:50px;
+    border-bottom:1px solid #EBEDF3; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal_tit {
+    font-size:18px;
+    font-weight:700;
+    padding:0 20px;
+
+}
+ .modal_title h2 {
+    display: inline;
+}
+.modal_close {
+    display: inline;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.modal_content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.alert_window{
+    width:300px;
+}
+.alert_content{
+    text-align:center;
+    font-size:18px;
+    font-weight:500;
+    line-height:1.5;
+    height:180px;
+}
+
+.popup_btn.alert{
+    padding:0;
+    gap:0;
+}
+.popup_btn.alert .btn{
+    border:none;
+    padding:0;
+    width:50%;
+    border-radius:0;
+    height:50px;
+    font-size:14px;
+}
+
+
+.popup_btn.alert .btn + .btn{
+    border-left:1px solid #EBEDF3;
 }
