@@ -27,7 +27,7 @@
     min-width:320px;
     max-width:800px;
     margin:0 auto;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 
@@ -62,7 +62,7 @@
     left: 50%;
     /* max-width: 500rem; */
     margin: 0px auto;
-    z-index: 99;
+    z-index: 100;
     transition: all 0.5s ease-in-out 0s;
 }
 .header_wrap{
@@ -597,6 +597,10 @@ main > .section{
 
 /** 리뷰 슬라이드 **/
 
+.section_in.review{
+    overflow:hidden;
+}
+
 .swiper.review_swiper{
     padding:0 20px;
 }
@@ -652,11 +656,10 @@ main > .section{
 
 
 /** 프로모션 - 카운트 다운 슬라이드 **/
-/* .countdown_box{
-    width:100%;
-    height:285px;
-    border-radius:15px;
-} */
+.section_in.promotion{
+    overflow:hidden;
+}
+
 .swiper.countdown_swiper{
     margin-top:30px;
     padding:0 20px;
@@ -664,7 +667,6 @@ main > .section{
     min-width:260px;
     overflow:visible;
 }
-
 
 .countdown_inner{
     position:absolute;
@@ -723,6 +725,10 @@ main > .section{
 
 
 /** 브랜드카드 슬라이드 **/
+.section_in.best_brandcard{
+    overflow:hidden;
+}
+
 .swiper.brandcard_swiper{
     max-width:290px;
     overflow:visible;
@@ -1037,7 +1043,7 @@ main > .section{
     bottom: 0;
     width: 100%;
     height: 90px;
-    padding: 20px 30px;
+    padding: 20px;
     -webkit-box-shadow: 2px -3px 16px 0 rgb(0 0 0 / 12%);
     box-shadow: 2px -3px 16px 0 rgb(0 0 0 / 12%);
     z-index: 999;
