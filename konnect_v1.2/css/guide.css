@@ -583,6 +583,10 @@ textarea {
     text-align: center;
 }
 
+.badge--full{
+    width:100% !important;
+}
+
 .badge--fill-gray{
     background-color:#2B4C7D;
     color:#fff;
@@ -594,6 +598,10 @@ textarea {
 .badge--fill-blue2{
     background-color:#00a3ff;
     color:#fff;
+}
+.badge--fill-lightgray{
+    background-color:#b3b3b3;
+    color:#313131;
 }
 
 .badge_square{

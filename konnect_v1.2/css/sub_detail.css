@@ -275,7 +275,7 @@ video[poster]{
     background-color:#fff;
     position:sticky;
     top:70px;
-    z-index:100;
+    z-index:99;
 }
 .brand_tab_list .tab_list{
     padding:0;

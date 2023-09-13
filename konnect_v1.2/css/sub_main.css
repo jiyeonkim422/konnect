@@ -6,6 +6,29 @@
     gap:14px;
 }
 
+
+/** 네비게이션 화이트배경 **/
+.main_header.deactive .navigation_bar.is-white{
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    top:0;
+    z-index:999999;
+  }
+  .main_header.active .navigation_bar.is-white{
+    background-color: #fff;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    top:0;
+    z-index:999999;
+  }
+  
+
+
 main > .section_sub_main{
     padding-top:70px;
     padding-bottom:140px;

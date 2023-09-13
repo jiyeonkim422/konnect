@@ -117,7 +117,7 @@ main > .section_collabo{
     border-radius: 20px;
     padding:25px 30px 25px 30px;
     display:flex;
-    gap:18px;
+    gap:12px;
     flex-direction: column;
 }
 .benefit_info_box + .benefit_info_box{
@@ -136,6 +136,13 @@ main > .section_collabo{
 }
 .benefit_info_box_inner .badge{
     min-width:70px;
+}
+
+.benefit_tit_box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
 }
 
 
