@@ -117,7 +117,7 @@
     gap:12px;
 }
 .coming_soon > img{
-    width:100%;
+    width:auto;
     height:auto;
     padding-left:25%;
 }

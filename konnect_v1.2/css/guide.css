@@ -821,6 +821,13 @@ textarea {
     width:24px;
     height:24px;
 }
+.ic_event_blue1{
+    background-image: url(../img/svg/ic_notice_blue1.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
 
 
 .ic_arrow_s_wh{
