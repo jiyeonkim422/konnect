@@ -50,7 +50,6 @@ var swiper = new Swiper(".main_swiper", {
 
 //메인 - 멤버쉽 카드 슬라이드 
 var swiper = new Swiper(".membership_swiper", {
-	spaceBetween: 30,
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,
@@ -59,7 +58,6 @@ var swiper = new Swiper(".membership_swiper", {
 
 //메인 - 멤버쉽 카드 슬라이드 
 var swiper = new Swiper(".my_membership_swiper", {
-	// spaceBetween: 30,
 	pagination: {
 	  el: ".swiper-pagination",
 	  clickable: true,

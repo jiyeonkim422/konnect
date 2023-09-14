@@ -108,6 +108,13 @@ main > .section_menu{
     background-color:#fff;
     align-items: center;
 }
+
+.menu_link{
+    color:#002863;
+    font-size:14rem;
+    font-weight:700;
+}
+
 .menu_icon{
     padding: 0 12px 0 14px;
     display:flex;

@@ -1,95 +1,36 @@
+
 main > .section.section_notice{
-    padding-top:70px;
+    padding-top:100px;
 }
 
-.section_notice .section_in + .section_in {
-    margin-top: 80px;
-}
-.notice_img{
-    height:350px;
+/** 공지사항 리스트 화면 **/
+.notice_list_box{
     width:100%;
-    margin-bottom:24px;
-}
-.notice_img > img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-.notice_form{
-    width: 100%;
-    background-color: #f3f4f6;
-    border-radius: 15px;
-    padding: 30px 34px 30px 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-    position:relative;
-}
-.notice_form > .profile_img{
-    position:absolute;
-    top:-40px;
-    width:80rem;
-    height:80rem;
-}
-
-.notice_form > .label{
-    position:absolute;
-    top:-17px;
-}
-
-.notice_form.border{
-    border:1px solid #c2d0e0;
-}
-.notice_form_inner{
-    width:100%;
-    padding:20px;
-}
-.notice_form_inner.no_data{
-    height:200px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.notice_form.border .notice_form_inner + .notice_form_inner{
-    border-top:1px solid #c2d0e0;
-}
-
-.notice_info_content{
-    margin:0 auto;
-    align-items: center;
-}
-
-
-
-
-/** 보상상품 안내 **/
-.gift_info{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:25px;
-}
-.gift_info_box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:14px;
-    width:100px;
-    white-space: nowrap;
-}
-.border_circle{
-    width:90px;
-    height:90px;
-    border:2px solid #0039cc;
-    background-color:#fff;
-    border-radius:50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.border_circle > img{
-    width:43%;
     height:auto;
+}
+.notice_list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:14px 0;
+}  
+.notice_list_info{
+    width:calc(100% - 24px);
+    margin-right:20px;
+    padding-left:10px;
+}
+.notice_list_info p{
+    text-align:left;
+}
+
+
+/** 공지사항 상세 화면 **/
+.notice_detail_tit{
+    padding-left:4px;
+}
+.notice_detail_form{
+    padding:20px 18px 40px;
+    border-radius:15px;
+    margin-top:20px;
 }

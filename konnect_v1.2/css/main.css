@@ -158,12 +158,12 @@ main > .section_main{
 
 /** 메인 - 멤버십 **/
 .membership_swiper{
-  padding:24% 30% 30% 30%;
-  max-height:600px;
-  max-width:650px;
+  padding: 0 86px 0;
+  /* max-height:600px;
+  max-width:650px; */
 }
 .membership_swiper .swiper-wrapper{
-  padding-bottom:40px;
+  padding-bottom : 70px;
 }
 
 .membership_swiper .swiper-slide {
@@ -173,29 +173,24 @@ main > .section_main{
   display: flex;
   justify-content: center;
   /* height:60vw; */
-  height:245px;
+  /* height:245px; */
   gap:63px;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column;      
 }
 
-.membership_swiper .swiper-slide .membership_img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.membership_swiper .swiper-slide .card_img {
   scale:0.8;
-  object-fit: cover;
-  background-color:transparent;
 }
 
-.membership_swiper .swiper-slide-active .membership_img {
+.membership_swiper .swiper-slide-active .card_img {
   scale:1;
 }
-.membership_swiper .swiper-slide .membership_img img{
+.membership_swiper .swiper-slide .card_img img{
   width:100%;
   height:auto;
 }
-.membership_swiper .swiper-slide-active .membership_img img{
+.membership_swiper .swiper-slide-active .card_img img{
   width:100%;
   height:auto;
 }
