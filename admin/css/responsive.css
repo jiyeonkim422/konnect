@@ -4,3 +4,36 @@
         height:calc(100vh - 140px);
     } */
 }
+
+@media (max-width: 1440px){
+    .menu_list{
+        width:100px;
+    }
+    .content_list{
+        width: calc(100% - 100px);
+    }
+
+
+    /** 로그인&회원가입 **/
+
+    .login_box {
+        overflow-y: auto;
+        max-height: 550px;
+    }   
+
+    .login_box::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 14px;
+      }
+    .login_box::-webkit-scrollbar-thumb {
+        border:5px solid transparent;
+        border-radius: 100px;
+        background-color: #ddd;
+        background-clip: padding-box;
+    }      
+    .login_box::-webkit-scrollbar-track {
+        background-color:transparent ;
+    }
+      
+
+}

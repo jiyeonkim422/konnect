@@ -68,26 +68,26 @@
                                 <tbody class="table_body top_border_bold">
                                     <tr class="table_type2_row">
                                         <th class="table_type2_head" scope="row">브랜드 명</th>
-                                        <td class="table_type2_data">
+                                        <td class="table_type2_data table_type2_input">
                                             <input class="input_form w_100per" type="text" placeholder="브랜드 명을 입력하세요" value=""/>
                                         </td>
                                     </tr>
                                     <tr class="table_type2_row">
                                         <th class="table_type2_head">서브 브랜드 명</th>
-                                        <td class="table_type2_data">
+                                        <td class="table_type2_data table_type2_input">
                                             <input class="input_form w_100per" type="text" placeholder="서브 브랜드 명을 입력하세요" value=""/>
                                         </td>
 
                                     </tr>
-                                    <tr class="table_type2_row long_type">
+                                    <tr class="table_type2_row">
                                         <th class="table_type2_head">브랜드 소개글</th>
-                                        <td class="table_type2_data full">
+                                        <td class="table_type2_data">
                                             <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글을 작성해주세요."></textarea>
                                         </td>
                                     </tr>
-                                    <tr class="table_type2_row long_type">
+                                    <tr class="table_type2_row">
                                         <th class="table_type2_head" scope="row">브랜드 이미지 </th>
-                                        <td class="table_type2_data">
+                                        <td class="table_type2_data table_type2_input">
                                             <div class="d_inline_flex align_center gap4">
                                                 <a href="javascript:ViewImage()" class="text_link">이미지.png</a>
                                                 <button type="button" class="btn btn--md btn--fill-primary">등록</button>
@@ -98,9 +98,9 @@
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="table_type2_row long_type">
+                                    <tr class="table_type2_row">
                                         <th class="table_type2_head">브랜드 소개글 - 번호</th>
-                                        <td class="table_type2_data full">
+                                        <td class="table_type2_data">
                                             <div class="brand_info_number">
                                                 <div class="brand_info_number_in">
                                                     <input class="input_form w_100per" type="text" placeholder="제목" value=""/>
@@ -128,27 +128,27 @@
                                 </div>
                                 <!-- 데이터 있을때 -->
                                 <tbody class="table_body top_border_bold">
-                                    <tr class="table_type2_row long_type">
+                                    <tr class="table_type2_row">
                                         <th class="table_type2_head" scope="row">운영 시간 안내 - open</th>
-                                        <td class="table_type2_data">
+                                        <td class="table_type2_data table_type2_input">
                                             <input class="input_form w_100per" type="text" placeholder="open" value=""/>
                                         </td>
                                     </tr>
                                     <tr class="table_type2_row">
                                         <th class="table_type2_head">운영 시간 안내 - close</th>
-                                        <td class="table_type2_data">
+                                        <td class="table_type2_data table_type2_input">
                                             <input class="input_form w_100per" type="text" placeholder="close" value=""/>
                                         </td>
                                     </tr>
                                     <tr class="table_type2_row">
                                         <th class="table_type2_head">운영 시간 안내 상세</th>
-                                        <td class="table_type2_data full">
+                                        <td class="table_type2_data">
                                             <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="운영 시간 안내 상세글을 작성해주세요."></textarea>
                                         </td>
                                     </tr>
-                                    <tr class="table_type2_row long_type">
+                                    <tr class="table_type2_row">
                                         <th class="table_type2_head">부가 설명</th>
-                                        <td class="table_type2_data full">
+                                        <td class="table_type2_data">
                                             <div id="editor" class="editor_box">
                                                 <button onclick="see1()"></button>
                                                 <button onclick="see2()"></button>
@@ -169,6 +169,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- 알럿 -->
+        <div id="modal_wrap">
+            <div class="modal_bg"></div>
+            <div class="modal_window alert_window">           
+                <div class="popup_content alert_content">
+                    로그아웃 하시겠습니까?
+                </div>    
+                <div class="popup_btn alert">
+                    <button type="button" class="btn btn--md btn--cancle modal_close">취소</button>
+                    <button type="button" class="btn btn--md btn--confirm" onclick="location.href='../alert/alert_logout_confirm.html'">확인</button>
+                </div>
+            </div>
+        </div>
+  
 
 
         <!-- //js script -->
@@ -194,7 +209,6 @@
             }
         </script>
         <script type="text/javascript">
-
             $(document).ready( function() {
                 $("#top_nav").load("../main/top_nav.html");
                 $("#side_nav").load("../main/side_nav.html");

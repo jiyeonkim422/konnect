@@ -1,0 +1,108 @@
+.login_wrap{
+    background-color:#293038;
+    position: relative;
+    min-width:auto !important;
+}
+
+.login_main{
+    width:500px;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-53%);
+}
+
+.login_logo_box{
+    width:300px;
+    padding-bottom:10px;
+    height:auto;
+    margin:0 auto;
+}
+
+.login_box{
+    width:100%;
+    height:770px;
+    padding:60px 70px;
+    background-color:#323d4d;
+    /* background-color:rgba(255,255,255,0.1); */
+    -webkit-box-shadow: 2px 1px 16px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 1px 16px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tab_form{
+    width:100%;
+    display:flex;
+}
+.tab_form li{
+    width:50%;
+    display:flex;
+    justify-content: center;
+}
+
+/*** 탭 tab **/
+.tab_btn{
+    color:rgba(255,255,255,0.5);
+    font-size:22px;
+    padding-bottom:5px;
+    box-sizing: border-box;
+    border-bottom:2px solid transparent;
+}
+.tab_btn.is-active{
+    color:#fff;
+    border-color:#20aeff;
+    font-weight:600;
+}
+.filter-tab_content{
+    display:none;
+    margin-top:50px;
+}
+.filter-tab_content.is-active{
+    display:block;
+}
+
+
+
+.login_input_form p{
+    color:rgba(255,255,255,0.5);
+    font-size:14px;
+}
+.login_input_form + .login_input_form{
+    margin-top:40px;
+}
+.login_input{
+    width:100%;
+    height:40px;
+    margin-top:4px;
+    padding: 0 20px 0 0;
+    font-size: 18px;
+    border:none;
+    background-color: transparent;
+    border-bottom:1px solid #fff;
+    color:rgba(255,255,255,1);
+}
+.login_input::placeholder{
+    color:rgba(255,255,255,0.2);
+}
+
+
+.login_btn{
+    background-color:#20aeff;
+    width:100%;
+    height:50px;
+    color:#fff;
+    font-size:18px;
+    margin-top:70px;
+    font-weight:700;
+    /* border-radius:10px; */
+}
+
+
+
+.help_text{
+    color:rgba(255,255,255,0.5);
+    font-size:14px;
+    line-height:1.4;
+    text-align:center;
+    margin-top:30px;
+}

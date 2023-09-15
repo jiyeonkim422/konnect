@@ -731,7 +731,7 @@ select.input_form option{
     overflow-x: auto;;
 }
 .table_default{
-    min-width:1000px;
+    min-width:800px;
 }
 .table_bg_gray{
     background-color:#f1f1f1;
@@ -806,7 +806,7 @@ select.input_form option{
 
 
 .table_type2_head{
-    padding: 0.7rem;
+    padding: 1rem 0.7rem;
     font-size: 14px;
     width:160px;
     min-width:160px;
@@ -815,14 +815,15 @@ select.input_form option{
     color:#9493a7;
     display:flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
 }
 .table_type2_data{
-    padding: 0.7rem;
+    padding: 1rem 0.7rem;
     font-size:13px;
     line-height:1.6;
     text-align:left;
     width: 50%;
+    min-width:600px;
     display: flex;
     vertical-align: middle;
     flex-direction: column;
@@ -830,9 +831,10 @@ select.input_form option{
     justify-content: center;
     color:#3a394a;
 }
-.table_type2_data.full{
-    width:calc(100% - 160px) !important;
+.table_type2_data.table_type2_input{
+    padding: 0.65rem 0.7rem;
 }
+
 .table_type2_data p + p{
     margin-top:8px;
 }

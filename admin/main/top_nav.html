@@ -45,12 +45,48 @@
               <i class="ic ic_setting"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">내 계정</a></li>
-            <li><a class="dropdown-item" href="#">로그아웃</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
           </ul>
       </li>
-      <li class="user">
-          <p><em class="semibold">{커넥트어드민관리자}</em>님</p>
+      <li class="dropdown user">
+          <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <p><em class="semibold">{커넥트어드민관리자}</em>님</p>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">내 계정</a></li>
+            <li><p class="dropdown-item" id="modal_on_btn">로그아웃</p></li>
+
+          </ul>
       </li>
   </ul>
 </div>
+
+
+
+
+<script>
+  const modal = document.getElementById("modal_wrap")
+const btnModal = document.getElementById("modal_on_btn")
+    btnModal.addEventListener("click", e => {
+        modal.style.display = "flex"
+    })
+
+const closeBtn = modal.querySelector(".modal_close")
+    closeBtn.addEventListener("click", e => {
+        modal.style.display = "none"
+    })
+
+modal.addEventListener("click", e => {
+    const evTarget = e.target
+    if(evTarget.classList.contains("modal_bg")) {
+        modal.style.display = "none"
+    }
+})
+
+window.addEventListener("keyup", e => {
+    if(modal.style.display === "flex" && e.key === "Escape") {
+        modal.style.display = "none"
+    }
+})
+</script>

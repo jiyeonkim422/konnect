@@ -1,7 +1,9 @@
 #wrap{
     /* display:flex; */
-    height:100vh;
+    height:auto;
+    min-height:100vh;
     min-width:1000px;
+    /* position:relative; */
 }
 
 .uio_wrap{
@@ -42,19 +44,20 @@
 .logo_box{
     width:240px;
     height:70px;
+    padding:0 35px;
     background-color:#323d4d;   
     border-bottom:1px solid rgba(255,255,255,0.1);
 }
 .logo{
-    height:62px;
-    width:auto;
+    height:auto;
+    width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .logo > img{
-    width:auto;
-    height:100%;
+    width:100%;
+    height:auto;
 }
 
 
@@ -317,7 +320,10 @@
     margin-left:20px;
 }
 .menu_list{
-    width:20%;
+    width:400px;
+}
+.content_list{
+    width:calc(100% - 400px);
 }
 
 
@@ -613,22 +619,28 @@
 
 
 /************** 모달 modal ***************/
-#modal_wrap.modal_bg {
+#modal_wrap{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     left: 0;
     top: 0;
     display:none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    z-index:99999;
+}
+.modal_bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .modal_window {
     background:#fff;   
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
@@ -638,8 +650,10 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 100%;
     height:auto;
-    position: relative;
-    top: -100px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 

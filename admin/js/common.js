@@ -73,37 +73,51 @@ function selectAll(selectAll)  {
 
 
 
+    ///// tab_btn.js (탭 기본)
+    // 초깃값 설정
+    $('.filter-tab1').addClass('is-active');
+    $('#filter-tab1').addClass('is-active').find('.tab_item').addClass('is-active')
+
+    // click 이벤트마다 리스트형으로 초기화
+    $('.tab_btn').on('click', function() {
+        let tab_id = $(this).attr('data-tab');
+
+        $(this).addClass('is-active').parent('li').siblings('li').find('button').removeClass('is-active');
+        $("#" + tab_id).siblings('.btn--layout').removeClass('is-active');
+        
+    });
+    //tab_btn1 (탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+    $('.tab_btn').on('click', function() {
+        $('.filter-tab_content').removeClass('is-active');
+        $('.tab_btn').removeClass('is-active');
+        $(this).addClass('is-active');
+
+        let tab_id = $(this).attr('data-tab');
+        console.log(tab_id);
+
+        $("#" + tab_id).addClass('is-active');
+
+    });
+
+
+
+
+
+
+
+
+
 
 //팝업 - popup.js
   function MM_openBrWindow(theURL,winName,features) { 
     window.open(theURL,winName,features);
 }
-  function ViewImage(){ //이미지 미리보기
+//이미지 미리보기
+  function ViewImage(){ 
     window.open("../popup/popup_img_preview.html","image_preview","width=500,height=450,scrollbars=yes, status=no, resizable=yes, titlebar=no");
 }	
 
 
-//모달 - modal.js
-const modal = document.getElementById("modal_wrap")
-const btnModal = document.getElementById("modal_on_btn")
-    btnModal.addEventListener("click", e => {
-        modal.style.display = "flex"
-    })
 
-const closeBtn = modal.querySelector(".modal_close")
-    closeBtn.addEventListener("click", e => {
-        modal.style.display = "none"
-    })
 
-modal.addEventListener("click", e => {
-    const evTarget = e.target
-    if(evTarget.classList.contains("modal_bg")) {
-        modal.style.display = "none"
-    }
-})
 
-window.addEventListener("keyup", e => {
-    if(modal.style.display === "flex" && e.key === "Escape") {
-        modal.style.display = "none"
-    }
-})
