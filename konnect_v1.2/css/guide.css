@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea {
-    font-family: 'Pretendard',sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, NanumBarunGothic, "Segoe UI", "Helvetica Neue", sans-serif;
     color:#000;
 }
 
@@ -12,55 +12,55 @@ textarea {
 @font-face {
     font-family: 'Pretendard';
     font-weight: 100;
-    src: url("../../font/Pretendard-Thin.ttf") format("ttf");
+    src: url("../../font/Pretendard-Thin.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 200;
-    src: url("../../font/Pretendard-ExtraLight.ttf") format("ttf"); 
+    src: url("../../font/Pretendard-ExtraLight.woff2") format("woff2"); 
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 300;
-    src: url("../../font/Pretendard-Light.ttf") format("ttf");
+    src: url("../../font/Pretendard-Light.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 400;
-    src: url("../../font/Pretendard-Regular.ttf") format("ttf");
+    src: url("../../font/Pretendard-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 500;
-    src: url("../../font/Pretendard-Medium.ttf") format("ttf");
+    src: url("../../font/Pretendard-Medium.woff2") format("woff2");
 } 
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 600;
-    src: url("../../font/Pretendard-SemiBold.ttf") format("ttf");
+    src: url("../../font/Pretendard-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 700;
-    src: url("../../font/Pretendard-Bold.ttf") format("ttf");
+    src: url("../../font/Pretendard-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Pretendard';
     font-weight: 800;
-    src: url("../../font/Pretendard-ExtraBold.ttf") format("ttf");
+    src: url("../../font/Pretendard-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Pretendard';             
     font-weight: 900;
-    src: url("../../font/Pretendard-Black.ttf") format("ttf");
+    src: url("../../font/Pretendard-Black.woff2") format("woff2");
 }
 
 /****************** 색상 color ******************/
@@ -509,6 +509,9 @@ textarea {
 }
 .extrabold{
     font-weight:800 !important;
+}
+.fw_black{
+    font-weight:900 !important;
 }
 
 
