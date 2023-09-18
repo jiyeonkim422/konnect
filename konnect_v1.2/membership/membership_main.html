@@ -595,8 +595,8 @@
                                   <div class="bs_bottom">
                                       <button
                                           type="button"
-                                          class="btn btn--full btn--lg btn--primary1 show_layerpopup" 
-                                          href="#layerpopup">
+                                          class="btn btn--full btn--lg btn--primary1" 
+                                          id="openModal1" >
                                           영수증 적립
                                       </button>
                                       <a></a>
@@ -607,15 +607,16 @@
                         </div>
 
                         <!-- 레이어팝업3 start -->
-                        <div class="layerpopup" id="layerpopup">
+                        <div class="layerpopup modal" id="modal2">
                             <div class="layer_header">
                                 <div class="arrow_title">
-                                    <div class="close_layerpopup">
+                                    <div class="close_layerpopup" id="goBack2">
                                         <i class="ic ic_arrow_left_w">
                                             <img src="../img/svg/arrow_left.svg">
                                         </i>
                                     </div>
                                     <div class="nav_title tx--white">{화면명}</div>
+                                    <button id="cancel2">x</button>
                                 </div>
                             </div>
                             <div class="layer_content">
@@ -663,6 +664,31 @@
                             </div>
                         </div>
                         <!-- 레이어팝업3 end -->
+                        <!-- 레이어팝업2 start -->
+                        <div class="layerpopup modal bg--black" id="modal1">
+                            <div class="layer_header">
+                                <div class="arrow_title">
+                                    <div class="close_layerpopup" id="goBack1">
+                                        <i class="ic ic_arrow_left">
+                                            <img src="../img/svg/arrow_left_wh.svg">
+                                        </i>
+                                    </div>
+                                    <div class="nav_title tx--black">{화면명}</div>
+                                    <button id="cancel1" class="tx--white">x</button>
+                                </div>
+                            </div>
+                            <div class="layer_content">
+                                <div class="layer_inner">
+                                    <div class="layer_box">
+                                        <div class="info_content">
+                                            <p class="main_tit tx--white bold" id="confirm1">다음 화면으로 이동</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 레이어팝업3 end -->
+
 
                         <!-- 레이어팝업 start --
                         <div class="layerpopup" id="layerpopup">

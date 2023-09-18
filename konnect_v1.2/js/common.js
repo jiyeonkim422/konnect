@@ -276,7 +276,7 @@ var x = setInterval(function () {
     let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
     document.getElementById("countdown_1").innerHTML = res
 
-    console.log(distance);
+    // console.log(distance);
 
     if (distance < 0) {
         clearInterval(x);
@@ -310,7 +310,7 @@ var x = setInterval(function () {
     let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
     document.getElementById("countdown_2").innerHTML = res
 
-    console.log(distance);
+    // console.log(distance);
 
     if (distance < 0) {
         clearInterval(x);
@@ -344,7 +344,7 @@ var x = setInterval(function () {
     let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
     document.getElementById("countdown_3").innerHTML = res
 
-    console.log(distance);
+    // console.log(distance);
 
     if (distance < 0) {
         clearInterval(x);
@@ -483,16 +483,55 @@ $('.show_layerpopup').on('click', function(e) {
 
 
 
-  /** 레이어팝업 여러개 **/
-  function openModal(modalname) {
-    document.get
-    $("." + modalname).fadeIn(300);
+
+
+//레이어팝업 두개일때 -
+let currentModal = null;
+
+// 모달 열기 함수
+function openModal(modalId) {
+    if (currentModal) {
+        currentModal.style.display = 'none';
+    }
+    currentModal = document.getElementById(modalId);
+    currentModal.style.display = 'block';
 }
 
-// 팝업 닫기
-$('.popup .close_popup').click(function() {
-    $(this).parent().fadeOut(300);
+// 모달1 열기
+document.getElementById('openModal1').addEventListener('click', function() {
+    openModal('modal1');
 });
+
+// 모달1 취소 버튼 클릭 시
+document.getElementById('cancel1').addEventListener('click', function() {
+    currentModal.style.display = 'none';
+});
+
+// 모달1 뒤로 가기 버튼 클릭 시
+document.getElementById('goBack1').addEventListener('click', function() {
+    document.getElementById('modal1').style.display = 'none';
+});
+
+// 모달1 확인 버튼 클릭 시
+document.getElementById('confirm1').addEventListener('click', function() {
+    openModal('modal2');
+});
+
+// 모달2 취소 버튼 클릭 시
+document.getElementById('cancel2').addEventListener('click', function() {
+    currentModal.style.display = 'none';
+});
+
+// 모달2 뒤로 가기 버튼 클릭 시
+document.getElementById('goBack2').addEventListener('click', function() {
+    currentModal.style.display = 'none';
+    openModal('modal1');
+});
+
+
+
+
+
 
 
 
