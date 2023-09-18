@@ -298,3 +298,23 @@
       .layer_box .info_content .dot_list > li{
         color:#002863;
       }
+
+.modal2{
+    z-index:9999;
+}
+
+
+/*** 영수증 적립하기 정보 화면 ***/
+
+main > .section.section_receipt_detail{
+    padding-top:120px;
+}
+.krown_reward_img{
+    width:auto;
+    height:140px;
+}
+.krown_reward_img > img{
+    width:auto;
+    height:100%;
+}
+

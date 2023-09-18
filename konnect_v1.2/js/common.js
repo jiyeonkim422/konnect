@@ -466,7 +466,6 @@ showModalBtn.addEventListener("click", showBottomSheet);
 
 
 
-
 //레이어팝업(모달)
 $('.show_layerpopup').on('click', function(e) {
     e.preventDefault();
@@ -481,6 +480,19 @@ $('.show_layerpopup').on('click', function(e) {
   $('.close_layerpopup').on('click', function(e) {
     $(this).closest('.layerpopup').removeClass('open');
   });
+
+
+
+  /** 레이어팝업 여러개 **/
+  function openModal(modalname) {
+    document.get
+    $("." + modalname).fadeIn(300);
+}
+
+// 팝업 닫기
+$('.popup .close_popup').click(function() {
+    $(this).parent().fadeOut(300);
+});
 
 
 

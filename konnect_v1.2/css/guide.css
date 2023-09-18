@@ -250,6 +250,9 @@ textarea {
 .pt_50{
     padding-top:50px !important;
 }
+.pt_60{
+    padding-top:60px !important;
+}
 .pt_70{
     padding-top:70px !important;
 }
@@ -636,6 +639,10 @@ textarea {
     display:flex !important;
 }
 
+.display_none{
+    display:none !important;
+}
+
 .align_center{
     align-items: center !important;
 }
@@ -758,7 +765,6 @@ textarea {
 .no_border{
     border:none !important;
 }
-
 
 /****************** 아이콘 icon ******************/
 
@@ -943,6 +949,15 @@ textarea {
     width:24px;
     height:24px;
 }
+
+.ic_krown_front {        
+    background-image: url(../img/svg/ic_krown_front.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+
 
 
 
