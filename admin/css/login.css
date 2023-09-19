@@ -1,7 +1,9 @@
-.login_wrap{
+#wrap.login_wrap{
     background-color:#293038;
     position: relative;
     min-width:auto !important;
+    height:100%;
+    min-height:940px;
 }
 
 .login_main{
@@ -14,10 +16,10 @@
 }
 
 .login_logo_box{
-    width:300px;
-    padding-bottom:10px;
+    width:260px;
     height:auto;
     margin:0 auto;
+    padding-bottom:6px;
 }
 
 .login_box{

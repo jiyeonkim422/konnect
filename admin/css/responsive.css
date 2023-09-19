@@ -15,11 +15,11 @@
 
 
     /** 로그인&회원가입 **/
-
+/* 
     .login_box {
         overflow-y: auto;
         max-height: 550px;
-    }   
+    }    */
 
     .login_box::-webkit-scrollbar {
         -webkit-appearance: none;
