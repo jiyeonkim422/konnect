@@ -295,6 +295,10 @@ textarea {
 .pr_10{
     padding-right:10px !important;
 }
+.pr_20{
+    padding-right:20px !important;
+}
+
 
 
 /****************** width height ******************/
@@ -778,22 +782,25 @@ textarea {
     width:32px;
     height:32px;
 }
-.ic_notice_blue1{
-    background-image: url(../img/svg/ic_notice_blue1.svg);
+.ic_close_xl{
+    background-image: url(../img/svg/ic_close_xl.svg);
     background-repeat: no-repeat;
     background-position:center;
-    width:24px;
-    height:24px;
+    width:32px;
+    height:32px;
+}
+.ic_close_xl_wh{
+    background-image: url(../img/svg/ic_close_xl_wh.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:32px;
+    height:32px;
 }
 
+
+
 /** icon 24px **/
-.ic_mypage{
-    background-image: url(../img/svg/ic_mypage.svg);
-    background-repeat: no-repeat;
-    background-position:center;
-    width:24px;
-    height:24px;
-}
+
 .ic_global{
     background-image: url(../img/svg/ic_global.svg);
     background-repeat: no-repeat;
@@ -958,6 +965,14 @@ textarea {
     height:24px;
 }
 
+
+.ic_mypage{
+    background-image: url(../img/svg/ic_mypage.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
 
 
 

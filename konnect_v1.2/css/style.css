@@ -314,6 +314,7 @@
 
 .arrow_title{
     display:flex;
+    width:100%;
 }
 .arrow_back{
     width:60px;
@@ -322,6 +323,15 @@
     justify-content: center;
     align-items:center;
 }
+.nav_close{
+    width:60px;
+    height:70px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-right:10px;
+}
+
 .nav_icon_box{
     display:flex;
     /* width:60px; */
@@ -1162,7 +1172,6 @@ main > .section{
 /** 테이블 폼 **/
 
 .table_form_box{ 
-    margin:0 4px;
     width:100%;
 }
 
@@ -1193,7 +1202,7 @@ main > .section{
     line-height:20px;
     color:#2b4c7d;
     text-align:left;
-    padding:8px 2px;
+    padding:8px 4px;
     vertical-align: top;
 }
 .table_form .table_data{
@@ -1202,7 +1211,7 @@ main > .section{
     color:#002863;
     line-height:20px;
     text-align:right;
-    padding:8px 2px;
+    padding:8px 4px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
