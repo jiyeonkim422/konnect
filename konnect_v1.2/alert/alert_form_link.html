@@ -46,43 +46,28 @@
 
     </head>
 
-    <body class="body_bg_gray"> 
-        <div id="container">
-            <ul class="card_benefit_info_box show_modal">
-                <li class="card_benefit_info_left">
-                    <div class="brand_img">
-                        <img src="../img/temp/brand/hotel_lotte_iconmini.png" alt="hotel_lotte_iconmini"/>
-                    </div>
-                    <div class="card_benefit_info">
-                        <p class="brand_name">롯데호텔<i class="ic ic_krown"></i></p>
-                        <p class="benefit_tit">온라인 최대 15% 할인</p>    
-                    </div>
-                </li>
-                <li class="card_benefit_info_right">
-                    <i class="ic ic_arrow_L_wh rotate_270"></i>
-                </li>
-            </ul>
-        </div>
+    <body> 
          <!-- 알림창 폼 start -->
-         <div class="bottomsheet alert_form">
-            <div class="sheet-overlay"></div>
-            <div class="bs_box alert_box">
-              <!-- <div class="bs_header no_border">
-                <div class="drag-icon"><span></span></div>
-              </div> -->
-              <div class="bs_body">
-                    <div class="bs_content">
-                        <div class="popup_content alert_content">
-                            커넥트'님에 대한 로그인 차단을<br/>
-                            해제하시겠습니까?
-                        </div>    
-                        <div class="popup_btn alert">
-                            <button type="button" class="btn btn--md btn--cancle modal_close">취소</button>
-                            <button type="button" class="btn btn--md btn--confirm">확인</button>
-                        </div>
-                    </div>
-              </div>
-
+         <div id="modal_wrap" style="display:flex">
+            <div class="modal_bg"></div>
+            <div class="modal_window alert_window">       
+                <div class="modal_close">
+                    <i class="ic ic_close_l_bk"></i>
+                </div>    
+                <div class="modal_content alert_content">
+                    <p class="modal_tit">
+                        크라운 적립에 실패했어요
+                    </p>
+                    <p class="modal_text">
+                        영풍문고 브랜드카드 혜택으로<br/>
+                        오늘 적립 가능한 횟수를 초과 했어요<br/>
+                        내일 다시 시도 해주세요
+                    </p>
+                    <a href="#">
+                        <p class="text_link">1:1 문의하러 가기</p>
+                    </a>
+                    <button type="button" class="btn btn--modal btn--full btn--primary1" onclick="location.href='../membership/membership_main.html'">나의 멤버십 가기</button>
+                </div>    
             </div>
         </div>
         <!-- 바텀시트 end -->

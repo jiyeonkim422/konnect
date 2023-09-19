@@ -1080,22 +1080,28 @@ main > .section{
     height:300px !important; 
 }
 
-#modal_wrap.modal_bg {
+#modal_wrap{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     left: 0;
     top: 0;
     display:none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    z-index:99999;
+}
+.modal_bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(1.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .modal_window {
     background:#fff;   
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
@@ -1105,8 +1111,10 @@ main > .section{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 100%;
     height:auto;
-    position: relative;
-    top: -100px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .modal_top{
@@ -1118,35 +1126,51 @@ main > .section{
     align-items: center;
 }
 .modal_tit {
-    font-size:18px;
+    font-size:17rem;
     font-weight:700;
-    padding:0 20px;
+}
+.modal_title h2 {
+    display: inline;
+}
+.modal_text{
+    font-size:14rem;
+    text-align:left;
+    font-weight:400;
+    line-height:1.4;
+}
 
-}
- .modal_title h2 {
-    display: inline;
-}
 .modal_close {
-    display: inline;
-    float: right;
-    padding-right: 10px;
     cursor: pointer;
+    position:absolute;
+    right:0;
+    right:12px;
+    top:16px;
 }
 
 .modal_content {
+    padding:48px 28px 36px;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
 }
 
+/************** 알럿 alert ***************/
+
 .alert_window{
-    width:300px;
+    width:314px;
 }
 .alert_content{
+    min-height:180px;
+    gap:16px;
+}
+.alert_content .text_link{
+    font-weight:600;
+}
+.alert_content .modal_text{
     text-align:center;
-    font-size:18px;
-    font-weight:500;
-    line-height:1.5;
-    height:180px;
+}
+.alert_content .btn{
+    margin-top:8px;
 }
 
 .popup_btn.alert{

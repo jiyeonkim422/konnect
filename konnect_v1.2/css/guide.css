@@ -105,6 +105,13 @@ textarea {
     font-size:13px;
     font-weight:800;
 }
+
+.btn--modal{
+    height:46px;
+    font-size:14px;
+    font-weight:600;
+}
+
 .btn--lg{
     height:48px;
     font-size:14px;
@@ -897,6 +904,13 @@ textarea {
 }
 .ic_close_l{
     background-image: url(../img/svg/ic_close_l.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+.ic_close_l_bk{
+    background-image: url(../img/svg/ic_close_l_bk.svg);
     background-repeat: no-repeat;
     background-position:center;
     width:24px;

@@ -485,7 +485,7 @@ $('.show_layerpopup').on('click', function(e) {
 
 
 
-//레이어팝업 두개일때 -
+//레이어팝업 두개일때
 let currentModal = null;
 
 // 모달 열기 함수
@@ -536,26 +536,26 @@ document.getElementById('goBack2').addEventListener('click', function() {
 
 
 //alert - alert.js
-// const modal = document.getElementById("modal_wrap")
-// const btnModal = document.getElementById("modal_on_btn")
-//     btnModal.addEventListener("click", e => {
-//         modal.style.display = "flex"
-//     })
+const modal = document.getElementById("modal_wrap")//
+const btnModal = document.getElementById("modal_on_btn")
+    btnModal.addEventListener("click", e => {
+        modal.style.display = "flex"
+    })
 
-// const closeBtn = modal.querySelector(".modal_close")
-//     closeBtn.addEventListener("click", e => {
-//         modal.style.display = "none"                  
-//     })
+const closeBtn = modal.querySelector(".modal_close")
+    closeBtn.addEventListener("click", e => {
+        modal.style.display = "none"                  
+    })
 
-// modal.addEventListener("click", e => {
-//     const evTarget = e.target
-//     if(evTarget.classList.contains("modal_bg")) {
-//         modal.style.display = "none"
-//     }
-// })
+modal.addEventListener("click", e => {
+    const evTarget = e.target
+    if(evTarget.classList.contains("modal_bg")) {
+        modal.style.display = "none"
+    }
+})
 
-// window.addEventListener("keyup", e => {
-//     if(modal.style.display === "flex" && e.key === "Escape") {
-//         modal.style.display = "none"
-//     }
-// })
+window.addEventListener("keyup", e => {
+    if(modal.style.display === "flex" && e.key === "Escape") {
+        modal.style.display = "none"
+    }
+})
