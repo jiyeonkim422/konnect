@@ -41,6 +41,23 @@ $(function() {
     
     //초기값을 오늘 날짜로 설정해줘야 합니다.
     $('#datepicker1,#datepicker2').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
+
+
+
+    // $('#datepicker1').datepicker();
+    // $('#datepicker1').datepicker("option", "maxDate", $("#datepicker2").val());
+    // $('#datepicker1').datepicker("option", "onClose", function ( selectedDate ) {
+    //     $("#datepicker2").datepicker( "option", "minDate", selectedDate );
+    // });
+
+    $('#datepicker2').datepicker();
+    $('#datepicker2').datepicker("option", "minDate", $("#datepicker1").val());
+    $('#datepicker2').datepicker("option", "onClose", function ( selectedDate ) {
+        $("#datepicker1").datepicker( "option", "maxDate", selectedDate );
+    });
+
+
+
 });
 
 
