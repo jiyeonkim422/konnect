@@ -136,6 +136,11 @@ textarea {
     border-color:#0039cc;
     color:#0039cc;
 }
+.btn.disable{
+    background-color:#D9D9D9;
+    border:none;
+    color:#fff;
+}
 
 
 .btn--icon{
@@ -342,6 +347,7 @@ textarea {
     font-weight:700;
     position:relative;
     display:inline-block;
+    cursor: pointer;
 }
 .text_link:after{
     content:'';
@@ -564,6 +570,7 @@ textarea {
 
 /****************** 라벨&뱃지 label&badge ******************/
 
+/** 라벨 label **/
 .label{
     font-weight: 800;
     font-size:16rem;
@@ -590,6 +597,7 @@ textarea {
     color:#00a3ff;
 }
 
+/** 뱃지 badge **/
 .badge.en{
     font-size:9px;
     padding:0;

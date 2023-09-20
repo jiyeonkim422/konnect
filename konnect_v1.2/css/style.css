@@ -35,19 +35,25 @@
 .uio_wrap{
     margin:0 auto;
     width:1080px;
-    margin-top:40px;
-    height:auto !important;
-    margin-bottom:100px;
+    padding:40px 0 100px;
 }
 .uio_wrap h2{
     padding-bottom:10px;
+    font-size:20px;
 }
 
 .uio_box{
-    border:2px solid #dddd;
+    border:1px solid #000;
     margin-top:12px;
     margin-bottom:30px;
     padding:20px;
+}
+.uio_box .uio_box{
+    border:none;
+    padding:4px 10px;
+}
+.uio_box.body_bg_gray{
+    background-color:#ddd;
 }
 
 

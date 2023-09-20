@@ -262,10 +262,13 @@ video[poster]{
 }
 .location_detail_content{
     display:flex;
-    align-items: center;
+    align-items: flex-start;
     gap:6px;
 }
-
+.location_detail_content > .regular_text{
+    max-width:calc(100% - 52px);
+    width:auto;
+}
 
 
 .brand_tab_list{         
