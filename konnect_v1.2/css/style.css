@@ -1027,13 +1027,13 @@ main > .section{
 }
 .bs_tab_category_item{
     display:inline-block;
-    width:calc(33.33% - 6.8px);
+    width:calc(50% - 5px);
 
 }
 .bs_tab_category_btn{
     background-color: #f3f4f6;
     color:#2B4C7D;
-    height:40px;
+    height:50px;
     padding:4px;
     width:100%;
     font-weight:700;
