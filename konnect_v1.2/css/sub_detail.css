@@ -51,8 +51,8 @@ main > .section_brand_detail{
 /** 브랜드 이미지 슬라이드 **/
 .brand_detail_img{
     position:sticky;
-    top:0;
-    z-index:-10;
+    /* z-index:-10; */
+    z-index:0 !important;
 }
 .brand_img_item{
     width:100%;
@@ -69,7 +69,8 @@ main > .section_brand_detail{
     padding-top:10px;
     background-color:#fff;
     position:relative;
-    z-index:50;
+    /* z-index:50; */
+    z-index:149;
 }
 /** 브랜드 상세정보 상단 **/
 .brand_info_box{
@@ -278,7 +279,8 @@ video[poster]{
     background-color:#fff;
     position:sticky;
     top:70px;
-    z-index:99;
+    /* z-index:99; */
+    z-index:150;
 }
 .brand_tab_list .tab_list{
     padding:0;

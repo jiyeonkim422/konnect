@@ -68,7 +68,8 @@
     left: 50%;
     /* max-width: 500rem; */
     margin: 0px auto;
-    z-index: 100;
+    /* z-index: 100; */
+    z-index:9999 !important;
     transition: all 0.5s ease-in-out 0s;
 }
 .header_wrap{
@@ -141,7 +142,7 @@
 .footer{
     width:100%;
     background-color:#111;
-    padding-bottom:34px;
+    padding-bottom:85px;
 }
 .business_info{
     display:flex;
