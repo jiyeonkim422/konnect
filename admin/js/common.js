@@ -68,14 +68,21 @@ $(function() {
 $(function() {
     $(".default_option").click(function(){
         $(this).parent().toggleClass("active");
-        })
-        
-        $(".select_ul li").click(function(){
-        var currentele = $(this).html();
-        $(".default_option li").html(currentele);
-        $(this).parents(".select_option").removeClass("active");
-        })
+    });
+
+    $(".select_option").each(function() {
+        var $selectOption = $(this);
+        $selectOption.find(".select_ul li").click(function(){
+            var currentele = $(this).html();
+            $selectOption.find(".default_option li").html(currentele);
+            $selectOption.removeClass("active");
+        });
+    });
 });
+
+
+
+
 
 
 //check_box - all select.js (체크박스 전체선택))

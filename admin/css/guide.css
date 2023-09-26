@@ -582,6 +582,7 @@ select.input_form option{
     background-position:right 5px center;
     background-size: auto;
     font-size:13px;
+    color: #9493a7;
   }
 
 
@@ -589,6 +590,9 @@ select.input_form option{
     position: relative;
     cursor: pointer;
     width:100%;
+  }
+  .select_option .default_option .option{
+    color:#666;
   }
   .select_option .select_ul{
     position: absolute;

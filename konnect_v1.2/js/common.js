@@ -412,7 +412,7 @@ let isDragging = false, startY, startHeight;
 const showBottomSheet = () => {
     bottomSheet.classList.add("show");
     document.body.style.overflowY = "hidden";
-    updateSheetHeight(80);
+    updateSheetHeight(74);
 }
 
 const updateSheetHeight = (height) => {
@@ -449,7 +449,7 @@ const dragStop = () => {
     isDragging = false;
     bottomSheet.classList.remove("dragging");
     const sheetHeight = parseInt(sheetContent.style.height);
-    sheetHeight < 50 ? hideBottomSheet() : updateSheetHeight(80);
+    sheetHeight < 50 ? hideBottomSheet() : updateSheetHeight(74);
     // sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 70 ? updateSheetHeight(70) : hideBottomSheet();
 }
 

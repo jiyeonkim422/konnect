@@ -934,7 +934,7 @@ main > .section{
     position: relative;
     background: #fff;
     height:auto;
-    max-height: 90vh;
+    max-height: 80vh;
     max-width: 1150px;
     transform: translateY(100%);
     border-radius: 15px 15px 0 0;
@@ -956,7 +956,7 @@ main > .section{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-top:25px;
+    padding-top:15px;
     border-bottom:1px solid #9FB1CC;   
 
 
@@ -965,7 +965,7 @@ main > .section{
   .bs_header .drag-icon {
     cursor: grab;
     user-select: none;
-    padding: 15px;
+    padding: 12px 15px;
     margin-top: -15px;
   }
   .bs_header .drag-icon span {
@@ -998,7 +998,7 @@ main > .section{
 
 .bs_tit_box {
     width: 100%;
-    padding: 20px 30px;
+    padding: 14px 20px;
     position: relative;
     display: flex;
     justify-content: flex-start;
