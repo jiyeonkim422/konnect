@@ -410,6 +410,12 @@ textarea {
     color:#222;
     font-weight:500;
 } 
+.detail_text{
+    font-size:10px;
+    line-height:12px;
+    color:#5B6B8B;
+    font-weight:500;
+}
 
 
 /** 상세화면 **/
