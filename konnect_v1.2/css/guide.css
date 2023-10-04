@@ -173,6 +173,11 @@ textarea {
     margin:10px !important;
 }
 
+
+.mr_4{
+    margin-right:4px !important;
+}
+
 .mt_2{
     margin-top:2px !important;
 }
@@ -378,7 +383,7 @@ textarea {
 .main_tit{
     color:#000;
     font-weight:700;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     font-size:24rem;
     line-height:1.4;
     text-align:center;
@@ -390,7 +395,7 @@ textarea {
     font-size:16rem;
     line-height:1.5;
     text-align:center;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.2px;
     word-break: break-word;
 }
 .btn_text{
@@ -949,6 +954,13 @@ textarea {
 }
 .ic_arrow_L_bk{
     background-image: url(../img/svg/ic_arrow_L_bk.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
+.ic_arrow_L_gr{
+    background-image: url(../img/svg/ic_arrow_L_gr.svg);
     background-repeat: no-repeat;
     background-position:center;
     width:24px;

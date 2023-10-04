@@ -46,39 +46,22 @@
         
     </head>
 
-    <body class="body_bg_bk"> 
+    <body class="body_bg_wh"> 
         <div class="wrap">
             <!-- // Header -->
             <header id="header" class="header sub_header"></header>
             <!-- // Content -->                 
             <main id="content" class="sub_main_content">
                 <section class="section section_sub_main">
-                    <div class="my_info">    
-                        <div class="d_flex align_center content_center gap4">\
-                            <div class="badge_grade">
-                                <img src="../img/temp/grade_e.png" alt="grade_e"/> 
-                            </div>
-                            <h1 class="wallet_name main_tit tx--white">
-                                <!-- 닉네임은 최대10자 -->
-                                <span>
-                                    <em>닉네임은최대10자로</em>님
-                                </span>
-                                <div class="arrow_area h_auto">
-                                    <i class="ic ic_arrow_L_gr rotate_270"></i>
-                                </div>
-                            </h1>      
-                        </div>
-                        <div class="profile_img big">
-                            <!-- 기본이미지 -->
-                            <img src="../img/temp/default_img.png" alt="profile_img"/>
-                        </div>
-                        <p class="main_detail bold tx--white">
-                            지갑은 멤버십 가입을 위한 토큰이나<br/>
-                            혜택이 담긴 NFT를 보관할 수 있어요
+                    <div class="coming_soon">
+                        <img src="../img/temp/coming_soon.png" alt="coming_soon"/>
+                        <h1 class="tx--lightblue">COMING SOON</h1>
+                        <p class="main_detail tx--darkblue">
+                            더 멋진 모습을 위해<br/>
+                            커넥트팀이 열심히 준비중이에요<br/>
+                            조금만 기다려 주세요
                         </p>
-                        <p class="label label--fill-blue2">내지갑 주소</p>         
                     </div>
-                    
                 </section>
             </main>
             <!-- // Footer -->
@@ -97,7 +80,7 @@
         <script type="text/javascript" src="../js/common.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $(".sub_header").load("../views/sub_header.html");
+                $(".sub_header").load("../views/sub_header_bk.html");
                 $(".main_footer").load("../views/main_footer.html");
                 $(".tabbar").load("../views/tabbar.html");
             });

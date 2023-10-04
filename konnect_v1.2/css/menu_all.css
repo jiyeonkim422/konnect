@@ -22,7 +22,18 @@ main > .section_menu{
     font-size:22rem;
     color:#000;
     line-height:1.36;
+    display:flex;
 }
+.profile_name em{
+    display:block;
+    /* display: -webkit-box; */
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width: 190px;
+}
+
 .profile_img{
     width:92rem;
     height:92rem;
@@ -30,7 +41,7 @@ main > .section_menu{
     align-content: center;
     justify-content: center;
     align-items: center;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -39,6 +50,17 @@ main > .section_menu{
     height:auto;
     object-fit: cover;
 }
+
+.profile_img.big{
+    width:140px;
+    height:140px;
+}
+.profile_img.big > img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
 .btn--icon > span{
     height:15px;
 }

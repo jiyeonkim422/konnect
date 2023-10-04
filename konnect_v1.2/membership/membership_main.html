@@ -55,7 +55,13 @@
                 <section class="section section_sub_main">
                     <div class="membership_info">    
                         <div class="d_flex align_center content_center gap4">
-                            <h1 class="main_tit tx--white">{커넥트}님의 멤버십</h1>      
+                            <h1 class="membership_name main_tit tx--white">
+                                <!-- 닉네임은 최대10자 -->
+                                <span>
+                                    <em>닉네임은최대10자로</em>님의
+                                </span>
+                                 &nbsp;멤버십
+                            </h1>      
                             <span class="badge badge_circle badge--fill-blue2">3</span>          
                         </div>
                         <div class="swiper my_membership_swiper">
@@ -156,7 +162,6 @@
                             </div>
                             <div class="swiper-pagination my_membership_pagination dark_pagination"></div>
                         </div>
-                       
                     </div>
                     <!-- 카드&바우처 라인 탭 start -->
                     <div class="section_in">
@@ -839,23 +844,34 @@
                         <div class="my_krown">
                             <h1 class="main_tit tx--white tx--left">나의 크라운</h1>
                             <div class="krown_box">
-                                <div class="img_frame_80">
-                                    <img src="../img/temp/krown_coin.png" alt="krown_coin"/>
-                                </div>
                                 <div class="d_flex">
-                                    <h1 class="sub_tit tx--white">192&nbsp;<span class="main_detail bold tx--white">KROWN</span></h1>
+                                    <div class="img_frame_80">
+                                        <img src="../img/temp/krown_coin.png" alt="krown_coin"/>
+                                    </div>
+                                    <div class="d_flex column_direction align_start">
+                                        <p class="default_text tx--darkgray2">지금까지 모은 크라운</p>
+                                        <h1 class="main_tit tx--white">192&nbsp;<span class="main_detail bold tx--white">KROWN</span></h1>
+                                    </div>
+                                </div>
+                                <div class="arrow_area mr_4">
+                                    <i class="ic ic_arrow_L_gr rotate_270"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="my_krown">
                             <h1 class="main_tit tx--white tx--left">내 지갑</h1>
-                            <div class="krown_box">
-                                <div class="img_frame_80">
-                                    <img src="../img/temp/kct.png" alt="kct"/>
+                            <div class="krown_box" onclick="location.href='../mypage/mywallet.html'">
+                                <div class="d_flex">
+                                    <div class="img_frame_80">
+                                        <img src="../img/temp/kct.png" alt="kct"/>
+                                    </div>
+                                    <div class="d_flex column_direction align_start pb_4">
+                                        <h1 class="main_tit tx--white line_height_0">2&nbsp;<span class="main_detail bold tx--white">KCT</span></h1>
+                                        <p class="default_text tx--darkgray2">(=$1.920)</p>
+                                    </div>
                                 </div>
-                                <div class="d_flex column_direction align_start pb_4">
-                                    <h1 class="sub_tit tx--white line_height_0">2&nbsp;<span class="main_detail bold tx--white">KCT</span></h1>
-                                    <p class="regular_text tx--lightgray">(=$1.920)</p>
+                                <div class="arrow_area mr_4">
+                                    <i class="ic ic_arrow_L_gr rotate_270"></i>
                                 </div>
                             </div>
                         </div>

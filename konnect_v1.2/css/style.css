@@ -237,7 +237,7 @@
 }
 .tabbar_title{
     color:#9fb1cc;
-    font-size:13rem;
+    font-size:12rem;
 }
 
 .tabbar_nav_item.is-active .tabbar_title{
@@ -427,6 +427,17 @@ main > .section{
 
 }
 
+.img_frame_110{
+    width:110rem;
+    height:auto;
+    margin:0 auto;
+}
+.img_frame_110 > img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
 .img_frame_80{
     width: 80rem;
     height: auto;
@@ -453,6 +464,14 @@ main > .section{
     object-fit: cover;
 }
 
+.card_img_s{
+    width:auto;
+    height:70px;
+}
+.card_img_s > img{
+    width:auto;
+    height:100%;
+}
 
 
 
@@ -515,6 +534,13 @@ main > .section{
     position:inherit;
 }
 
+
+.tab_list3{
+    padding:0;
+}
+.tab_list3 .tab_category{
+    padding:0;
+}
 
 .tab_category{
     margin-top: 0;

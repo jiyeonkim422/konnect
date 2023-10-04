@@ -1,0 +1,49 @@
+.badge_grade{
+    width:30px;
+    height:30px;
+}
+.badge_grade > img{
+    width:auto;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.my_info{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.wallet_name{
+    max-width:290px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wallet_name span{
+    max-width:240px;
+    display:block;
+    display: -webkit-box;
+}
+.wallet_name em{
+    display:block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width: 208px;
+}
+
+
+.nft_box{
+    margin:14px 0;
+    display:flex;
+    gap:20px;
+    width:100%;
+    padding:4px;
+}

@@ -13,6 +13,27 @@
     opacity:0;
 }
 
+.membership_name{
+    max-width:250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.membership_name span{
+    max-width:240px;
+    display:block;
+    display: -webkit-box;
+}
+.membership_name em{
+    display:block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width: 190px;
+}
 
 /** 멤버십 슬라이드 **/
 .my_membership_swiper{
@@ -169,6 +190,7 @@
     border-radius:15px;
     display:flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 

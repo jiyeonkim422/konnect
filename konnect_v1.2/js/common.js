@@ -187,6 +187,19 @@ var swiper = new Swiper(".card_benefit_swiper", {
 
     });
 
+        //tab_btn1 (탭 1개) - 상단 필터 탭 클릭시 해당내용 노출
+        $('.tab_btn1').on('click', function() {
+            $('.nft_tab_list').removeClass('is-active');
+            $('.tab_btn1').removeClass('is-active');
+            $(this).addClass('is-active');
+    
+            let tab_id = $(this).attr('data-tab');
+            console.log(tab_id);
+    
+            $("#" + tab_id).addClass('is-active');
+    
+        });
+
 
     ///// tab_btn2.js - 두번째
     // 초깃값 설정

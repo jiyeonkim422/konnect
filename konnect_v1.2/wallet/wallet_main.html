@@ -44,23 +44,165 @@
 
         <link rel="stylesheet" href="../css/common.css">
         
-    </head>
+    </head>  
 
-    <body class="body_bg_wh"> 
+    <body class="body_bg_bk"> 
         <div class="wrap">
             <!-- // Header -->
-            <header id="header" class="header sub_header"></header>
+            <header id="header" class="header main_header bg--black"></header>
             <!-- // Content -->                 
             <main id="content" class="sub_main_content">
                 <section class="section section_sub_main">
-                    <div class="coming_soon">
-                        <img src="../img/temp/coming_soon.png" alt="coming_soon"/>
-                        <h1 class="tx--lightblue">COMING SOON</h1>
-                        <p class="main_detail tx--darkblue">
-                            더 멋진 모습을 위해<br/>
-                            커넥트팀이 열심히 준비중이에요<br/>
-                            조금만 기다려 주세요
+                    <div class="my_info">    
+                        <div class="d_flex align_center content_center gap4">
+                            <h1 class="wallet_name main_tit tx--white">
+                                <!-- 닉네임은 최대10자 -->
+                                <span>
+                                    <em>닉네임은최대10자로</em>님의
+                                </span>
+                                &nbsp;지갑
+                            </h1>      
+                        </div>
+                        <div class="img_frame_110">
+                            <img src="../img/temp/wallet.png" alt="wallet"/>
+                        </div>
+                        <p class="main_detail bold tx--white">
+                            지갑은 멤버십 가입을 위한 토큰이나<br/>
+                            혜택이 담긴 NFT를 보관할 수 있어요
                         </p>
+                        <p class="label label--fill-blue2">내지갑 주소</p>         
+                    </div>
+                    <!-- 나의 토큰&크라운 start -->
+                    <div class="section_in mt_60 p_side_20">
+                        <div class="my_krown">
+                            <h1 class="main_tit tx--white tx--left">나의 토큰</h1>
+                            <div class="krown_box">
+                                <div class="d_flex">
+                                    <div class="img_frame_80">
+                                        <img src="../img/temp/kct.png" alt="kct"/>
+                                    </div>
+                                    <div class="d_flex column_direction align_start pb_4">
+                                        <h1 class="main_tit tx--white line_height_0">2&nbsp;<span class="main_detail bold tx--white">KCT</span></h1>
+                                        <p class="default_text tx--darkgray2">(=$1.920)</p>
+                                    </div>
+                                </div>
+                                <div class="arrow_area mr_4">
+                                    <i class="ic ic_arrow_L_gr rotate_270"></i>
+                                </div>
+                            </div>
+                            <div class="krown_box">
+                                <div class="d_flex">
+                                    <div class="img_frame_80">
+                                        <img src="../img/temp/eth.png" alt="eth"/>
+                                    </div>
+                                    <div class="d_flex column_direction align_start">
+                                        <h1 class="main_tit tx--white line_height_0">200,000&nbsp;<span class="main_detail bold tx--white">ETH</span></h1>
+                                        <p class="default_text tx--darkgray2">(=$1.920)</p>
+                                    </div>
+                                </div>
+                                <div class="arrow_area mr_4">
+                                    <i class="ic ic_arrow_L_gr rotate_270"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my_krown">
+                            <h1 class="main_tit tx--white tx--left">나의 크라운</h1>
+                            <div class="krown_box">
+                                <div class="d_flex">
+                                    <div class="img_frame_80">
+                                        <img src="../img/temp/krown_coin.png" alt="krown_coin"/>
+                                    </div>
+                                    <div class="d_flex column_direction align_start">
+                                        <p class="default_text tx--darkgray2">지금까지 모은 크라운</p>
+                                        <h1 class="main_tit tx--white">192&nbsp;<span class="main_detail bold tx--white">KROWN</span></h1>
+                                    </div>
+                                </div>
+                                <div class="arrow_area mr_4">
+                                    <i class="ic ic_arrow_L_gr rotate_270"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 나의 NFT -->
+                    <div class="section_in mt_60 p_side_20">
+                        <div class="my_krown">
+                            <h1 class="main_tit tx--white tx--left">나의 NFT</h1>
+                            <!-- tab_list -->
+                            <div class="tab_list tab_list3 mt_10">
+                                <ul class="tab_category">
+                                    <li class="tab_category_item tab_item1"><button type="button" class="tab_category_btn tab_btn1 filter-tab1" data-tab="filter-tab1">ALL</button></li>
+                                    <li class="tab_category_item tab_item1"><button type="button" class="tab_category_btn tab_btn1 filter-tab2" data-tab="filter-tab2">PFP</button></li>
+                                    <li class="tab_category_item tab_item1"><button type="button" class="tab_category_btn tab_btn1 filter-tab3" data-tab="filter-tab3">Card</button></li>
+                                    <li class="tab_category_item tab_item1"><button type="button" class="tab_category_btn tab_btn1 filter-tab4" data-tab="filter-tab4">Mystery Box</button></li>
+                                </ul>
+                            </div>
+                            <!-- 카드 혜택 리스트 start -->
+                            <div class="tab_content_list">
+                                <!-- nft all -->
+                                <div class="nft_tab_list all filter-tab_content" id="filter-tab1">
+                                    <div class="nft_box">
+                                        <div class="card_img_s">
+                                            <!-- 멤버십 이미지 택1 -->
+                                            <!-- <img src="../img/temp/membership_white.png" alt="membership_white"/> -->
+                                            <img src="../img/temp/membership_blue.png" alt="membership_blue"/>
+                                            <!-- <img src="../img/temp/membership_gold.png" alt="membership_gold"/> -->
+                                            <!-- <img src="../img/temp/gateio_blue.png" alt="gateio_blue"/> -->
+                                            <!-- <img src="../img/temp/gateio_silver.png" alt="gateio_silver"/> -->
+                                            <!-- <img src="../img/temp/gateio_black.png" alt="gateio_black"/> -->
+                                            <!-- <img src="../img/temp/huobi_blue.png" alt="huobi_blue"/> -->
+                                            <!-- <img src="../img/temp/huobi_gold.png" alt="huobi_gold"/> -->
+                                            <!-- <img src="../img/temp/huobi_black.png" alt="huobi_black"/> -->
+                                        </div>
+                                        <div class="d_flex column_direction content_center">
+                                            <p class="default_text tx--blue2">Konnect Membership NFT</p>
+                                            <h5 class="main_detail bold tx--white">FLEX BLUE MEMBERSHIP</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- nft pfp -->
+                                <div class="nft_tab_list filter-tab_content" id="filter-tab2">
+
+                                </div>
+                                <!-- nft card -->
+                                <div class="nft_tab_list filter-tab_content" id="filter-tab3">
+                                    <div class="nft_box">
+                                        <div class="card_img_s">
+                                            <!-- 멤버십 이미지 택1 -->
+                                            <!-- <img src="../img/temp/membership_white.png" alt="membership_white"/> -->
+                                            <img src="../img/temp/membership_blue.png" alt="membership_blue"/>
+                                            <!-- <img src="../img/temp/membership_gold.png" alt="membership_gold"/> -->
+                                            <!-- <img src="../img/temp/gateio_blue.png" alt="gateio_blue"/> -->
+                                            <!-- <img src="../img/temp/gateio_silver.png" alt="gateio_silver"/> -->
+                                            <!-- <img src="../img/temp/gateio_black.png" alt="gateio_black"/> -->
+                                            <!-- <img src="../img/temp/huobi_blue.png" alt="huobi_blue"/> -->
+                                            <!-- <img src="../img/temp/huobi_gold.png" alt="huobi_gold"/> -->
+                                            <!-- <img src="../img/temp/huobi_black.png" alt="huobi_black"/> -->
+                                        </div>
+                                        <div class="d_flex column_direction content_center">
+                                            <p class="default_text tx--blue2">Konnect Membership NFT</p>
+                                            <h5 class="main_detail bold tx--white">FLEX BLUE MEMBERSHIP</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- nft mystery box -->
+                                <div class="nft_tab_list filter-tab_content" id="filter-tab4">
+
+                                </div>
+                            </div>         
+                        </div>
+                    </div>
+                    <div class="section_in event_banner mt_40">
+                        <div class="swiper event_banner_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide event_banner_item">
+                                    <a class="ad_event" href=""><img src="../img/temp/home_banner6_ko.png" alt="event_banner1"></a>
+                                </div>
+                                <div class="swiper-slide event_banner_item">
+                                    <a class="ad_event" href=""><img src="../img/temp/home_banner7_ko.png" alt="event_banner2"></a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination count_pagination"></div>
+                        </div>                      
                     </div>
                 </section>
             </main>
@@ -80,7 +222,7 @@
         <script type="text/javascript" src="../js/common.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                $(".sub_header").load("../views/sub_header_bk.html");
+                $(".main_header").load("../views/main_header.html");
                 $(".main_footer").load("../views/main_footer.html");
                 $(".tabbar").load("../views/tabbar.html");
             });
