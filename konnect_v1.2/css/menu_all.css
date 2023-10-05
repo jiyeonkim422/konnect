@@ -31,7 +31,7 @@ main > .section_menu{
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    max-width: 190px;
+    max-width: 195px;
 }
 
 .profile_img{

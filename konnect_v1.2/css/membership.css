@@ -32,7 +32,7 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    max-width: 190px;
+    max-width: 208px;
 }
 
 /** 멤버십 슬라이드 **/
