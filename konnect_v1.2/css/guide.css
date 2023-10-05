@@ -136,6 +136,11 @@ textarea {
     border-color:#0039cc;
     color:#0039cc;
 }
+.btn--stroke-primary2{
+    border-color:#00a3ff;
+    color:#00a3ff;
+}
+
 .btn.disable{
     background-color:#D9D9D9;
     border:none;
@@ -176,6 +181,9 @@ textarea {
 
 .mr_4{
     margin-right:4px !important;
+}
+.mr_8{
+    margin-right:8px !important;
 }
 
 .mt_2{
@@ -332,6 +340,9 @@ textarea {
 
 .h_auto{
     height:auto !important;
+}
+.w_auto{
+    width:auto !important;
 }
 
 /****************** 텍스트 text ******************/
@@ -649,6 +660,9 @@ textarea {
     background-color:#b3b3b3;
     color:#313131;
 }
+.badge--white-text{
+    color:#fff;
+}
 
 .badge_square{
     border-radius:8px;
@@ -684,6 +698,10 @@ textarea {
     justify-content: center !important;
 }
 
+.content_between{
+    justify-content: space-between !important;
+}
+
 .column_direction{
     flex-direction:column !important;
 }
@@ -693,6 +711,9 @@ textarea {
 
 .gap4{
     gap:4px !important;
+}
+.gap6{
+    gap:6px !important;
 }
 .gap10{
     gap:10px !important;
@@ -1072,6 +1093,21 @@ textarea {
 }
 .ic_membership{
     background-image: url(../img/svg/ic_membership.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+
+.ic_check{
+    background-image: url(../img/svg/ic_check.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:20px;
+    height:20px;
+}
+.ic_check_wh{
+    background-image: url(../img/svg/ic_check_wh.svg);
     background-repeat: no-repeat;
     background-position:center;
     width:20px;

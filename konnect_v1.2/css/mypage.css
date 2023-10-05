@@ -17,19 +17,19 @@
     align-items: center;
 }
 
-.wallet_name{
+.my_info_name{
     max-width:290px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.wallet_name span{
+.my_info_name span{
     max-width:240px;
     display:block;
     display: -webkit-box;
 }
-.wallet_name em{
+.my_info_name em{
     display:block;
     display: -webkit-box;
     overflow: hidden;

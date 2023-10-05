@@ -52,8 +52,8 @@ main > .section_menu{
 }
 
 .profile_img.big{
-    width:140px;
-    height:140px;
+    width:140rem;
+    height:140rem;
 }
 .profile_img.big > img{
     width:100%;
