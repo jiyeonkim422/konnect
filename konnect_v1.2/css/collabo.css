@@ -246,7 +246,7 @@ main > .section_collabo{
     display: flex;
     gap: 30px;
     flex-direction: column;
-    max-width:600px;
+    max-width:800px;
 }
 .benefit_info_box2 + .benefit_info_box2{
     margin-top:20px;
