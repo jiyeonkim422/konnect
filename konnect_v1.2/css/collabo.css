@@ -270,3 +270,54 @@ main > .section_collabo{
     height:136px;
     margin-top:0; 
 }
+
+
+
+
+
+/**** ambassador  ****/
+.membership_list{
+    width:280px;
+    height:auto;
+    position:relative;
+}
+.membership_list img{
+    width:100%;
+    height:auto;
+
+}
+.membership_list p{
+    position:absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.sns_info_box{
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+} 
+.sns_info_box > img{
+    width:66px;
+    height:54px;
+}
+
+
+.poonam_img_frame{
+    width:210px;
+    height:210px;
+    border-radius:20px;
+    overflow:hidden;
+}
+.poonam_img_frame > img{
+    width:100%;
+    height:auto;
+}
