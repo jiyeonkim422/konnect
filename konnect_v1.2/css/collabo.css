@@ -298,7 +298,7 @@ main > .section_collabo{
 .sns_info_box{
     background-color: #1d1d1d;
     border-radius: 20px;
-    padding: 25px;
+    padding: 12px 30px 20px;
     display: flex;
     gap: 12px;
     flex-direction: column;
@@ -306,15 +306,15 @@ main > .section_collabo{
     align-items: center;
 } 
 .sns_info_box > img{
-    width:66px;
-    height:54px;
+    width:63px;
+    height:50px;
 }
 
 
 .poonam_img_frame{
-    width:210px;
-    height:210px;
-    border-radius:20px;
+    width:190px;
+    height:220px;
+    border-radius:15px;
     overflow:hidden;
 }
 .poonam_img_frame > img{

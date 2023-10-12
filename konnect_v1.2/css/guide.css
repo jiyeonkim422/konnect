@@ -213,6 +213,9 @@ textarea {
 .mt_80{
     margin-top:80px !important;
 }
+.mt_90{
+    margin-top:90px !important;
+}
 .mt_100{
     margin-top:100px !important;
 }
@@ -395,7 +398,7 @@ textarea {
     content:'';
     position:absolute;
     width:100%;
-    height:2px;
+    height:1px;
     bottom:-1px;
     left:0;
     background-color:#fff;
