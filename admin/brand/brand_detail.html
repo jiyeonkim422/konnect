@@ -49,118 +49,137 @@
             <div class="wrapper">
                 <div class="content_bg">
                     <div class="title_box">
-                        <h1 class="main_tit">브랜드 등록</h1>
+                        <h1 class="main_tit">브랜드관 상세</h1>
                         <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
-                              <li class="breadcrumb-item"><a href="../brand/brand_list.html">브랜드 정보</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">브랜드 등록</li>
+                              <li class="breadcrumb-item"><a href="../cs/inquiry_list.html">CS/운영</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">상담내역조회</li>
                             </ol>
                           </nav>
                     </div>
-                    <div class="content">
-                        <div class="table_form">
-                            <table class="table_default table_type2">
-                                <div class="sub_tit_box">
-                                    <span class="sub_tit">기본 소개</span>
-                                </div>
-                                <!-- 데이터 있을때 -->
-                                <tbody class="table_body top_border_bold">
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head" scope="row">브랜드 명</th>
-                                        <td class="table_type2_data table_type2_input">
-                                            <input class="input_form w_100per" type="text" placeholder="브랜드 명을 입력하세요" value=""/>
-                                        </td>
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head">서브 브랜드 명</th>
-                                        <td class="table_type2_data table_type2_input">
-                                            <input class="input_form w_100per" type="text" placeholder="서브 브랜드 명을 입력하세요" value=""/>
-                                        </td>
-
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head">브랜드 소개글</th>
-                                        <td class="table_type2_data">
-                                            <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글을 작성해주세요."></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head" scope="row">브랜드 이미지 </th>
-                                        <td class="table_type2_data table_type2_input">
-                                            <div class="d_inline_flex align_center gap4">
-                                                <a href="javascript:ViewImage()" class="text_link">이미지.png</a>
-                                                <button type="button" class="btn btn--md btn--fill-primary">등록</button>
-                                                <button type="button" class="btn btn--md btn--warning">취소</button>
-                                            </div>
-                                            <p class="mt_10">
-                                                파일용량 제한 : 사진 1MB 이내, 동영상 100MB 이내
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head">브랜드 소개글 - 번호</th>
-                                        <td class="table_type2_data">
-                                            <div class="brand_info_number">
-                                                <div class="brand_info_number_in">
-                                                    <input class="input_form w_100per" type="text" placeholder="제목" value=""/>
-                                                    <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글 내용"></textarea>
-                                                </div>
-                                                <button type="button" class="btn btn--md btn--primary">추가</button>
-                                            </div>
-                                            <div class="brand_info_number">
-                                                <div class="brand_info_number_in">
-                                                    <input class="input_form w_100per" type="text" placeholder="제목" value=""/>
-                                                    <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글 내용"></textarea>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="row_box">
+                        <div class="content">
+                            <div class="table_form">
+                                <table class="table_default table_type2">
+                                    <div class="sub_tit_box">
+                                        <span class="sub_tit">브랜드 정보</span>
+                                    </div>
+                                    <!-- 데이터 있을때 -->
+                                    <tbody class="table_body top_border_bold">
+                                        <tr class="table_type2_row">
+                                            <th class="table_type2_head" scope="row">닉네임</th>
+                                            <td class="table_type2_data">커넥트</td>
+                                        </tr>
+                                        <tr class="table_type2_row">
+                                            <th class="table_type2_head">휴대폰 번호</th>
+                                            <td class="table_type2_data">+82 010-1234-5678</td>
+                                        </tr>
+                                        <tr class="table_type2_row">
+                                            <th class="table_type2_head">이메일 주소</th>
+                                            <td class="table_type2_data"><a href="" class="text_link">konnect@email.com</a></td>
+    
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <div class="content">
-                        <div class="table_form">
-                            <table class="table_default table_type2">
-                                <div class="sub_tit_box">
-                                    <span class="sub_tit">상세 소개</span>     
-                                </div>
-                                <!-- 데이터 있을때 -->
-                                <tbody class="table_body top_border_bold">
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head" scope="row">운영 시간 안내 - open</th>
-                                        <td class="table_type2_data table_type2_input">
-                                            <input class="input_form w_100per" type="text" placeholder="open" value=""/>
-                                        </td>
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head">운영 시간 안내 - close</th>
-                                        <td class="table_type2_data table_type2_input">
-                                            <input class="input_form w_100per" type="text" placeholder="close" value=""/>
-                                        </td>
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head">운영 시간 안내 상세</th>
-                                        <td class="table_type2_data">
-                                            <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="운영 시간 안내 상세글을 작성해주세요."></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr class="table_type2_row">
-                                        <th class="table_type2_head">부가 설명</th>
-                                        <td class="table_type2_data">
-                                            <div id="editor" class="editor_box">
-                                                <button onclick="see1()"></button>
-                                                <button onclick="see2()"></button>
-                                            </div>                                        
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="row_box">
+                        <div class="column_box menu_list">
+                            <div class="content">
+
+                            </div>
                         </div>
-                        <div class="btn_box">
-                            <button type="button" class="btn btn--lg btn--basic">취소</button>
-                            <button type="submit" class="btn btn--lg btn--fill-primary">저장</button>
+                        <div class="column_box content_list">
+                            <div class="content">
+                                <div class="table_form">
+                                    <table class="table_default table_type2">
+                                        <div class="sub_tit_box button">
+                                            <span class="sub_tit">기본 정보</span>
+                                            <button class="btn btn--primary">브랜드관 상세 수정</button>
+                                        </div>
+                                        <!-- 데이터 있을때 -->
+                                        <tbody class="table_body top_border_bold">
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">브랜드 로고</th>
+                                                <td class="table_type2_data">
+                                                    <div class="brand_logo">
+                                                        <img src="../img/main_logo2.png" alt="main_logo2"/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">법인명</th>
+                                                <td class="table_type2_data">(주)커넥트</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">법인/사업자등록번호</th>
+                                                <td class="table_type2_data">123-012345-6789</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">전화번호</th>
+                                                <td class="table_type2_data">82 010-1234-5678</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">프로필 업데이트</th>
+                                                <td class="table_type2_data">2023-10-16 14:24:35</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">증빙문서</th>
+                                                <td class="table_type2_data">
+                                                    <div class="d_inline_flex align_center gap4">
+                                                        <a href="javascript:ViewImage()" class="text_link">첨부파일.pdf</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 데이터 없을때 -->
+                                        <!-- <tbody class="table_nodata top_border_bold">
+                                            <tr>
+                                                <td colspan="10">    
+                                                    일치하는 정보가 없습니다.
+                                                </td>         
+                                            </tr>
+                                        </tbody> -->
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="table_form">
+                                    <table class="table_default table_type2">
+                                        <div class="sub_tit_box">
+                                            <span class="sub_tit">지역 정보</span>
+                                        </div>
+                                        <!-- 데이터 있을때 -->
+                                        <tbody class="table_body top_border_bold">
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">본점 소재지</th>
+                                                <td class="table_type2_data">서울 강남구 삼성로 547 Bk-Tower 1층</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">사업장 소재지</th>
+                                                <td class="table_type2_data">서울 강남구 삼성로 547 Bk-Tower 1층</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">OS 타입</th>
+                                                <td class="table_type2_data">iOS</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">OS 버전</th>
+                                                <td class="table_type2_data">iOS 17.0.3</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">IP</th>
+                                                <td class="table_type2_data">111.111.111.111</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="btn_box">
+                                    <button onclick="location.href='../brand/brand_list.html'" type="button" class="btn btn--lg btn--basic">목록으로</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,7 +202,7 @@
                 </div>
             </div>
         </div>
-  
+        
 
 
         <!-- //js script -->
@@ -191,24 +210,8 @@
         <script src="../js/jquery_ui.js"></script>
         <script src="../js/bootstrap.js"></script>
         <script src="../js/common.js"></script>
-        <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-        <script>
-            const editor = new toastui.Editor({
-                el: document.querySelector('#editor'),
-                previewStyle: 'vertical',
-                height: '500px',
-                initialValue: '안녕하세요.',
-            });
-    
-            // editor.getHtml()을 사용해서 에디터 내용 받아오기
-            see1 = function() {
-                console.log(editor.getHTML());
-            }
-            see2 = function() {
-                console.log(editor.getMarkdown());
-            }
-        </script>
         <script type="text/javascript">
+
             $(document).ready( function() {
                 $("#top_nav").load("../main/top_nav.html");
                 $("#side_nav").load("../main/side_nav.html");

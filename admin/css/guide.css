@@ -257,6 +257,10 @@ select:disabled {
     width:100%;
     margin-bottom:10px;
 }
+.sub_tit_box.button{
+    display:flex;justify-content: space-between;
+}
+
 .sub_tit{
     font-weight:700;
     font-size:18px;
@@ -860,6 +864,10 @@ select.input_form option{
 .badge_form.is-red{
     color:#b0233a;
     background-color:#fae0e9;
+}
+.badge_form.is-gray{
+    color:#666;
+    background-color:#eee;
 }
 
 

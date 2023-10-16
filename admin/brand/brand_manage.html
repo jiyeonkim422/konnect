@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Konnect Admin</title>
+
+        <!-- SEO meta tag -->
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="date" content="">
+        <meta name="sitecode" content="">
+        <!-- // SEO meta tag -->
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:type" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:locale" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:country-name" content="">
+        <!-- // Open Graph -->
+
+        <!-- Icon & Favicon -->
+        <link rel="shortcut icon" href="../">
+        <link rel="icon" type="image/png" sizes="16x16" href="../">
+        <link rel="icon" type="image/png" sizes="32x32" href="../">
+        <link rel="apple-touch-icon" href="../">
+        <!-- // Icon & Favicon -->
+
+        <link rel="stylesheet" href="../css/common.css">
+
+
+    </head>
+
+    <body data-pagestatus="">
+
+        <div id="wrap">
+            <!-- 상단 메뉴 -->
+            <div id="top_nav" class="top_nav"></div>
+            <!-- 사이드 메뉴 -->
+            <div id="side_nav" class="side_nav"></div>
+            <div class="wrapper">
+                <div class="content_bg">
+                    <div class="title_box">
+                        <h1 class="main_tit">브랜드 등록</h1>
+                        <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="../brand/brand_list.html">브랜드 정보</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">브랜드 등록</li>
+                            </ol>
+                          </nav>
+                    </div>
+                    <div class="content">
+                        <div class="table_form">
+                            <table class="table_default table_type2">
+                                <div class="sub_tit_box">
+                                    <span class="sub_tit">기본 소개</span>
+                                </div>
+                                <!-- 데이터 있을때 -->
+                                <tbody class="table_body top_border_bold">
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head" scope="row">브랜드 명</th>
+                                        <td class="table_type2_data table_type2_input">
+                                            <input class="input_form w_100per" type="text" placeholder="브랜드 명을 입력하세요" value=""/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head">서브 브랜드 명</th>
+                                        <td class="table_type2_data table_type2_input">
+                                            <input class="input_form w_100per" type="text" placeholder="서브 브랜드 명을 입력하세요" value=""/>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head">브랜드 소개글</th>
+                                        <td class="table_type2_data">
+                                            <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글을 작성해주세요."></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head" scope="row">브랜드 이미지 </th>
+                                        <td class="table_type2_data table_type2_input">
+                                            <div class="d_inline_flex align_center gap4">
+                                                <a href="javascript:ViewImage()" class="text_link">이미지.png</a>
+                                                <button type="button" class="btn btn--md btn--fill-primary">등록</button>
+                                                <button type="button" class="btn btn--md btn--warning">취소</button>
+                                            </div>
+                                            <p class="mt_10">
+                                                파일용량 제한 : 사진 1MB 이내, 동영상 100MB 이내
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head">브랜드 소개글 - 번호</th>
+                                        <td class="table_type2_data">
+                                            <div class="brand_info_number">
+                                                <div class="brand_info_number_in">
+                                                    <input class="input_form w_100per" type="text" placeholder="제목" value=""/>
+                                                    <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글 내용"></textarea>
+                                                </div>
+                                                <button type="button" class="btn btn--md btn--primary">추가</button>
+                                            </div>
+                                            <div class="brand_info_number">
+                                                <div class="brand_info_number_in">
+                                                    <input class="input_form w_100per" type="text" placeholder="제목" value=""/>
+                                                    <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="브랜드 소개글 내용"></textarea>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="table_form">
+                            <table class="table_default table_type2">
+                                <div class="sub_tit_box">
+                                    <span class="sub_tit">상세 소개</span>     
+                                </div>
+                                <!-- 데이터 있을때 -->
+                                <tbody class="table_body top_border_bold">
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head" scope="row">운영 시간 안내 - open</th>
+                                        <td class="table_type2_data table_type2_input">
+                                            <input class="input_form w_100per" type="text" placeholder="open" value=""/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head">운영 시간 안내 - close</th>
+                                        <td class="table_type2_data table_type2_input">
+                                            <input class="input_form w_100per" type="text" placeholder="close" value=""/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head">운영 시간 안내 상세</th>
+                                        <td class="table_type2_data">
+                                            <textarea class="textarea_form min_h_100" aria-label="textarea" placeholder="운영 시간 안내 상세글을 작성해주세요."></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_type2_row">
+                                        <th class="table_type2_head">부가 설명</th>
+                                        <td class="table_type2_data">
+                                            <div id="editor" class="editor_box">
+                                                <button onclick="see1()"></button>
+                                                <button onclick="see2()"></button>
+                                            </div>                                        
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_box">
+                            <button type="button" class="btn btn--lg btn--basic">취소</button>
+                            <button type="submit" class="btn btn--lg btn--fill-primary">저장</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p class="footer_detail">© 2023. Konnect All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 알럿 -->
+        <div id="modal_wrap">
+            <div class="modal_bg"></div>
+            <div class="modal_window alert_window">           
+                <div class="popup_content alert_content">
+                    로그아웃 하시겠습니까?
+                </div>    
+                <div class="popup_btn alert">
+                    <button type="button" class="btn btn--md btn--cancle modal_close">취소</button>
+                    <button type="button" class="btn btn--md btn--confirm" onclick="location.href='../alert/alert_logout_confirm.html'">확인</button>
+                </div>
+            </div>
+        </div>
+  
+
+
+        <!-- //js script -->
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/jquery_ui.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+        <script>
+            const editor = new toastui.Editor({
+                el: document.querySelector('#editor'),
+                previewStyle: 'vertical',
+                height: '500px',
+                initialValue: '안녕하세요.',
+            });
+    
+            // editor.getHtml()을 사용해서 에디터 내용 받아오기
+            see1 = function() {
+                console.log(editor.getHTML());
+            }
+            see2 = function() {
+                console.log(editor.getMarkdown());
+            }
+        </script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+                $("#top_nav").load("../main/top_nav.html");
+                $("#side_nav").load("../main/side_nav.html");
+
+            });
+        </script>
+        <!-- //js script -->
+        
+
+    </body>
+
+</html>

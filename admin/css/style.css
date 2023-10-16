@@ -547,6 +547,30 @@
 }
 
 
+.profile_photo{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:2px solid #eee;
+    overflow:hidden;
+}
+.profile_photo > img{
+    width: 100%;
+    height:auto;
+}
+
+
+.brand_logo{
+    width:240px;
+    height:60px;
+}
+.brand_logo > img{
+    width:auto;
+    height:100%;
+}
+
+
+
 /** footer **/
 .footer{
     height:50px;
@@ -586,6 +610,7 @@
 }
 .logo_bk{
     height:40px;
+    width:170px;
     padding:0 20px;
 }
 
