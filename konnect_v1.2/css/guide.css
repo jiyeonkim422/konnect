@@ -273,6 +273,9 @@ textarea {
 .pt_10{
     padding-top:10px !important;
 }
+.pt_14{
+    padding-top:14px !important;
+}
 .pt_20{
     padding-top:20px !important;
 }
@@ -523,6 +526,9 @@ textarea {
 .tx--darkblue{
     color:#002863 !important;
 }
+.tx--darkblue2{
+    color:#5b6b8b !important;
+}
 .tx--blue1{
     color:#0039CC !important;
 }
@@ -532,6 +538,7 @@ textarea {
 .tx--lightblue{
     color:#9FB1CC !important;
 }
+
 
 .tx--gold1{
     color:#e58c23 !important;

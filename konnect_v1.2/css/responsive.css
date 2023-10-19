@@ -20,10 +20,17 @@
         width:48.5%;
     }
 
+    /** 이벤트 리스트 **/
+    .event_list_box{
+        flex-wrap:wrap;
+        flex-direction: inherit;
+    }
+    .event_list_form{
+        width: calc(50% - 20px);
+    }
+
 }
-@media (min-width: 600px) and (max-width : 1025px){
-    
-}
+
 
 
 /** 450사이즈 이상일때 **/
@@ -31,6 +38,7 @@
     .responsive{
         padding:0 100px;
     }
+
 }
 
 /** 370사이즈 미만일때 **/
