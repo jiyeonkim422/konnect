@@ -548,6 +548,13 @@ document.getElementById('goBack2').addEventListener('click', function() {
 
 
 
+
+
+
+
+
+
+
 //alert - alert.js
 const modal = document.getElementById("modal_wrap")//
 const btnModal = document.getElementById("modal_on_btn")
