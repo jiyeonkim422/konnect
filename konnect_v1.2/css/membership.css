@@ -340,3 +340,55 @@ main > .section.section_receipt_detail{
     height:100%;
 }
 
+
+
+
+
+/*** voucher 바우처 ***/
+
+main > .section_voucher_detail{
+    padding-top:80px;
+    padding-bottom:100px;
+}
+
+.voucher_info_box{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voucher_img_box{
+    width:250rem;
+    height:140rem;
+    position:relative;
+}
+.voucher_img_box .voucher_tit{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+}
+.voucher_img_box .voucher_tit p,
+.voucher_img_box .voucher_tit span,
+.voucher_img_box .voucher_tit h3
+{
+    color:#fff;
+    text-align:center;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.24);
+}
+
+.voucher_img_box > img{
+    width:100%;
+    height:auto;
+}
+
+.input_form_box{
+    padding:0 20px;
+}
+
+
+.reservation_status_notice{
+    padding-top:40px;
+}

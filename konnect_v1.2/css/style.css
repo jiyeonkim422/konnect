@@ -1150,6 +1150,7 @@ main > .section{
     transform:translate(-50%,-50%);
 }
 
+
 .modal_top{
     width:100%;
     height:50px;
@@ -1186,6 +1187,26 @@ main > .section{
     align-items: center;
     flex-direction: column;
 }
+
+
+/*** 긴 모달창 ***/
+.modal_window2{
+    height:70%;
+    overflow:auto;
+}
+.modal_window2 .modal_content{
+    padding:30px;
+}
+.modal_window2 .table_input .table_head2{
+    padding:4px 0;
+}
+.modal_window2 .table_input .table_data2{
+    padding:4px 0;
+}
+.modal_window2 .table_input .table_row2 + .table_row2{
+    margin-top:14px;
+}
+
 
 /************** 알럿 alert ***************/
 
@@ -1263,7 +1284,7 @@ main > .section{
     vertical-align: top;
 }
 .table_form .table_data{
-    font-size:12px;
+    font-size:14rem;
     font-weight:600;
     color:#002863;
     line-height:20px;
@@ -1276,4 +1297,94 @@ main > .section{
 .table_data.bold{
     font-weight:700;
     font-size:16px;
+}
+
+
+.table_form2 .table_head{
+    font-size:14rem;
+    font-weight:400;
+    line-height:20px;
+    color:#2b4c7d;
+    text-align:left;
+    padding:8px 4px;
+    vertical-align: top;
+}
+.table_form2.table_data{
+    font-size:12px;
+    font-weight:600;
+    color:#002863;
+    line-height:20px;
+    text-align:right;
+    padding:8px 4px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.table_data2.bold{
+    font-weight:700;
+    font-size:16px;
+}
+
+
+
+/*** 입력폼 테이블 ***/
+.table_input{
+    width:100%;
+    margin-top:20px;
+}
+.table_input .table_row2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.table_input .table_row2 + .table_row2{
+    margin-top:24px;
+}
+
+
+.table_input .table_head2{
+    font-size:14rem;
+    font-weight:700;
+    line-height:20px;
+    color:#2b4c7d;
+    text-align:left;
+    padding:8px 0;
+    vertical-align: top;
+}
+.table_input .table_data2{
+    font-size:14rem;
+    font-weight:500;
+    line-height:20px;
+    color:#000;
+    text-align:left;
+    padding:8px 0;
+    vertical-align: top;
+}
+
+.input_form{
+    border:none;
+    border-bottom:1px solid #666;
+    padding:4px 0;
+    font-size:14rem;
+    line-height:20px;
+    color:#000;
+}
+.input_form::placeholder{
+    color:#c9c9c9;
+}
+
+.textarea_form{
+    border:none;
+    background-color:#f3f4f6;
+    width:100%;
+    border-radius:6px;
+    padding:10px 14px;
+    color:#000;
+    font-size:14rem;
+    line-height:20rem;
+    height:200px;
+}
+.textarea_form::placeholder{
+    color:#aaa;
 }

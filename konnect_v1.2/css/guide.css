@@ -127,6 +127,11 @@ textarea {
     background-color:#00a3ff;
     color:#fff;
 }
+.btn--gray{
+    border:none;
+    background-color:#F3F4F6;
+    color:#2B4C7D;
+}
 .btn--white-stroke{
     border:2px solid #fff;
     color:#fff;
@@ -164,6 +169,20 @@ textarea {
 }
 .btn_box2{
     margin:20px 0;
+}
+
+.btn_multi{
+    display:flex;
+    width:100%;
+    gap:6px;
+}
+
+.btn_sticky{
+    position:sticky;
+    bottom:0;
+    background-color:#fff;
+    padding:20px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 /****************** 마진 margin ******************/
@@ -270,6 +289,9 @@ textarea {
 }
 
 
+.pt_4{
+    padding-top:4px !important;
+}
 .pt_10{
     padding-top:10px !important;
 }
@@ -348,7 +370,7 @@ textarea {
 }
 .w_230{
     width:230px !important;
-}
+} 
 
 
 
