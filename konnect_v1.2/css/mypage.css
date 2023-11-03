@@ -46,4 +46,21 @@
     gap:20px;
     width:100%;
     padding:4px;
+}   
+
+
+.profile_img_form{
+    position:relative;
+}
+.profile_edit{
+    width:45px;
+    height:45px;
+    background-color:#282828;
+    position:absolute;
+    border-radius:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    right:0;
 }

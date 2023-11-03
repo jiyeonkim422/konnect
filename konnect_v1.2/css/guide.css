@@ -205,6 +205,10 @@ textarea {
     margin-right:8px !important;
 }
 
+
+.mt_0{
+    margin-top:0 !important;
+}
 .mt_2{
     margin-top:2px !important;
 }
@@ -593,6 +597,14 @@ textarea {
 .tx--warning{
     color:#CE2827 !important;
 }
+.tx--warning2{
+    color:#fd3020 !important;
+}
+
+.tx--confirm2{ 
+    color: #1FBCFF !important;
+}
+
 
 .tx--gradient{
     font-weight:700;
@@ -629,6 +641,9 @@ textarea {
     font-weight:900 !important;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
 
 .sentence_1{
     display: block;
@@ -1112,6 +1127,14 @@ textarea {
     height:24px;
 }
 
+
+.ic_profile_edit{
+    background-image: url(../img/svg/ic_profile_edit.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px;
+}
 
 
 

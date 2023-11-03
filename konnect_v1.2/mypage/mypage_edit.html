@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Konnect</title>
+
+        <!-- SEO meta tag -->
+        <meta name="apple-mobile-web-app-title" content=""> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+        <meta name="title" content="Konnect">
+        <meta name="description" content="">
+        <meta name="keywords" content="Konnect Web3, Konnect, KCT, kct, konnectkct, NFT, nft, Duman, DUMAN, 듀먼, 커넥트, 커넥트 웹3">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="author" content="KCT-Konnect">
+        <!-- // SEO meta tag -->
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:type" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:locale" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:country-name" content="">
+        <!-- // Open Graph -->
+
+        <!-- Icon & Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- // Icon & Favicon -->
+
+        <link rel="stylesheet" href="../css/common.css">
+        
+    </head>
+
+    <body class="body_bg_bk"> 
+        <div class="wrap">
+            <!-- // Header -->
+            <header id="header" class="header sub_header"></header>
+            <!-- // Content -->                 
+            <main id="content" class="sub_main_content">
+                <section class="section section_sub_main">
+                    <div class="my_info">    
+                        <div class="profile_img_form">
+                            <div class="profile_img big">
+                                <!-- 기본이미지 -->
+                                <img src="../img/temp/default_img.png" alt="profile_img"/>
+                            </div>
+                            <div class="profile_edit">
+                                <i class="ic ic_profile_edit"></i>
+                            </div>
+                        </div>
+                        <div class="table_form p_side_20 pb_40 ">
+                            <table class="table_input table_input_wh mt_0">
+                                <tbody class="table_body">
+                                    <tr class="table_row2">
+                                        <th class="table_head2" scope="row">닉네임 설정</th>
+                                        <td class="table_data2">
+                                            <input type='button'
+                                            onclick='count("plus")'
+                                            value='+'/>
+                                        <input type='button'
+                                            onclick='count("minus")'
+                                            value='-'/>
+                                        <div id='result'>0</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2" scope="row">닉네임 설정</th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per" minlength="1" maxlength="20" type="text" placeholder="커넥트" value=""/>
+                                            <p class="input_guide ">최소 1자, 최대 20자 이내로 입력해주세요</p>
+                                            <!-- <p class="input_guide tx--warning2">이미 사용중인 닉네임이에요!</p> -->
+                                            <p class="input_guide tx--confirm2 ">변경 가능한 닉네임이에요!</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2" scope="row">이메일 주소</th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per" minlength="1" readonly maxlength="20" type="text" placeholder="" value="konnect@email.com"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2" scope="row">휴대폰 번호</th>
+                                        <td class="table_data2">
+                                            <div class="select_input_group">
+                                                <div class="select_option input_form input_form_code">
+                                                    <ul class="default_option">
+                                                        <li><p class="option">+82</p></li>
+                                                    </ul>           
+                                                    <ul class="select_ul">
+                                                        <li>
+                                                            <p class="option_national">대한민국</p>
+                                                            <p class="option">+82</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="option_national">가나</p>
+                                                            <p class="option">+233</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="option_national">가봉</p>
+                                                            <p class="option">+241</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="option_national">가이아나</p>
+                                                            <p class="option">+592</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="option_national">감비아</p>
+                                                            <p class="option">+220</p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="option_national">괌</p>
+                                                            <p class="option">+1671</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input class="input_form input_form_phone " name="cellPhone" id="cellPhone"  maxlength="20" type="text" placeholder="휴대폰 번호 입력" value=""/>
+                                            </div>
+                                            <p class="input_guide">휴대폰 번호를 숫자만 입력해 주세요</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2" scope="row">여권 상 영문이름</th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per uppercase" minlength="1" maxlength="20" type="text" placeholder="HONG GILDONG" value=""/>
+                                            <p class="input_guide">투숙객 이름은 체크인 시 제시할<br/>유효한 신분증 이름과 정확히 일치해야 합니다.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th>
+                                            <button class="btn btn--full btn--lg btn--primary2">저장하기</button>
+                                        </th>
+                                    </tr>
+
+
+                                    <tr class="table_row2 pt_50">
+                                        <th class="table_head2 table_head_icon" scope="row">멤버십 번호
+                                            <button onclick="toast('멤버십 번호가 클립보드에 복사되었습니다.')"><i id="copy_btn" class="ic ic_copy"></i></button>
+                                        </th>
+                                        <td class="table_data2">
+                                            <div id="copy_text" class="input_form">
+                                                <p>ABCD-1234-5678-9090</p>
+                                            </div>
+                                        </td>
+                                        <div id="toast"></div>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2 table_head_icon" scope="row">나의 초대장 번호
+                                            <button onclick="toast('나의 초대장 번호가 클립보드에 복사되었습니다.')"><i id="copy_btn" class="ic ic_copy"></i></button>
+                                        </th>
+                                        <td class="table_data2">
+                                            <div id="copy_text" class="input_form">
+                                                <p>A000000</p>
+                                            </div>                                        
+                                        </td>
+                                        <div id="toast"></div>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th>
+                                            <button class="btn btn--full btn--lg btn--stroke-primary2">친구한테 공유하기</button>
+                                        </th>
+                                    </tr>
+                                    <tr class="table_row2 pt_50">
+                                        <th class="table_head2" scope="row">추천인 초대장 번호 입력하기</th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per" minlength="6" maxlength="6" type="text" placeholder="000000" value=""/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th>
+                                            <button class="btn btn--full btn--lg btn--white-stroke">초대장 번호 등록하기</button>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>    
+                    </div>
+
+
+                </section>
+            </main>
+            <!-- // Footer -->
+            <!-- <footer id="footer" class="footer main_footer"></footer> -->
+            <!-- // Tab Bar -->
+            <!-- <div id="tabbar" class="tabbar"></div> -->
+                
+            <div id="safe_area_bottom"></div>
+        </div>
+        
+        
+    
+        <!-- //js script -->
+        <script src="../js/libs/jquery-3.6.0.min.js"></script>
+        <script src="../js/libs/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $(".sub_header").load("../views/sub_header.html");
+                $(".main_footer").load("../views/main_footer.html");
+                $(".tabbar").load("../views/tabbar.html");
+            });
+
+            //국가코드 설정
+            $(function() {
+                $(".default_option").click(function(){
+                    $(this).parent().toggleClass("active");
+                });
+
+                $(".select_option").each(function() {
+                    var $selectOption = $(this);
+                    $selectOption.find(".select_ul li").click(function(){
+                        var currentele = $(this).children(".option").html();
+                        $selectOption.find(".default_option li .option").html(currentele);
+                        $selectOption.removeClass("active");
+                    });
+                });
+            });
+
+
+        </script>
+        <!-- //js script -->
+
+    </body>
+</html> 

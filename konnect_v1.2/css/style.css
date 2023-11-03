@@ -1327,6 +1327,136 @@ main > .section{
 }
 
 
+/** 선택폼 **/
+/** select_option_form **/
+
+.option_btn_group{
+    gap:4px;
+    display:flex;
+    flex-direction: row;
+}
+  .select_option{
+    position: relative;
+    user-select: none;
+    height:32px;
+    padding:5px 18px 5px 8px;
+    width:120px;
+    background-image:url(../img/svg/ic_arrow.svg);
+    background-repeat: no-repeat;
+    background-position:right 5px center;
+    background-size: auto;
+    font-size:13px;
+    color: #9493a7;
+  }
+
+
+  .select_option .default_option{
+    position: relative;
+    cursor: pointer;
+    width:100%;
+  }
+  .select_option .default_option .option{
+    color:#000;
+  }
+    .table_input_wh .select_option .default_option .option{
+        color:#fff;
+    }
+    .select_option .select_ul{
+        position: absolute;
+        top: 36px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 4px;
+        display: none;
+        border:1px solid #ddd;
+        max-height:200px;
+        overflow-x: hidden;
+        overflow-y: overlay;
+    }
+    .table_input_wh .select_option .select_ul{
+        background: #333;
+        border:1px solid #555;
+    }
+
+
+  .select_ul::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+  }
+.select_ul::-webkit-scrollbar-thumb {
+    border:5px solid transparent;
+    border-radius: 100px;
+    background-color: #ddd;
+    background-clip: padding-box;
+}      
+.select_ul::-webkit-scrollbar-track {
+    background-color:transparent ;
+}
+  
+
+
+
+.select_option .select_ul li{
+    padding:10px 8px;
+    cursor: pointer; 
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    white-space: nowrap;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    color:#555;
+}
+.table_input_wh .select_option .select_ul li{
+    color:#ddd;
+}
+
+.select_option .select_ul li .option_national{
+    padding-right:6px;
+}
+
+  
+  .select_option .select_ul li:first-child:hover{
+    border-top-left-radius: 5px;
+    /* border-top-right-radius: 5px; */
+  }
+  
+  .select_option .select_ul li:last-child:hover{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .select_option .select_ul li:hover{
+    background: #f1f1f1;
+    color:#000;
+  }   
+  .table_input_wh .select_option .select_ul li:hover{
+    background: #000;
+    color:#fff;
+  }   
+  
+  .select_option .option .icon{
+    background: url('https://i.imgur.com/oEZu0sK.png') no-repeat 0 0;
+      width: 32px;
+      height: 32px;
+    margin-right: 15px;
+  }
+  
+  .select_option.active .select_ul{
+    display: block;
+  }
+  .select_option.active .select_ul > li{
+    display:flex;
+  }  
+
+
 
 /*** 입력폼 테이블 ***/
 .table_input{
@@ -1343,22 +1473,22 @@ main > .section{
 }
 
 
-.table_input .table_head2{
+.table_input .table_head2{           
     font-size:14rem;
     font-weight:700;
     line-height:20px;
     color:#2b4c7d;
     text-align:left;
-    padding:8px 0;
+    padding:6px 0;
     vertical-align: top;
-}
+}           
 .table_input .table_data2{
     font-size:14rem;
     font-weight:500;
     line-height:20px;
     color:#000;
     text-align:left;
-    padding:8px 0;
+    padding:6px 0;
     vertical-align: top;
 }
 
@@ -1373,6 +1503,60 @@ main > .section{
 .input_form::placeholder{
     color:#c9c9c9;
 }
+
+
+
+/** select랑 input 같이 쓸때 **/
+.select_input_group{
+    display:flex;
+    gap:10px;
+    position:relative;
+}
+.select_input_group .select_option{
+    position:initial;
+}
+.select_input_group .select_option .default_option{
+    position:initial;
+}
+
+
+
+
+/*** 테이블 입력폼 배경 화이트 ***/
+.table_input_wh .table_head2 {
+    color: #fff;
+}
+
+.table_input_wh .input_form{
+    background-color:#000;
+    color:#fff;
+}
+.table_input_wh .input_form::placeholder{
+    color:#787878;
+}
+
+
+.input_form_code {
+    width:50px;
+    color:#000;
+}
+
+.input_form_phone{
+    width:calc(100% - 50px);
+}
+
+
+.table_input_wh .input_guide{
+    color:#ccc;
+}
+
+/** 테이블 타이틀에 아이콘 포함 **/
+.table_head_icon{
+    display:flex;
+    gap:6px;
+}
+
+
 
 
 /** input date(달력) **/
@@ -1419,4 +1603,93 @@ input[type='date']::before {
 }
 .textarea_form::placeholder{
     color:#aaa;
+}
+
+
+
+
+/**  클립보드에 복사 - 토스트 메세지 **/
+#toast {
+position: fixed;
+min-width: 150px;
+bottom: 50px;
+left: 50%;
+transform:translateX(-50%);
+text-align: center;
+}
+
+#toast .toastWrap {
+margin: 6px 0 0;
+padding: 18px 0 15px;
+display: none;
+}
+
+.toast {
+color: #fff;
+background: #333;
+padding: 14px 20px;
+text-align: center;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+font-family: arial;
+font-size: 13px;
+white-space: pre;
+position: relative;
+width:100%;
+}
+
+#toast > b {
+display: block;
+position: absolute;
+top: 3px;
+right: 4px;
+width: 12px;
+height: 12px;
+font: normal 12px/1 Arial, sans-serif;
+text-align: right;
+cursor: pointer;
+text-shadow: #FFF 0 1px 0;
+}
+
+#toast > b:before {
+content: "\2716";
+}
+
+.timerWrap {
+position: absolute;
+bottom: 4px;
+left: 4px;
+overflow: hidden;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+.timer {
+/* display: block; */
+display:none;
+height: 4px;
+width: 0;
+background-color: #F1D031;
+}
+
+
+
+
+/*** 수량 증가 감소 ***/
+.quantity{
+    display:flex;
+}
+.quantity_value{
+    color:#000;
+    font-size:14px;
+    width:30px;
+}
+.quantity_btn{
+    border-radius:20px;
+    padding:4px;
+    width:24px;
+    height:24px;
+    border:none;
 }

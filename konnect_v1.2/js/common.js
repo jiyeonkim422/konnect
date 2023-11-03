@@ -1,6 +1,7 @@
 //롤링 공지사항
 //slider-notice.js
 
+
 $(document).ready(function(){
 	var height =  $(".notice").height(); 
 	var num = $(".rolling li").length; 
@@ -25,6 +26,8 @@ $(document).ready(function(){
 		noticeRollingOff = setInterval(noticeRolling,1000); 
 	});
 });
+
+
 
 
  //history back - 페이지 뒤로가기
@@ -266,114 +269,6 @@ $(document).ready(function () {
 
 
 
-
-// 카운트다운 - 1
-var countDownDate = new Date("2023-09-30 00:00:00").getTime();
-
-function timePart(val, text, color = "white") {
-    return `<h1 class="timer" style="color:${color};">${val}<div>${text}</div></h1>`
-}
-
-var x = setInterval(function () {
-
-
-    var now = new Date().getTime();
-
-    var distance = countDownDate - now;
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
-    document.getElementById("countdown_1").innerHTML = res
-
-    // console.log(distance);
-
-    if (distance < 0) {
-        clearInterval(x);
-
-        let res = timePart(0, 'Day') + timePart(0, '') + timePart(0, ''); // + timePart(0, 'Seconds', 'red');
-        document.getElementById("countdown_1").innerHTML = res
-
-        //document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-}, 1000);
-
-// 카운트다운 - 2
-var countDownDate2 = new Date("2023-10-31 00:00:00").getTime();
-
-function timePart(val, text, color = "white") {
-    return `<h1 class="timer" style="color:${color};">${val}<div>${text}</div></h1>`
-}
-
-var x = setInterval(function () {
-
-
-    var now = new Date().getTime();
-
-    var distance = countDownDate2 - now;
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
-    document.getElementById("countdown_2").innerHTML = res
-
-    // console.log(distance);
-
-    if (distance < 0) {
-        clearInterval(x);
-
-        let res = timePart(0, 'Day') + timePart(0, '') + timePart(0, ''); // + timePart(0, 'Seconds', 'red');
-        document.getElementById("countdown_2").innerHTML = res
-
-        //document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-}, 1000);
-
-// 카운트다운 - 3
-var countDownDate3 = new Date("2023-11-31 00:00:00").getTime();
-
-function timePart(val, text, color = "white") {
-    return `<h1 class="timer" style="color:${color};">${val}<div>${text}</div></h1>`
-}
-
-var x = setInterval(function () {
-
-
-    var now = new Date().getTime();
-
-    var distance = countDownDate3 - now;
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    let res = timePart(days, 'Day') + timePart(hours, '') + timePart(minutes, '');// + timePart(seconds, 'Seconds', 'red');
-    document.getElementById("countdown_3").innerHTML = res
-
-    // console.log(distance);
-
-    if (distance < 0) {
-        clearInterval(x);
-
-        let res = timePart(0, 'Day') + timePart(0, '') + timePart(0, ''); // + timePart(0, 'Seconds', 'red');
-        document.getElementById("countdown_3").innerHTML = res
-
-        //document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-}, 1000);
-
-
-
-
-
-
   //modal(bottom sheet & action sheet) show / 모달창(바텀시트 & 액션시트)
 
     // var modals = document.getElementsByClassName("bottom_sheet_box");
@@ -498,6 +393,11 @@ $('.show_layerpopup').on('click', function(e) {
 
 
 
+
+
+  
+
+
 //레이어팝업 두개일때
 let currentModal = null;
 
@@ -579,3 +479,85 @@ window.addEventListener("keyup", e => {
         modal.style.display = "none"
     }
 })
+
+
+
+
+
+   
+//input_option.js
+// $(function() {
+//     $(".default_option").click(function(){
+//         $(this).parent().toggleClass("active");
+//     });
+
+//     $(".select_option").each(function() {
+//         var $selectOption = $(this);
+//         $selectOption.find(".select_ul li .option").click(function(){
+//             var currentele = $(this).html();
+//             $selectOption.find(".default_option li .option").html(currentele);
+//             $selectOption.removeClass("active");
+//         });
+//     });
+// });
+
+
+
+
+// 토스트 메세지.js
+ function fillWidth(elem, timer, limit) {
+	// if (!timer) { timer = 3000; }	
+	// if (!limit) { limit = 100; }
+	var width = 1;
+	var id = setInterval(frame, timer / 100);
+		function frame() {
+		if (width >= limit) {
+			clearInterval(id);
+		} else {
+			width++;
+			elem.style.width = width + '%';
+		}
+	}
+};
+
+function toast(msg, timer) {
+	if (!timer) { timer = 1000; }
+	var $elem = $("<div class='toastWrap'><span class='toast'>" + msg + "<b></b><div class='timerWrap'><div class='timer'></div></div></span></div>");
+	$("#toast").append($elem); //top = prepend, bottom = append
+	$elem.slideToggle(100, function() {
+		$('.timerWrap', this).first().outerWidth($elem.find('.toast').first().outerWidth() - 10);
+		if (!isNaN(timer)) {
+			fillWidth($elem.find('.timer').first()[0], timer);
+			setTimeout(function() {
+				$elem.fadeOut(function() {
+					$(this).remove();
+				});
+			}, timer);			
+		}
+	});
+}
+
+$("#toast").on("click", "b", function() {
+	$(this).closest('.toastWrap').remove();
+})
+
+
+
+//수량 옵션
+function count(type)  {
+    // 결과를 표시할 element
+    const resultElement = document.getElementById('quantity_value');
+    
+    // 현재 화면에 표시된 값
+    let number = resultElement.innerText;
+    
+    // 더하기/빼기
+    if(type === 'plus') {
+      number = parseInt(number) + 1;
+    }else if(type === 'minus')  {
+      number = parseInt(number) - 1;
+    }
+    
+    // 결과 출력
+    resultElement.innerText = number;
+  }
