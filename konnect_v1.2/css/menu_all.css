@@ -157,3 +157,33 @@ main > .section_menu{
     height:100%;
     object-fit: cover;
 }
+
+
+
+
+/*** 전체메뉴 리뉴얼 디자인 ***/
+.profile_info2{
+    width:100%;
+    display:flex;
+}
+
+.profile_img2{
+    width:60rem;
+    height:60rem;
+}
+.profile_name{
+    font-weight:700;
+    font-size:14rem;
+    color:#000;
+    line-height:20rem;
+    display:flex;
+}
+.profile_name em{
+    display:block;
+    /* display: -webkit-box; */
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width: 195px;
+}

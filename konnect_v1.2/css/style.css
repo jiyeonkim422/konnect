@@ -1557,6 +1557,15 @@ main > .section{
 }
 
 
+/** 숫자 증가&감소 버튼 숨기기 **/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
 
 
 /** input date(달력) **/
@@ -1574,9 +1583,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
    height: 18px;
    border-width: thin;
 }
-
-
-
 input[type='date']::before {
     content: attr(data-placeholder);
     width: 100%;
@@ -1589,7 +1595,32 @@ input[type='date']::before {
   }
    
 
+/** input time(시계) **/
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+   color: rgba(0, 0, 0, 0);
+   opacity: 1;
+   display: block;
+   background: url('../img/svg/ic_clock.svg') no-repeat 98% 50%;
+   width: 30px;
+   height: 18px;
+   border-width: thin;
+}
+input[type='time']::before {
+    content: attr(time-placeholder);
+    width: 100%;
+    color:#c9c9c9;
+  }
 
+
+
+textarea{
+    resize:none;
+}
 .textarea_form{
     border:none;
     background-color:#f3f4f6;
@@ -1678,13 +1709,17 @@ background-color: #F1D031;
 
 
 /*** 수량 증가 감소 ***/
-.quantity{
+.quantity_form{
     display:flex;
+    justify-content: space-between;
 }
 .quantity_value{
     color:#000;
     font-size:14px;
     width:30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .quantity_btn{
     border-radius:20px;
@@ -1692,4 +1727,13 @@ background-color: #F1D031;
     width:24px;
     height:24px;
     border:none;
+    background-color:#fff;
+}
+.quantity_btn_minus{
+    background-image:url(../img/svg/ic_minus.svg);
+    background-size:auto;
+}
+.quantity_btn_plus{
+    background-image:url(../img/svg/ic_plus.svg);
+    background-size:auto;
 }

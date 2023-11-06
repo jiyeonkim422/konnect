@@ -249,15 +249,87 @@
                 </div>
             </div>
 
-            <h2>quantity</h2>
+            <h2>Input & Select</h2>
             <div class="uio_box">
+                <h2>Input Form - Text</h2>
+                <div class="uio_box">
+                    <input class="input_form w_100per pt_2" type="text" maxlength="20" placeholder="이름을 입력하세요" value=""/> 
+                </div>
+
+                <h2>Input Form - Time</h2>
+                <div class="uio_box">
+                    <input class="input_form w_100per pt_2"
+                    type="time"
+                    time-placeholder="시간을 선택하세요"
+                    required
+                    aria-required="true"
+                    placeholder="시간을 선택하세요"/> 
+                </div>
+
+                <h2>Input Form - Date</h2>
+                <div class="uio_box">
+                    <input class="input_form date_input w_100per"
+                    type="date"
+                    data-placeholder="날짜를 선택하세요"
+                    required
+                    aria-required="true"
+                    value={startDateValue}
+                    className={styles.selectDay}
+                    onChange={StartDateValueHandler}/>
+                </div>
+
+                <h2>Input Form - Cellphone</h2>
+                <div class="uio_box">
+                    <div class="select_input_group">
+                        <div class="select_option input_form input_form_code">
+                            <ul class="default_option">
+                                <li><p class="option tx--black">+82</p></li>
+                            </ul>           
+                            <ul class="select_ul">
+                                <li>
+                                    <p class="option_national">대한민국</p>
+                                    <p class="option">+82</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">가나</p>
+                                    <p class="option">+233</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">가봉</p>
+                                    <p class="option">+241</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">가이아나</p>
+                                    <p class="option">+592</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">감비아</p>
+                                    <p class="option">+220</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">괌</p>
+                                    <p class="option">+1671</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <input class="input_form input_form_phone " name="cellPhone" id="cellPhone"  maxlength="20" type="number" placeholder="휴대폰 번호 입력" value=""/>
+                    </div>
+                    <p class="input_guide">휴대폰 번호를 숫자만 입력해 주세요</p>
+                </div>
+
                 <h2>quantity</h2>
                 <div class="uio_box">
-                    <div class="quantity">
-                        <input class="quantity_btn" type='button' onclick='count("minus")' value='-'/>
-                        <div id='quantity_value' class="quantity_value">0</div>
-                        <input class="quantity_btn" type='button' onclick='count("plus")' value='+'/>
+                    <div class="quantity_form input_form">
+                        <input class="quantity_btn quantity_btn_minus" type='button' onclick='count("minus")' value=''/>
+                        <div id='quantity_value' class="quantity_value">1</div>
+                        <input class="quantity_btn quantity_btn_plus" type='button' onclick='count("plus")' value=''/>
                     </div>
+                    <p class="input_guide">최대 <span class="tx--blue1 semibold">5</span>개 까지 사용신청 가능해요</p>
+                </div>
+
+                <h2>Textarea</h2>
+                <div class="uio_box">
+                    <textarea class="textarea_form min_h_100" maxlength="500" aria-label="textarea" placeholder="특별요청사항을 작성해주세요"></textarea>
                 </div>
             </div>
         </div>

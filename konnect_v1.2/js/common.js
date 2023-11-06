@@ -543,6 +543,31 @@ $("#toast").on("click", "b", function() {
 
 
 
+   // 3. 다른 태그(div등)의 값 복사 기능 구현
+   document.getElementById("copy_btn").onclick = function(){
+    // div 내부 텍스트 취득
+    const valOfDIV = document.getElementById("copy_text").innerText;
+
+    // textarea 생성
+    const textArea = document.createElement('textarea');
+
+    // textarea 추가
+    document.body.appendChild(textArea);
+    
+    // textara의 value값으로 div내부 텍스트값 설정
+    textArea.value = valOfDIV;
+
+    // textarea 선택 및 복사
+    textArea.select();
+    document.execCommand('copy');
+
+    // textarea 제거
+    document.body.removeChild(textArea);
+}
+
+
+
+
 //수량 옵션
 function count(type)  {
     // 결과를 표시할 element
@@ -552,12 +577,20 @@ function count(type)  {
     let number = resultElement.innerText;
     
     // 더하기/빼기
-    if(type === 'plus') {
+    if(type === 'plus' && number < 5) {
       number = parseInt(number) + 1;
-    }else if(type === 'minus')  {
+    }else if(type === 'minus' && number > 1)  {
       number = parseInt(number) - 1;
     }
     
     // 결과 출력
     resultElement.innerText = number;
+      // 만약 number가 5일 때 알림창 표시
+    if (number >= 5) {
+        alert('최대 n개까지만 ');
+    }
   }
+
+
+
+

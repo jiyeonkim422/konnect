@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Konnect</title>
+
+        <!-- SEO meta tag -->
+        <meta name="apple-mobile-web-app-title" content=""> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+        <meta name="title" content="Konnect">
+        <meta name="description" content="">
+        <meta name="keywords" content="Konnect Web3, Konnect, KCT, kct, konnectkct, NFT, nft, Duman, DUMAN, 듀먼, 커넥트, 커넥트 웹3">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="author" content="KCT-Konnect">
+        <!-- // SEO meta tag -->
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:type" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:locale" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:country-name" content="">
+        <!-- // Open Graph -->
+
+        <!-- Icon & Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- // Icon & Favicon -->
+
+        <link rel="stylesheet" href="../css/common.css">
+
+    </head>
+
+    <body class="body_bg_gray"> 
+        <div class="wrap">
+            <header id="header" class="header sub_header">       
+                <div id="safe_area_top" class="status_bar"></div>
+                <div class="navigation_bar bg--white">
+                    <div class="arrow_title">
+                        <div class="arrow_back go_back" onclick="goBack();">
+                            <i class="ic ic_arrow_left">
+                                <img src="../img/svg/arrow_left.svg"/>
+                            </i>
+                        </div>
+                        <div class="nav_title tx--black">전체보기</div>
+                    </div>
+                    <div class="nav_icon_box" onclick="location.href='../setting/setting_list.html'">
+                        <!-- <i class="ic ic_alarm">
+                            <img src="../img/svg/alarm.svg" alt=""/>
+                        </i> -->
+                        <i class="ic ic_setting mb_4">
+                            <img src="../img/svg/setting.svg" alt=""/>
+                        </i>
+                    </div>
+                </div>
+            </header>
+            <main id="content" class="sub_content">
+                <section class="section section_menu">
+                    <div class="section_in p_side_20 menu_top">
+                        <div class="profile_info2">
+                            <div class="profile_img profile_img2">
+                                <!-- 기본이미지 -->
+                                <img src="../img/temp/default_img.png" alt="profile_img"/>
+                            </div>
+                            <div class="profile_name_info">
+                                <h2 class="profile_name mt_4">
+                                    <!-- 닉네임은 최대10자 -->
+                                    <em>닉네임은최대10자로</em> 님  
+                                    <i class="ic_arrow_m rotate_270"></i>
+                                 </h3>
+                            </div>
+                            <!-- 버튼 선택시 나의멤버십 화면으로 이동 -->
+                            <button type="button" onclick="location.href='../mypage/mypage_main.html'" type="button" class="btn btn--xs btn--primary1 btn--icon">
+                                <span>MY</span>
+                                <img src="../img/svg/arrow_right_wh_sm.svg">
+                            </button>
+                        </div>
+                        <ul class="quick_info">
+                            <li class="q_info" onclick="location.href='../event/event_list.html'">
+                                이벤트
+                            </li>
+                            <li class="q_info" onclick="location.href='../notice/notice_list.html'">
+                                공지사항
+                            </li>
+                            <li class="q_info" onclick="location.href='../cs/inquiry.html'">
+                                고객센터
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section_in menu_list_area p_side_20">
+                        <ul class="menu_list">
+                            <li class="menu_li" onclick="location.href='../wallet/wallet_main.html'">
+                                <div class="menu_icon">
+                                    <img src="../img/svg/menu_wallet.svg" alt="menu_wallet"/>
+                                </div>
+                                <p class="menu_link">내 지갑</p>
+                            </li>
+                            <li class="menu_li" onclick="location.href='../membership/membership_main.html'">
+                                <div class="menu_icon">
+                                    <img src="../img/svg/menu_membership.svg" alt="menu_membership"/>
+                                </div>
+                                <p class="menu_link">나의 멤버십</p>
+                            </li>
+                            <li class="menu_li" onclick="location.href='../brand/brand_main.html'">
+                                <div class="menu_icon">
+                                    <img src="../img/svg/menu_brand.svg" alt="menu_brand"/>
+                                </div>
+                                <p class="menu_link">브랜드관</p>
+                            </li>
+                            <li class="menu_li" onclick="location.href='../store/store_main.html'">
+                                <div class="menu_icon">
+                                    <img src="../img/svg/menu_store.svg" alt="menu_store"/>
+                                </div>
+                                <p class="menu_link">스토어</p>
+                            </li>
+                            <li class="menu_li" onclick="location.href='../nft/nft.html'">
+                                <div class="menu_icon">
+                                    <img src="../img/svg/menu_nft.svg" alt="menu_nft"/>
+                                </div>
+                                <p class="menu_link">NFT관</p>
+                            </li>
+                            <li class="menu_li" onclick="location.href='../use_guide/use_guide.html'">
+                                <div class="menu_icon">
+                                    <img src="../img/svg/menu_guide.svg" alt="menu_guide"/>
+                                </div>
+                                <p class="menu_link">안내서</p>
+                            </li>
+                        </ul>
+                        <div class="ad_event" onclick="location.href='../event/event_invitation.html'">
+                            <img src="../img/temp/home_banner6_ko.png" alt="invite_event"/>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- <footer id="footer" class="footer sub_footer"></footer> -->
+            <div id="safe_area_bottom"></div>
+    
+        </div>
+    
+
+        <!-- //js script -->
+        <script src="../js/libs/jquery-3.6.0.min.js"></script>
+        <script src="../js/libs/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript">
+                $(".sub_footer").load("../views/sub_footer.html");
+        </script>
+        <!-- //js script -->
+
+    </body>
+</html> 
