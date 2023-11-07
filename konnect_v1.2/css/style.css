@@ -473,6 +473,17 @@ main > .section{
     height:100%;
 }
 
+.card_img_xs{
+    width:auto;
+    height:50px;
+}
+.card_img_xs > img{
+    width:auto;
+    height:100%;
+}
+
+
+
 
 
 

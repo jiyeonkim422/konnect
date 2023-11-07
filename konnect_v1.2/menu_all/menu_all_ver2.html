@@ -46,7 +46,7 @@
 
     </head>
 
-    <body class="body_bg_gray"> 
+    <body class="body_bg_white "> 
         <div class="wrap">
             <header id="header" class="header sub_header">       
                 <div id="safe_area_top" class="status_bar"></div>
@@ -71,80 +71,225 @@
             </header>
             <main id="content" class="sub_content">
                 <section class="section section_menu">
-                    <div class="section_in p_side_20 menu_top">
+                    <div class="section_in p_side_20 menu_top menu_top2">
                         <div class="profile_info2">
-                            <div class="profile_img profile_img2">
-                                <!-- 기본이미지 -->
-                                <img src="../img/temp/default_img.png" alt="profile_img"/>
-                            </div>
-                            <div class="profile_name_info">
-                                <h2 class="profile_name mt_4">
-                                    <!-- 닉네임은 최대10자 -->
-                                    <em>닉네임은최대10자로</em> 님  
-                                    <i class="ic_arrow_m rotate_270"></i>
-                                 </h3>
+                            <div class="d_flex align_center gap10">
+                                <div class="profile_img profile_img2">
+                                    <!-- 기본이미지 -->
+                                    <img src="../img/temp/default_img.png" alt="profile_img"/>
+                                </div>
+                                <div class="profile_name_info">
+                                    <div class="profile_grade">
+                                        <div class="badge_grade">
+                                            <img src="../img/temp/grade_e.png" alt="grade_e"/> 
+                                        </div>
+                                        <p class="regular_text semibold tx--earlybird">EARLY BIRLD</p>
+                                    </div>
+                                    <h2 class="profile_name">
+                                        <!-- 닉네임은 최대10자 -->
+                                        <em>닉네임은최대10자로</em> 님  
+                                        <i class="ic_arrow_m rotate_270"></i>
+                                     </h3>
+                                </div>
                             </div>
                             <!-- 버튼 선택시 나의멤버십 화면으로 이동 -->
-                            <button type="button" onclick="location.href='../mypage/mypage_main.html'" type="button" class="btn btn--xs btn--primary1 btn--icon">
-                                <span>MY</span>
-                                <img src="../img/svg/arrow_right_wh_sm.svg">
+                            <button
+                                type="button"
+                                onclick="location.href='../mypage/mypage_main.html'"
+                                class="btn btn--md btn--stroke-gray">
+                                <span>Membership</span>
                             </button>
                         </div>
-                        <ul class="quick_info">
+                        <ul class="quick_info quick_info2">
                             <li class="q_info" onclick="location.href='../event/event_list.html'">
-                                이벤트
+                                KCT
+                                <p class="q_info_value">{0}</p>
                             </li>
                             <li class="q_info" onclick="location.href='../notice/notice_list.html'">
-                                공지사항
+                                KROWN
+                                <p class="q_info_value">{1,500}</p>
                             </li>
                             <li class="q_info" onclick="location.href='../cs/inquiry.html'">
-                                고객센터
-                            </li>
+                                ETH
+                                <p class="q_info_value">{0}</p>
+                            </li>         
                         </ul>
                     </div>
-                    <div class="section_in menu_list_area p_side_20">
+                    <div class="line_10"></div>
+                    <div class="section_in menu_list_area2">
                         <ul class="menu_list">
                             <li class="menu_li" onclick="location.href='../wallet/wallet_main.html'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_wallet.svg" alt="menu_wallet"/>
+                                <div class="d_flex align_center">
+                                    <div class="menu_icon">
+                                        <img src="../img/svg/menu_wallet.svg" alt="menu_wallet"/>
+                                    </div>
+                                    <p class="menu_link">내 지갑</p>
                                 </div>
-                                <p class="menu_link">내 지갑</p>
+                                <i class="ic_arrow_m rotate_270"></i>
                             </li>
                             <li class="menu_li" onclick="location.href='../membership/membership_main.html'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_membership.svg" alt="menu_membership"/>
+                                <div class="d_flex align_center">
+                                    <div class="menu_icon">
+                                        <img src="../img/svg/menu_membership.svg" alt="menu_membership"/>
+                                    </div>
+                                    <p class="menu_link">나의 멤버십</p>
                                 </div>
-                                <p class="menu_link">나의 멤버십</p>
+                                <i class="ic_arrow_m rotate_270"></i>
                             </li>
                             <li class="menu_li" onclick="location.href='../brand/brand_main.html'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_brand.svg" alt="menu_brand"/>
+                                <div class="d_flex align_center">
+                                    <div class="menu_icon">
+                                        <img src="../img/svg/menu_brand.svg" alt="menu_brand"/>
+                                    </div>
+                                    <p class="menu_link">브랜드관</p>
                                 </div>
-                                <p class="menu_link">브랜드관</p>
+                                <i class="ic_arrow_m rotate_270"></i>
                             </li>
                             <li class="menu_li" onclick="location.href='../store/store_main.html'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_store.svg" alt="menu_store"/>
+                                <div class="d_flex align_center">
+                                    <div class="menu_icon">
+                                        <img src="../img/svg/menu_store.svg" alt="menu_store"/>
+                                    </div>
+                                    <p class="menu_link">스토어</p>
                                 </div>
-                                <p class="menu_link">스토어</p>
+                                <i class="ic_arrow_m rotate_270"></i>
                             </li>
                             <li class="menu_li" onclick="location.href='../nft/nft.html'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_nft.svg" alt="menu_nft"/>
+                                <div class="d_flex align_center">
+                                    <div class="menu_icon">
+                                        <img src="../img/svg/menu_nft.svg" alt="menu_nft"/>
+                                    </div>
+                                    <p class="menu_link">NFT관</p>
                                 </div>
-                                <p class="menu_link">NFT관</p>
+                                <i class="ic_arrow_m rotate_270"></i>
                             </li>
                             <li class="menu_li" onclick="location.href='../use_guide/use_guide.html'">
-                                <div class="menu_icon">
-                                    <img src="../img/svg/menu_guide.svg" alt="menu_guide"/>
+                                <div class="d_flex align_center">
+                                    <div class="menu_icon">
+                                        <img src="../img/svg/menu_guide.svg" alt="menu_guide"/>
+                                    </div>
+                                    <p class="menu_link">안내서</p>
                                 </div>
-                                <p class="menu_link">안내서</p>
+                                <i class="ic_arrow_m rotate_270"></i>
+                                <li class="menu_li" onclick="location.href='../use_guide/use_guide.html'">
+                                    <div class="d_flex align_center">
+                                        <div class="menu_icon">
+                                            <img src="../img/svg/menu_cs.svg" alt="menu_cs"/>
+                                        </div>
+                                        <p class="menu_link">고객센터</p>
+                                    </div>
+                                    <i class="ic_arrow_m rotate_270"></i>
                             </li>
                         </ul>
-                        <div class="ad_event" onclick="location.href='../event/event_invitation.html'">
-                            <img src="../img/temp/home_banner6_ko.png" alt="invite_event"/>
-                        </div>
+                        <div class="konnect_membership bg--gray">
+                            <div class="konnect_membership_box p_side_20">
+                                <h1 class="main_detail bold">Konncet 멤버십 알아보기</h1>
+                                <div class="membership_box">
+                                    <div class="card_img_s">
+                                        <img src="../img/temp/membership_blue.png" alt="membership_blue"/>
+
+                                    </div>
+                                    <div class="d_flex column_direction">
+                                        <h1 class="main_detail bold">FLEX BLUE MEMBERSHIP</h1>
+                                        <p class="regular_text tx--lightgray2">더 알아보러 가기</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="konnect_membership_box">
+                                <h1 class="regular_text semibold tx--left p_side_20">Konnect Collabo Membership</h1>
+                                <div class="membership_box_list_wrap">
+                                    <ul class="membership_box_list p_side_20">
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/gateio_black.png" alt="gateio_black"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Gate.io VVIP</h1>
+                                            </div>
+                                        </li>
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/gateio_silver.png" alt="gateio_silver"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Gate.io VIP</h1>
+                                            </div>
+                                        </li>
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/gateio_blue.png" alt="gateio_blue"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Gate.io BLUE</h1>
+                                            </div>
+                                        </li>
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/huobi_black.png" alt="huobi_black"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Gate.io VVIP</h1>
+                                            </div>
+                                        </li>
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/huobi_gold.png" alt="huobi_gold"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Gate.io VVIP</h1>
+                                            </div>
+                                        </li>
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/huobi_blue.png" alt="huobi_blue"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Gate.io VVIP</h1>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="konnect_membership_box">
+                                <h1 class="regular_text semibold tx--left p_side_20">Konnect Ambassador Membership</h1>
+                                <div class="membership_box_list_wrap">
+                                    <ul class="membership_box_list p_side_20">
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/collabo_poonam_gold.png" alt="collabo_poonam_gold"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Poonam Gold</h1>
+                                            </div>
+                                        </li>
+                                        <li class="membership_box_li">
+                                            <div class="membership_box2">
+                                                <div class="card_img_xs">
+                                                    <img src="../img/temp/collabo_poonam_blue.png" alt="collabo_poonam_blue"/>
+                                                </div>    
+                                                <h1 class="main_detail bold tx--lightgray2">Poonam Blue</h1>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ad_event mt_40 p_side_20   " onclick="location.href='../event/event_invitation.html'">
+                                <img src="../img/temp/home_banner6_ko.png" alt="invite_event"/>
+                            </div>   
+                        </div>   
                     </div>
+                    <div class="p_side_20 cs_direct">
+                        <h1 class="main_detail bold">어떤 도움이 필요하신가요?</h1>
+                        <ul class="cs_direct_list">
+                            <li class="cs_direct_li"><button type="button" class="tab_category_btn cs_direct_btn" onclick="location.href='../notice/notice_list.html'">공지사항</button></li>
+                            <li class="cs_direct_li"><button type="button" class="tab_category_btn cs_direct_btn" onclick="location.href='../cs/faq_list.html'">자주 하는 질문</button></li>
+                            <li class="cs_direct_li"><button type="button" class="tab_category_btn cs_direct_btn" onclick="location.href='../cs/inquiry.html'">1:1 문의</button></li>
+                            <li class="cs_direct_li"><button type="button" class="tab_category_btn cs_direct_btn" onclick="location.href='../use_guide/kct_guide.html'">KCT가 궁금해요</button></li>
+                            <li class="cs_direct_li"><button type="button" class="tab_category_btn cs_direct_btn" onclick="location.href='../notice/krown_guide.html'">KROWN 사용방법</button></li>
+                        </ul>
+                    </div>
+                    
+                   
                 </section>
             </main>
 

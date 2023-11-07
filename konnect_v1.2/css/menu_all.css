@@ -61,6 +61,20 @@ main > .section_menu{
     object-fit: cover;
 }
 
+
+.profile_grade{
+    display:flex;
+    gap:4px;
+}
+.profile_grade .badge_grade {
+    width:20px;
+    height:20px;
+}
+
+
+
+
+
 .btn--icon > span{
     height:15px;
 }
@@ -87,9 +101,9 @@ main > .section_menu{
 }
 .q_info:after{
     content:'';
-    width:2px;
+    width:1px;
     height:20px;
-    background-color:#f3f4f6;
+    background-color:#eaeaea;
     position: absolute;
     right: 0px;
 }
@@ -162,9 +176,17 @@ main > .section_menu{
 
 
 /*** 전체메뉴 리뉴얼 디자인 ***/
+.menu_top2{
+    height:220px;    
+    padding-top:30px;
+}
+
 .profile_info2{
     width:100%;
     display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
 }
 
 .profile_img2{
@@ -187,3 +209,124 @@ main > .section_menu{
     text-overflow: ellipsis;
     max-width: 195px;
 }
+
+
+
+.quick_info2{
+    padding-top:20px;
+}
+.quick_info2 .q_info{
+    color:#000;
+    font-weight:700;
+    flex-direction: column;
+    align-items: center;
+    width:35%;
+}
+.quick_info2 .q_info_value{
+    font-weight:400;
+    color:#555;
+    padding-top:4px;
+}
+.quick_info2 .q_info:first-child{
+    margin-left:0;
+}
+
+
+.menu_list_area2 .menu_list{ 
+    flex-direction: column;
+    gap:0;
+}
+.menu_list_area2 .menu_li{
+    height:60px;
+    width:100%;
+    border-bottom:1px solid #f3f4f6;
+    padding:0 20px;
+    justify-content: space-between;
+}
+.menu_list_area2 .menu_icon{
+    padding-left:4px;
+}
+
+
+.konnect_membership{
+    padding : 50px 0 40px;
+}
+.konnect_membership_box{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+.konnect_membership_box + .konnect_membership_box{
+    margin-top:30px;
+}
+.membership_box{
+    padding:20px 22px;
+    background-color:#fff;
+    border-radius:10px;
+    display:flex;
+    gap:15px;
+    align-items: center;
+}
+
+
+.membership_box_list_wrap{
+    overflow-x:auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.membership_box_list_wrap::-webkit-scrollbar{
+    display:none; /* Chrome, Safari, Opera*/
+}
+
+.membership_box_list{
+    white-space: nowrap;
+}
+
+.membership_box_li{
+    padding:20px 10px;
+    background-color:#fff;
+    border-radius:10px;
+    display:inline-block;
+    width:100px;
+    height:140px;
+    gap:8px;
+}
+.membership_box_li{
+    margin-right:10px;
+}
+.membership_box_li:last-child{
+    margin-right:20px;
+}
+.membership_box2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:6px;
+    white-space: initial;
+}
+
+
+
+
+/*** 어떤 도움이 필요하신가요? ***/
+.cs_direct{
+    padding-top:60px;
+    padding-bottom:60px;
+    display:flex;
+    flex-direction: column;
+}
+.cs_direct_list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:8px 4px;
+    margin-top:25px;
+}
+
+.cs_direct_btn{
+    background-color:#F3F4F6;
+    color:#333;
+}
+
+
