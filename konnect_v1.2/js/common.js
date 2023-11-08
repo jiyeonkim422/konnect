@@ -447,14 +447,6 @@ document.getElementById('goBack2').addEventListener('click', function() {
 
 
 
-
-
-
-
-
-
-
-
 //alert - alert.js
 const modal = document.getElementById("modal_wrap")//
 const btnModal = document.getElementById("modal_on_btn")
@@ -484,6 +476,8 @@ window.addEventListener("keyup", e => {
 
 
 
+
+
    
 //input_option.js
 // $(function() {
@@ -506,64 +500,43 @@ window.addEventListener("keyup", e => {
 
 // 토스트 메세지.js
  function fillWidth(elem, timer, limit) {
-	// if (!timer) { timer = 3000; }	
-	// if (!limit) { limit = 100; }
-	var width = 1;
-	var id = setInterval(frame, timer / 100);
-		function frame() {
-		if (width >= limit) {
-			clearInterval(id);
-		} else {
-			width++;
-			elem.style.width = width + '%';
-		}
-	}
-};
+	  // if (!timer) { timer = 3000; }	
+    // if (!limit) { limit = 100; }
+    var width = 1;
+    var id = setInterval(frame, timer / 100);
+      function frame() {
+      if (width >= limit) {
+        clearInterval(id);
+      } else {
+        width++;
+        elem.style.width = width + '%';
+      }
+    }
+  };
 
-function toast(msg, timer) {
-	if (!timer) { timer = 1000; }
-	var $elem = $("<div class='toastWrap'><span class='toast'>" + msg + "<b></b><div class='timerWrap'><div class='timer'></div></div></span></div>");
-	$("#toast").append($elem); //top = prepend, bottom = append
-	$elem.slideToggle(100, function() {
-		$('.timerWrap', this).first().outerWidth($elem.find('.toast').first().outerWidth() - 10);
-		if (!isNaN(timer)) {
-			fillWidth($elem.find('.timer').first()[0], timer);
-			setTimeout(function() {
-				$elem.fadeOut(function() {
-					$(this).remove();
-				});
-			}, timer);			
-		}
-	});
-}
+  function toast(msg, timer) {
+    if (!timer) { timer = 1000; }
+    var $elem = $("<div class='toastWrap'><span class='toast'>" + msg + "<b></b><div class='timerWrap'><div class='timer'></div></div></span></div>");
+    $("#toast").append($elem); //top = prepend, bottom = append
+    $elem.slideToggle(100, function() {
+      $('.timerWrap', this).first().outerWidth($elem.find('.toast').first().outerWidth() - 10);
+      if (!isNaN(timer)) {
+        fillWidth($elem.find('.timer').first()[0], timer);
+        setTimeout(function() {
+          $elem.fadeOut(function() {
+            $(this).remove();
+          });
+        }, timer);			
+      }
+    });
+  }
 
-$("#toast").on("click", "b", function() {
-	$(this).closest('.toastWrap').remove();
-})
+  $("#toast").on("click", "b", function() {
+    $(this).closest('.toastWrap').remove();
+  })
 
 
 
-   // 3. 다른 태그(div등)의 값 복사 기능 구현
-   document.getElementById("copy_btn").onclick = function(){
-    // div 내부 텍스트 취득
-    const valOfDIV = document.getElementById("copy_text").innerText;
-
-    // textarea 생성
-    const textArea = document.createElement('textarea');
-
-    // textarea 추가
-    document.body.appendChild(textArea);
-    
-    // textara의 value값으로 div내부 텍스트값 설정
-    textArea.value = valOfDIV;
-
-    // textarea 선택 및 복사
-    textArea.select();
-    document.execCommand('copy');
-
-    // textarea 제거
-    document.body.removeChild(textArea);
-}
 
 
 
@@ -590,7 +563,3 @@ function count(type)  {
         alert('최대 n개까지만 ');
     }
   }
-
-
-
-

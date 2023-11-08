@@ -293,7 +293,7 @@ main > .section_menu{
 }
 .membership_box_li{
     margin-right:10px;
-}
+}         
 .membership_box_li:last-child{
     margin-right:20px;
 }
@@ -311,7 +311,7 @@ main > .section_menu{
 /*** 어떤 도움이 필요하신가요? ***/
 .cs_direct{
     padding-top:60px;
-    padding-bottom:60px;
+    padding-bottom:80px;
     display:flex;
     flex-direction: column;
 }

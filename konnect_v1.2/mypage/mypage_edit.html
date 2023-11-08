@@ -137,21 +137,21 @@
 
                                     <tr class="table_row2 pt_50">
                                         <th class="table_head2 table_head_icon" scope="row">멤버십 번호
-                                            <button onclick="toast('멤버십 번호가 클립보드에 복사되었습니다.')"><i id="copy_btn" class="ic ic_copy"></i></button>
+                                            <button class="copy_btn" data-target="copy_text1" onclick="toast('멤버십 번호가 클립보드에 복사되었습니다.')"><i class="ic ic_copy"></i></button>
                                         </th>
                                         <td class="table_data2">
-                                            <div id="copy_text" class="input_form">
+                                            <div class="input_form" id="copy_text1">
                                                 <p>ABCD-1234-5678-9090</p>
                                             </div>
                                         </td>
-                                        <div id="toast"></div>
+                                        <div id="toast"></div> 
                                     </tr>
                                     <tr class="table_row2">
                                         <th class="table_head2 table_head_icon" scope="row">나의 초대장 번호
-                                            <button onclick="toast('나의 초대장 번호가 클립보드에 복사되었습니다.')"><i id="copy_btn" class="ic ic_copy"></i></button>
+                                            <button class="copy_btn" data-target="copy_text2" onclick="toast('나의 초대장 번호가 클립보드에 복사되었습니다.')"><i class="ic ic_copy"></i></button>
                                         </th>
                                         <td class="table_data2">
-                                            <div id="copy_text" class="input_form">
+                                            <div class="input_form" id="copy_text2">
                                                 <p>A000000</p>
                                             </div>                                        
                                         </td>
@@ -218,6 +218,38 @@
                     });
                 });
             });
+
+            //copy.js
+            const copyButtons = document.querySelectorAll(".copy_btn");
+
+            copyButtons.forEach(function(copyButton) {
+                copyButton.addEventListener("click", function() {
+                    // 대상 div 요소의 ID를 가져옵니다.
+                    const targetId = this.getAttribute("data-target");
+                    
+                    // 대상 div 요소의 텍스트 내용을 가져옵니다.
+                    const targetDiv = document.getElementById(targetId);
+                    const targetText = targetDiv.innerText;
+
+                    // textarea 생성
+                    const textArea = document.createElement('textarea');
+
+                    // textarea 추가
+                    document.body.appendChild(textArea);
+
+                    // textarea의 value값으로 대상 div 내부 텍스트값 설정
+                    textArea.value = targetText;
+
+                    // textarea 선택 및 복사
+                    textArea.select();
+                    document.execCommand('copy');
+
+                    // textarea 제거
+                    document.body.removeChild(textArea);
+                });
+            });
+
+
 
 
         </script>
