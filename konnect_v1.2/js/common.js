@@ -59,13 +59,6 @@ var swiper = new Swiper(".membership_swiper", {
 	},
 });
 
-//메인 - 멤버쉽 카드 슬라이드 
-var swiper = new Swiper(".my_membership_swiper", {
-	pagination: {
-	  el: ".swiper-pagination",
-	  clickable: true,
-	},
-});
 
 
 
@@ -125,15 +118,35 @@ var swiper = new Swiper(".my_membership_swiper", {
     });
 
 
-//메인 - 혜택 슬라이드
-var swiper = new Swiper(".card_benefit_swiper", {
-    spaceBetween: 30,
-    loop:true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+  //메인 - 혜택 슬라이드
+  var swiper = new Swiper(".card_benefit_swiper", {
+      spaceBetween: 30,
+      loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+    // 나의멤버십 - 보유 멤버쉽 카드 슬라이드 
+    var swiper = new Swiper(".my_membership_swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    // 나의멤버십 - 보유 티켓 슬라이드
+    var swiper = new Swiper(".ticket_swiper", {
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
 
 
 
@@ -257,7 +270,7 @@ $(document).ready(function () {
     $('.tab_top .line_tab').click(function () {
         var tab_id = $(this).attr('data-tab');
 
-        $('.tab_top .line_tab').removeClass('is-active');
+        $('.tab_top .line_tab').removeClass('is-active');        
         $('.line_tab_content').removeClass('is-active');
 
         $(this).addClass('is-active');
@@ -266,6 +279,23 @@ $(document).ready(function () {
 
 })
 
+// bottomsheet line_tab2 - 탭 선택시 해당정보 노출 
+$(document).ready(function () {
+
+  $('.line_tab3').addClass('is-active'); // 초깃값 설정
+  $('.bs_tab_content1').addClass('is-active');
+
+  $('.tab_top .line_tab').click(function () {
+      var tab_id = $(this).attr('data-tab');
+
+      $('.tab_top .line_tab').removeClass('is-active');
+      $('.bs_tab_content').removeClass('is-active');
+
+      $(this).addClass('is-active');
+      $("#" + tab_id).addClass('is-active');
+  })
+
+})
 
 
 
@@ -320,7 +350,7 @@ let isDragging = false, startY, startHeight;
 const showBottomSheet = () => {
     bottomSheet.classList.add("show");
     document.body.style.overflowY = "hidden";
-    updateSheetHeight(74);
+    updateSheetHeight();
 }
 
 const updateSheetHeight = (height) => {
@@ -357,7 +387,7 @@ const dragStop = () => {
     isDragging = false;
     bottomSheet.classList.remove("dragging");
     const sheetHeight = parseInt(sheetContent.style.height);
-    sheetHeight < 50 ? hideBottomSheet() : updateSheetHeight(74);
+    sheetHeight < 50 ? hideBottomSheet() : updateSheetHeight();
     // sheetHeight < 25 ? hideBottomSheet() : sheetHeight > 70 ? updateSheetHeight(70) : hideBottomSheet();
 }
 
@@ -559,7 +589,7 @@ function count(type)  {
     // 결과 출력
     resultElement.innerText = number;
       // 만약 number가 5일 때 알림창 표시
-    if (number >= 5) {
+    if (number >= 5) {          
         alert('최대 n개까지만 ');
     }
   }

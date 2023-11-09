@@ -965,6 +965,7 @@ main > .section{
     opacity: 0.4;
     background: #000;
   }
+ 
   .bottomsheet .bs_box {
     width: 100%;
     position: relative;
@@ -977,6 +978,16 @@ main > .section{
     box-shadow: 0 10px 20px rgba(0,0,0,0.03);
     /* transition: 0.3s ease; */
   }
+
+  .bottomsheet .bs_box2{
+    max-height:90vh;
+  }
+  .bottomsheet.show .bs_box2{
+    transform: translateY(0%);
+  }
+
+
+
   .bottomsheet.show .bs_box{
     transform: translateY(0%);
   }
@@ -1030,11 +1041,19 @@ main > .section{
   }
  */
 
+ .bottomsheet .bs_body2{
+    padding: 25px 0;
+    padding-bottom: 250px;
+ }
+ .bottomsheet .bs_body2 .bs_line_tab_tit {
+    padding: 0 22px 24px;
+}
+
 
 
 .bs_tit_box {
     width: 100%;
-    padding: 14px 24px;
+    padding: 14px 26px;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -1226,6 +1245,8 @@ main > .section{
 .alert_content{
     min-height:180px;
     gap:16px;
+    min-height:200px;
+    justify-content: space-evenly;
 }
 .alert_content .text_link{
     font-weight:600;
@@ -1721,6 +1742,12 @@ background-color: #F1D031;
 /*** 수량 증가 감소 ***/
 .quantity_form{
     display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.quantity_form_box{
+    display:flex;
+    width: 100px;
     justify-content: space-between;
 }
 .quantity_value{

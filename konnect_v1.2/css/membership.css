@@ -89,6 +89,35 @@
 
 
 
+/*** 나의멤버십 바텀시트 line tab ***/
+.line_tab_content.bs_line_tab.is-active{
+    display:contents;
+}
+.bs_line_tab > li{
+    color:#9FB1CC;
+    border-bottom:2px solid #9FB1CC;
+}
+.bs_line_tab > li.is-active{
+    color:#0039CC;
+    border-color:#0039CC;
+}
+.bs_line_tab > li.is-active em{
+    color:#00A3FF;
+}
+.bs_line_tab_tit{
+    padding:0 2px 24px;
+}
+
+
+.bs_tab_content{
+    display:none;
+}
+.bs_tab_content.is-active{
+    display:block;
+}
+
+
+
 .filter-tab_voucher{
     display:none;
 }
@@ -286,7 +315,7 @@
     left:0;
     width:100%;
     height:100%;
-    z-index:999;
+    z-index:99999;
     margin:0 auto;
     display:none;
     background-color:#fff;
@@ -318,9 +347,10 @@
       right:0;
       bottom:0;
       left:0;
+      overflow-y:auto;
     }
       .layer_inner {
-        height:100%;
+        height:;
         border-radius:0 0 5px 5px;
         padding:20px;
       }
@@ -410,4 +440,82 @@ main > .section_voucher_detail{
 
 .reservation_status_notice{
     padding-top:40px;
+}
+
+
+
+
+/*** 더라운지 혜택사용 티켓 the lounge ticket ***/
+.ticket_swiper{
+    padding:0 40px 0;
+}
+.ticket_box{
+    border:2px solid #eee;
+    border-radius:20px;
+    overflow:hidden;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket_header{
+    background-color:#F3F4F6;
+    height:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 25px;
+    gap:16px;
+}
+.ticket_title{
+    display:flex;
+    flex-direction:column;           
+    align-items: flex-start;
+}
+.ticket_icon{
+    width:50px;
+    height:50px;
+    background-color:#000;
+    border-radius:8px;
+    overflow:hidden;
+}
+.ticket_icon > img{
+    width:100%;
+    height:auto;
+}
+
+.ticket_content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+}
+.qr_code{
+    width:110px;
+    height:110px;
+}
+.qr_code > img{
+     width:100%;
+     height:auto;
+}
+
+
+.ticket_img{
+    width:100%;
+    height:auto;
+}
+.ticket_img > img{
+    width:100%;
+    height:auto;
+}
+
+
+.ticket_bottom{
+    background-color:#F3F4F6;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 25px;
 }

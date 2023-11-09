@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Konnect</title>
+
+        <!-- SEO meta tag -->
+        <meta name="apple-mobile-web-app-title" content=""> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+        <meta name="title" content="Konnect">
+        <meta name="description" content="">
+        <meta name="keywords" content="Konnect Web3, Konnect, KCT, kct, konnectkct, NFT, nft, Duman, DUMAN, 듀먼, 커넥트, 커넥트 웹3">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="author" content="KCT-Konnect">
+        <!-- // SEO meta tag -->
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:type" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:locale" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:country-name" content="">
+        <!-- // Open Graph -->
+
+        <!-- Icon & Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- // Icon & Favicon -->
+
+        <link rel="stylesheet" href="../css/common.css">
+        
+    </head>
+
+    <body class="body_bg_bk"> 
+        <div class="wrap">
+            <!-- // Header -->
+            <header id="header" class="header main_header bg--black"></header>
+            <!-- // Content -->                 
+            <main id="content" class="sub_main_content">
+
+                <div class="bottomsheet show">
+                    <div class="sheet-overlay"></div>
+                    <div class="bs_box bs_box2">
+                        <div class="bs_header no_border">
+                            <div class="drag-icon"><span></span></div>
+                        </div>
+                        <!-- line tab start -->
+                        <div class="tab_line mt_30">
+                            <ul class="membership_tab bs_line_tab p_side_20 tab_top">
+                                <li class="sub_tit2 line_tab line_tab1" data-tab="line_tab1">사용신청</li>
+                                <li class="sub_tit2 line_tab line_tab2" data-tab="line_tab2">사용하기</li>
+                            </ul> 
+                        </div>
+                        <!-- 사용신청 tab content start -->
+                        <div class="line_tab_content line_tab_content1 bs_line_tab" id="line_tab1">
+                            <div class="bs_body">
+                                <div class="bs_line_tab_tit">
+                                    <h1 class="sub_tit2">더 라운지를 사용하실<br/>
+                                        인원 수와 정보를 알려주세요</h1>
+                                </div>
+                                <div class="bs_content">
+                                    <div class="bs_content_box">
+                                        <ul class="benefit_info_box bg_light gap10">
+                                            <li class="benefit_info_box_inner">
+                                                <div class="benefit_info_left">
+                                                    <div class="brand_img">
+                                                        <img src="../img/temp/voucher_s.png" alt="thelounge"/>
+                                                    </div>
+                                                </div>
+                                                <div class="benefit_info_right">
+                                                    <div class="benefit_info">
+                                                        <p class="brand_name">더 라운지</p>
+                                                        <p class="benefit_tit">더 라운지 전세계 모든 공항<br/>
+                                                            1인 이용권 5장</p>    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="benefit_info_box_inner">
+                                                <div class="badge">추가혜택</div>
+                                                <div class="benefit_info_right">
+                                                    <p class="benefit_detail">
+                                                        호텔 숙박 시 F&B 10% 할인
+                                                    </p>
+                                                </div>
+                                            </li> -->
+                                            <li class="benefit_info_box_inner">
+                                                <div class="badge">사용방법</div>
+                                                <div class="benefit_info_right">
+                                                    <p class="benefit_detail">
+                                                        1. 더 라운지 사용 수량 및 정보 입력<br/>
+                                                        2. 사용 신청 완료<br/>
+                                                        3. 상단 ‘사용하기' 탭에서 QR 확인<br/>
+                                                        4. 더 라운지 데스트에서 QR 보여주기
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- 정보 입력 폼 -->
+                                        <div class="table_form">
+                                            <table class="table_input">
+                                                <tbody class="table_body">
+                                                    <tr class="table_row2">
+                                                        <!-- <th class="table_head2" scope="row"></th> -->
+                                                        <td class="table_data2">
+                                                            <div class="quantity_form input_form">
+                                                                <p class="table_head2">신청 수량</p>
+                                                                <div class="quantity_form_box">
+                                                                    <input class="quantity_btn quantity_btn_minus" type='button' onclick='count("minus")' value=''/>
+                                                                    <div id='quantity_value' class="quantity_value">1</div>
+                                                                    <input class="quantity_btn quantity_btn_plus" type='button' onclick='count("plus")' value=''/>    
+                                                                </div>
+                                                            </div>
+                                                            <p class="input_guide">최대 <span class="tx--blue1 semibold">5</span>개 까지 사용신청 가능해요</p>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr class="table_row2">
+                                                        <th class="table_head2" scope="row">여권 상 영문이름</th>
+                                                        <td class="table_data2">
+                                                            <input class="input_form w_100per pt_2" type="text" maxlength="20" placeholder="KONNECT" value=""/> 
+                                                            <p class="input_guide">투숙객 이름은 체크인 시 제시할<br/>유효한 신분증 이름과 정확히 일치해야 합니다.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- 휴대폰 번호 폼 추가 -->
+                                                    <tr class="table_row2">
+                                                        <th class="table_head2" scope="row">휴대폰 번호</th>
+                                                        <td class="table_data2">
+                                                            <div class="select_input_group">
+                                                                <div class="select_option input_form input_form_code">
+                                                                    <ul class="default_option">
+                                                                        <li><p class="option tx--black">+82</p></li>
+                                                                    </ul>           
+                                                                    <ul class="select_ul">
+                                                                        <li>
+                                                                            <p class="option_national">대한민국</p>
+                                                                            <p class="option">+82</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="option_national">가나</p>
+                                                                            <p class="option">+233</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="option_national">가봉</p>
+                                                                            <p class="option">+241</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="option_national">가이아나</p>
+                                                                            <p class="option">+592</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="option_national">감비아</p>
+                                                                            <p class="option">+220</p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p class="option_national">괌</p>
+                                                                            <p class="option">+1671</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <input class="input_form input_form_phone " name="cellPhone" id="cellPhone"  maxlength="20" type="number" placeholder="휴대폰 번호 입력" value=""/>
+                                                            </div>
+                                                            <p class="input_guide">휴대폰 번호를 숫자만 입력해 주세요</p>
+                                                        </td>
+                                                    </tr>            
+                                                    <tr class="table_row2">
+                                                        <th class="table_head2" scope="row">이메일 주소</th>
+                                                        <td class="table_data2">
+                                                            <input class="input_form w_100per pt_2" type="text" maxlength="20" placeholder="konnect@email.com" value=""/> 
+                                                        </td>
+                                                    </tr>                  
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- 사용시 유의사항, 환불안내 start -->
+                                        <ul class="arrow_box bg_light mt_20">
+                                            <li class="benefit_policy_more show_layerpopup" href="#layerpopup">
+                                                <p class="regular_text tx--darkblue semibold">유의사항 및 문의사항</p>
+                                                <i class="ic ic_arrow_m rotate_270"></i>
+                                            </li>
+                                            <li class="benefit_policy_more show_layerpopup">
+                                                <p class="regular_text tx--darkblue semibold">취소 및 환불 안내</p>
+                                                <i class="ic ic_arrow_m rotate_270"></i>
+                                            </li>
+                                        </ul>
+                                        <!-- 사용규정 동의 -->
+                                        <div class="check_form mt_30 p_side_4">
+                                            <input class="check_form_input checkbox" type="checkbox" name="agreement" id="agreement1"/>
+                                            <label class="check_form_label" for="agreement1">
+                                                더 라운지 사용신청 후 <span class= "tx--blue1 medium">14일 이내에 취소가능</span>함을 확인하였으며, 이에 동의합니다.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line_tab_content line_tab_content1 bs_line_tab" id="line_tab2">
+                            <div class="bs_body bs_body2">
+                                <div class="bs_line_tab_tit">
+                                    <h1 class="sub_tit2 tx--center">혜택 사용 시<br/>
+                                        티켓 화면을 보여주세요</h1>          
+                                </div>
+                                <div class="bs_content">
+                                    <div class="bs_content_box">
+                                        <div class="swiper ticket_swiper m_0">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="ticket_box">
+                                                        <div class="ticket_header">
+                                                            <div class="ticket_icon"></div>
+                                                            <div class="ticket_title">
+                                                                <p class="main_detail">Konnect Membership</p>
+                                                                <h5 class="sub_tit2">HONG GILDONG</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ticket_content">
+                                                            <p class="main_detail tx--darkblue">전세계 라운지 1인권</p>
+                                                            <div class="qr_code">
+                                                                <img src="../img/temp/sample_qr.png" alt="qr_code"/>
+                                                            </div>
+                                                            <h5 class="sub_tit2 tx--darkblue">0000 0000 0000</h5>
+                                                        </div>
+                                                        <div class="ticket_bottom">
+                                                            <p class="regular_text semibold">유효기간 : 20XX-XX-XX</p>
+                                                            <button class="btn btn--xs btn--stroke-gray">취소</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="ticket_box">
+                                                        <div class="ticket_header">
+                                                            <div class="ticket_icon"></div>
+                                                            <div class="ticket_title">
+                                                                <p class="main_detail">Konnect Membership</p>
+                                                                <h5 class="sub_tit2">HONG GILDONG</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ticket_content">
+                                                            <p class="main_detail tx--darkblue">전세계 라운지 1인권</p>
+                                                            <div class="qr_code">
+                                                                <img src="../img/temp/sample_qr.png" alt="qr_code"/>
+                                                            </div>
+                                                            <h5 class="sub_tit2 tx--darkblue">0000 0000 0000</h5>
+                                                        </div>
+                                                        <div class="ticket_bottom">
+                                                            <p class="regular_text semibold">유효기간 : 20XX-XX-XX</p>
+                                                            <button class="btn btn--xs btn--stroke-gray">취소</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="ticket_box">
+                                                        <div class="ticket_header">
+                                                            <div class="ticket_icon"></div>
+                                                            <div class="ticket_title">
+                                                                <p class="main_detail">Konnect Membership</p>
+                                                                <h5 class="sub_tit2">HONG GILDONG</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ticket_content">
+                                                            <p class="main_detail tx--darkblue">전세계 라운지 1인권</p>
+                                                            <div class="qr_code">
+                                                                <img src="../img/temp/sample_qr.png" alt="qr_code"/>
+                                                            </div>
+                                                            <h5 class="sub_tit2 tx--darkblue">0000 0000 0000</h5>
+                                                        </div>
+                                                        <div class="ticket_bottom">
+                                                            <p class="regular_text semibold">유효기간 : 20XX-XX-XX</p>
+                                                            <button class="btn btn--xs btn--stroke-gray">취소</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="swiper-pagination"></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tx--center mt_30">
+                                    <a href="#" class="text_link">도움이 필요하세요?</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="bs_bottom">
+                            <button
+                                type="button"
+                                class="btn btn--full btn--lg btn--primary1" 
+                                onclick="location.href='#'">사용 신청하기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+            <!-- // Footer -->
+            <!-- <footer id="footer" class="footer main_footer"></footer> -->
+            <!-- // Tab Bar -->
+            <!-- <div id="tabbar" class="tabbar"></div> -->
+
+            
+
+            <div id="safe_area_bottom"></div>
+        </div>
+        
+        
+    
+        <!-- //js script -->
+        <script src="../js/libs/jquery-3.6.0.min.js"></script>
+        <script src="../js/libs/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".main_header").load("../views/main_header.html");
+                $(".main_footer").load("../views/main_footer.html");
+                $(".tabbar").load("../views/tabbar.html");
+            });
+        </script>
+        <!-- //js script -->
+
+    </body>          
+</html> 

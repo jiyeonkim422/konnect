@@ -292,6 +292,9 @@ textarea {
 .p_side_20{
     padding:0 20px;
 }
+.p_side_4{
+    padding:0 4px;
+}
 .p_side_40{
     padding:0 40px;
 }
@@ -933,6 +936,66 @@ textarea {
     height:10px;
     background-color:#f3f4f6;
 }
+
+
+
+/****************** check_form 체크박스&라디오 ******************/
+
+
+.check_form_box{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.check_form{
+    display:flex;
+    gap:2px;
+}
+
+.check_form_input{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    margin-right:4px;
+    cursor:pointer;
+}
+.check_form_label{
+    font-size:14px;
+    color:#000;
+    line-height:20px;
+    cursor:pointer;
+    width:calc(100% - 16px);
+}
+
+.check_form_input.checkbox{
+    border-radius:2px;
+    background-image:url(../img/svg/ic_copy.svg);
+}
+.check_form_input.checkbox:checked {
+    background-image:url(../img/svg/ic_calendar.svg);
+}
+
+.check_form_input.radio{
+    border-radius:2px;
+    background-image:url(../img/svg/ic_copy.svg);
+}
+.check_form_input.radio:checked {
+    background-image:url(../img/svg/ic_calendar.svg);
+}
+
+
+
 
 /****************** 아이콘 icon ******************/
 
