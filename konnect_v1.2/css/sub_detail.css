@@ -187,9 +187,9 @@ video[poster]{
     padding:30px;
     align-items: center;
 }
-.youtube_box > div{
+/* .youtube_box > div{
     width:180px;
-}
+} */
 .youtube_box img{
     width:45px;
     height:auto;
@@ -301,3 +301,9 @@ video[poster]{
 }
 
 
+
+/****** store *******/
+main > .section_brand_card{
+    padding-top:100px;
+    padding-bottom:140px;
+}
