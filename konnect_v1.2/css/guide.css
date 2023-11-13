@@ -628,6 +628,19 @@ textarea {
 }
 
 
+/** 바우처 상태 색상 **/
+.tx--confirm{
+    color:#89ff8e
+}
+.tx--cancel{
+    color:#ff5247;
+}
+.tx--expired{
+    color:#b1b1b1;
+}
+
+
+
 .tx--gradient{
     font-weight:700;
     background: linear-gradient(to right, #00a3ff, #8ae9e2, #51fff2);
@@ -980,18 +993,18 @@ textarea {
 
 .check_form_input.checkbox{
     border-radius:2px;
-    background-image:url(../img/svg/ic_copy.svg);
+    background-image:url(../img/svg/ic_checkbox_off.svg);
 }
 .check_form_input.checkbox:checked {
-    background-image:url(../img/svg/ic_calendar.svg);
+    background-image:url(../img/svg/ic_checkbox_on.svg);
 }
 
 .check_form_input.radio{
     border-radius:2px;
-    background-image:url(../img/svg/ic_copy.svg);
+    background-image:url(../img/svg/ic_radio_off.svg);
 }
 .check_form_input.radio:checked {
-    background-image:url(../img/svg/ic_calendar.svg);
+    background-image:url(../img/svg/ic_radio_on.svg);
 }
 
 

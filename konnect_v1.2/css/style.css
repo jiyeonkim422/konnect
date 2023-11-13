@@ -1191,6 +1191,7 @@ main > .section{
 .modal_tit {
     font-size:17rem;
     font-weight:700;
+    text-align:center;
 }
 .modal_title h2 {
     display: inline;
@@ -1761,8 +1762,8 @@ background-color: #F1D031;
 .quantity_btn{
     border-radius:20px;
     padding:4px;
-    width:24px;
-    height:24px;
+    width:20px;
+    height:20px;
     border:none;
     background-color:#fff;
 }

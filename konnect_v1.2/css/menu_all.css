@@ -193,14 +193,14 @@ main > .section_menu{
     width:60rem;
     height:60rem;
 }
-.profile_name{
+.profile_info2 .profile_name{
     font-weight:700;
     font-size:14rem;
     color:#000;
     line-height:20rem;
     display:flex;
 }
-.profile_name em{
+.profile_info2 .profile_name em{
     display:block;
     /* display: -webkit-box; */
     overflow: hidden;

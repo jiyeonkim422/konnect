@@ -118,7 +118,7 @@
                                                         <!-- <th class="table_head2" scope="row"></th> -->
                                                         <td class="table_data2">
                                                             <div class="quantity_form input_form">
-                                                                <p class="table_head2">신청 수량</p>
+                                                                <p class="table_head2 p_0">신청 수량</p>
                                                                 <div class="quantity_form_box">
                                                                     <input class="quantity_btn quantity_btn_minus" type='button' onclick='count("minus")' value=''/>
                                                                     <div id='quantity_value' class="quantity_value">1</div>
@@ -207,6 +207,13 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="bs_bottom">
+                                <button
+                                    type="submit"
+                                    class="btn btn--full btn--lg btn--primary1" 
+                                    onclick="location.href='../membership/alert_the-lounge_1.html'">사용 신청하기
+                                </button>
+                            </div>
                         </div>
                         <div class="line_tab_content line_tab_content1 bs_line_tab" id="line_tab2">
                             <div class="bs_body bs_body2">
@@ -236,7 +243,7 @@
                                                         </div>
                                                         <div class="ticket_bottom">
                                                             <p class="regular_text semibold">유효기간 : 20XX-XX-XX</p>
-                                                            <button class="btn btn--xs btn--stroke-gray">취소</button>
+                                                            <button type="submit" class="btn btn--xs btn--stroke-gray" onclick="location.href='../membership/popup_ticket_cancel.html'">취소</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -258,7 +265,7 @@
                                                         </div>
                                                         <div class="ticket_bottom">
                                                             <p class="regular_text semibold">유효기간 : 20XX-XX-XX</p>
-                                                            <button class="btn btn--xs btn--stroke-gray">취소</button>
+                                                            <button type="submit" class="btn btn--xs btn--stroke-gray" onclick="location.href='../membership/popup_ticket_cancel.html'">취소</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -280,7 +287,7 @@
                                                         </div>
                                                         <div class="ticket_bottom">
                                                             <p class="regular_text semibold">유효기간 : 20XX-XX-XX</p>
-                                                            <button class="btn btn--xs btn--stroke-gray">취소</button>
+                                                            <button type="submit" class="btn btn--xs btn--stroke-gray" onclick="location.href='../membership/popup_ticket_cancel.html'">취소</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -293,14 +300,6 @@
                                     <a href="#" class="text_link">도움이 필요하세요?</a>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="bs_bottom">
-                            <button
-                                type="button"
-                                class="btn btn--full btn--lg btn--primary1" 
-                                onclick="location.href='#'">사용 신청하기
-                            </button>
                         </div>
                     </div>
                 </div>

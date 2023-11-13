@@ -350,7 +350,7 @@
       overflow-y:auto;
     }
       .layer_inner {
-        height:;
+        /* height:; */
         border-radius:0 0 5px 5px;
         padding:20px;
       }
