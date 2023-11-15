@@ -307,3 +307,31 @@ main > .section_brand_card{
     padding-top:100px;
     padding-bottom:140px;
 }
+
+/** 구독 종류 선택 **/
+.card_type_box{
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+}
+.card_type_select{
+    border:1px solid #9fb1cc;
+    height:240px;
+    width:100%;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:30px 24px;
+}
+.check_form_input[type="radio"]:checked + label{
+    border-color:#0039cc;
+}
+
+.card_type_tit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

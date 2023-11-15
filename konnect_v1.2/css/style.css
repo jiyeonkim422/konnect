@@ -1535,7 +1535,9 @@ main > .section{
 .input_form::placeholder{
     color:#c9c9c9;
 }
-
+.uppercase{
+    transform-style: uppercase;
+}
 
 
 /** select랑 input 같이 쓸때 **/
