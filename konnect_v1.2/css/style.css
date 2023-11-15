@@ -1279,7 +1279,7 @@ main > .section{
 
 
 
-/** 테이블 폼 **/
+/** 테이블 폼 - 1 (영풍문고) **/
 
 .table_form_box{ 
     width:100%;
@@ -1357,6 +1357,66 @@ main > .section{
     font-weight:700;
     font-size:16px;
 }
+
+
+
+/** 테이블 폼 - 2 (스토어) **/
+
+.table_form_bk{
+    width:100%;
+    margin-top:10px;
+}
+.table_form_bk .table_default{
+    border-top:2px solid #000;
+    border-bottom:2px solid #000;
+}
+
+.table_form_bk tr:first-child td{
+    padding-top:20px;
+}
+.table_form_bk tr:first-child th{
+    padding-top:20px;
+}
+
+.table_form_bk tr:last-child td{
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.table_form_bk tr:last-child th{
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+.table_form_bk .table_head{
+    font-size:14rem;
+    font-weight:400;
+    line-height:20px;
+    color:#2b4c7d;
+    text-align:left;
+    padding:12px 4px;
+    vertical-align: top;
+}
+.table_form_bk .table_data{
+    font-size:14rem;
+    font-weight:400;
+    color:#000;
+    line-height:20px;
+    text-align:right;
+    padding:12px 4px;
+    vertical-align: top;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
+
+.table_center_line{
+    border-bottom:1px solid #9fb1cc;
+    height:12px;
+}
+.table_center_line + tr{
+    margin-bottom:20px;
+}
+
 
 
 /** 선택폼 **/

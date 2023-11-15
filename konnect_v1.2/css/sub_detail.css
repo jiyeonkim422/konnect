@@ -305,7 +305,7 @@ video[poster]{
 /****** store *******/
 main > .section_brand_card{
     padding-top:100px;
-    padding-bottom:140px;
+    padding-bottom:40px;
 }
 
 /** 구독 종류 선택 **/
@@ -316,7 +316,7 @@ main > .section_brand_card{
     flex-direction: column;
 }
 .card_type_select{
-    border:1px solid #9fb1cc;
+    border:2px solid #E1E1E1;
     height:240px;
     width:100%;
     border-radius:15px;
@@ -326,9 +326,16 @@ main > .section_brand_card{
     justify-content: space-between;
     padding:30px 24px;
 }
-.check_form_input[type="radio"]:checked + label{
+input.check_form_input[type="radio"]:checked + label{
     border-color:#0039cc;
 }
+.check_form_position{
+    position:absolute;
+    top:33px;
+    right:25px;
+}
+
+
 
 .card_type_tit{
     display: flex;
