@@ -30,6 +30,22 @@ $(document).ready(function(){
 
 
 
+// faq list (열림 닫힘)
+$(function () {
+  $(".faq_list_box").click(function () {
+
+    var currentFaqListDetail = $(this).find(".faq_list_detail");
+
+    $(".faq_list_detail").not(currentFaqListDetail).slideUp(0);
+    currentFaqListDetail.slideToggle(0);
+    $(".faq_list_box").not(this).find(".ic_arrow_m_thin").removeClass('on');
+    $(this).find(".ic_arrow_m_thin").toggleClass('on').siblings().removeClass('on');
+  });
+});
+
+
+
+
  //history back - 페이지 뒤로가기
  function goBack(){
     window.history.back();
@@ -595,3 +611,6 @@ function count(type)  {
         alert('최대 n개까지만 ');
     }
   }
+
+
+

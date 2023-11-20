@@ -321,10 +321,10 @@ main > .section_menu{
     flex-wrap: wrap;
     justify-content: center;
     gap:8px 4px;
-    margin-top:25px;
+    /* margin-top:25px; */
 }
 
-.cs_direct_btn{
+.body_bg_wh .cs_direct_btn{
     background-color:#F3F4F6;
     color:#333;
 }

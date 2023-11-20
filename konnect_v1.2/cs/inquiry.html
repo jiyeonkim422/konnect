@@ -51,16 +51,44 @@
             <!-- // Header -->
             <header id="header" class="header sub_header"></header>
             <!-- // Content -->                 
-            <main id="content" class="sub_main_content">
-                <section class="section section_sub_main">
-                    <div class="coming_soon">
-                        <img src="../img/temp/coming_soon.png" alt="coming_soon"/>
-                        <h1 class="tx--lightblue">COMING SOON</h1>
-                        <p class="main_detail tx--darkblue">
-                            더 멋진 모습을 위해<br/>
-                            커넥트팀이 열심히 준비중이에요<br/>
-                            조금만 기다려 주세요
-                        </p>
+            <main id="content" class="sub_detail_content">
+                <section class="section section_inquiry">
+                    <div class="p_side_20">
+                        <div class="select_option select_option2">
+                            <ul class="default_option">
+                                <li><p class="option tx--black">+82</p></li>
+                            </ul>           
+                            <ul class="select_ul">
+                                <li>
+                                    <p class="option_national">대한민국</p>
+                                    <p class="option">+82</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">가나</p>
+                                    <p class="option">+233</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">가봉</p>
+                                    <p class="option">+241</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">가이아나</p>
+                                    <p class="option">+592</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">감비아</p>
+                                    <p class="option">+220</p>
+                                </li>
+                                <li>
+                                    <p class="option_national">괌</p>
+                                    <p class="option">+1671</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="p_side_20 mt_20">
+                        <textarea class="textarea_form min_h_100" maxlength="500" aria-label="textarea" placeholder="문의 내용을 입력해주세요"></textarea>
                     </div>
                 </section>
             </main>
@@ -83,6 +111,7 @@
                 $(".sub_header").load("../views/sub_header_bk.html");
                 $(".main_footer").load("../views/main_footer.html");
                 $(".tabbar").load("../views/tabbar.html");
+
             });
         </script>
         <!-- //js script -->
