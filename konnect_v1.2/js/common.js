@@ -44,6 +44,18 @@ $(function () {
 });
 
 
+// textarea 글자수 제한
+$('.textarea_box .textarea_form').keyup(function(){
+  var content = $(this).val();
+  $('.textarea_box .text_count span').html(content.length);
+  if (content.length > 500){
+    alert("최대 200자까지 입력 가능합니다.");
+    $(this).val(content.substring(0, 500));
+    $('.textarea_box .text_count span').html(200);
+  }
+});
+
+
 
 
  //history back - 페이지 뒤로가기

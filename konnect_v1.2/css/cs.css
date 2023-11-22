@@ -62,5 +62,6 @@ main > .section_faq{
 /** 문의하기 상세 **/
 
 .section_inquiry{
-    margin-top:30px;
+    margin-top:40px;
+    padding-bottom:5px;
 }

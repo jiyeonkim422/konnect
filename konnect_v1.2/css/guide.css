@@ -649,7 +649,7 @@ textarea {
 }
 
 .text_link{
-    color:#0039cc;
+    color:#000;
     font-size:14rem;
     font-weight:700;
     position:relative;
@@ -663,18 +663,20 @@ textarea {
     height:1px;
     bottom:0;
     left:0;
+    background-color:#000;
+}
+
+.text_link.tx--blue1:after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:1px;
+    bottom:0;
+    left:0;
     background-color:#0039cc;
 }
 
-.text_link_wh{
-    color:#fff;
-    font-size:14rem;
-    font-weight:700;
-    position:relative;
-    display:inline-block;
-    cursor: pointer;
-}
-.text_link_wh:after{
+.text_link.tx--white:after{
     content:'';
     position:absolute;
     width:100%;
@@ -684,24 +686,16 @@ textarea {
     background-color:#fff;
 }
 
-.text_link_gr{
-    color:#787878;
-    font-size:14rem;
-    font-weight:500;
-    position:relative;
-    display:inline-block;
-    cursor: pointer;
-}
-.text_link_gr:after{
+.text_link.tx--darkgray2:after{
     content:'';
     position:absolute;
     width:100%;
     height:1px;
     bottom:-1px;
     left:0;
-    background-color:#787878;
-}
-
+    background-color:#a2a2a2;
+} 
+ 
 
 
 .sentence_1{
@@ -743,6 +737,23 @@ textarea {
 }
 
 
+
+
+.required:after {
+    content: '*';
+    color:#ff0000;
+    position:absolute;
+    top:2px;
+    padding-left:1px;
+}
+.error_message:after{
+    content:'필수 입력 항목입니다.';
+    color:#ff0000;
+    font-size:12px;
+    position:absolute;
+    left:0;
+    bottom:-14px;
+}
 
 
 /****************** 선택폼 select ******************/
@@ -790,6 +801,7 @@ textarea {
         max-height:200px;
         overflow-x: hidden;
         overflow-y: overlay;
+        z-index:1;
     }
     .table_input_wh .select_option .select_ul{
         background: #333;
@@ -876,9 +888,10 @@ textarea {
 
 /** select_option_form - 배경색o **/
 
-  .select_option2{
-    background-color:#F3F4F6;
-    border:none;
+.select_option2{
+    /* background-color:#F3F4F6; */
+    /* border:none; */
+    border: 1px solid #ddd;
     border-radius:15px;
     width:100%;
     padding:14px 20px;
@@ -888,7 +901,26 @@ textarea {
     background-repeat: no-repeat;
     background-position:right 15px center;
   }
-  
+  .select_option2:focus{
+    border:2px solid #00A3FF;
+    box-sizing: border-box; 
+}
+
+  .select_option2 .select_ul2 {
+    top:51px;
+    border-radius:15px;
+    padding:6px 0;
+  }
+  .select_option2 .select_ul2 > li{
+    padding:10px 20px;
+  }
+
+  .select_ul2::-webkit-scrollbar {
+    width: 28px;
+  }
+  .select_ul2::-webkit-scrollbar-thumb{
+    border: 12px solid transparent;
+  }
 
 
 
@@ -907,7 +939,7 @@ textarea {
     flex-direction: column;
 }
 .table_input .table_row2 + .table_row2{
-    margin-top:24px;
+    margin-top:40px;
 }
 
 
@@ -919,6 +951,7 @@ textarea {
     text-align:left;
     padding:6px 0;
     vertical-align: top;
+    position:relative;
 }           
 .table_input .table_data2{
     font-size:14rem;
@@ -928,6 +961,7 @@ textarea {
     text-align:left;
     padding:6px 0;
     vertical-align: top;
+    position:relative
 }
 
 .input_form{
@@ -971,12 +1005,12 @@ textarea {
 
 
 .input_form_code {
-    width:50px;
+    width:60px;
     color:#000;
 }
 
 .input_form_phone{
-    width:calc(100% - 50px);
+    width:calc(100% - 60px);
 }
 
 
@@ -1059,18 +1093,25 @@ textarea{
     border:none;
     background-color:#f3f4f6;
     width:100%;
-    border-radius:6px;
-    padding:10px 14px;
+    border-radius:15px;
+    padding:14px 18px;
     color:#000;
     font-size:14rem;
     line-height:20rem;
-    height:200px;
+    height:250px;
 }
 .textarea_form::placeholder{
     color:#aaa;
 }
+.textarea_form:focus{
+    border-color:#0039CC;
+}
         
-
+.text_count{
+    text-align:right;
+    padding-top:6px;
+    padding-right:6px;
+}
 
 
 /** 검색 입력창 **/
@@ -1095,6 +1136,10 @@ textarea{
     top:50%;
     transform:translateY(-50%);
 }
+
+
+
+
 
 
 /****************** 라벨&뱃지 label&badge ******************/
@@ -1373,7 +1418,7 @@ textarea{
     color:#000;
     line-height:20px;
     cursor:pointer;
-    width:calc(100% - 16px);
+    width:calc(100% - 36px);
 }
 
 .check_form_input.checkbox{

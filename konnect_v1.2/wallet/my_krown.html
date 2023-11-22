@@ -43,44 +43,47 @@
         <!-- // Icon & Favicon -->
 
         <link rel="stylesheet" href="../css/common.css">
-
+        
     </head>
 
-    <body> 
-         <!-- 알림창 폼 start -->
-         <div id="modal_wrap" style="display:flex">
-            <div class="modal_bg"></div>
-            <div class="modal_window alert_window">       
-                <div class="modal_close">
-                    <i class="ic ic_close_l_bk"></i>
-                </div>    
-                <div class="modal_content alert_content">
-                    <p class="modal_tit">
-                        알림창의 타이틀을 작성해주세요
-                    </p>
-                    <p class="modal_text">
-                        알림창의 세부내용을 작성해주세요
-                    </p>
-                    <a href="#">
-                        <p class="text_link tx--blue1">링크 텍스트 버튼</p>
-                    </a>
-                    <div class="btn_multi">
-                        <button type="button" class="btn btn--lg btn--full btn--gray">취소</button>
-                        <button type="button" class="btn btn--lg btn--full btn--primary1">확인</button>
-                    </div>  
-                    <!-- <button type="button" class="btn btn--modal btn--full btn--primary1" onclick="location.href='../membership/membership_main.html'">나의 멤버십 가기</button> -->
-                </div>    
-            </div>
+    <body class="body_bg_wh"> 
+        <div class="wrap">
+            <!-- // Header -->
+            <header id="header" class="header sub_header"></header>
+            <!-- // Content -->                 
+            <main id="content" class="sub_main_content">
+                <section class="section section_sub_main">
+                    <div class="coming_soon">
+                        <img src="../img/temp/coming_soon.png" alt="coming_soon"/>
+                        <h1 class="tx--lightblue">COMING SOON</h1>
+                        <p class="main_detail tx--darkblue">
+                            더 멋진 모습을 위해<br/>
+                            커넥트팀이 열심히 준비중이에요<br/>
+                            조금만 기다려 주세요
+                        </p>
+                    </div>
+                </section>
+            </main>
+            <!-- // Footer -->
+            <!-- <footer id="footer" class="footer main_footer"></footer> -->
+            <!-- // Tab Bar -->
+            <!-- <div id="tabbar" class="tabbar"></div> -->
+                
+            <div id="safe_area_bottom"></div>
         </div>
-        <!-- 바텀시트 end -->
+        
+        
     
-
         <!-- //js script -->
         <script src="../js/libs/jquery-3.6.0.min.js"></script>
         <script src="../js/libs/swiper.min.js"></script>
         <script type="text/javascript" src="../js/common.js"></script>
         <script type="text/javascript">
-            
+            $(document).ready(function () {
+                $(".sub_header").load("../views/sub_header_bk.html");
+                $(".main_footer").load("../views/main_footer.html");
+                $(".tabbar").load("../views/tabbar.html");
+            });
         </script>
         <!-- //js script -->
 
