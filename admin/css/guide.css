@@ -275,13 +275,23 @@ select:disabled {
 
 
 
-.required{
-    position:relative;
-    top:-1px;
-    left:4px;
-    color:#FE4155;
-    font-weight:600;
+
+.required:after {
+    content: '*';
+    color:#ff0000;
+    position:absolute;
+    right:3px;
+    top:14px;
 }
+.error_message:after{
+    content:'필수 입력 항목입니다.';
+    color:#ff0000;
+    font-size:12px;
+    position:absolute;
+    left:0;
+    bottom:-14px;
+}
+
 
 
 
@@ -824,6 +834,7 @@ select.input_form option{
     display:flex;
     justify-content: flex-end;
     align-items: flex-start;
+    position:relative;
 }
 .table_type2_data{
     padding: 1rem 0.7rem;

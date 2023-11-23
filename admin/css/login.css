@@ -64,9 +64,11 @@
 }
 
 
-
+/* .login_input_form{
+    position:relative;
+} */
 .login_input_form p{
-    color:rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.7);
     font-size:14px;
 }
 .login_input_form + .login_input_form{
@@ -82,6 +84,7 @@
     background-color: transparent;
     border-bottom:1px solid #fff;
     color:rgba(255,255,255,1);
+    position:relative;
 }
 .login_input::placeholder{
     color:rgba(255,255,255,0.2);
@@ -102,9 +105,18 @@
 
 
 .help_text{
-    color:rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.7);
     font-size:14px;
     line-height:1.4;
     text-align:center;
     margin-top:30px;
+}
+
+.login_label{
+    position:relative;
+    display:inline-block;
+}
+.login_label.required:after{
+    right:-8px;
+    top:-2px;
 }
