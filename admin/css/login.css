@@ -1,5 +1,5 @@
 #wrap.login_wrap{
-    background-color:#293038;
+    background-color:#1f2327;
     position: relative;
     min-width:auto !important;
     height:100%;
@@ -42,13 +42,20 @@
     justify-content: center;
 }
 
+
+.login_tit{
+    font-size:22px;
+    font-weight:600;
+    color:#fff;
+}
+
 /*** 탭 tab **/
 .tab_btn{
     color:rgba(255,255,255,0.5);
-    font-size:22px;
     padding-bottom:5px;
     box-sizing: border-box;
     border-bottom:2px solid transparent;
+    font-weight:400;
 }
 .tab_btn.is-active{
     color:#fff;
@@ -64,9 +71,9 @@
 }
 
 
-/* .login_input_form{
+.login_input_form{
     position:relative;
-} */
+}
 .login_input_form p{
     color:rgba(255,255,255,0.7);
     font-size:14px;
@@ -79,12 +86,11 @@
     height:40px;
     margin-top:4px;
     padding: 0 20px 0 0;
-    font-size: 18px;
+    font-size: 16px;
     border:none;
     background-color: transparent;
     border-bottom:1px solid #fff;
     color:rgba(255,255,255,1);
-    position:relative;
 }
 .login_input::placeholder{
     color:rgba(255,255,255,0.2);
@@ -119,4 +125,13 @@
 .login_label.required:after{
     right:-8px;
     top:-2px;
+    color:#ff6c6c;
+}
+.login_input_form.error_message:after{
+    content:'필수 입력 항목입니다.';
+    color:#ff6c6c;
+    font-size:12px;
+    position:absolute;
+    left:0;
+    bottom:-18px;
 }
