@@ -1,0 +1,15 @@
+.brand_detail_img{
+    z-index:0 !important;
+}
+
+
+.header{
+    z-index:9999 !important;
+}
+
+.brand_tab_list{
+    z-index:150;
+}
+.brand_detail_box{
+    z-index:140;
+}

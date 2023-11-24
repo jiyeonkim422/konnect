@@ -1,0 +1,292 @@
+main > .section_main{
+    padding-top:0;
+}
+
+.main_btn_box{
+    position:absolute;
+    bottom:48px;
+    width:100%;
+    z-index:1;   
+}
+
+
+.main_header.deactive .navigation_bar{
+  background-color: transparent;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  top:0;
+  z-index:999999;
+}
+.main_header.active .navigation_bar{
+  background-color: #000;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  top:0;
+  z-index:999999;
+}
+
+
+/** main **/
+.main_content{
+    position:relative;
+    top:0;
+    width:100%;
+}
+
+.main_slide{
+  width:100%;
+  height:80vh;
+  min-height:700px;
+}
+
+
+.membership{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+}
+.membership + .p_side_20{
+  margin-bottom:-170px;
+}
+
+.text_box{
+  padding:20px;
+  height:180px;
+  background-color:#fff;
+  border-radius:20px;
+  width:100%;
+  position:relative;
+  bottom:217px;
+}
+
+/** 메인 - 롤링 공지사항 **/
+.notice_area{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: normal;
+    width: 100%; 
+    margin: 0px auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top:54px;
+}
+
+.notice_box  {
+    width: 100%;
+    height: 50px;
+    background:#fff;
+    /* border-radius: 15rem; */
+    border-radius:10px;
+    /* padding: 15rem 25rem 15rem 20rem; */
+    padding:13px 25px;
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-items: center;
+}
+.notice_icon{
+  display:flex;
+  width:24px;
+}
+
+
+.notice{width:100%; height:50px; overflow:hidden;}
+.rolling{position:relative; width:100%; height:auto;}
+.rolling li{width:100%; height:50px; line-height:50px; font-size:14px; padding-left:6px;}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.main_slide_li {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_slide_li > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* max-width:500px; */
+}
+.main_slide_li > video {
+  display: block;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  /* max-width:500px; */
+}
+.main_pagination{
+  bottom:25px !important;
+}
+
+.swiper-pagination-bullet{
+  width:10px;
+  height:10px;
+}
+
+.dark_pagination .swiper-pagination-bullet{
+  background-color:#393939;
+}
+.dark_pagination .swiper-pagination-bullet-active{
+  background-color:#00a3ff;
+}
+
+.light_pagination .swiper-pagination-bullet{
+  background-color:#c2d0e0;
+}
+.light_pagination .swiper-pagination-bullet-active{
+  background-color:#0039cc;
+}
+
+
+.main_slide_li .btn_text{
+  position:absolute;
+  bottom:67px;
+}
+
+
+/** 메인 - 멤버십 **/
+.membership_swiper{
+  padding: 0 86px 0;
+  /* max-height:600px;
+  max-width:650px; */
+}
+.membership_swiper .swiper-wrapper{
+  padding-bottom : 70px;
+}
+
+.membership_swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  /* height:60vw; */
+  /* height:245px; */
+  gap:63px;
+  align-items: center;
+  flex-direction: column;      
+}
+
+.membership_swiper .swiper-slide .card_img {
+  scale:0.8;
+}
+
+.membership_swiper .swiper-slide-active .card_img {
+  scale:1;
+}
+.membership_swiper .swiper-slide .card_img img{
+  width:100%;
+  height:auto;
+}
+.membership_swiper .swiper-slide-active .card_img img{
+  width:100%;
+  height:auto;
+}
+
+.membership_text{
+  width:max-content;
+  opacity:0;
+}
+.membership_swiper .swiper-slide-active .membership_text{
+  opacity:1;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  -webkit-transition-duration:0.3s;
+  -webkit-transition-timing-function:ease;
+}
+
+
+
+/** 세이빙 프로그램 소개 **/
+
+.saving_program.dark{
+  width:100%;
+  height:100%;
+  background-image: url(../img/temp/bg_saving_program_dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top:20px;
+}
+.saving_program.light{
+  width:100%;
+  height:100%;
+  background-image: url(../img/temp/bg_saving_program_light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top:20px;
+}
+.roulette_text{
+  position: absolute;
+  bottom: 7px;
+  left:0;
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 45px;
+}
+
+.roulette_box{
+  margin:0 auto;
+  padding:0 30px;
+  min-width:280px;
+  max-width:400px;
+  position:relative;
+}
+.roulette_box > img{
+  width:100%;
+  height:auto;
+}
+
+/** 에코시스템 소개 **/
+.ecosystem_box{
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecosystem_img_box{
+  background-color:#fff;
+  border-radius:50%;
+  width:128px;
+  height:128px;
+  padding:32px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ecosystem_img_box > img{
+  width:auto;
+  height:100%;
+  object-fit: contain;
+}
+.ecosystem_img_box > p{
+  text-align:center;
+}
+
+
+
+
+
+

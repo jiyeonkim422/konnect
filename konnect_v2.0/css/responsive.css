@@ -1,0 +1,61 @@
+@media (min-width: 600px) and (max-width : 1025px){
+
+    /** 메인화면 - 멤버십 슬라이드 **/
+    .membership_swiper{
+        padding: 0 250px 0;
+    }
+    /** 나의멤버십 - 멤버십 슬라이드 **/
+    .my_membership_swiper{
+        padding:0 250px 0;
+    }
+
+    /** 브랜드 배너 리스트 **/
+    .brand_banner_list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    a.brand_banner{
+        display:flex;
+        width:48.5%;
+    }
+
+    /** 이벤트 리스트 **/
+    .event_list_box{
+        flex-wrap:wrap;
+        flex-direction: inherit;
+    }
+    .event_list_form{
+        width: calc(50% - 20px);
+    }
+
+}
+
+
+
+/** 450사이즈 이상일때 **/
+@media (min-width: 450px){
+    .responsive{
+        padding:0 100px;
+    }
+
+}
+
+/** 370사이즈 미만일때 **/
+@media (max-width: 370px){
+
+    .countdown_inner{
+        padding:30px 20px;
+    }
+
+    .roulette_box{
+        padding:0 20px;
+    }
+    .roulette_text{
+        bottom:0;
+        transform:scale(0.9);
+        padding:0 30px;
+    }
+
+
+}

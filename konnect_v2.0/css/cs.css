@@ -1,0 +1,67 @@
+/** faq 상세 **/
+main > .section_faq{
+    padding-bottom:80px;
+}
+
+.search_box{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.faq_category{
+    padding-bottom:40px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.faq_icon{
+    font-size:16px;
+    color:#0039cc;
+    font-weight:800;
+}
+
+
+.faq_list_tit{
+    margin:0 25px;
+    border-bottom:1px solid #eee;
+    padding:15px 0;
+    display: flex;
+    justify-content: space-between;
+    gap:16px;
+}
+.faq_list_tit > .faq_text{
+    width:calc(100% - 20px);
+}
+
+.faq_text{
+    font-size:14rem;
+    color:#000;
+    line-height:20rem;
+    display:flex;
+    gap:10px;
+}
+.faq_list_detail{
+    width:100%;
+    background-color:#F3F4F6;
+    display:none;
+    margin-top:-1px;
+    padding:20px 25px 30px;
+}
+
+
+.faq_list_box.on .faq_list_detail{
+    display:block;
+}
+.faq_list_box .ic_arrow_m_thin.on{
+    transform:rotate(180deg);
+}
+
+
+
+
+/** 문의하기 상세 **/
+
+.section_inquiry{
+    margin-top:40px;
+    padding-bottom:5px;
+}

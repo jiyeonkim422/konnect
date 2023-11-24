@@ -1,0 +1,66 @@
+.badge_grade{
+    width:30px;
+    height:30px;
+}
+.badge_grade > img{
+    width:auto;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.my_info{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.my_info_name{
+    max-width:290px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.my_info_name span{
+    max-width:240px;
+    display:block;
+    display: -webkit-box;
+}
+.my_info_name em{
+    display:block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width: 208px;
+}
+
+
+.nft_box{
+    margin:14px 0;
+    display:flex;
+    gap:20px;
+    width:100%;
+    padding:4px;
+}   
+
+
+.profile_img_form{
+    position:relative;
+}
+.profile_edit{
+    width:45px;
+    height:45px;
+    background-color:#282828;
+    position:absolute;
+    border-radius:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    right:0;
+}

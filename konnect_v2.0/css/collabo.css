@@ -1,0 +1,324 @@
+main > .section_collabo{
+    padding-top:0;
+    padding-bottom:120px;
+}
+
+
+.collabo_main{
+    height:78vh;
+    position:relative;
+    min-height: 620px;
+}
+.collabo_main img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit: cover;
+    max-width:500px;
+    margin:0 auto;
+}
+.collabo_main .main_btn_box{
+    bottom:30px;
+}
+.collabo_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collabo_info + .collabo_info{
+    margin-top:60px;
+}
+.collabo_grade_info{
+    margin-bottom:70px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collabo_info_box{
+    width: 100%;
+    background-color: #262626;
+    border-radius: 15px;
+    padding: 40px 20px 20px;
+    display: flex;
+    gap: 20px;
+    position:relative;
+    flex-direction: column;
+}
+.collabo_info_box + .collabo_info_box{
+    margin-top:40px;
+}
+
+.collabo_info_box.p_20{
+    gap:10px;
+}
+.collabo_info_box.p_20 + .collabo_info_box.p_20{
+    margin-top:20px;
+}
+
+.collabo_info_box > .label{
+    position:absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: pre;
+}
+
+.collabo_info_number{
+    display:flex;
+}
+.collabo_info_number > span{
+    width:26px;
+}
+
+
+/** 콜라보 상세화면 **/
+
+.collabo_membership{
+    padding-top:70px;
+}
+
+.collabo_grade{
+    margin-top:36px;
+}
+
+
+.collabo_card_img{
+    margin-top:30px;
+}
+.collabo_card_img > img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+.collabo_benefit_info{
+    margin-top:30px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:14px;
+}
+
+.collabo_benefit{
+    margin-top:24px;
+}
+.benefit_box{
+    margin-top:24px;
+}
+.benefit_box > .main_tit{
+    margin-bottom:10px;
+}
+
+
+.benefit_info_box{
+    width:100%;
+    background-color:#1d1d1d;
+    border-radius: 20px;
+    padding:25px 30px 25px 30px;
+    display:flex;
+    gap:12px;
+    flex-direction: column;
+}
+.benefit_info_box + .benefit_info_box{
+    margin-top: 20px;
+}
+
+.benefit_info_box_multi{
+    flex-direction: column;
+}
+.benefit_info_box_multi .benefit_info{
+    height:auto;
+}
+.benefit_info_box_inner{
+    display:flex;
+    gap:18px;
+}
+.benefit_info_box_inner .badge{
+    min-width:70px;
+}
+
+.benefit_tit_box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+}
+
+
+.benefit_info_left{
+    width:70px;
+    display:flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.brand_img{
+    width:70px;
+    height:70px;
+    border-radius:15px;
+}
+.brand_img > img{
+    width:100%;
+    height:auto;
+}
+
+
+.benefit_info_right{
+    width:calc(100% - 70px);
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.benefit_info{
+    min-height:70px;
+    height:auto;
+    display:flex;
+    gap:6px;
+    flex-direction: column;
+    justify-content: center;
+}
+.benefit_info .brand_name{
+    color:#b3b3b3;
+    font-size:14px;
+    line-height:20px;
+    letter-spacing:-0.7px;
+    font-weight:600;
+}
+.benefit_info .benefit_tit{
+    color:#fff;
+    font-size:16px;
+    line-height:1.4;
+    font-weight:700;
+}
+
+
+.benefit_detail{
+    color:#b3b3b3;
+    font-size:14px;
+    line-height:20px;
+}
+.benefit_detail_li{
+    padding-left:9px;
+    position:relative;
+}
+.benefit_detail_li + .benefit_detail_li{
+    margin-top:4px;
+}
+.benefit_detail_li::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #858585;
+    content: '';
+}
+
+
+
+.collabo_benefit.benefit_plus{
+    margin-top:80px;
+    /* margin-bottom:40px; */
+}
+.collabo_benefit.benefit_plus .benefit_tit{
+    font-size:20px;
+    line-height:26px;
+    color:#fff;
+    font-weight:700;
+}
+.collabo_benefit.benefit_plus .benefit_detail{
+    font-size:16px;
+    line-height:22px;
+}
+.collabo_benefit.benefit_plus .benefit_detail.en{
+    font-size:14px;
+    line-height:20px;
+}
+.collabo_benefit.benefit_plus .benefit_detail_li::before{
+    top:8px;
+}
+.benefit_info_box2{
+    width: 100%;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 25px 30px 25px 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    max-width:800px;
+}
+.benefit_info_box2 + .benefit_info_box2{
+    margin-top:20px;
+}
+.benefit_info_top{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.benefit_info2{
+    margin-bottom:6px;
+}
+.benefit_info_top > .brand_img{
+    width:70px;
+    height:70px;   
+}
+
+.benefit_info_box2 .collabo_card_img{
+    width:92px;
+    height:136px;
+    margin-top:0; 
+}
+
+
+
+
+
+/**** ambassador  ****/
+.membership_list{
+    width:280px;
+    height:auto;
+    position:relative;
+}
+.membership_list img{
+    width:100%;
+    height:auto;
+
+}
+.membership_list p{
+    position:absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.sns_info_box{
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    padding: 12px 30px 20px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+} 
+.sns_info_box > img{
+    width:63px;
+    height:50px;
+}
+
+
+.poonam_img_frame{
+    width:190px;
+    height:220px;
+    border-radius:15px;
+    overflow:hidden;
+}
+.poonam_img_frame > img{
+    width:100%;
+    height:auto;
+}

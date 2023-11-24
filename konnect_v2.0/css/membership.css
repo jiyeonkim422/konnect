@@ -1,0 +1,521 @@
+
+.membership_info{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:20px 0 80px;
+}
+.membership_detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:45px;
+    opacity:0;
+}
+
+.membership_name{
+    max-width:250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.membership_name span{
+    max-width:240px;
+    display:block;
+    display: -webkit-box;
+}
+.membership_name em{
+    display:block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width: 208px;
+}
+
+/** 멤버십 슬라이드 **/
+.my_membership_swiper{
+    padding:0 86px 0;
+}
+.my_membership_swiper .swiper-slide .card_img {
+    scale:0.8;
+  }
+.my_membership_swiper .swiper-slide-active .card_img {
+    scale:1;
+  }
+.swiper-pagination.my_membership_pagination{
+    bottom:133px;
+}
+  .my_membership_swiper .swiper-slide-active .membership_detail{
+    opacity:1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.3s;
+    -webkit-transition-timing-function:ease;
+  }
+  
+
+.membership_tab{
+    width:100%;
+    display:flex;
+}
+.membership_tab > li{
+    width:50%;
+    color:#787878;
+    border-bottom:2px solid #222;
+    display:flex;
+    justify-content: center;
+    gap:6px;
+    padding-bottom:10px;
+}
+
+.membership_tab > li.is-active{
+    color:#fff;
+    border-color:#fff;
+}
+.membership_tab > li.is-active em{
+    color:#00A3FF;
+}
+
+.line_tab_content{
+    display:none;
+}
+.line_tab_content.is-active{
+    display:block;
+}
+
+
+
+
+/*** 나의멤버십 바텀시트 line tab ***/
+.line_tab_content.bs_line_tab.is-active{
+    display:contents;
+}
+.bs_line_tab > li{
+    color:#9FB1CC;
+    border-bottom:2px solid #9FB1CC;
+}
+.bs_line_tab > li.is-active{
+    color:#0039CC;
+    border-color:#0039CC;
+}
+.bs_line_tab > li.is-active em{
+    color:#00A3FF;
+}
+.bs_line_tab_tit{
+    padding:0 2px 24px;
+}
+
+
+.bs_tab_content{
+    display:none;
+}
+.bs_tab_content.is-active{
+    display:block;
+}
+
+
+
+.filter-tab_voucher{
+    display:none;
+}
+.filter-tab_voucher.is-active{
+    display:block;
+}
+
+
+.card_benefit_info_box{
+    padding:10px 0 10px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card_benefit_info_left{
+    display:flex;
+    width:calc(100% - 40px);
+    gap:20px;
+}
+.card_benefit_info_right{
+    display:flex;
+    width:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_benefit_info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2px;
+    width:calc(100% - 90px);
+}
+
+.brand_name_box{
+    display:flex;
+    flex-direction: row;
+    gap: 0;
+}
+.brand_name_box .brand_name{
+    color:#fff;
+    font-size:16px;
+    line-height:1.4;
+    font-weight:700;
+    align-items: center;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-width:calc(100% - 40px);
+    padding-right:4px;
+}
+.card_benefit_info .benefit_tit{
+    /* color:#b3b3b3; */
+    color:#fff;
+    font-size:14px;
+    line-height:20px;
+    letter-spacing:-0.7px;
+    font-weight:400;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+
+.card_benefit_swiper{
+    position:relative;
+    padding:0 20px;
+    padding-bottom:40px;
+}
+
+.no_benefit{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    padding:70px 0 40px;
+}
+.no_benefit > img{
+    width:70px;
+    height:auto;
+}
+
+.benefit_badge_box{
+    display:inline-flex;
+    gap:10px;
+    margin-bottom:14px;
+}
+.benefit_badge{
+    display:flex;
+    align-items: center;
+    gap:2px;
+}
+
+
+.my_krown{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+.my_krown + .my_krown{
+    margin-top:40px;
+}
+
+.krown_box{
+    width:100%;
+    height:80px;
+    background-color:#333;
+    border-radius:15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/*** 멤버십 카드 자세히보기 바텀시트 ***/
+.benefit_info_box.bg_light{
+    background-color:#f3f4f6;
+}
+.benefit_info_box.bg_gray{
+    background-color:#474747;
+}
+.benefit_info_box.bg_dark{
+    background-color:#262626;
+}
+
+.benefit_info_box.bg_light .benefit_info .brand_name{
+    color:#002863;
+}
+.benefit_info_box.bg_light .benefit_info .benefit_tit{
+    color:#000;
+}
+.benefit_info_box.bg_light .badge{
+    color:#002863;
+    background-color:#c2d0e0;
+}
+.benefit_info_box.bg_light .benefit_detail{
+    color:#002863;
+    font-weight:500;
+    font-size:13px;
+    line-height:22px;
+}
+
+
+
+.arrow_box{
+    width:100%;
+    padding:20px 30px;
+    border-radius:20px;
+    gap:18px;
+    display:flex;
+    flex-direction: column;
+}
+.arrow_box.bg_light{
+    background-color: #f3f4f6;
+}
+.benefit_info_box.info_box_solo{
+    padding: 12px 20px;
+}
+.info_box_solo + .info_box_solo{
+    margin-top:12px;
+}
+
+
+.info_box_slim + .info_box_slim{
+    margin-top:16px;
+}
+.benefit_info_box.info_box_slim{
+    padding: 6px 20px;
+}
+
+
+.benefit_policy_more{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.layerpopup {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:99999;
+    margin:0 auto;
+    display:none;
+    background-color:#fff;
+}
+.layerpopup.open {
+    display:block;
+  }
+.close_layerpopup{
+    width: 60px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .layerpopup > .layer_header {
+      position:relative;
+      width: 100%;
+      height: 70px;
+      /* padding: 0 6px; */
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      top: 0;
+    }
+
+    .layer_content {
+      position:absolute;
+      top:70px;
+      right:0;
+      bottom:0;
+      left:0;
+      overflow-y:auto;
+    }
+      .layer_inner {
+        /* height:; */
+        border-radius:0 0 5px 5px;
+        padding:20px;
+      }
+      .layer_box {
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        overflow:hidden;
+        overflow-y:auto;
+        -webkit-overflow-scrolling:touch;
+      }
+      .layer_box + .layer_box{
+        margin-top:80px;
+      }
+      .layer_box .info_content .dot_list > li{
+        color:#002863;
+      }
+
+.modal2{
+    z-index:9999;
+}
+
+
+/*** 영수증 적립하기 정보 화면 ***/
+
+main > .section.section_receipt_detail{
+    padding-top:120px;
+}
+.krown_reward_img{
+    width:auto;
+    height:140px;
+}
+.krown_reward_img > img{
+    width:auto;
+    height:100%;
+}
+
+
+
+
+
+/*** voucher 바우처 ***/
+
+main > .section_voucher_detail{
+    padding-top:80px;
+    padding-bottom:140px;
+}
+
+.voucher_info_box{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voucher_img_box{
+    width:250rem;
+    height:140rem;
+    position:relative;
+}
+.voucher_img_box .voucher_tit{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+}
+.voucher_img_box .voucher_tit p,
+.voucher_img_box .voucher_tit span,
+.voucher_img_box .voucher_tit h3
+{
+    color:#fff;
+    text-align:center;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.24);
+}
+
+.voucher_img_box > img{
+    width:100%;
+    height:auto;
+}
+
+.input_form_box{
+    padding:0 20px;
+}
+
+
+.reservation_status_notice{
+    padding-top:40px;
+}
+
+
+
+
+/*** 더라운지 혜택사용 티켓 the lounge ticket ***/
+.ticket_swiper{
+    padding:0 40px 0;
+}
+.ticket_box{
+    border:2px solid #eee;
+    border-radius:20px;
+    overflow:hidden;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket_header{
+    background-color:#F3F4F6;
+    height:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 25px;
+    gap:16px;
+}
+.ticket_title{
+    display:flex;
+    flex-direction:column;           
+    align-items: flex-start;
+}
+.ticket_icon{
+    width:50px;
+    height:50px;
+    background-color:#000;
+    border-radius:8px;
+    overflow:hidden;
+}
+.ticket_icon > img{
+    width:100%;
+    height:auto;
+}
+
+.ticket_content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+}
+.qr_code{
+    width:110px;
+    height:110px;
+}
+.qr_code > img{
+     width:100%;
+     height:auto;
+}
+
+
+.ticket_img{
+    width:100%;
+    height:auto;
+}
+.ticket_img > img{
+    width:100%;
+    height:auto;
+}
+
+
+.ticket_bottom{
+    background-color:#F3F4F6;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 25px;
+}
