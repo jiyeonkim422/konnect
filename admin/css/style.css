@@ -64,7 +64,6 @@
 
 
 
-
 .nav_list{
     overflow-y:auto;
     height:calc(100% - 70px);
@@ -82,14 +81,13 @@
     background-color:#323d4d ;
 }
 
-
-.nav_list > li:hover > a{
+.nav_link{
     color:#fff;
     transition: all .25s ease-in-out;
 }
-.nav_list > li > a {
+.nav_link {
     display:block;
-    padding:20px 14px 20px 20px;
+    padding:20px 15px 20px 20px;
     color:#a9bbd0;
     font-weight:500;
 }
@@ -98,29 +96,88 @@
     width:100%;
     height:auto;
     display:none;
-    background-color:#293038;
+    background-color:#1f2327;
 }  
 
 
-.nav_group .nab_link.is-active{
-    background-color:#293038;
+
+.nav_item{
+    display:block;
+    color:#a9bbd0;
+    font-size:14px;
+    font-weight:500;
 }
-.nav_link.is-active{
+.nav_item1{
+    font-size:16px;
+}
+
+
+.sub_nav_tit{
+    display:block;
+    padding:20px 20px;    
+    color:#a9bbd0;
+    font-size:14px;
+    font-weight:500;
+}
+
+.sub_nav_item > .nav_link{    
+    display:block;
+    padding:14px 24px;    
+    color:#a9bbd0;
+    font-size:14px;
+}
+.sub_nav_item:hover > .nav_link{
+    color:#fff;
+    transition: all .25s ease-in-out;
+}
+.sub_nav_item{
+    display:block;
+    padding:15px 20px;
+    color:#a9bbd0;
+    font-size:14px;
+    font-weight:500;
+}
+.sub_nav_item.is-active > a{
+    transition: all .25s ease-in-out;
+    font-weight:500;
+    color:#fff;
+}
+
+
+
+
+.nav_item.open .nav_item > ul{
+    display:none;
+}
+
+.nav_item1.open{
     display:block;
     transition: all .25s ease-in-out;
     font-weight:600;
     color:#fff;
 }
 
-.sub_nav_item > a{    
+
+.nav_item1.open > .nav_link{
     display:block;
-    padding:14px 24px;    
+    transition: all .25s ease-in-out;
+    font-weight:600;
+    color:#fff;
+}
+
+.nav_item2 > a{
+    display:block;
+    padding:15px 20px;    
     color:#a9bbd0;
     font-size:14px;
+    font-weight:500;
 }
-.sub_nav_item:hover > a{
+.nav_item2 .sub_nav_item{
+    padding:15px 15px 15px 35px;
+}
+.nav_item2.open > a{
+    font-weight:500;
     color:#fff;
-    transition: all .25s ease-in-out;
 }
 
 
@@ -753,3 +810,5 @@
 .popup_btn.alert .btn + .btn{
     border-left:1px solid #EBEDF3;
 }
+
+
