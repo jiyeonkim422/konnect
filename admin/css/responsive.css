@@ -6,20 +6,14 @@
 }
 
 @media (max-width: 1440px){
-    .menu_list{
-        width:100px;
-    }
-    .content_list{
-        width: calc(100% - 100px);
-    }
-
 
     /** 로그인&회원가입 **/
-/* 
+    /* 
     .login_box {
         overflow-y: auto;
         max-height: 550px;
-    }    */
+    }    
+    */
 
     .login_box::-webkit-scrollbar {
         -webkit-appearance: none;

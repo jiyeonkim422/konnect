@@ -371,17 +371,12 @@
 .column_box{
     display: flex;
     flex-direction: column;
-    width:80%;
+    width:100%;
 }
 .column_box + .column_box{
     margin-left:20px;
 }
-.menu_list{
-    width:400px;
-}
-.content_list{
-    width:calc(100% - 400px);
-}
+
 
 
 
