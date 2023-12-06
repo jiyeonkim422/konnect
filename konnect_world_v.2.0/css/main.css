@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width:680px;
+    min-width:320px;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.header{
+    width:100%;
+    height:55px;
+    background-color:#fcfcfc;
+    border-bottom:1px solid #e4e2e1;
+    box-sizing: border-box;
+    position:sticky;
+    z-index:20;
+    top:0;
+}
+.header_wrap{
+    padding:0 30px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    width:170px;
+    height:30px;
+    border:1px solid red;
+}
+
+.header_right{
+    display:flex;
+}
+.language{
+    width:50px;
+    height: 30px;
+    background-color:yellow;
+}
+.menu{
+    width:50px;
+    height:30px;
+    background-color:blue;
+}
+
+
+.content{
+    height:1000px;
+    background-color:#ddd;
+}
+.content_2{
+    background-color:salmon;
+}
+
+.p_side_32{
+    padding:0 32px;
+}
+
+
+.footer_sub{
+    border-top:1px solid #e4e2e1;
+    padding-top:54px;
+    padding-bottom:70px;
+}
+
+.email_form{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+.email_input{
+    width:calc(100% - 150px);
+    position:relative;
+}
+.email_input_field{
+    height:70px;
+    border-radius:70px;
+    border:1px solid #ddd;
+    width:100%;
+    position:absolute;
+    padding-left:24px;
+    padding-right:24px;
+    padding-top:24px;
+    transition:all .3s ease;
+}
+
+.email_input_label{
+    font-size:17rem;
+    font-weight:700;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:24px;
+    transition:all .3s ease;
+}
+.email_btn{
+    width:140px;
+    height:70px;
+    border-radius:70px;
+    border:1px solid #ddd;
+    background-color:#000;
+}
+
+
+/* 포커스 될 때 email_input_label이 위로 올라감 */
+.email_input_field:focus + .email_input_label,
+.email_input_field:valid + .email_input_label
+{
+    font-size:14rem;
+    transform:translateY(-120%);
+}
+
+.email_input_field:focus,
+.email_input_field:valid{
+    outline:1px solid #000;
+}
+
+
+.footer_menu{
+    column-count: 3;
+    column-gap: 3.2rem;
+    display: block;
+}
+.footer_menu_list{
+    font-size:16rem;
+    line-height:20rem;
+    display:grid;
+}
+.footer_menu_list > ul{
+    padding-top:16px;
+}
+.footer_menu_list > ul li{
+    padding:6px 0;
+    font-weight:500;
+}
+.copyright{
+    font-size:16rem;
+    line-height:22rem;
+}
+.copyright + .copyright {
+    padding-top:10px;
+}

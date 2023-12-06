@@ -279,6 +279,7 @@
     padding-bottom: 80px !important;
 }
 
+
 .section {
     width: 100%;
 }
@@ -1057,6 +1058,11 @@
 }
 .m_footer_bottom > ul > li {
     margin-bottom: 30px;
+}
+
+
+.d_none{
+    display:none;
 }
 
 
