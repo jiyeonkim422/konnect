@@ -74,6 +74,7 @@
 
     <body class="body_bg">
         <div class="wrap">
+            <!-- HEADER start -->
             <header id="header" class="header main_header">
                 <div class="header_wrap">
                     <div class="header_logo">
@@ -86,7 +87,7 @@
                     <div class="header_right">
                         <div class="language">
                             <div class="language_status language_box">
-                                <img src="../img/svg/global.svg" alt="global" />
+                                <img src="../img/svg/global.svg" alt="global">
                                 <p class="language_text is-active">KR</p>
                             </div>
                             <ul class="language_list">
@@ -102,20 +103,95 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="menu">
-
-                        </div>
+                        <button type="button" id="header_cate" class="header_cate" onclick=""></button>
                     </div>
                 </div>
             </header>
+            <!-- HEADER end -->
+
+            <!-- HAMBURGER start -->
+            <div class="hamburger_wrap">
+                <div class="header">
+                    <div class="header_container">
+                        <div class="header_logo">
+                            <a href="./home_main.html">
+                                <i class="etc_logo"></i>
+                            </a>
+                        </div>
+                        <div class="btn_area">
+                            <img src="../images/close_btn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <section class="hamburger_section">
+                    <ul>
+                        <li class="hamburger_item">
+                            <a href="home_main.html">
+                                <span class="sub_sub_sub_sub_tit">HOME</span>
+                                <div class="btn_area">
+                                    <img src="../images/arrow_right.png" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hamburger_item">
+                            <a href="about-we_main.html">
+                                <span class="sub_sub_sub_sub_tit">ABOUT, WE</span>
+                                <div class="btn_area">
+                                    <i class="ic_arrow_right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hamburger_item">
+                            <a href="service_main.html">
+                                <span class="sub_sub_sub_sub_tit">SERVICE</span>
+                                <div class="btn_area">
+                                    <i class="ic_arrow_right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hamburger_item">
+                            <a href="press_main.html">
+                                <span class="sub_sub_sub_sub_tit">NEWS</span>
+                                <div class="btn_area">
+                                    <i class="ic_arrow_right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="hamburger_item">
+                            <a href="contact_main.html">
+                                <span class="sub_sub_sub_sub_tit">CONTACT</span>
+                                <div class="btn_area">
+                                    <img class="ic_arrow_right"></img>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!-- HAMBURGER end -->
+
+            <!-- MAIN start -->
             <main id="main" class="main_content">
                 <div class="section">
                     <div class="content"></div>
                 </div>
                 <div class="section">
-                    <div class="content content_2"></div>
-                </div>
+                    <div class="content content_2">
+                        <div class="content_tit"></div>
+                        <div class="content_video">
+                            <button class="video_button active">Pause</button>
+                            <video  id="video" loop muted playsinline autoplay preload="auto" disableremoteplayback>
+                                <source src="../img/mobile_Intro.mp4" type="video/mp4" />
+                            </video>
+                        </div>	
+                    </div>
+                </div> 
+
+                
             </main>
+            <!-- MAIN end -->
+
+            <!-- FOOTER start -->
             <footer id="footer" class="footer main_footer p_side_32">
                 <div class="footer_sub email">
                     <form class="email_form">
@@ -168,6 +244,7 @@
                     </p>
                 </div>
             </footer>
+            <!-- FOOTER end -->
         </div>
 
     </body>
@@ -176,6 +253,30 @@
 
 <!-- //js script -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- GSAP library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
 <script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript"> 
+
+    //video play&pause 버튼
+    $(document).ready(function () {
+        var ctrlVideo = document.getElementById("video");
+
+            $('.video_button').click(function () {
+            if (ctrlVideo.paused) {
+            ctrlVideo.play();
+            $('.video_button').html("Pause");
+            } else {
+            ctrlVideo.pause();
+            $('.video_button').html("Play");
+            }
+        });
+    });
+
+
+</script>
 
 <!-- //js script -->

@@ -33,13 +33,91 @@ body{
 }
 
 .header_right{
-    display:flex;
+    display: flex;
+    align-items: center;
 }
-.language{
-    width:50px;
+
+
+.language {
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    right:62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-right: 10px;
+    width: 60px;
+}
+.language_status {
+    cursor: pointer;
+}
+.language:hover .language_list {
+    display: block;
+    transition: all 0.3s ease-out;
+}
+.language_box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.language img {
+    width: 18px;
+    height: 29px;
+}
+
+.language_list {
+    background-color: #fff;
+    border: 2.4px solid #002863;
+    position: absolute;
+    width: 40px;
+    bottom: -72px;
+    border-radius: 10px;
+    right: 9px;
+    display: none;
+}
+.language_list > li {
+    text-align: center;
+}
+.language_list > li > a > .language_text:hover {
+    color: #002863;
+    transition: all 0.3s ease-out;
+}
+.language_list > li + li {
+    margin-top: 6px;
+}
+.language_list > li:first-child:after {
+    width: 80%;
+    height: 3px;
+    background-color: #c2d0e0;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.language_list > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2px 10px;
+}
+.language_text {
+    font-size: 14px;
     height: 30px;
-    background-color:yellow;
+    line-height: 30px;
+    font-weight: 600;
+    color: #c2d0e0;
+    letter-spacing: -0.5px;
 }
+.language_text.is-active {
+    color: #002863;
+}
+
+
+
+
 .menu{
     width:50px;
     height:30px;
@@ -47,23 +125,141 @@ body{
 }
 
 
+/** hamburger menu **/
+.hamburger_section{
+    padding: 80px 90px 0 90px;
+}
+.hamburger_item{
+    padding: 18px 0;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.hamburger_item > a{
+   position: relative;
+   width: 100%;
+}
+.hamburger_item > a:hover .sub_sub_sub_sub_tit{
+    color: #2AF497 !important;
+}
+.hamburger_item > a > .sub_sub_sub_sub_tit{
+    display: flex;
+    justify-content: space-between;
+    color: #555 !important;
+}
+.hamburger_item .btn_area{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: blue;
+    /* display: none; */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hamburger_item > a:hover .btn_area{
+    display: block;
+}
+.header_cate{
+    width: 32px;
+    height: 32px;
+    background: blue;
+}
+.hamburger_wrap{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 400;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: right 0.3s ease-in-out;
+    background-color: white;
+}
+.hamburger_wrap.on {
+    right: 0;
+  }
+
+
+/*** MAIN ***/
+.main_content{
+    position: relative;
+    overflow: hidden;
+}
+.section{
+    position:relative;
+}
 .content{
     height:1000px;
     background-color:#ddd;
+    margin:0 auto  !important;
 }
 .content_2{
     background-color:salmon;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    height:100%;
 }
+.content_tit{
+    height:500px;
+}
+
+/** video **/
+.content_video{
+    height:500px;
+    margin:0 auto;
+}
+.content_video > video{
+    /* width:100%;
+    height:auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; */
+    /* z-index: -1; */
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+
+.video_button{
+    background-color: #fff;
+    color: #000;
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    right: 65px;
+    bottom:50px;
+    width:44px;
+    height:44px;
+    border-radius:22px;
+    border:1px solid #eee;
+    z-index:99;
+}
+
+.video_button.active {
+    background-color: #fff;
+}
+
+
 
 .p_side_32{
     padding:0 32px;
 }
 
 
+/*** FOOTER ***/
+.footer_sub:first-child{
+    border-top:0;
+}
 .footer_sub{
     border-top:1px solid #e4e2e1;
-    padding-top:54px;
-    padding-bottom:70px;
+    padding-top:60px;
+    padding-bottom:90px;
 }
 
 .email_form{
@@ -144,3 +340,7 @@ body{
 .copyright + .copyright {
     padding-top:10px;
 }
+
+
+
+
