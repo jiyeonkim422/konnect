@@ -103,7 +103,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" id="header_cate" class="header_cate" onclick=""></button>
+                        <button type="button" id="header_cate" class="header_cate" onclick="">
+                            <ul class="hamburger_line" id="hamburger_line">
+                                <li class="line line1"></li>
+                                <li class="line line2"></li>
+                                <li class="line line3"></li>
+                            </ul>
+                        </button> 
                     </div>
                 </div>
             </header>
@@ -112,30 +118,56 @@
             <!-- HAMBURGER start -->
             <div class="hamburger_wrap">
                 <div class="header">
-                    <div class="header_container">
+                    <div class="header_wrap">
                         <div class="header_logo">
-                            <a href="./home_main.html">
-                                <i class="etc_logo"></i>
+                            <a href="../views/index_ko.html">
+                                <div class="header_logo">
+                                    <img src="../img/main_logo.png" alt="" />
+                                </div>
                             </a>
                         </div>
-                        <div class="btn_area">
-                            <img src="../images/close_btn.png" alt="">
+                        <div class="header_right">
+                            <div class="language">
+                                <div class="language_status language_box">
+                                    <img src="../img/svg/global.svg" alt="global">
+                                    <p class="language_text is-active">KR</p>
+                                </div>
+                                <ul class="language_list">
+                                    <li>
+                                        <a href="../views/index_ko.html">
+                                            <p class="language_text is-active">KR</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../views/index_en.html">
+                                            <p class="language_text">EN</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" id="header_close" class="header_close" onclick="">
+                                <ul class="hamburger_line" id="hamburger_line">
+                                    <li class="line line1"></li>
+                                    <li class="line line2"></li>
+                                    <li class="line line3"></li>
+                                </ul>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <section class="hamburger_section">
                     <ul>
                         <li class="hamburger_item">
-                            <a href="home_main.html">
-                                <span class="sub_sub_sub_sub_tit">HOME</span>
+                            <a href="home_en.html">
+                                <span class="menu_tit">Home</span>
                                 <div class="btn_area">
                                     <img src="../images/arrow_right.png" alt="">
                                 </div>
                             </a>
                         </li>
                         <li class="hamburger_item">
-                            <a href="about-we_main.html">
-                                <span class="sub_sub_sub_sub_tit">ABOUT, WE</span>
+                            <a href="save.html">
+                                <span class="menu_tit">Save</span>
                                 <div class="btn_area">
                                     <i class="ic_arrow_right"></i>
                                 </div>
@@ -143,23 +175,15 @@
                         </li>
                         <li class="hamburger_item">
                             <a href="service_main.html">
-                                <span class="sub_sub_sub_sub_tit">SERVICE</span>
+                                <span class="menu_tit">Service</span>
                                 <div class="btn_area">
                                     <i class="ic_arrow_right"></i>
                                 </div>
                             </a>
                         </li>
                         <li class="hamburger_item">
-                            <a href="press_main.html">
-                                <span class="sub_sub_sub_sub_tit">NEWS</span>
-                                <div class="btn_area">
-                                    <i class="ic_arrow_right"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hamburger_item">
-                            <a href="contact_main.html">
-                                <span class="sub_sub_sub_sub_tit">CONTACT</span>
+                            <a href="support.html">
+                                <span class="menu_tit">Support</span>
                                 <div class="btn_area">
                                     <img class="ic_arrow_right"></img>
                                 </div>
@@ -167,17 +191,32 @@
                         </li>
                     </ul>
                 </section>
+                <div class="menu_footer">
+                    <button class="btn "></button>
+                </div>
             </div>
             <!-- HAMBURGER end -->
 
             <!-- MAIN start -->
             <main id="main" class="main_content">
+                <!-- 이미지 들어가는 영역 --> 
                 <div class="section">
-                    <div class="content"></div>
+                    <div class="content p_side_32">
+                        <div class="content_tit_box">
+                            <h1>해당 영역의 타이틀이 들어갑니다.해당 영역의 타이틀이 들어갑니다.해당 영역의 타이틀이 들어갑니다.</h1>
+                            <p>해당 영역의 상세내용이 들어갑니다.</p>
+                        </div>
+                        <div class="content_img">
+                        </div>
+                    </div>
                 </div>
+                <!-- 영상 들어가는 영역 -->
                 <div class="section">
                     <div class="content content_2">
-                        <div class="content_tit"></div>
+                        <div class="content_tit_box tx_center">
+                            <h1>해당 영역의 타이틀이 들어갑니다.</h1>
+                            <p>해당 영역의 상세내용이 들어갑니다.</p>
+                        </div>
                         <div class="content_video">
                             <button class="video_button active">Pause</button>
                             <video  id="video" loop muted playsinline autoplay preload="auto" disableremoteplayback>
@@ -204,7 +243,7 @@
                 </div>
                 <div class="footer_sub footer_menu">
                     <div class="footer_menu_list">
-                        <h3>About us</h3>
+                        <h5>About us</h5>
                         <ul>
                             <li>Our company</li>
                             <li>Our company</li>
@@ -213,7 +252,7 @@
                         </ul>
                     </div>
                     <div class="footer_menu_list">
-                        <h3>About us</h3>
+                        <h5>About us</h5>
                         <ul>
                             <li>Our company</li>
                             <li>Our company</li>
@@ -222,7 +261,7 @@
                         </ul>
                     </div>
                     <div class="footer_menu_list">
-                        <h3>About us</h3>
+                        <h5>About us</h5>
                         <ul>
                             <li>Our company</li>
                             <li>Our company</li>
@@ -275,6 +314,9 @@
             }
         });
     });
+
+
+
 
 
 </script>

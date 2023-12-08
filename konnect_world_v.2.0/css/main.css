@@ -28,8 +28,11 @@ body{
 }
 .header_logo{
     width:170px;
-    height:30px;
-    border:1px solid red;
+    height:45px;
+}
+.header_logo > img{
+    width:auto;
+    height:100%;
 }
 
 .header_right{
@@ -52,10 +55,6 @@ body{
 }
 .language_status {
     cursor: pointer;
-}
-.language:hover .language_list {
-    display: block;
-    transition: all 0.3s ease-out;
 }
 .language_box {
     display: flex;
@@ -80,10 +79,6 @@ body{
 .language_list > li {
     text-align: center;
 }
-.language_list > li > a > .language_text:hover {
-    color: #002863;
-    transition: all 0.3s ease-out;
-}
 .language_list > li + li {
     margin-top: 6px;
 }
@@ -104,9 +99,9 @@ body{
     padding: 2px 10px;
 }
 .language_text {
-    font-size: 14px;
-    height: 30px;
-    line-height: 30px;
+    font-size: 16px;
+    /* height: 30px;
+    line-height: 30px; */
     font-weight: 600;
     color: #c2d0e0;
     letter-spacing: -0.5px;
@@ -122,21 +117,27 @@ body{
     width:50px;
     height:30px;
     background-color:blue;
-}
+}       
 
 
 /** hamburger menu **/
-.hamburger_section{
-    padding: 80px 90px 0 90px;
+
+.menu_tit{
+    font-size:16px;
+    font-weight:700;
 }
+
+
+
 .hamburger_item{
-    padding: 18px 0;
+    padding: 18px 30px;
     text-align: left;
     border-bottom: 1px solid #eee;
 }
 .hamburger_item > a{
    position: relative;
    width: 100%;
+   display:flex;
 }
 .hamburger_item > a:hover .sub_sub_sub_sub_tit{
     color: #2AF497 !important;
@@ -159,11 +160,71 @@ body{
 .hamburger_item > a:hover .btn_area{
     display: block;
 }
+
+
+
 .header_cate{
-    width: 32px;
-    height: 32px;
-    background: blue;
+    width: 40px;
+    height: 40px;
+    padding:0 8px;
+    z-index:1;
 }
+.header_close .hamburger_line .line:nth-child(2){
+    opacity: 0;
+}
+.header_close .hamburger_line .line:nth-child(1){
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+}
+  
+.header_close .hamburger_line .line:nth-child(3){
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+    -ms-transform: translateY(-7px) rotate(-45deg);
+    -o-transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+
+.hamburger_line{
+    width:24px;
+    height:18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger_line .line{
+    height:2px;
+    border-radius:10px;
+    width:100%;
+    background-color:#000;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.hamburger_line.is-active .line:nth-child(2){
+    opacity: 0;
+}
+.hamburger_line.is-active .line:nth-child(1){
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+}
+  
+.hamburger_line.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+    -ms-transform: translateY(-7px) rotate(-45deg);
+    -o-transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+
 .hamburger_wrap{
     position: fixed;
     top: 0;
@@ -172,7 +233,7 @@ body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    transition: right 0.3s ease-in-out;
+    transition: right 0.35s ease-in-out;
     background-color: white;
 }
 .hamburger_wrap.on {
@@ -189,7 +250,6 @@ body{
     position:relative;
 }
 .content{
-    height:1000px;
     background-color:#ddd;
     margin:0 auto  !important;
 }
@@ -200,9 +260,14 @@ body{
     overflow:hidden;
     height:100%;
 }
-.content_tit{
-    height:500px;
+.content_tit_box{
+    padding-top:100px;
+    padding-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
 
 /** video **/
 .content_video{
@@ -238,7 +303,7 @@ body{
     height:44px;
     border-radius:22px;
     border:1px solid #eee;
-    z-index:99;
+    z-index:1;
 }
 
 .video_button.active {

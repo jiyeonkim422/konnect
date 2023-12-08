@@ -143,3 +143,37 @@ button {
 .ic{
   display:inline-block;
 }
+
+
+
+
+/*** text style ***/
+h1{
+  font-size:45rem;
+  line-height:54rem;
+  font-weight:700;
+}
+
+h5{
+  font-size:18rem;
+  font-weight:600;
+}
+
+p{
+  font-size:20rem;
+}
+
+
+
+.tx_center{
+  text-align:center;
+}
+.tx_left{
+  text-align:left;
+}
+.tx_right{
+  text-align:right;
+}
+
+
+
