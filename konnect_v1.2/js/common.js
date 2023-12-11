@@ -44,6 +44,7 @@ $(function () {
 });
 
 
+
 // textarea 글자수 제한
 $('.textarea_box .textarea_form').keyup(function(){
   var content = $(this).val();

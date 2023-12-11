@@ -9,6 +9,9 @@ body{
     box-sizing: border-box;
 }
 
+
+
+/**************** HEADER ****************/
 .header{
     width:100%;
     height:55px;
@@ -112,7 +115,6 @@ body{
 
 
 
-
 .menu{
     width:50px;
     height:30px;
@@ -121,7 +123,6 @@ body{
 
 
 /** hamburger menu **/
-
 .menu_tit{
     font-size:16px;
     font-weight:700;
@@ -241,7 +242,10 @@ body{
   }
 
 
-/*** MAIN ***/
+
+  
+
+/***************** MAIN ****************/
 .main_content{
     position: relative;
     overflow: hidden;
@@ -250,16 +254,10 @@ body{
     position:relative;
 }
 .content{
-    background-color:#ddd;
     margin:0 auto  !important;
 }
-.content_2{
-    background-color:salmon;
-    display: flex;
-    flex-direction: column;
-    overflow:hidden;
-    height:100%;
-}
+
+
 .content_tit_box{
     padding-top:100px;
     padding-bottom:50px;
@@ -269,7 +267,25 @@ body{
 }
 
 
-/** video **/
+/** scrolltrigger style **/
+.scrolltrigger_1{
+    background-color:skyblue;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    height:1000px;
+}
+.scrolltrigger_2{
+    background-color:salmon;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    height:100%;
+}
+
+
+
+/** video style **/
 .content_video{
     height:500px;
     margin:0 auto;
@@ -312,12 +328,95 @@ body{
 
 
 
-.p_side_32{
-    padding:0 32px;
+
+/** faq list style **/
+.faq_icon{
+    font-size:16px;
+    color:#0039cc;
+    font-weight:800;
 }
 
 
-/*** FOOTER ***/
+.faq_list_box{
+    border-bottom:1px solid #eee;
+}
+.faq_list_tit{
+    padding:20px 0;
+    display: flex;
+    justify-content: space-between;
+    gap:16px;
+}
+.faq_text{
+    color:#000;
+    line-height:24rem;
+    display:flex;
+    gap:10px;
+    font-size:18rem;
+}
+
+.faq_list_tit > .faq_text{
+    width:calc(100% - 40px);
+    font-weight:600;
+}
+
+.faq_list_detail{
+    width:100%;
+    display:none;
+    padding-bottom:20px;
+}
+.faq_list_detail > .faq_text{
+    font-weight:400;
+}
+
+.faq_list_box.on .faq_list_detail{
+    display:block;
+}
+
+.faq_list_box .ic_close_m_bk{
+    transform:rotate(45deg);
+    transform-origin: center center;
+    transition: transform 0.45s ease 0s;
+}
+.faq_list_box .ic_close_m_bk.on{
+    transform:rotate(0deg);
+    transform-origin: center center;
+    transition: transform 0.45s ease 0s;
+}
+
+
+/** 흘러가는 객체 **/
+.flow_banner {
+    overflow: hidden;
+    display: flex;
+    max-width: 1180px;
+    margin: 30px auto;
+}
+.flow_banner .flow_banner_list {
+    display: flex;
+    gap:30px;
+}
+.flow_banner .flow_banner_list > li {
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 20px;
+    width:300px;
+    height:300px;
+    background-color:#eee;
+    border-radius:20px;
+}
+@keyframes flowRolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-30%);
+    }
+}
+
+
+
+
+/**************** FOOTER ****************/
 .footer_sub:first-child{
     border-top:0;
 }

@@ -40,6 +40,26 @@ main {
   padding: 0;
 }
 
+
+html,
+body {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  font-size:1px;       
+
+} 
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, NanumBarunGothic, "Segoe UI", "Helvetica Neue", sans-serif;
+    color:#000;
+    font-size:16rem;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -65,14 +85,6 @@ main {
   display: block;
 }
 
-html,
-body {
-  height: 100%;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  font-size:1px;       
-
-} 
 
 img,
 form,
@@ -145,6 +157,9 @@ button {
 }
 
 
+.p_side_32{
+  padding:0 32px;
+}
 
 
 /*** text style ***/
@@ -176,4 +191,12 @@ p{
 }
 
 
+/*** icon ***/
 
+.ic_close_m_bk{
+  background-image: url(../img/svg/ic_close_m_bk.svg);
+  background-repeat: no-repeat;
+  background-position:center;
+  width:24px;
+  height:24px;
+}
