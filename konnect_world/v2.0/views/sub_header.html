@@ -1,0 +1,32 @@
+<div id="safe_area_top" class="status_bar"></div>
+<div class="arrow_title">
+    <div class="navigation_bar is-black">
+        <div class="arrow_title">
+            <div class="arrow_back go_back" onclick="goBack();">
+                <div class="close_layerpopup" id="goBack1">
+                    <i class="ic ic_arrow_L_wh rotate_90"></i>
+                </div>
+</div>
+            <!-- 각 화면에 맞는 화면명을 넣어주세요 -->
+            <div class="nav_title tx--white">{화면명}</div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+        // 스크롤 시 header fade-in
+        $(document).on('scroll', function(){
+            if($(window).scrollTop() > 0){
+                $(".sub_header").removeClass("deactive");
+                $(".sub_header").addClass("active");
+            }else{
+                $(".sub_header").removeClass("active");
+                $(".sub_header").addClass("deactive");
+            }
+        })
+    
+    });
+    
+    </script>

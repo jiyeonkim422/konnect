@@ -56,7 +56,7 @@ input,
 select,
 textarea {
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, NanumBarunGothic, "Segoe UI", "Helvetica Neue", sans-serif;
-    color:#000;
+    color:#002863;
     font-size:16rem;
 }
 
@@ -157,27 +157,90 @@ button {
 }
 
 
-.p_side_32{
-  padding:0 32px;
+
+/**** padding ****/
+.p_side_28{
+  padding:0 28px;
+}
+
+.pt_6{
+  padding-top:6px;
+}
+.pt_10{
+  padding-top:10px;
+}
+.pt_16{
+  padding-top:16px;
+}
+.pt_40{
+  padding-top:40px;
 }
 
 
+
+/**** margin ****/
+.mt_40{
+  margin-top:40px;
+}
+
 /*** text style ***/
+.tit_box{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
 h1{
-  font-size:45rem;
-  line-height:54rem;
+  font-size:36rem;
+  line-height:42rem;
+  font-weight:700;
+}
+h2{
+  font-size:30rem;
+  line-height:34rem;
   font-weight:700;
 }
 
-h5{
-  font-size:18rem;
-  font-weight:600;
+h4{       
+  font-size:20rem;         
+  font-weight:500;
+  line-height:24rem;
 }
+h5{       
+  font-size:18rem;         
+  font-weight:500;
+  line-height:28rem;
+}
+
 
 p{
-  font-size:20rem;
+  font-size:16rem;
+  line-height:24rem;
+  font-weight:500;
+}
+b{
+  font-weight:700;
 }
 
+.detail_text{
+  font-size:14rem;
+  line-height:20rem;
+}
+
+
+.en{
+  letter-spacing: 0.3px;
+}
+.ko{
+  letter-spacing: -0.2px;
+}
+
+.tx_darkblue{
+  color:#002863;
+}
+.tx_black{
+  color:#000;
+}
 
 
 .tx_center{
@@ -191,6 +254,177 @@ p{
 }
 
 
+.thin{
+  font-weight:300;
+}
+.regular{
+  font-weight:400;
+}
+.medium{
+  font-weight:500;
+}
+.semibold{
+  font-weight:600;
+}
+.bold{
+  font-weight:700;
+}
+.extrabold{
+  font-weight:800;
+}
+
+
+
+.required:after {
+  content: '*';
+  color:#ff0000;
+  position:absolute;
+  top:2px;
+  padding-left:1px;
+}
+
+.error{
+  color:#ff0000;
+  font-size:12rem;
+  position:absolute;
+  left:0;
+  bottom:-16px;
+}
+
+
+
+
+/**** button ****/
+.btn{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color:#000;
+  color: #000;
+  font-size: 16rem;
+  padding: 14px 20px;
+  font-weight:700;
+}
+
+.btn_full{
+  width:100%;
+}
+
+.btn_primary{
+  background-color:#0039cc;
+  color:#fff;
+  border:none;
+}
+.btn_primary_stroke{
+  border-color:#0039cc;
+  color:#0039cc;
+}
+
+.btn_box{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  width:100%;
+}
+.btn_wrap{
+  padding:24px 0;
+}
+
+
+
+
+/******** input 입력창 ********/
+
+.input_form{
+  border:none;
+  border-bottom:1px solid #666;
+  padding:4px 0;
+  font-size:14rem;
+  line-height:20px;
+  color:#000;
+  width:100%;
+}
+.input_form::placeholder{
+  color:#c9c9c9;
+}
+
+/** select랑 input 같이 쓸때 **/
+.select_input_group{
+  display:flex;
+  gap:10px;
+  position:relative;
+}
+.select_input_group .select_option{
+  position:initial;
+}
+.select_input_group .select_option .default_option{
+  position:initial;
+}
+
+
+
+
+
+
+/***** 장문 입력창 textarea *****/
+textarea{
+  resize:none;
+}
+.textarea_form{
+  border:none;
+  background-color:#f3f4f6;
+  width:100%;
+  border-radius:10px;
+  padding:14px 18px;
+  color:#000;
+  font-size:14rem;
+  line-height:20rem;
+  height:250px;
+}
+.textarea_form::placeholder{
+  color:#aaa;
+}
+.textarea_form:focus{
+  border-color:#0039CC;
+}
+      
+.text_count{
+  text-align:right;
+  padding-top:6px;
+  padding-right:6px;
+}
+
+
+
+
+/**** position ****/
+.po_relative{
+  position:relative;
+}
+.po_absolute{
+  position:absolute;
+}
+
+
+.rotate_90 {
+  transform: rotate(90deg);
+}
+
+
+
+
+
 /*** icon ***/
 
 .ic_close_m_bk{
@@ -199,4 +433,11 @@ p{
   background-position:center;
   width:24px;
   height:24px;
+}
+.ic_arrow_L_bk {
+  background-image: url(../img/svg/ic_arrow_L_bk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
 }

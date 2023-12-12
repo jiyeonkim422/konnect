@@ -103,131 +103,205 @@
                                 </li>
                             </ul>
                         </div>
-                        <button type="button" id="header_cate" class="header_cate" onclick="">
-                            <ul class="hamburger_line" id="hamburger_line">
-                                <li class="line line1"></li>
-                                <li class="line line2"></li>
-                                <li class="line line3"></li>
-                            </ul>
-                        </button> 
                     </div>
                 </div>
             </header>
             <!-- HEADER end -->
 
-            <!-- HAMBURGER start -->
-            <div class="hamburger_wrap">
-                <div class="header">
-                    <div class="header_wrap">
-                        <div class="header_logo">
-                            <a href="../views/index_ko.html">
-                                <div class="header_logo">
-                                    <img src="../img/main_logo.png" alt="" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="header_right">
-                            <div class="language">
-                                <div class="language_status language_box">
-                                    <img src="../img/svg/global.svg" alt="global">
-                                    <p class="language_text is-active">KR</p>
-                                </div>
-                                <ul class="language_list">
-                                    <li>
-                                        <a href="../views/index_ko.html">
-                                            <p class="language_text is-active">KR</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="../views/index_en.html">
-                                            <p class="language_text">EN</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <button type="button" id="header_close" class="header_close" onclick="">
-                                <ul class="hamburger_line" id="hamburger_line">
-                                    <li class="line line1"></li>
-                                    <li class="line line2"></li>
-                                    <li class="line line3"></li>
-                                </ul>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <section class="hamburger_section">
-                    <ul>
-                        <li class="hamburger_item">
-                            <a href="home_en.html">
-                                <span class="menu_tit">Home</span>
-                                <div class="btn_area">
-                                    <img src="../images/arrow_right.png" alt="">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hamburger_item">
-                            <a href="save.html">
-                                <span class="menu_tit">Save</span>
-                                <div class="btn_area">
-                                    <i class="ic_arrow_right"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hamburger_item">
-                            <a href="service_main.html">
-                                <span class="menu_tit">Service</span>
-                                <div class="btn_area">
-                                    <i class="ic_arrow_right"></i>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hamburger_item">
-                            <a href="support.html">
-                                <span class="menu_tit">Support</span>
-                                <div class="btn_area">
-                                    <img class="ic_arrow_right"></img>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <div class="menu_footer">
-                    <button class="btn "></button>
-                </div>
-            </div>
-            <!-- HAMBURGER end -->
 
             <!-- MAIN start -->
             <main id="main" class="main_content">
-                <!-- 이미지 들어가는 영역 --> 
-                <div class="section">
-                    <div class="content_tit_box p_side_32">
-                        <h1>해당 영역의 타이틀이 들어갑니다.해당 영역의 타이틀이 들어갑니다.해당 영역의 타이틀이 들어갑니다.</h1>
-                        <p>해당 영역의 상세내용이 들어갑니다.</p>
-                    </div>
-                    <div class="content scrolltrigger_1">
-                        <div class="content_img">
+                <!-- 메인 동영상 --> 
+                <section class="section main_img">
+                    <!-- <img src="../img/m_main_banner.png"> -->
+                    <video id="video_m" autoplay muted playsinline>
+                        <!-- <source id="video_m_intro" src="../video/mobile_Intro.mp4" type="video/mp4" /> -->
+                        <source
+                            id="video_m_loop"
+                            src="../video/mobile_Looping.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </section>
+                <!-- konnect info start -->
+                <section class="section">
+                    <div class="content konnect_info_box p_side_28">
+                        <ul class="info_box">
+                            <li class="info_box_list">
+                                <div class="info_box_top">
+                                    <div class="text_img">
+                                        <img src="../img/temp/text_img1.png" alt="text_img1" />
+                                    </div>
+                                </div>
+                                <div class="info_box_bottom">
+                                    <div>
+                                        <p class="semibold ko">커넥트가 제안하는 Web3 최초의 실생활 혜택</p>
+                                        <p class="bold pt_16 ko">Discount Rate</p>
+                                        <p class="medium pt_6 ko">뷰티&스파 10%<br/>
+                                            면세점 30%<br/>
+                                            호텔 15%<br/>
+                                            의료 25%<br/>
+                                            교통 5%</p>
+                                    </div>
+                                    <div class="info_box_img po_absolute">
+                                        <img src="../img/temp/info_box_img1.png" alt="info_box_img1" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="info_box_list">
+                                <div class="info_box_top">
+                                    <h2 class="en">
+                                        Curation<br/>
+                                        Membership
+                                    </h2>
+                                </div>
+                                <div class="info_box_bottom">
+                                    <div>
+                                        <p class="ko">
+                                            내 라이프스타일에 꼭 맞는 혜택을 담은<br/>
+                                            큐레이션 멤버십과 더 많은 혜택을 누릴 수 있게<br/>
+                                            해주는 유저 인센티브
+                                        </p>
+                                    </div>
+                                    <div class="info_box_img">
+                                        <img src="../img/temp/service_list.png" alt="service_list" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="info_box_list">
+                                <div class="info_box_top">
+                                    <h2 class="en">
+                                        Collaboration<br/>
+                                        Membership
+                                    </h2>
+                                </div>
+                                <div class="info_box_bottom">
+                                    <div>
+                                        <p class="ko">
+                                            고객 충성도를 높여줄 브랜드별 특화 멤버십과<br/>
+                                            유명 인플루언서와 함께 만드는<br/>
+                                            콜라보 멤버십까지
+                                        </p>
+                                    </div>
+                                    <div class="info_box_img">
+                                        <img src="../img/temp/collabo_list.png" alt="collabo_list" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="konnect_info">
+                            <div class="konnect_main_img">
+                                <img src="../img/temp/konnect_main.png" alt="konnect_main"/>
+                            </div>
+                            <h5 class="tx_center ko">
+                                Web3의 가능성과 Web2의 혜택이 만나<br/>
+                                전 세계 어디서나 한 번의 로그인으로<br/>
+                                다양한 실생활 혜택을 누리는<br/>
+                                <b>Real World Benefit 멤버십의 시작</b>
+                            </h5>
+                            <div class="btn_box">
+                                <button type="button" class="btn btn_full btn_primary_stroke">제휴처 및 혜택보기</button>
+                                <button type="button" class="btn btn_full btn_primary">멤버십 제휴 신청</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- membership info start -->
+                <section class="section">
+                    <div class="content membership_info_box p_side_28">
+                        <div class="tit_box">
+                            <h2 class="tx_center extrabold en">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023<br/>
+                                Launch Membership
+                            </h2>
+                            <p class="ko">
+                                2023년도에 출시한 커넥트와 파트너사들의<br/>
+                                다양한 혜택이 담긴 멤버십들을 소개할게요
+                            </p>
+                        </div>
+                        <ul class="membership_list_box pt_40">
+                            <li class="membership_list">
+                                <div class="membership_img">
+                                    <img src="../img/temp/flex_membership.png" alt="flex_membership"/>
+                                </div>
+                               <div class="membership_info_detail">
+                                    <div class="membership_logo">
+                                        <img src="../img/main_logo.png" alt="main_logo"/>
+                                    </div>
+                                    <div class="membership_name">
+                                        <h4 class="bold en">FLEX MEMBERSHIP</h4>
+                                        <p class="detail_text">GOLD / BLUE</p>
+                                    </div>
+                                    <div class="membership_detail ko">
+                                        <p>커넥트와 수많은 파트너사의 다양한<br/>
+                                            혜택을 담아 출시한 첫 번째 멤버십
+                                        </p>
+                                    </div>
+                               </div>
+                            </li>
+                            <li class="membership_list">
+                                <div class="membership_img">
+                                    <img src="../img/temp/gateio_membership.png" alt="gateio_membership"/>
+                                </div>
+                               <div class="membership_info_detail">
+                                    <div class="membership_logo">
+                                        <img src="../img/temp/gateio_logo.png" alt="gateio_logo"/>
+                                    </div>
+                                    <div class="membership_name">
+                                        <h4 class="bold en">Gate.io MEMBERSHIP</h4>
+                                        <p class="detail_text">VVIP / VIP</p>
+                                    </div>
+                                    <div class="membership_detail ko">
+                                        <p>Gate.io와 Konnect의 파트너십을 통해<br/>
+                                            양사의 VIP에게 지급되는 멤버십
+                                        </p>  
+                                    </div>
+                               </div>
+                            </li>
+                            <li class="membership_list">
+                                <div class="membership_img">
+                                    <img src="../img/temp/kn_membership.png" alt="kn_membership"/>
+                                </div>
+                               <div class="membership_info_detail">
+                                    <div class="membership_logo">
+                                        <img src="../img/temp/tron_logo.png" alt="tron_logo"/>
+                                        <img src="../img/temp/htx_logo.png" alt="htx_logo"/>
+                                    </div>
+                                    <div class="membership_name">
+                                        <h4 class="bold en">Konnect Night MEMBERSHIP</h4>
+                                        <p class="detail_text">VVIP / VIP / BLUE</p>
+                                    </div>
+                                    <div class="membership_detail ko">
+                                        <p>2023 커넥트 나이트를 기념해 TRON×Huobi의<br/>
+                                            VIP와 고객들을 위한 혜택을 담은 멤버십
+                                        </p>
+                                    </div>
+                               </div>
+                            </li>
+                            <li class="membership_list">
+                                <div class="membership_img">
+                                    <img src="../img/temp/poonam_membership.png" alt="kn_membership"/>
+                                </div>
+                               <div class="membership_info_detail">
+                                    <p class="membership_logo_name">YOUTUBER POONAM</p>
+                                    <div class="membership_name">
+                                        <h4 class="bold en">POONAM MEMBERSHIP</h4>
+                                        <p class="detail_text">GOLD / BLUE</p>
+                                    </div>
+                                    <div class="membership_detail ko">
+                                        <p>
+                                            유튜버 Poonam의 라이프스타일에 맞춘 풍성한<br/>
+                                            혜택을 팬들과 함께 누릴 수 있도록 만들어진 멤버십
+                                        </p>
+                                    </div>
+                               </div>
+                            </li>
+                        </ul>
+                        <div class="closed"></div>
+                    </div>
+                </section>
 
-                <!-- flow -->
-                <div class="section">
-                    <div class="content">
-                        <div class="content_tit_box tx_center">
-                            <h1>Contents</h1>
-                        </div>
-                        <div class="flow_banner">
-                            <ul class="flow_banner_list">
-                                <li>TEXT1</li>
-                                <li>TEXT2</li>
-                                <li>TEXT3</li>
-                                <li>TEXT4</li>
-                                <li>TEXT5</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
 
                 <!-- 영상 들어가는 영역 -->
                 <div class="section">
@@ -239,13 +313,14 @@
                         <div class="content_video">
                             <button class="video_button active">Pause</button>
                             <video  id="video" loop muted playsinline autoplay preload="auto" disableremoteplayback>
-                                <source src="../img/mobile_Intro.mp4" type="video/mp4" />
+                                <source src="../video/mobile_Intro.mp4" type="video/mp4" />
                             </video>
                         </div>	
                     </div>
                 </div> 
+
                 <div class="section">
-                    <div class="content p_side_32">
+                    <div class="content p_side_28">
                         <div class="content_tit_box tx_center">
                             <h1>FAQs</h1>
                         </div>
@@ -436,56 +511,129 @@
             <!-- MAIN end -->
 
             <!-- FOOTER start -->
-            <footer id="footer" class="footer main_footer p_side_32">
-                <div class="footer_sub email">
-                    <form class="email_form">
-                        <div class="email_input">
-                            <input id="email_form" type="text" class="email_input_field" required area-required="true" value="">
-                            <label for="email_form" class="email_input_label">Enter your email</label>    
+            <footer id="footer" class="footer main_footer">
+                <div class="footer_in">
+                    <div class="footer_top">
+                        <div class="footer_logo">
+                            <a href="../views/index_en.html">
+                                <img src="../imglogo_white.png" alt="logo_white" />
+                            </a>
                         </div>
-                        <button class="email_btn"></button>
-                    </form> 
-                </div>
-                <div class="footer_sub footer_menu">
-                    <div class="footer_menu_list">
-                        <h5>About us</h5>
-                        <ul>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                        </ul>
+                        <div class="main_sns">
+                            <ul>
+                                <li class="sns_icon">
+                                    <a href="https://t.me/KonnectAnnouncements" target="_blank">
+                                        <img
+                                            src="../img/svg/sns_telegram_wh.svg"
+                                            alt="sns_telegram"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="sns_icon">
+                                    <a
+                                        href="https://twitter.com/KONNECT_KCT"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="../img/svg/sns_twitter_wh2.svg"
+                                            alt="sns_twitter"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="sns_icon">
+                                    <a href="https://www.instagram.com/konnectkct/" target="_blank">
+                                        <img
+                                            src="../img/svg/sns_instagram_wh.svg"
+                                            alt="sns_instagram"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="sns_icon">
+                                    <a href="https://medium.com/@KONNECT_KCT" target="_blank">
+                                        <img src="../img/svg/sns_medium_wh.svg" alt="sns_medium" />
+                                    </a>
+                                </li>
+                                <!-- <li class="sns_icon">
+                                    <a href="https://pf.kakao.com/_yQxcNb" target="_blank">
+                                        <img src="../img/svg/sns_kakao_wh.svg" alt="sns_kakao" />
+                                    </a>
+                                </li> -->
+                                <li class="sns_icon">
+                                    <a
+                                        href="https://blog.naver.com/konnect_finance"
+                                        target="_blank"
+                                    >
+                                        <img src="../img/svg/sns_blog_wh.svg" alt="sns_blog" />
+                                    </a>
+                                </li>
+                                <li class="sns_icon">
+                                    <a href="https://discord.com/invite/konnect" target="_blank">
+                                        <img
+                                            src="../img/svg/sns_discord_wh.svg"
+                                            alt="sns_discord"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="app_download">
+                            <ul>
+                                <li class="app_down_link">
+                                    <a
+                                        href="https://bit.ly/kctios"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="../img/temp/appstore_wh.png"
+                                            alt="appstore_wh"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="app_down_link">
+                                    <a
+                                        href="https://bit.ly/kctand"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="../img/temp/googleplay_wh.png"
+                                            alt="googleplay_wh"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="https://d1mrs9xylgng0j.cloudfront.net/apk/konnect.apk" target="_blank">
+                                <p class="app_help">
+                                    <i class="ic ic_notice"><img src="../img/svg/ic_notice_wh.svg" alt="ic_notice"/></i>
+                                    Can't find konnect app in google store?
+                                </p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="footer_menu_list">
-                        <h5>About us</h5>
+                    <div class="footer_bottom">
                         <ul>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                            <li>Our company</li>
+                            <li>
+                                <h3 class="footer_tit">Head</h3>
+                                <p class="footer_detail">
+                                    CDF Switzerland GmbH - <b>Konnect</b><br />
+                                    21 Banhhofstrasse 6300 Zug, Switzerland<br />
+                                    contact@konnect.finance
+                                </p>
+                            </li>
+                            <li>
+                                <h3 class="footer_tit">Korea Branch</h3>
+                                <p class="footer_detail">
+                                    씨디에프 스위치랜드 유한책임회사<br />
+                                    (CDF Switzerland GmbH)<br />
+                                    대표자 김주영 / 사업자등록번호 518-84-00025
+                                </p>
+                            </li>
                         </ul>
+                        <p class="copyright">© Copyright 2023 KCT All right are reserved.</p>
+                        <p class="copyright">
+                            A space where virtual and reality
+                            connect&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2023 Konnect
+                        </p>
                     </div>
-                    <div class="footer_menu_list">
-                        <h5>About us</h5>
-                        <ul>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                            <li>Our company</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                <div class="footer_sub">
-                    <p class="copyright">© Copyright 2023 KCT All right are reserved.</p>
-                    <p class="copyright">
-                        CDF Switzerland GmbH - <b>Konnect</b> 21 Banhhofstrasse 6300 Zug, Switzerland<br/>
-                        contact@konnect.finance
-                    </p>
-                    <p class="copyright">
-                        씨디에프 스위치랜드 유한책임회사 (CDF Switzerland GmbH)<br/>
-                        대표자 김주영 / 사업자등록번호 518-84-00025
-                    </p>
                 </div>
             </footer>
             <!-- FOOTER end -->
@@ -496,12 +644,8 @@
 
 
 <!-- //js script -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- GSAP library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-
+<script src="../js/libs/jquery-3.6.0.min.js"></script>
+<script src="../js/libs/swiper.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript"> 
 

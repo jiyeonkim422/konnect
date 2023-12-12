@@ -138,3 +138,8 @@ function setFlowBanner() {
         $wrap.find('.flow_banner_list').css('animation-play-state', 'running');
     });
 }
+
+
+
+
+
