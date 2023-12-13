@@ -1,4 +1,29 @@
-// more_btn.js
+ //history back - 페이지 뒤로가기
+ function goBack(){
+    window.history.back();
+}
+
+// 페이지 앞으로가기
+function goForward(){
+    window.history.forward();
+}
+
+
+
+
+// textarea 글자수 제한
+$('.textarea_box .textarea_form').keyup(function(){
+    var content = $(this).val();
+    $('.textarea_box .text_count span').html(content.length);
+    if (content.length > 500){
+      alert("최대 200자까지 입력 가능합니다.");
+      $(this).val(content.substring(0, 500));
+      $('.textarea_box .text_count span').html(200);
+    }
+});
+
+
+// more_btn.js    
 $(function () {
     $('.tabcontent > div').hide();
     $('.tabnav a')
@@ -38,62 +63,6 @@ $(function () {
     });
 });
   
-
-// hamburger.js
-    document.addEventListener('DOMContentLoaded', function() {
-        var headerCate = document.getElementById('header_cate');
-        var hamburgerLine = document.getElementById('hamburger_line');
-        var hamburgerWrap = document.querySelector('.hamburger_wrap');
-        var headerClose = document.getElementById('header_close');
-
-        headerCate.addEventListener('click', function() {
-            // Toggle 'is-active' class on #hamburger_line
-            hamburgerLine.classList.toggle('is-active');
-
-            // Toggle 'on' class on .hamburger_wrap
-            hamburgerWrap.classList.toggle('on');
-        });
-
-        headerClose.addEventListener('click', function() {
-            // Remove 'on' class from .hamburger_wrap
-            hamburgerWrap.classList.remove('on');
-
-            // Remove 'is-active' class from #hamburger_line
-            hamburgerLine.classList.remove('is-active');
-        });
-});
-
-
-// scrolltrigger.js
-gsap.set(".scrolltrigger_1", { borderRadius: "30px", width: "calc(100% - 8%)" });
-gsap.set(".scrolltrigger_2", { borderRadius: "0", width: "100%" });
-
-
-gsap.to(".scrolltrigger_1", {
-    borderRadius: "0",
-    width: "100%", 
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrolltrigger_1",
-      start: "0 center",  // Scroll animation starts when the top of the trigger hits the middle of the viewport
-      end: "50% center",  // Scroll animation ends when the bottom of the trigger hits the 20% mark of the viewport
-      scrub: 1
-    },
-  });
-
-gsap.to(".scrolltrigger_2", {
-  borderRadius: "30px",
-  width: "calc(100% - 8%)", 
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".scrolltrigger_2",
-    start: "80% center",  // Scroll animation starts when the top of the trigger hits the middle of the viewport
-    end: "130% center",  // Scroll animation ends when the bottom of the trigger hits the 20% mark of the viewport
-    scrub: 1
-  },
-});
-
-
 
 
 // flow_content.js
@@ -140,6 +109,30 @@ function setFlowBanner() {
 }
 
 
+
+// benefit-tab - 탭 선택시 해당정보 노출 
+$(document).ready(function () {
+
+    $('.benefit_tab1').addClass('is-active'); // 초깃값 설정
+    $('.tab_content1').addClass('is-active');
+
+    $('.tab_top .benefit_tab_list').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('.tab_top .benefit_tab_list').removeClass('is-active');        
+        $('.tab_content').removeClass('is-active');
+
+        $(this).addClass('is-active');
+        $("#" + tab_id).addClass('is-active');
+    })
+
+})
+
+
+
+// 혜택소개 - 멤버쉽 카드 슬라이드 
+var swiper = new Swiper(".flex_membership_swiper", {
+  });
 
 
 

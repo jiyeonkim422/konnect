@@ -163,6 +163,9 @@ button {
   padding:0 28px;
 }
 
+.pt_4{
+  padding-top:4px;
+}
 .pt_6{
   padding-top:6px;
 }
@@ -175,13 +178,29 @@ button {
 .pt_40{
   padding-top:40px;
 }
-
+.pt_50{
+  padding-top:50px;
+}
 
 
 /**** margin ****/
+.mt_30{
+  margin-top:30px;
+}
 .mt_40{
   margin-top:40px;
 }
+.mt_50{
+  margin-top:50px;
+}
+.mt_80{
+  margin-top:80px;
+}
+.mt_110{
+  margin-top:110px;
+}
+
+
 
 /*** text style ***/
 .tit_box{
@@ -197,14 +216,19 @@ h1{
 }
 h2{
   font-size:30rem;
-  line-height:34rem;
+  line-height:36rem;
+  font-weight:700;
+}
+h3{
+  font-size:24rem;
+  line-height:30rem;
   font-weight:700;
 }
 
 h4{       
   font-size:20rem;         
   font-weight:500;
-  line-height:24rem;
+  line-height:28rem;
 }
 h5{       
   font-size:18rem;         
@@ -241,6 +265,13 @@ b{
 .tx_black{
   color:#000;
 }
+.tx_blue2{
+  color:#00a3ff;
+}
+.tx_gold{
+  color:#FFB800;
+}
+
 
 
 .tx_center{
@@ -287,12 +318,22 @@ b{
   color:#ff0000;
   font-size:12rem;
   position:absolute;
-  left:0;
-  bottom:-16px;
+  right:0;
+  bottom:10px;
 }
 
 
 
+/**** badge ****/
+.badge{
+  border:2px solid #fff;
+  border-radius:20px;
+  padding:6px 20px;
+  font-size:14rem;
+  font-weight:700;
+  margin-bottom:30px;
+  display:inline-block;
+}
 
 /**** button ****/
 .btn{
@@ -330,6 +371,13 @@ b{
   border-color:#0039cc;
   color:#0039cc;
 }
+
+.btn_darkblue{
+  background-color:#001B5E;
+  color:#fff;
+  border:none;
+}
+
 
 .btn_box{
   display:flex;
@@ -375,6 +423,136 @@ b{
 
 
 
+/******** alert 알림창 ********/
+/******* 모달&알림창 ********/
+.alert_form {
+  justify-content: center;
+}
+.alert_form .alert_box{
+  width:300px;
+  height:300px !important; 
+}
+
+#modal_wrap{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display:none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index:99999;
+}
+.modal_bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modal_window {
+  background:#fff;   
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.2 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 100%;
+  height:auto;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+
+.modal_top{
+  width:100%;
+  height:50px;
+  border-bottom:1px solid #EBEDF3; 
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal_tit {
+  font-size:16rem;
+  font-weight:700;
+  text-align:center;
+  color:#000;
+}
+.modal_title h2 {
+  display: inline;
+}
+.modal_text{
+  font-size:14rem;
+  text-align:left;
+  font-weight:400;
+  line-height:1.4;
+}
+
+.modal_close {
+  cursor: pointer;
+  position:absolute;
+  right:0;
+  right:12px;
+  top:16px;
+}
+
+.modal_content {
+  padding:48px 28px 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**** 알럿 alert ****/
+
+.alert_window{
+  width:314px;
+}
+.alert_content{
+  min-height:180px;
+  gap:16px;
+  min-height:220px;
+  justify-content: space-evenly;
+}
+.alert_content .text_link{
+  font-weight:600;
+}
+.alert_content .modal_text{
+  text-align:center;
+}
+.alert_content .btn{
+  margin-top:8px;
+  font-size:14rem;
+}
+
+.popup_btn.alert{
+  padding:0;
+  gap:0;
+}
+.popup_btn.alert .btn{
+  border:none;
+  padding:0;
+  width:50%;
+  border-radius:0;
+  height:50px;
+  font-size:14px;
+}
+
+
+.popup_btn.alert .btn + .btn{
+  border-left:1px solid #EBEDF3;
+}
+
+
+
+
 
 
 /***** 장문 입력창 textarea *****/
@@ -386,23 +564,19 @@ textarea{
   background-color:#f3f4f6;
   width:100%;
   border-radius:10px;
-  padding:14px 18px;
+  padding:14px 18px 40px;
   color:#000;
   font-size:14rem;
   line-height:20rem;
-  height:250px;
+  height:250rem;
+  position:relative;
 }
+
 .textarea_form::placeholder{
   color:#aaa;
 }
 .textarea_form:focus{
   border-color:#0039CC;
-}
-      
-.text_count{
-  text-align:right;
-  padding-top:6px;
-  padding-right:6px;
 }
 
 

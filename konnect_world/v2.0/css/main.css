@@ -154,7 +154,7 @@ body{
     top:0;
 }
 
-.sub_header.deactive .navigation_bar{
+/* .sub_header.deactive .navigation_bar{
     background-color: transparent;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -171,9 +171,7 @@ body{
     -webkit-transition-timing-function:ease;
     top:0;
     z-index:99;
-    /* backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); */
-  }
+  } */
 
 
 /***************** MAIN ****************/
@@ -333,9 +331,6 @@ body{
 
 }
 
-
-
-
 .content_tit_box{
     padding-top:100px;
     padding-bottom:50px;
@@ -344,21 +339,232 @@ body{
     gap: 10px;
 }
 
-
-/** scrolltrigger style **/
-.scrolltrigger_1{
-    background-color:skyblue;
-    display: flex;
-    flex-direction: column;
-    overflow:hidden;
-    height:1000px;
+.text_logo{
+    height:23rem;
+    width:auto;
+    position:absolute;
+    top:94px;
+    transform:translateX(-50%);
 }
-.scrolltrigger_2{
-    background-color:salmon;
+
+.closed{
     display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 120px;
     flex-direction: column;
-    overflow:hidden;
-    height:100%;
+    align-items: center;
+    gap:10px;
+}
+.closed > img{
+    width:auto;
+    height:124rem;
+}
+
+
+
+/** benefit info tab **/
+
+.benefit_info_box{
+    text-align: center;
+}
+
+/** tab style **/
+.tab_content_wrap{
+    color:#fff;
+}
+.tab_content{
+    display:none;
+}
+.tab_content.is-active{
+    display:block;
+}
+
+.tab_box {
+	position: absolute;
+    width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    top:200px;
+}
+.benefit_tab {
+	display: flex;
+	position: relative;
+    width:100%;
+    display:flex;
+    padding:6px;
+    background-color:#f2f2f2;
+    border-radius:80px;
+}
+.benefit_tab > label{
+    font-size:14rem;
+    z-index:9;
+}
+input[type="radio"] {
+	display: none;
+}
+.benefit_tab_list {
+    width: 50%;
+    color: #787878;
+    display: flex;
+    justify-content: center;
+    border-radius:80px;
+    padding:14px;
+    font-size:14rem;
+    color:#5b6b8b;
+    font-weight:700;
+	transition: color 0.15s ease-in;
+    align-items: center;
+}
+input[type="radio"] {
+	&:checked {
+		& + label {
+			color:#fff;
+			& > .notification {
+				background-color: #0039cc;
+				color: #fff;
+			}
+		}
+	}
+}
+input[id="radio-1"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(0);
+            background-color: #0039cc;
+		}
+	}
+}
+input[id="radio-2"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(100%);
+            background-color: #0099a2;
+		}
+	}
+}
+.glider {
+	position: absolute;
+	display: flex;    
+    font-size:14rem;
+    color:#fff;
+	padding:23px;
+	width: 49%;   
+	z-index: 1;        
+	border-radius: 80px; 
+	transition: 0.25s ease-out;
+}
+
+
+.card_list_img{
+    height:300px;
+    width:auto;
+    margin-top:60px;
+    margin-bottom:40px;
+}
+.benefit_box + .benefit_box{
+    margin-top:110px;
+}
+.number_box{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+
+/** 큐레이션 멤버십 탭  **/
+.tab_content1{
+    background-color:#0d296f;
+    padding-top:90px;
+    padding-bottom:100px;
+}
+
+/** 멤버십 슬라이드 **/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.flex_membership_swiper{
+    margin-top:40px;
+}
+  .flex_membership_swiper .swiper-slide-active .membership_detail{
+    opacity:1;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    -webkit-transition-duration:0.3s;
+    -webkit-transition-timing-function:ease;
+  }
+  .card_img {
+    max-width: 200rem;
+    max-height: 286rem;
+    margin: 0 auto;
+    padding: 0 4px;
+  }
+  .card_img > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .membership_detail{
+    display:flex;
+    gap:8px;
+    flex-direction:column;
+    margin-top:20px;
+  }
+
+
+  /** 넘버링된 박스 영역 **/
+  .asset_box{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+  }
+  .asset_box li{
+    display:flex;
+    background-color:#001b5e;
+    border-radius:10px;
+  }
+  .asset_box img{
+    height:90rem;
+    width:auto;
+  }
+
+
+  .box_4{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+  }
+.box_4 > li{
+    width:150rem;
+    height:140rem;
+    gap:6px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_2{
+    flex-direction: column;
+}
+.box_2 > li{
+    width:320rem;
+    height:100rem;
+    align-items: center;
+}
+
+
+
+
+/** 콜라보 멤버십 탭  **/
+.tab_content2{
+    background-color:#005460;
+    padding-top:90px;
+    padding-bottom:100px;
 }
 
 

@@ -49,7 +49,19 @@
     <body class="body_bg_wh"> 
         <div class="wrap">
             <!-- HEADER start -->
-            <header id="header" class="header sub_header"></header>
+            <header id="header" class="header sub_header">
+                <div class="arrow_title">
+                    <div class="navigation_bar">
+                        <div class="arrow_title">
+                            <div class="arrow_back go_back" onclick="goBack();">
+                                <i class="ic ic_arrow_L_bk rotate_90"></i>
+                            </div>
+                            <!-- 각 화면에 맞는 화면명을 넣어주세요 -->
+                            <div class="nav_title tx--black">멤버십 제휴 신청</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <!-- MAIN start -->                 
             <main id="sub" class="sub_content">
                 <section class="section input_form_box">
@@ -64,7 +76,7 @@
                                     <tr class="table_row2">
                                         <th class="table_head2 required" scope="row">기업명</th>
                                         <td class="table_data2">
-                                            <input class="input_form w_100per" id="company" required minlength="1" maxlength="50" type="text" placeholder="커넥트" value="" autocomplete="off"/>
+                                            <input class="input_form w_100per" id="company" required minlength="1" maxlength="30" type="text" placeholder="커넥트" value="" autocomplete="off"/>
                                             <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
                                             <span class="error">필수 정보를 입력해 주세요</span>
                                         </td>
@@ -72,7 +84,7 @@
                                     <tr class="table_row2">
                                         <th class="table_head2 required" scope="row">담당자</th>
                                         <td class="table_data2">
-                                            <input class="input_form w_100per" id="name" required minlength="1" maxlength="20" type="text" placeholder="기획팀 홍길동 팀장" value="" autocomplete="off"/> 
+                                            <input class="input_form w_100per" id="name" required minlength="2" maxlength="30" type="text" placeholder="기획팀 홍길동 팀장" value="" autocomplete="off"/> 
                                             <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
                                             <span class="error">필수 정보를 입력해 주세요</span>
                                         </td>
@@ -80,7 +92,7 @@
                                     <tr class="table_row2">
                                         <th class="table_head2 required" scope="row">이메일</th>
                                         <td class="table_data2">
-                                            <input class="input_form w_100per" id="email" required minlength="1" maxlength="30" type="email" placeholder="konnect@email.com" value="" autocomplete="off"/> 
+                                            <input class="input_form w_100per" id="email" required minlength="5" maxlength="30" type="email" placeholder="konnect@email.com" value="" autocomplete="off"/> 
                                             <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
                                             <span class="error">필수 정보를 입력해 주세요</span>
                                         </td>
@@ -88,19 +100,20 @@
                                     <tr class="table_row2">
                                         <th class="table_head2" scope="row">문의 사항</th>
                                         <td class="table_data2">
-                                            <textarea class="textarea_form min_h_100" maxlength="500" aria-label="textarea" value="2   00" placeholder="문의사항을 입력해주세요" autocomplete="off"></textarea>
+                                            <div class="textarea_box"> 
+                                                <textarea class="textarea_form min_h_100" maxlength="500" aria-label="textarea" value="" placeholder="문의사항을 입력해주세요" autocomplete="off"></textarea>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="btn_box btn_wrap">
-                                <button type="submit" class="btn btn_full btn_primary">신청하기</button>
+                                <button type="submit" class="btn btn_full btn_primary" onclick="location.href='../partnership/alert_form.html'">신청하기</button>
                             </div>
                         </form>
                     </div>
                 </section>
             </main>   
- 
             <div id="safe_area_bottom"></div>
         </div>
         
@@ -111,29 +124,21 @@
         <script src="../js/libs/swiper.min.js"></script>
         <script type="text/javascript" src="../js/common.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-                $(".sub_header").load("../views/sub_header_bk.html");
-            });
 
+        // $(function(){
+        //         // 스크롤 시 header fade-in
+        //         $(document).on('scroll', function(){
+        //             if($(window).scrollTop() > 0){
+        //                 $(".sub_header").removeClass("deactive");
+        //                 $(".sub_header").addClass("active");
+        //             }else{
+        //                 $(".sub_header").removeClass("active");
+        //                 $(".sub_header").addClass("deactive");
+        //             }
+        //         })
+            
+        // });
 
-
-
-            // document.querySelectorAll("input").forEach(input => {
-            //     input.addEventListener("invalid", () => {
-            //     // 검증 후 폼 요소에 was-validated 클래스로 표시해 둔다
-            //     document.forms[0].classList.add("was-validated")
-            //     })
-            // })
-
-            // function showError(input) {
-            // // 커스텀 오류 메시지 UI
-            // document.querySelector("#error").textContent = getMessage(input.validity)
-            // }
-
-            // input.addEventListener("invalid", e => {
-            // // 브라우져 툴팁 숨김
-            // e.preventDefault()
-            // })
 
         </script>
 
