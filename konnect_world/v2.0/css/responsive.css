@@ -7,3 +7,45 @@
         gap: 40px;
     }
 }
+
+
+/** 600사이즈 미만일때 **/
+@media (max-width: 600px){
+    .glider{
+        width:48.7%;
+    }
+}
+
+
+
+/** 500사이즈 미만일때 **/
+@media (max-width: 500px){
+    .glider{
+        width:48.3%;
+    }
+}
+
+
+/** 400사이즈 미만일때 **/
+@media (max-width: 400px){
+    .glider{
+        width:48%;
+    }
+}
+
+/** 360사이즈 미만일때 **/
+@media (max-width: 360px){
+    .box_2 > li{
+        width:300rem;
+    }
+    .roulette_box{
+        width:280rem;
+    }
+    .roulette_text{
+        bottom:5px;
+        padding:0 16px;
+    }
+    .big_tit{
+        font-size:30rem;
+    }
+}

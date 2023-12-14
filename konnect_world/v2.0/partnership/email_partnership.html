@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <div style= "width:100%; padding:40px 0;">
-        <table cellpadding="0" cellspacing="0" style="width: 600px; margin: 0 auto; padding: 30px 20px 0; height: 100%; background-color:#fff;">
+        <table cellpadding="0" cellspacing="0" style="width:100%; min-width:400px; max-width: 800px; margin: 0 auto; padding: 30px 20px 0; height: 100%; background-color:#fff;">
             <tr class="padding:0">
                 <!-- 배너 -->
                 <td>
@@ -19,7 +19,7 @@
                     letter-spacing:-0.5px;
                     font-size:26px;
                     margin: 0; color: #000;
-                    font-weight: 700; 
+                    font-weight: 700;  
                     line-height: 30px;">
                         멤버십 제휴 신청서
                     </p>
@@ -61,7 +61,7 @@
                             style="
                                 display: block;
                                 padding: 20px 20px;
-                                height: 20px;
+                                min-height: 20px;
                                 border-bottom: 1px solid #cccccc;
                                 font-weight: 500;
                                 font-size: 14px;
@@ -69,7 +69,7 @@
                                 color: #002863;
                             "
                         >
-                            <td style="float: left;">기업명</td>
+                            <th style="float: left; width:100px; font-weight:500; text-align:left;">기업명</th>
                             <td style="float: right; font-weight:700;">{입력한 기업명이 표기됩니다}</td>
                         </tr>
                         <tr
@@ -84,7 +84,7 @@
                                 color: #002863;
                             "
                         >
-                            <td style="float: left;">담당자</td>
+                            <th style="float: left; width:100px; font-weight:500; text-align:left;">담당자</th>
                             <td style="float: right; font-weight:700;">
                                 {입력한 담당자가 표기됩니다}
                             </td>
@@ -100,7 +100,7 @@
                             color: #002863;
                         "
                     >
-                        <td style="float: left;">이메일</td>
+                        <th style="float: left; width:100px; font-weight:500; text-align:left;">이메일</th>
                         <td style="float: right; font-weight:700;">
                             {입력한 이메일 주소가 표기됩니다}
                         </td>

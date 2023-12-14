@@ -132,6 +132,12 @@ $(document).ready(function () {
 
 // 혜택소개 - 멤버쉽 카드 슬라이드 
 var swiper = new Swiper(".flex_membership_swiper", {
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".flex_button_next",
+        prevEl: ".flex_button_prev",
+      },
+
   });
 
 
