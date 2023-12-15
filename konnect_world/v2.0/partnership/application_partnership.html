@@ -78,7 +78,7 @@
                                         <td class="table_data2">
                                             <input class="input_form w_100per" id="company" required minlength="1" maxlength="30" type="text" placeholder="커넥트" value="" autocomplete="off"/>
                                             <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
-                                            <span class="error">필수 정보를 입력해 주세요</span>
+                                            <!-- <span class="error">필수 정보를 입력해 주세요</span> -->
                                         </td>
                                     </tr>
                                     <tr class="table_row2">
@@ -93,8 +93,9 @@
                                         <th class="table_head2 required" scope="row">이메일</th>
                                         <td class="table_data2">
                                             <input class="input_form w_100per" id="email" required minlength="5" maxlength="30" type="email" placeholder="konnect@email.com" value="" autocomplete="off"/> 
-                                            <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
-                                            <span class="error">필수 정보를 입력해 주세요</span>
+                                            <!-- 해당 입력폼 데이터 미 입력, 메일형식에 맞지 않을경우 아래 문구가 표기됩니다 -->
+                                            <!-- <span class="error">필수 정보를 입력해 주세요</span> -->
+                                            <span class="error">잘못된 형식의 이메일 주소입니다</span>
                                         </td>
                                     </tr>
                                     <tr class="table_row2">

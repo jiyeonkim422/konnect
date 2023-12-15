@@ -285,12 +285,20 @@ b{
 .tx_black{
   color:#000;
 }
+.tx_white{
+  color:#fff;
+}
+
+.tx_blue{
+  color:#0039cc;
+}
 .tx_blue2{
   color:#00a3ff;
 }
 .tx_green{
   color:#9bffab;
 }
+
 .tx_gold{
   color:#FFB800;
 }
@@ -346,8 +354,8 @@ b{
   color:#ff0000;
   font-size:12rem;
   position:absolute;
-  right:0;
-  bottom:10px;
+  left:0;
+  bottom:-16px;
 }
 
 
@@ -360,6 +368,46 @@ b{
   font-size:14rem;
   font-weight:700;
   margin-bottom:30px;
+  display:inline-block;
+}
+
+.badge_s{
+  padding: 4px 10px;
+  height: 22px;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #313131;
+  color: #b3b3b3;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.badge_s.en{
+  font-size: 9px;
+    padding: 0;
+    width: 72px;
+    font-weight: 500;
+}
+
+
+.badge--fill-lightgray{
+  background-color: #d9d9d9;
+  color: #1d1d1d;
+}
+.badge--full {
+  width: 100% !important;
+  margin-top:10px;
+}
+
+/**** label ****/
+.label{
+  background-color:#00a3ff;
+  border-radius:20px;
+  padding:6px 20px;
+  font-size:16rem;
+  font-weight:700;
   display:inline-block;
 }
 
@@ -445,6 +493,12 @@ b{
 }
 .input_form::placeholder{
   color:#c9c9c9;
+}
+
+.input_form:focus{
+  border-color: #0039CC;
+  box-shadow:  0 0.5px 0 0 #0039CC;
+  outline: none;
 }
 
 /** select랑 input 같이 쓸때 **/
@@ -614,9 +668,9 @@ textarea{
 
 .textarea_form::placeholder{
   color:#aaa;
-}
+}     
 .textarea_form:focus{
-  border-color:#0039CC;
+  outline-color:#0039CC;   
 }
 
 
@@ -650,6 +704,9 @@ textarea{
 }
 
 
+.gap6{
+  gap:6px; 
+}
 .gap14{
   gap:14px; 
 }
@@ -684,14 +741,14 @@ textarea{
 }
 
 .ic_arrow_l_wh{
-  background-image: url(../img/svg/arrow_l_wh.svg);
+  background-image: url(../img/svg/ic_arrow_l_wh.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 36px;
   height: 36px;
 }
 .ic_arrow_s_wh{
-  background-image: url(../img/svg/arrow_s_wh.svg);
+  background-image: url(../img/svg/ic_arrow_s_wh.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 20px;

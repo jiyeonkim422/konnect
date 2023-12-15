@@ -124,6 +124,10 @@ body{
 .sub_header{
     background-color:#fff;
 }
+.sub_header.bg_black{
+    border:none;
+}
+
 .arrow_title{
     display:flex;
     width:100%;
@@ -231,6 +235,10 @@ body{
     padding-top:44px;
     padding-bottom:60px;
 }
+
+.info_box + .info_box{
+    padding-top:20px;
+}
 .info_box_list{
     width:100%;
     height:auto;
@@ -257,12 +265,13 @@ body{
 
 
 .text_img{
-    height:105rem;
-    width:auto;
+    max-width:280rem;
+    width:72vw;
+    height:auto;
 }
 .text_img > img{
-    height:100%;
-    width:auto;
+    width:100%;
+    height:auto;
 }
 
 .info_box_bottom{
@@ -304,11 +313,29 @@ body{
 
 
 /** membership info **/
+.membership_list_swiper{
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+.membership_pagination{
+    top:290px !important;
+}
+
+
+.membership_button_next:after,
+.membership_button_prev:after{
+    color:#002863;
+    font-weight:900;
+    font-size:24rem;
+}
+
+
 .membership_list{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
+    gap:50px;
 }
 .membership_list + .membership_list{
     margin-top:90px;
@@ -343,7 +370,11 @@ body{
     font-size:28rem;
     line-height:30rem;
     letter-spacing: 0.3px;
+}
 
+.membership_logo2{
+    height:36rem;
+    width:auto;
 }
 
 .content_tit_box{
@@ -358,15 +389,14 @@ body{
     height:23rem;
     width:auto;
     position:absolute;
-    top:94px;
-    transform:translateX(-50%);
+    top:96px;
+    transform:translateX(-48%);
 }
 
 .closed{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 120px;
     flex-direction: column;
     align-items: center;
     gap:10px;
@@ -381,7 +411,7 @@ body{
 
 /** benefit info tab **/
 
-.benefit_info_box{
+.membership_info_more_box{
     text-align: center;
 }
 
@@ -399,6 +429,7 @@ body{
 .tab_box {
 	position: absolute;
     width:100%;
+    height:57px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -422,6 +453,7 @@ input[type="radio"] {
 }
 .benefit_tab_list {
     width: 50%;
+    height:45px;
     color: #787878;
     display: flex;
     justify-content: center;
@@ -520,8 +552,8 @@ input[id="radio-2"] {
     top:140px;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after{
+.flex_button_next:after,
+.flex_button_prev:after{
     color:#fff;
     font-weight:900;
     font-size:24rem;
@@ -555,12 +587,15 @@ input[id="radio-2"] {
   }
   .asset_box li{
     display:flex;
-    background-color:#001b5e;
     border-radius:10px;
   }
   .asset_box img{
     height:90rem;
     width:auto;
+  }
+
+  .box_blue li{
+    background-color:#001b5e;
   }
 
 
@@ -631,17 +666,18 @@ input[id="radio-2"] {
     gap:15px;
     flex-direction: column;
 }
-.text_box .detail_text{
+
+.text_box .box_green{
     background-color:#004250;
     border-radius:15px;
     padding:14rem 30rem;
     text-align:left;
 
 }
-.text_box .detail_text.number{
+.text_box .number{
     list-style-type: decimal;
 }
-.text_box .detail_text li + li{
+.text_box li + li{
     padding-top:6px;
 }
 .poster_img{
@@ -658,7 +694,56 @@ input[id="radio-2"] {
 
 
 
-/** ecosystem 파트너사 **/
+/** ecosystem **/
+.ecosystem_info_box{
+    margin-bottom:40px;
+}
+.kct_l{
+    height:138rem;
+    width:auto;
+}
+.investment{
+    width:350rem;
+    height:auto;
+}
+.tokenomics{
+    width:280rem;
+    height:auto;
+}
+
+.text_box .box_gray{
+    background-color:#f1f2f4;
+    border-radius:15px;
+    padding:14rem 30rem;
+    text-align:left;
+    font-weight:600;
+}
+
+
+.box_3{
+    flex-direction: row;
+    gap:20px;
+    max-width:430rem;
+    margin-left:auto;
+    margin-right:auto;
+  }
+.box_3 > li{
+    width:33%;
+    height:140rem;
+    gap:10px;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box_3 img{
+    height:78rem;
+    width:auto;
+}
+
+
+
+/** 파트너사 **/
 .ecosystem_box{
     background-color:#779cc1;
 }

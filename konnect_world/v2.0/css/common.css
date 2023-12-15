@@ -3,9 +3,10 @@
 @import url("./style.css");        
 @import url("./libs.css");
 
+@import url("./main.css");
 
 @import url("./application.css");
-@import url("./main.css");
+@import url("./membership.css");
 @import url("./responsive.css");
 
 

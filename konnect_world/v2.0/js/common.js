@@ -130,9 +130,25 @@ $(document).ready(function () {
 
 
 
-// 혜택소개 - 멤버쉽 카드 슬라이드 
+// 멤버십소개 - 멤버십 슬라이드 
+var swiper = new Swiper(".membership_list_swiper", {
+    spaceBetween: 50,
+    loop:true,
+    navigation: {
+        nextEl: ".membership_button_next",
+        prevEl: ".membership_button_prev",
+      },
+      pagination: {
+        el: ".membership_pagination",
+        clickable: true,
+      },
+
+  });
+
+
+// 혜택소개 - 멤버십 카드 슬라이드 
 var swiper = new Swiper(".flex_membership_swiper", {
-    spaceBetween: 30,
+    spaceBetween: 50,
     navigation: {
         nextEl: ".flex_button_next",
         prevEl: ".flex_button_prev",
@@ -141,4 +157,13 @@ var swiper = new Swiper(".flex_membership_swiper", {
   });
 
 
+// 혜택소개 - 멤버십 카드 상세화면 
+var swiper = new Swiper(".membership_sub_swiper", {
+    spaceBetween: 50,
+    navigation: {
+        nextEl: ".sub_button_next",
+        prevEl: ".sub_button_prev",
+      },
+
+  });
 

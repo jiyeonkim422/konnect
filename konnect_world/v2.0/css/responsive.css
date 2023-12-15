@@ -48,4 +48,10 @@
     .big_tit{
         font-size:30rem;
     }
+    .swiper-button-next{
+        right:0;
+    }
+    .swiper-button-prev{
+        left:0;
+    }
 }
