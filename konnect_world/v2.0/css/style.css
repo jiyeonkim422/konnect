@@ -191,6 +191,9 @@ button {
 
 
 /**** margin ****/
+.mt_10{
+  margin-top:10px !important;
+}
 .mt_20{
   margin-top:20px !important;
 }
@@ -301,6 +304,9 @@ b{
 
 .tx_gold{
   color:#FFB800;
+}
+.tx_gold2{
+  color:#f9ce57;
 }
 
 
@@ -446,6 +452,11 @@ b{
 .btn_primary_stroke{
   border-color:#0039cc;
   color:#0039cc;
+}
+.btn_primary2{
+  background-color:#00a3ff;
+  color:#fff;
+  border:none;
 }
 
 .btn_secondary{
@@ -732,13 +743,7 @@ textarea{
   width:24px;
   height:24px;
 }
-.ic_arrow_L_bk {
-  background-image: url(../img/svg/ic_arrow_L_bk.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-}
+
 
 .ic_arrow_l_wh{
   background-image: url(../img/svg/ic_arrow_l_wh.svg);
@@ -747,6 +752,22 @@ textarea{
   width: 36px;
   height: 36px;
 }
+
+.ic_arrow_m_bk {
+  background-image: url(../img/svg/ic_arrow_m_bk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+.ic_arrow_m_wh {
+  background-image: url(../img/svg/ic_arrow_m_wh.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
 .ic_arrow_s_wh{
   background-image: url(../img/svg/ic_arrow_s_wh.svg);
   background-repeat: no-repeat;
@@ -754,6 +775,7 @@ textarea{
   width: 20px;
   height: 20px;
 }
+
 .ic_notice_wh{
   background-image: url(../img/svg/ic_notice_wh.svg);
   background-repeat: no-repeat;

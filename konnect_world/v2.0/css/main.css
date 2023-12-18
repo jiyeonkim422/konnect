@@ -146,7 +146,7 @@ body{
     display:flex;
     align-items: center;
     width:calc(100% - 60px);
-    color:#000;
+    /* color:#000; */
 }
 
 .navigation_bar{
@@ -576,6 +576,17 @@ input[id="radio-2"] {
     gap:8px;
     flex-direction:column;
     margin-top:20px;
+  }
+
+
+  .card_img_s{
+    height: 145rem;
+    width:auto;
+  }
+  .card_img_s > img{
+    height:100%;
+    width:auto;
+    object-fit: cover;
   }
 
 

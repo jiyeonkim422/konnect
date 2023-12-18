@@ -4,8 +4,8 @@
 }
 
 .sub_content{
-    margin-top:40px;
-    padding-bottom:170px;
+    margin-top:30px;
+    padding-bottom:60px;
 }
 
 .membership_main{
@@ -87,12 +87,17 @@
 
 .membership_grade{
     text-align: center;
-    margin-top:36px;
+}
+.membership_grade_tit{
+    height:84rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .membership_card_img{
-    margin-top:30px;
+    margin-top:24px;
 }
 .membership_card_img > img{
     height:100%;
@@ -319,4 +324,34 @@
     color:#fff;
     font-weight:900;
     font-size:24rem;
+}
+
+
+
+
+
+/********* rwb 전체혜택 *********/
+.membership_img_info{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.membership_img_info > img{
+    width:100%;
+    max-width:500rem;
+    height:auto;
+}
+
+.membership_text_img{
+    width:100%;
+    max-width:500rem;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.membership_text_img > img{
+    width:100%;
+    height:auto;
 }
