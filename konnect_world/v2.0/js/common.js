@@ -9,8 +9,6 @@ function goForward(){
 }
 
 
-
-
 // textarea 글자수 제한
 $('.textarea_box .textarea_form').keyup(function(){
     var content = $(this).val();
@@ -152,17 +150,6 @@ var swiper = new Swiper(".flex_membership_swiper", {
     navigation: {
         nextEl: ".flex_button_next",
         prevEl: ".flex_button_prev",
-      },
-
-  });
-
-
-// 혜택소개 - 멤버십 카드 상세화면 
-var swiper = new Swiper(".membership_sub_swiper", {
-    spaceBetween: 50,
-    navigation: {
-        nextEl: ".sub_button_next",
-        prevEl: ".sub_button_prev",
       },
 
   });

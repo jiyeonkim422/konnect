@@ -741,11 +741,14 @@ input[id="radio-2"] {
 .box_3 > li{
     width:33%;
     height:140rem;
-    gap:10px;
-    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.box_3 > li > a{
+    display:flex;
+    gap:10px;
+    flex-direction: column; 
 }
 .box_3 img{
     height:78rem;

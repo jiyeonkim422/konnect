@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Konnect</title>
+
+        <!-- SEO meta tag -->
+        <meta name="apple-mobile-web-app-title" content=""> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+        <meta name="title" content="Konnect">
+        <meta name="description" content="">
+        <meta name="keywords" content="Konnect Web3, Konnect, KCT, kct, konnectkct, NFT, nft, Duman, DUMAN, 듀먼, 커넥트, 커넥트 웹3">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="author" content="KCT-Konnect">
+        <!-- // SEO meta tag -->
+
+        <!-- Open Graph -->
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:type" content="">
+        <meta property="og:site_name" content="">
+        <meta property="og:locale" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:country-name" content="">
+        <!-- // Open Graph -->
+
+        <!-- Icon & Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- // Icon & Favicon -->
+
+        <link rel="stylesheet" href="../css/common.css">
+        
+    </head>
+
+    <body class="body_bg_wh"> 
+        <div class="wrap">
+            <!-- HEADER start -->
+            <header id="header" class="header sub_header">
+                <div class="arrow_title">
+                    <div class="navigation_bar">
+                        <div class="arrow_title">
+                            <div class="arrow_back go_back" onclick="goBack();">
+                                <i class="ic ic_arrow_m_bk rotate_90"></i>
+                            </div>
+                            <!-- 각 화면에 맞는 화면명을 넣어주세요 -->
+                            <div class="nav_title tx_black">Partnership Application Form</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- MAIN start -->                 
+            <main id="sub" class="sub_content">
+                <section class="section input_form_box">
+                    <div class="table_form p_side_28 pb_40">
+                        <form>
+                            <table class="table_input">
+                                <h4 class="bold tx_black">
+                                    Complete the partnership application form.
+                                    We'll reach out after review
+                                </h4>   
+                                <tbody class="table_body">
+                                    <tr class="table_row2">
+                                        <th class="table_head2 required" scope="row">Partner Name </th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per" id="company" required minlength="1" maxlength="30" type="text" placeholder="Konnect" value="" autocomplete="off"/>
+                                            <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
+                                            <!-- <span class="error">Required</span> -->
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2 required" scope="row">Point of Contact</th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per" id="name" required minlength="2" maxlength="30" type="text" placeholder="Planning Team Manager Hong Gil-dong" value="" autocomplete="off"/> 
+                                            <!-- 해당 입력폼 데이터 미 입력시 아래 문구가 표기됩니다 -->
+                                            <span class="error">Required</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2 required" scope="row">Email </th>
+                                        <td class="table_data2">
+                                            <input class="input_form w_100per" id="email" required minlength="5" maxlength="30" type="email" placeholder="konnect@email.com" value="" autocomplete="off"/> 
+                                            <!-- 해당 입력폼 데이터 미 입력, 메일형식에 맞지 않을경우 아래 문구가 표기됩니다 -->
+                                            <!-- <span class="error">Required</span> -->
+                                            <span class="error">Please enter a valid email address.</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_row2">
+                                        <th class="table_head2" scope="row">Inquiry</th>
+                                        <td class="table_data2">
+                                            <div class="textarea_box"> 
+                                                <textarea class="textarea_form min_h_100" maxlength="500" aria-label="textarea" value="" placeholder="Please enter your inquiry" autocomplete="off"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_box btn_wrap">
+                                <button type="submit" class="btn btn_full btn_primary" onclick="location.href='../partnership/alert_form_en.html'">Apply</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>   
+            <div id="safe_area_bottom"></div>
+        </div>
+        
+        
+    
+        <!-- //js script -->
+        <script src="../js/libs/jquery-3.6.0.min.js"></script>
+        <script src="../js/libs/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript">
+
+        // $(function(){
+        //         // 스크롤 시 header fade-in
+        //         $(document).on('scroll', function(){
+        //             if($(window).scrollTop() > 0){
+        //                 $(".sub_header").removeClass("deactive");
+        //                 $(".sub_header").addClass("active");
+        //             }else{
+        //                 $(".sub_header").removeClass("active");
+        //                 $(".sub_header").addClass("deactive");
+        //             }
+        //         })
+            
+        // });
+
+
+        </script>
+
+    </body>
+</html> 
