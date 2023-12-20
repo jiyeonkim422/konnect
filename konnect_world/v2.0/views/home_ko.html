@@ -114,10 +114,10 @@
                 <!-- 메인 동영상 --> 
                 <section class="section main_img">
                     <!-- <img src="../img/m_main_banner.png"> -->
-                    <video id="video_m" autoplay muted playsinline>
-                        <!-- <source id="video_m_intro" src="../video/mobile_Intro.mp4" type="video/mp4" /> -->
+                    <video id="video" autoplay muted playsinline>
+                        <source id="video_intro" src="../video/mobile_Intro.mp4" type="video/mp4" />
                         <source
-                            id="video_m_loop"
+                            id="video_loop"
                             src="../video/mobile_Looping.mp4"
                             type="video/mp4"
                         />
@@ -951,6 +951,26 @@
       window.location.href = otherPagePath + '#'+ slideId;
     }
 
+
+    // video.js
+    document.addEventListener('DOMContentLoaded', function () {
+        var video = document.getElementById('video');
+        var introSource = document.getElementById('video_intro');
+        var loopSource = document.getElementById('video_loop');
+
+        video.addEventListener('ended', function () {
+            introSource.removeEventListener('ended', replayIntro);
+            video.src = loopSource.src;
+            video.loop = true;
+            video.play();
+        });
+
+        function replayIntro() {
+            introSource.play();
+        }
+
+        introSource_m.addEventListener('ended', replayIntro);
+    });
 
 </script>
 

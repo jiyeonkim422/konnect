@@ -316,7 +316,7 @@
 
 .sub_button_next,
 .sub_button_prev{
-    top:240px;
+    top:248px;
 }
 
 .sub_button_next:after,
@@ -326,6 +326,17 @@
     font-size:24rem;
 }
 
+.detail_button_next,
+.detail_button_prev{
+    top:248px;
+}
+
+.detail_button_next:after,
+.detail_button_prev:after{
+    color:#fff;
+    font-weight:900;
+    font-size:24rem;
+}
 
 
 

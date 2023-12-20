@@ -153,4 +153,16 @@ var swiper = new Swiper(".flex_membership_swiper", {
       },
 
   });
+  
 
+
+  // 혜택소개 - 멤버십 상세 슬라이드 
+var swiper = new Swiper(".membership_detail_swiper", {
+    spaceBetween: 50,
+    navigation: {
+        nextEl: ".detail_button_next",
+        prevEl: ".detail_button_prev",
+      },
+
+  });
+  
