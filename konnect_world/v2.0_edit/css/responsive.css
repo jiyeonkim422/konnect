@@ -1,9 +1,0 @@
-
-/** 630사이즈 미만일때 **/
-@media (max-width: 630px){
-    .footer_menu{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-}

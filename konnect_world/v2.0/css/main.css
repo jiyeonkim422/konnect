@@ -259,7 +259,9 @@ body{
     gap:30px;
 }
 .info_box_list2 .info_box_img {
-    height:230rem;
+    min-height:200rem;
+    height:58vw;
+    max-height:350rem;
     justify-content: center;
 }
 
@@ -279,7 +281,9 @@ body{
     position:relative;
 }
 .info_box_img{
-    height:170rem;
+    min-height:150rem;
+    height:45vw;
+    max-height:250rem;
     width:auto;
     display: flex;
     justify-content: flex-end;
