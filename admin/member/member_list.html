@@ -49,11 +49,12 @@
             <div class="wrapper">
                 <div class="content_bg">
                     <div class="title_box">
-                        <h1 class="main_tit">회원정보 목록</h1>
+                        <h1 class="main_tit">회원 조회</h1>
                         <nav class="breadcrumb_form" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><div>회원</div></li>
-                              <li class="breadcrumb-item"><div>멤버십 회원</div></li>
+                              <li class="breadcrumb-item"><a href="../main/index.html">Home</a></li>
+                              <li class="breadcrumb-item">회원</li>
+                              <li class="breadcrumb-item">멤버십 회원</li>
                               <li class="breadcrumb-item active" aria-current="page">회원 조회</li>
                             </ol>
                         </nav>
@@ -94,6 +95,16 @@
                             <div class="option_group" >
                                 <div class="btn_box_tit btn_box_tit_s">
                                     <span>계정 상태</span>
+                                </div>
+                                <div class="btn_group " role="group">
+                                    <button type="button" class="btn btn_group_inner is-active">전체</button>
+                                    <button type="button" class="btn btn_group_inner">정상</button>
+                                    <button type="button" class="btn btn_group_inner">차단</button>
+                                </div>
+                            </div>
+                            <div class="option_group" >
+                                <div class="btn_box_tit btn_box_tit_s">
+                                    <span>마이그레이션</span>
                                 </div>
                                 <div class="btn_group " role="group">
                                     <button type="button" class="btn btn_group_inner is-active">전체</button>
@@ -149,59 +160,97 @@
                             <table class="table_default table_type1">
                                 <thead>
                                     <tr>
-                                        <th class="table_type1_head">번호</th>
-                                        <th class="table_type1_head">회원번호</th>
-                                        <th class="table_type1_head">닉네임</th>
+                                        <th class="table_type1_head">멤버십 번호</th>
                                         <th class="table_type1_head">이메일</th>
-                                        <th class="table_type1_head">회원 구분</th>
-                                        <th class="table_type1_head">가입일</th>
-                                        <th class="table_type1_head">본인인증</th>
+                                        <th class="table_type1_head">닉네임</th>
+                                        <th class="table_type1_head">가입일시</th>
+                                        <th class="table_type1_head">회원 등급</th>
+                                        <th class="table_type1_head">보유 멤버십</th>
+                                        <th class="table_type1_head">참여 세이빙</th>
+                                        <th class="table_type1_head">국가</th>
+                                        <th class="table_type1_head">마이그레이션</th>
                                         <th class="table_type1_head">관리대상</th>
                                         <th class="table_type1_head">계정상태</th>
-                                        <th class="table_type1_head">
+                                        <!-- <th class="table_type1_head">
                                             <div class="check_form check_form_solo">
                                                 <input class="check_form_input checkbox" type="checkbox" name="check_all" onclick='selectAll(this)'/>
                                             </div>
-                                        </th>
+                                        </th> -->
                                     </tr>
                                 </thead>
                                 <!-- 데이터 있을때 -->
                                 <tbody class="table_body">
                                     <tr>
-                                        <td class="table_type1_data">0000</td>
-                                        <td class="table_type1_data">12341234</td>
-                                        <td class="table_type1_data">커넥트</td>
                                         <td class="table_type1_data">
-                                            <a href="../member/member_detail.html" class="text_link">userid1234@email.com</a>
+                                            <a href="../member/member_detail.html" class="text_link">ABCD-0000-0000-0000</a>
                                         </td>
-                                        <td class="table_type1_data">일반</td>
-                                        <td class="table_type1_data">2023-00-00</td>
-                                        <td class="table_type1_data">이메일</td>
-                                        <td class="table_type1_data"><div class="badge_form is-red">관리대상</div></td>
-                                        <td class="table_type1_data"><div class="badge_form is-blue">정상</div></td>
+                                        <td class="table_type1_data">konnect@email.com</td>
+                                        <td class="table_type1_data">커넥트</td>
+                                        <td class="table_type1_data">2023-00-00 00:00:00</td>
+                                        <td class="table_type1_data">White</td>
                                         <td class="table_type1_data">
+                                            <a href="#" class="text_link">총 5개</a>
+                                        </td>
+                                        <td class="table_type1_data">
+                                            <a href="#" class="text_link">총 2개</a>
+                                        </td> 
+                                        <td class="table_type1_data">대한민국</td> 
+                                        <td class="table_type1_data">미완료</td> 
+                                        <td class="table_type1_data"><div class="badge_form is-red2">진상등급2</div></td>
+                                        <td class="table_type1_data"><div class="badge_form is-blue">정상</div></td>
+                                        <!-- <td class="table_type1_data">
                                             <div class="check_form check_form_solo">
                                                 <input class="check_form_input checkbox" type="checkbox" name="ckeck_box" id="ckeck_box2"/>
                                             </div>
-                                        </td>
+                                        </td> -->
                                     </tr>
                                     <tr>
-                                        <td class="table_type1_data">0000</td>
-                                        <td class="table_type1_data">12341234</td>
-                                        <td class="table_type1_data">커넥트</td>
                                         <td class="table_type1_data">
-                                            <a href="../member/member_detail.html" class="text_link">userid1234@email.com</a>
+                                            <a href="../member/member_detail.html" class="text_link">ABCD-0000-0000-0000</a>
                                         </td>
-                                        <td class="table_type1_data">해외</td>
-                                        <td class="table_type1_data">2023-00-00</td>
-                                        <td class="table_type1_data">구글</td>
+                                        <td class="table_type1_data">konnect@email.com</td>
+                                        <td class="table_type1_data">커넥트22</td>
+                                        <td class="table_type1_data">2023-00-00 00:00:00</td>
+                                        <td class="table_type1_data">Blue</td>
+                                        <td class="table_type1_data">
+                                            <a href="#" class="text_link">총 5개</a>
+                                        </td>
+                                        <td class="table_type1_data">
+                                            <a href="#" class="text_link">총 2개</a>
+                                        </td> 
+                                        <td class="table_type1_data">중국</td> 
+                                        <td class="table_type1_data">완료</td> 
                                         <td class="table_type1_data"></td>
                                         <td class="table_type1_data"><div class="badge_form is-red">차단</div></td>
-                                        <td class="table_type1_data">
+                                        <!-- <td class="table_type1_data">
                                             <div class="check_form check_form_solo">
                                                 <input class="check_form_input checkbox" type="checkbox" name="ckeck_box" id="ckeck_box3"/>
                                             </div>
+                                        </td> -->
+                                    </tr>
+                                    <tr>
+                                        <td class="table_type1_data">
+                                            <a href="../member/member_detail.html" class="text_link">ABCD-0000-0000-0000</a>
                                         </td>
+                                        <td class="table_type1_data">konnect@email.com</td>
+                                        <td class="table_type1_data">커넥트3</td>
+                                        <td class="table_type1_data">2023-00-00 00:00:00</td>
+                                        <td class="table_type1_data">Blue</td>
+                                        <td class="table_type1_data">
+                                            <a href="#" class="text_link">총 5개</a>
+                                        </td>
+                                        <td class="table_type1_data">
+                                            <a href="#" class="text_link">총 2개</a>
+                                        </td> 
+                                        <td class="table_type1_data">도미니카공화국</td> 
+                                        <td class="table_type1_data">완료</td> 
+                                        <td class="table_type1_data"><div class="badge_form is-red">진상등급</div></td>
+                                        <td class="table_type1_data"><div class="badge_form is-blue">정상</div></td>
+                                        <!-- <td class="table_type1_data">
+                                            <div class="check_form check_form_solo">
+                                                <input class="check_form_input checkbox" type="checkbox" name="ckeck_box" id="ckeck_box3"/>
+                                            </div>
+                                        </td> -->
                                     </tr>
                                 </tbody>
                                 <!-- 검색전&일치하는 결과가 없을때 화면 | 각 상황에 맞는 텍스트를 넣어주세요 -->

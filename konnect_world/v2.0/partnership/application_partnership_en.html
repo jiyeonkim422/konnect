@@ -104,17 +104,39 @@
                                             <div class="textarea_box"> 
                                                 <textarea class="textarea_form min_h_100" maxlength="500" aria-label="textarea" value="" placeholder="Please enter your inquiry" autocomplete="off"></textarea>
                                             </div>
-                                        </td>
+                                        </td> 
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="btn_box btn_wrap">
-                                <button type="submit" class="btn btn_full btn_primary" onclick="location.href='../partnership/alert_form_en.html'">Apply</button>
+                                <button type="submit" id="modal_on_btn" class="btn btn_full btn_primary">Apply</button>
                             </div>
                         </form>
                     </div>
                 </section>
             </main>   
+            <!-- 알림창 start -->
+            <div id="modal_wrap">
+                <div class="modal_bg"></div>
+                <div class="modal_window alert_window">       
+                    <div class="modal_close">
+                        <i class="ic ic_close_m_bk"></i>
+                    </div>    
+                    <div class="modal_content alert_content">
+                        <p class="modal_tit">
+                            Membership partnership<br/>
+                            application received<br/>
+                            successfully.
+                        </p>
+                        <div class="btn_box">
+                            <!-- <button type="button" class="btn btn_full btn_gray">취소</button> -->       
+                            <button type="button" class="btn btn_full btn_primary" onclick="location.href='../views/home_en.html'">Confirm</button>
+                        </div>  
+                        <!-- <button type="button" class="btn btn--modal btn--full btn--primary1" onclick="location.href='../membership/membership_main.html'">나의 멤버십 가기</button> -->
+                    </div>    
+                </div>
+            </div>
+            <!-- 알림창 end -->
             <div id="safe_area_bottom"></div>
         </div>
         

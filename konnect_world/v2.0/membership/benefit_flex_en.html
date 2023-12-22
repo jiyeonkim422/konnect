@@ -216,7 +216,7 @@
                                         <!-- 세상의 모든 아침 -->
                                         <ul class="benefit_info_box fnb_allday"></ul>  
                                         <!-- A lounge -->
-                                        <ul class="benefit_info_box fnb_alounge"></ul>
+                                        <ul class="benefit_info_box fnb_alounge gold"></ul>
             
                                         <!------------- 헬스&메디컬 ------------->
                                         <h3 class="benefit_category">Health & Medical</h3>
@@ -285,6 +285,7 @@
 
                  $(".fnb_allday").load("../membership/benefit/en/fnb_allday.html");
                  $(".fnb_alounge").load("../membership/benefit/en/fnb_alounge.html");
+                 $(".fnb_alounge.gold").load("../membership/benefit/en/fnb_alounge_gold.html");
 
                  $(".medical_oganacell").load("../membership/benefit/en/medical_oganacell.html");
                  $(".medical_fresh").load("../membership/benefit/en/medical_fresh.html");
@@ -300,27 +301,6 @@
 
 
             });
-
-
-                // 현재 슬라이드 ID 추출
-                    var currentSlideId = window.location.hash.substr(1);
-
-                // Swiper 초기화
-                var mySwiper = new Swiper('.membership_sub_swiper', {
-                    spaceBetween: 50,
-                    navigation: {
-                        nextEl: ".sub_button_next",
-                        prevEl: ".sub_button_prev",
-                    },
-                });
-
-                // 현재 슬라이드로 이동
-                if (currentSlideId) {
-                var currentIndex = Array.from(document.querySelectorAll('.slide')).findIndex(slide => slide.id === currentSlideId);
-                if (currentIndex !== -1) {
-                    mySwiper.slideTo(currentIndex);
-                }
-                }
 
                 
          </script>

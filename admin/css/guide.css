@@ -279,7 +279,6 @@ select:disabled {
 
 
 
-
 .required:after {
     content: '*';
     color:#ec0000;
@@ -296,6 +295,14 @@ select:disabled {
     bottom:-18px;
 }
 
+
+
+
+.text_link{
+    color:#0039cc;
+    text-decoration: underline;
+    /* font-weight:500; */
+}
 
 
 
@@ -382,8 +389,6 @@ button:not(:disabled),
     background-color:#555;
     color:#fff;
 }
-
-
 .btn--fill-primary{
     border-color:#3b71ca;
     background-color:#3b71ca;
@@ -403,30 +408,26 @@ button:not(:disabled),
     background-color:#3b71ca;
     color:#fff;
 }
-
 .btn--secondary{
     background-color:#00a3ff;
     color:#fff;
 }
-
-
 .btn--warning{
     border-color:#dc4c64;
     background-color:#fff;
     color:#dc4c64;
 }
-
 .btn--warning:hover{
     background-color:#dc4c64;
     color:#fff;
 }
-
-
 .btn--white-stroke{
     border:2px solid #fff;
     color:#fff;
     background-color:rgba(0,0,0,0);
 }
+
+
 .btn_noline{
     border:none !important;
 }
@@ -454,6 +455,11 @@ button:not(:disabled),
     height:28px; */
 } 
 
+
+.btn_wrap{
+    display:flex;
+    gap:6px;
+}
 
 
 /****************** 폼 form ******************/
@@ -715,6 +721,16 @@ select.input_form option{
 .align_center{
     align-items: center !important;
 }
+.align_start{
+    align-items: flex-start !important;
+}
+
+.direction_row{
+    flex-direction: row;
+}
+.direction_column{
+    flex-direction: column;
+}
 
 .gap4{
     gap:4px !important;
@@ -724,6 +740,12 @@ select.input_form option{
 }
 .gap10{
     gap:10px !important;
+}
+.gap20{
+    gap:20px !important;
+}
+.gap30{
+    gap:30px !important;
 }
 
 
@@ -753,9 +775,7 @@ select.input_form option{
     padding-top:10px;
     overflow-x: auto;;
 }
-.table_default{
-    min-width:800px;
-}
+
 .table_bg_gray{
     background-color:#f1f1f1;
 }
@@ -768,7 +788,6 @@ select.input_form option{
 .right_border{
     border-right:1px solid #e1e1e1;
 }
-
 
 
 /** 테이블 가로정렬 **/
@@ -809,7 +828,7 @@ select.input_form option{
 /** 테이블 세로정렬 **/
 .table_type2{
     width:100%;
-    padding:20px;
+    /* padding:20px; */
 }
 .table_type2_row{
     width:100%;
@@ -864,6 +883,28 @@ select.input_form option{
 }
 
 
+
+/** 세로 테이블 두 줄 **/
+
+.table_body2{
+    display:flex;     
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.table_body2 > tr{
+    width:50%;
+}
+.table_body2 .table_type2_data{
+    width:auto;
+    min-width:300px;
+}
+.table_body2 .table_type2_row{
+    align-items: center;
+}
+
+
+
+
 /****************** badge 뱃지 ******************/
 .badge_form{
     display: inline-block;
@@ -880,6 +921,10 @@ select.input_form option{
 .badge_form.is-red{
     color:#b0233a;
     background-color:#fae0e9;
+}
+.badge_form.is-red2{
+    color:#fae0e9;
+    background-color:#d2304a;
 }
 .badge_form.is-gray{
     color:#666;
@@ -919,6 +964,8 @@ select.input_form option{
 
 
 
+
+
 /****************** icon 아이콘 ******************/
 
 /** icon 24px **/
@@ -945,6 +992,15 @@ select.input_form option{
 }
 .ic_close_l{
     background-image:url(../img/svg/ic_close_l.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:24px;
+    height:24px; 
+}
+
+.ic_profile{
+    /* background-image:url(../img/svg/ic_close_l.svg); */
+    background-color:#ddd;
     background-repeat:no-repeat;
     background-position:center;
     width:24px;

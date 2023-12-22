@@ -166,3 +166,41 @@ var swiper = new Swiper(".membership_detail_swiper", {
 
   });
   
+
+
+// 혜택소개 - flex 멤버십 슬라이드 초기화
+    var mySwiper = new Swiper('.membership_sub_swiper', {
+    spaceBetween: 50,
+    navigation: {
+        nextEl: ".sub_button_next",
+        prevEl: ".sub_button_prev",
+    },
+});
+
+
+
+
+//alert - alert.js
+const modal = document.getElementById("modal_wrap")//
+const btnModal = document.getElementById("modal_on_btn")
+    btnModal.addEventListener("click", e => {
+        modal.style.display = "flex"
+    })
+
+const closeBtn = modal.querySelector(".modal_close")
+    closeBtn.addEventListener("click", e => {
+        modal.style.display = "none"                  
+    })
+
+modal.addEventListener("click", e => {
+    const evTarget = e.target
+    if(evTarget.classList.contains("modal_bg")) {
+        modal.style.display = "none"
+    }
+})
+
+window.addEventListener("keyup", e => {
+    if(modal.style.display === "flex" && e.key === "Escape") {
+        modal.style.display = "none"
+    }
+})

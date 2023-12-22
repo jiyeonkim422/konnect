@@ -14,15 +14,27 @@
     .glider{
         width:48.7%;
     }
+    .info_box_list{
+        width:100%;
+    }
+
 }
 
 
+/** 600사이즈 이상일떄 **/
+@media (min-width: 600px){
+    .info_box_bottom p.responsive{
+        font-size:14rem;
+    }
+
+}
 
 /** 500사이즈 미만일때 **/
 @media (max-width: 500px){
     .glider{
         width:48.3%;
     }
+
 }
 
 
@@ -53,5 +65,9 @@
     }
     .swiper-button-prev{
         left:0;
+    }
+
+    .info_box_bottom p.responsive{
+        font-size:15rem;
     }
 }
