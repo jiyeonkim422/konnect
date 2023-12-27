@@ -261,7 +261,9 @@ body{
     width:100%;
 }
 .info_box_list2 .info_box_img {
-    height:170rem;
+
+    min-height:170rem;
+    max-height:230rem;
     justify-content: center;
 }
 
@@ -397,7 +399,7 @@ body{
     width:auto;
     position:absolute;
     top:96px;
-    transform:translateX(-48%);
+    transform:translateX(-40%);
 }
 
 .closed{
@@ -513,7 +515,9 @@ input[id="radio-2"] {
 
 
 .card_list_img{
-    height:300px;
+    height:76vw;
+    min-height:240rem;
+    max-height:330rem;
     width:auto;
     margin-top:60px;
     margin-bottom:40px;
