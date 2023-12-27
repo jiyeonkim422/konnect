@@ -124,11 +124,17 @@
 /** 360사이즈 미만일때 **/
 @media (max-width: 340px){
 
+    h4{
+        font-size:19rem;
+    }
     h5{
-        font-size:17rem;
+        font-size:16.8rem;
     }
     .p_side_28{
         padding-left:20px;
         padding-right: 20px;
+    }
+    .info_box_bottom p.responsive{
+        font-size:13.8rem;
     }
 }
