@@ -236,7 +236,7 @@ select:disabled {
     font-weight:500 !important;
 }
 .semibold{
-    font-weight:700 !important;
+    font-weight:600 !important;
 }
 .bold{
     font-weight:700 !important;
@@ -253,7 +253,7 @@ select:disabled {
 }
 .main_tit{
     font-weight:700;
-    font-size:22px;
+    font-size:20px;
     line-height:1.4;
     color:#313a46;
 }
@@ -267,14 +267,26 @@ select:disabled {
 
 .sub_tit{
     font-weight:700;
-    font-size:18px;
+    font-size:16px;
     color:#313a46;
     line-height:1.4;
 }
+.sub_sub_tit{
+    font-weight:600;
+    font-size:15px;
+    color:#313a46;
+    line-height:1.4;
+}
+
 .default_text{
-    font-size:12.5px;
+    font-size:12px;
     line-height:1.4;
     color:#313a46;
+}
+.detail_text{
+    font-size:11px;
+    color:#9493a7;
+    line-height:1.8;
 }
 
 
@@ -283,7 +295,7 @@ select:disabled {
     content: '*';
     color:#ec0000;
     position:absolute;
-    right:3px;
+    right:2px;
     top:14px;
 }
 .error_message:after{
@@ -299,8 +311,8 @@ select:disabled {
 
 
 .text_link{
-    color:#0039cc;
-    text-decoration: underline;
+    color:#0039cc !important;
+    text-decoration: underline !important;
     /* font-weight:500; */
 }
 
@@ -741,6 +753,9 @@ select.input_form option{
 .gap10{
     gap:10px !important;
 }
+.gap14 {
+    gap:14px !important;
+}
 .gap20{
     gap:20px !important;
 }
@@ -806,7 +821,7 @@ select.input_form option{
 }
 .table_type1_data{
     padding: 0 0.6rem;
-    font-size:14px;
+    font-size:12.5px;
     border-bottom:1px solid #EBEDF3;
     text-align:center;
     height:50px;
@@ -848,8 +863,8 @@ select.input_form option{
 
 
 .table_type2_head{
-    padding: 1rem 0.7rem;
-    font-size: 14px;
+    padding: 1rem 0.6rem;
+    font-size: 13px;
     width:160px;
     min-width:160px;
     font-weight:700;
@@ -861,7 +876,7 @@ select.input_form option{
     position:relative;
 }
 .table_type2_data{
-    padding: 1rem 0.7rem;
+    padding: 1rem 0.6rem;
     font-size:13px;
     line-height:1.6;
     text-align:left;
@@ -883,25 +898,39 @@ select.input_form option{
 }
 
 
-
 /** 세로 테이블 두 줄 **/
 
 .table_body2{
     display:flex;     
     flex-direction: row;
     flex-wrap: wrap;
+    padding:10px 0;
 }
 .table_body2 > tr{
     width:50%;
 }
+ 
+.table_body2 .table_type2_head{
+    padding:0.7rem 0.6rem;
+}
 .table_body2 .table_type2_data{
     width:auto;
     min-width:300px;
+    padding: 0.7rem 0.6rem;
 }
 .table_body2 .table_type2_row{
     align-items: center;
 }
 
+.tr_tit{
+    width:100% !important;
+}
+.td_tit{
+    font-size:16px;
+    font-weight:600;
+    color:#313a46;
+    min-width:100%;
+}
 
 
 
@@ -943,8 +972,8 @@ select.input_form option{
     align-items: flex-end;
 }
 .breadcrumb-item{
-    height:20px;
-    font-size: 14px;
+    height:16px;
+    font-size: 12px;
 }
 .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem;

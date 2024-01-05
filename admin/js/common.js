@@ -161,6 +161,23 @@ function selectAll(selectAll)  {
     });
 
 
+    // line_tab - 탭 선택시 해당정보 노출 
+    $(document).ready(function () {
+
+        $('.menu_tab1').addClass('is-active'); // 초깃값 설정
+        $('.menu_tab_content1').addClass('is-active');
+
+        $('.menu_tab_list .menu_tab').click(function () {
+            var tab_id = $(this).attr('data-tab');
+
+            $('.menu_tab_list .menu_tab').removeClass('is-active');        
+            $('.menu_tab_content1').removeClass('is-active');
+
+            $(this).addClass('is-active');
+            $("#" + tab_id).addClass('is-active');
+        })
+
+    })
 
 
 

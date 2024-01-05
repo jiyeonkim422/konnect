@@ -68,11 +68,11 @@
                                     </div>
                                     <div class="profile_info">
                                         <div class="badge_form is-blue">회원등급명</div>
-                                        <h1 class="main_tit">어드민닉네임</h1>
+                                        <h1 class="main_tit">커넥트어드민관리자</h1>
                                         <p class="default_text">최근 로그인 : 2024-05-24 14:15:03</p>
                                     </div>
                                 </li>
-                                <li class="detail_box_li gap20 direction_column align_start">
+                                <li class="detail_box_li gap14 direction_column align_start">
                                     <div class="profile_detail">
                                         <i class="ic ic_profile"></i>
                                         <p class="default_text">mailaddress@email.com</p>
@@ -87,25 +87,51 @@
                                     </div>
                                 </li>
                                 <li class="detail_box_li">
-                                    <div class="info_group">
-                                        <div class="info_group_box"></div>
-                                        <div class="info_group_box"></div>
-                                        <div class="info_group_box"></div>
-                                        <div class="info_group_box"></div>
-                                        <div class="info_group_box"></div>
-                                        <div class="info_group_box"></div>
+                                    <div class="info_group info_group_top">
+                                        <div class="info_group_box">
+                                            <p class="detail_text">멤버십</p>
+                                            <em class="sub_tit semibold">1,234</em>
+                                        </div>
+                                        <div class="info_group_box">
+                                            <p class="detail_text">바우처</p>
+                                            <em class="sub_tit semibold">1,234</em>
+                                        </div>
+                                        <div class="info_group_box">
+                                            <p class="detail_text">교환권</p>                                          
+                                            <em class="sub_tit semibold">1,234</em>
+                                        </div>
+                                        <div class="info_group_box">
+                                            <p class="detail_text">쿠폰</p>                                           
+                                            <em class="sub_tit semibold">1,234</em>
+                                        </div>
+                                    </div>
+                                    <div class="info_group info_group_bottom">
+                                        <div class="info_group_box">
+                                            <p class="detail_text">크라운</p>     
+                                            <em class="sub_sub_tit">12,345,678</em>
+                                        </div>
+                                        <div class="info_group_box">
+                                            <p class="detail_text">KCT</p>     
+                                            <em class="sub_sub_tit">12,345,678.12345678</em>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="content_tab"></div>
+                        <div class="content_tab">
+                            <ul class="menu_tab_list">
+                                <li class="menu_tab menu_tab1" data-tab="menu_tab1">프로필 & 계정</li>
+                                <li class="menu_tab menu_tab2" data-tab="menu_tab2">구매내역</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="row_box">
+                    <!-- 프로필&계정 start -->
+                    <div class="row_box menu_tab_content menu_tab_content1" id="menu_tab1">
                         <div class="column_box">
                             <div class="content">
                                 <div class="table_form">
                                     <!-- 회원 프로필 정보 -->
-                                    <table class="table_default table_type2 double">  
+                                    <table class="table_default table_type2">  
                                         <div class="sub_tit_box button">
                                             <span class="sub_tit">프로필 & 계정</span>
                                             <div class="btn_wrap">
@@ -115,9 +141,9 @@
                                         </div>
                                         <!-- 데이터 있을때 -->
                                         <tbody class="table_body2  top_border_bold">
-                                            <tr class="table_type2_row">
+                                            <tr class="table_type2_row tr_tit">
                                                 <th class="table_type2_head" scope="row"></th>
-                                                <td class="table_type2_data td_tit">회원 프로필 정보</td>
+                                                <td colspan="2" class="table_type2_data td_tit">회원 프로필 정보</td>
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">이메일</th>
@@ -154,8 +180,12 @@
                                         </tbody> -->
                                     </table>
                                     <!-- 계정 정보 -->
-                                    <table class="table_default table_type2 double">  
+                                    <table class="table_default table_type2">  
                                         <tbody class="table_body2  top_border_bold">
+                                            <tr class="table_type2_row tr_tit">
+                                                <th class="table_type2_head" scope="row"></th>
+                                                <td colspan="2" class="table_type2_data td_tit">계정 정보</td>
+                                            </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">멤버십 번호</th>
                                                 <td class="table_type2_data">ABCD-0000-0000-0000</td>
@@ -170,7 +200,7 @@
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">입력한 초대코드</th> 
-                                                <td class="table_type2_data">HE3PB</td>
+                                                <td class="table_type2_data text_link">HE3PB</td>
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">회원가입일시</th>
@@ -182,29 +212,28 @@
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">회원 마이그레이션</th>
-                                                <td class="table_type2_data">
-                                                    완료
-                                                </td>
+                                                <td class="table_type2_data tx--blue1">완료</td>
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">마이그레이션 완료일지</th>
                                                 <td class="table_type2_data">2023-00-00 00:00:00</td>
                                             </tr>
-
-
-
                                         </tbody> 
                                     </table>
                                     <!-- 알림 설정 -->
-                                    <table class="table_default table_type2 double">  
+                                    <table class="table_default table_type2">  
                                         <tbody class="table_body2  top_border_bold">
+                                            <tr class="table_type2_row tr_tit">
+                                                <th class="table_type2_head" scope="row"></th>
+                                                <td colspan="2" class="table_type2_data td_tit">알림 설정</td>
+                                            </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">앱 푸쉬알림</th>
-                                                <td class="table_type2_data">수신 동의</td>
+                                                <td class="table_type2_data tx--blue1">수신 동의</td>
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">관심상품 출시 알림</th>
-                                                <td class="table_type2_data">수신동의</td>
+                                                <td class="table_type2_data tx--blue1">수신 동의</td>
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">광고성 정보 수신 동의</th>
@@ -221,18 +250,18 @@
                                         </tbody> 
                                     </table>
                                     <!-- 마케팅 수신 동의 -->
-                                    <table class="table_default table_type2 double">  
+                                    <table class="table_default table_type2">  
                                         <tbody class="table_body2  top_border_bold">
+                                            <tr class="table_type2_row tr_tit">
+                                                <th class="table_type2_head" scope="row"></th>
+                                                <td colspan="2" class="table_type2_data td_tit">마케팅 수신 동의</td>
+                                            </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">이메일</th>
-                                                <td class="table_type2_data">수신 동의<td>
+                                                <td class="table_type2_data tx--blue1">수신 동의<td>
                                             </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">SMS</th>
-                                                <td class="table_type2_data">미동의</td>
-                                            </tr>
-                                            <tr class="table_type2_row">
-                                                <th class="table_type2_head" scope="row">광고성 정보 수신 동의</th>
                                                 <td class="table_type2_data">미동의</td>
                                             </tr>
                                             <tr class="table_type2_row">
@@ -241,12 +270,49 @@
                                             </tr>
                                         </tbody> 
                                     </table>
-                                    <!-- 마케팅 수신 동의 -->
-                                    <table class="table_default table_type2 double">  
+                                    <!-- cs 평판 : 일반고객 -->
+                                    <table class="table_default table_type2">  
                                         <tbody class="table_body2  top_border_bold">
+                                            <tr class="table_type2_row tr_tit">
+                                                <th class="table_type2_head" scope="row"></th>
+                                                <td colspan="2" class="table_type2_data td_tit">CS 평판</td>
+                                            </tr>
                                             <tr class="table_type2_row">
                                                 <th class="table_type2_head" scope="row">계정 상태</th>
-                                                <td class="table_type2_data">정상<td>
+                                                <td class="table_type2_data tx--blue1">정상<td>
+                                            </tr>
+                                        </tbody> 
+                                    </table>
+                                    <!-- cs 평판 : 블랙리스트 -->
+                                    <table class="table_default table_type2">  
+                                        <tbody class="table_body2  top_border_bold">
+                                            <tr class="table_type2_row tr_tit">
+                                                <th class="table_type2_head" scope="row"></th>
+                                                <td colspan="2" class="table_type2_data td_tit">CS 평판</td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">계정 상태</th>
+                                                <td class="table_type2_data tx--warning">블랙리스트<td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">제재 수준</th>
+                                                <td class="table_type2_data tx--warning">로그인 차단<td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">등록자</th>
+                                                <td class="table_type2_data">홍길동<td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">등록일시</th>
+                                                <td class="table_type2_data">2023-01-01 15:23:16<td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">사유</th>
+                                                <td class="table_type2_data">운영자가 블랙리스트 등록 시 입력한 사유가 표시됩니다.<td>
+                                            </tr>
+                                            <tr class="table_type2_row">
+                                                <th class="table_type2_head" scope="row">차단</th>
+                                                <td class="table_type2_data">2023-06-01 00:00:00<td>
                                             </tr>
                                         </tbody> 
                                     </table>
@@ -254,6 +320,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row_box menu_tab_content menu_tab_content2" id="menu_tab2"></div>
                 </div>
                 <div class="footer">
                     <p class="footer_detail">© 2023. Konnect All rights reserved.</p>
